@@ -62,7 +62,7 @@ Congratulations! You have successfully implemented the Tealium Plugin into your 
 
 #### iOS
 
-Additional frameworks are necessary to run the Tealium Plugin on iOS, the [Advanced Guide](../../wiki/Unity-Advanced-Guide#deploying-to-an-ios-project) has instructions on how to do this.
+Additional frameworks are necessary to run the Tealium Plugin on iOS, the [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-ios-project) has instructions on how to do this.
 
 #### Android ####
 
