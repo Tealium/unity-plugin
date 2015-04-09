@@ -9,7 +9,6 @@ public class Tealium {
 
 	public class Config {
 		public bool IsHTTPSDisabled = false;
-		public bool IsLifeCycleTrackingDisabled = false;
 		public bool IsDebugLogSilent = true;
 		public bool IsErrorLogSilent = false;
 		
@@ -18,11 +17,6 @@ public class Tealium {
 			return this;
 		}
 		
-		public Config DisableLifeCycleTracking(bool disable) {
-			this.IsLifeCycleTrackingDisabled = disable;
-			return this;			
-		}
-
 		public Config SilenceErrors(bool silence) {
 			this.IsErrorLogSilent = silence;
 			return this;
@@ -62,10 +56,6 @@ public class Tealium {
 
 	// Singleton interface handle.
 	private AndroidJavaClass _tealiumClass = null;
-	
-	// Lifecycle operations.
-	private AndroidJavaRunnable _resumeRunnable = null;
-	private AndroidJavaRunnable _pauseRunnable = null;
 
 #else
 	
@@ -101,55 +91,31 @@ public class Tealium {
 		_instance._silencedErrors = config.IsErrorLogSilent;
 		
 #if UNITY_ANDROID && !UNITY_EDITOR
-		
-		int options = 0;
-		
-		if(config.IsHTTPSDisabled) {
-			options = 1 << 0; // Tealium.OPT_DISABLE_HTTPS
-		}
 
-		if(config.IsLifeCycleTrackingDisabled) {
-			options = options | (1 << 9);// Tealium.OPT_DISABLE_LIFECYCLE_TRACKING
-		}
-
+	    _instance._currentActivity = new AndroidJavaClass("com.unity3d.player.UnityPlayer")
+			.GetStatic<AndroidJavaObject>("currentActivity");	
+		
+		AndroidJavaObject tealiumConfig = new AndroidJavaClass("com.tealium.library.Tealium$Config")
+			.CallStatic<AndroidJavaObject>("create", _instance._currentActivity, accountName, profileName, environmentName);
+		tealiumConfig.Call<AndroidJavaObject>("setHTTPSEnabled", config.IsHTTPSDisabled);	
+		
 		if(config.IsErrorLogSilent) {
-			options = options | (1 << 6) | (1 << 7) | (1 << 8);// Tealium.OPT_SILENCE_*
-		}
-
-		if(config.IsDebugLogSilent) {
-			options = options | (1 << 3) | (1 << 4) | (1 << 5);// Tealium.OPT_VOL_*
+			tealiumConfig.Call<AndroidJavaObject>("setLibraryLogLevel", new AndroidJavaClass("com.tealium.library.Tealium$LogLevel")
+				.GetStatic<AndroidJavaObject>("SILENT"));
+		} else if (!config.IsDebugLogSilent) {
+			tealiumConfig.Call<AndroidJavaObject>("setLibraryLogLevel", new AndroidJavaClass("com.tealium.library.Tealium$LogLevel")
+				.GetStatic<AndroidJavaObject>("VERBOSE"));
 		}
 		
-	    AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-	    _instance._currentActivity = jc.GetStatic<AndroidJavaObject>("currentActivity");	
-	
 		_instance._tealiumClass = new AndroidJavaClass("com.tealium.library.Tealium");
+		_instance._tealiumClass.CallStatic("initialize", tealiumConfig);
 	
-	    _instance._currentActivity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
-			_instance._tealiumClass.CallStatic<bool>(
-				"initialize", _instance._currentActivity, accountName, profileName, environmentName, options);
-		
-			_instance._tealiumClass.CallStatic<bool>("onResume", _instance._currentActivity);
-		}));
-	
-		_instance._resumeRunnable = new AndroidJavaRunnable(() => {
-			_instance._tealiumClass.CallStatic<bool>("onResume", _instance._currentActivity);
-		});
-	
-		_instance._pauseRunnable = new AndroidJavaRunnable(() => {
-			_instance._tealiumClass.CallStatic<bool>("onPause");
-		});
-		
 #elif UNITY_IPHONE && !UNITY_EDITOR
 		
 		int options = 0;
 		
 		if(config.IsHTTPSDisabled) {
 			options = 1 << 3; // TLDisableHTTPS = 1 << 3
-		}
-
-		if(config.IsLifeCycleTrackingDisabled) {
-			options = options | (1 << 2); // TLDisableLifecycleTracking  = 1 << 2
 		}
 
 		if(config.IsDebugLogSilent) {
@@ -178,11 +144,7 @@ public class Tealium {
 			if(config.IsHTTPSDisabled) {
 				Debug.Log("HTTPS DISABLED");
 			}
-			
-			if(config.IsLifeCycleTrackingDisabled) {
-				Debug.Log("LIFECYCLE TRACKING DIABLED");
-			}
-			
+						
 			if(config.IsErrorLogSilent) {
 				Debug.Log("ERRORS SILENCED");
 			}
@@ -211,20 +173,21 @@ public class Tealium {
 		}
 		
 #if UNITY_ANDROID && !UNITY_EDITOR
-		this._currentActivity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
-			AndroidJavaObject map = new AndroidJavaObject("com.tealium.unity.DataMap", data == null ? 1 : data.Count + 1);
-	
-			if(data != null) {
-				foreach(KeyValuePair<string, string> pair in data) {
-					map.Call("set", pair.Key, pair.Value);
-				}
+
+		AndroidJavaObject map = new AndroidJavaObject("com.tealium.unity.DataMap", data == null ? 1 : data.Count + 1);
+
+		if(data != null) {
+			foreach(KeyValuePair<string, string> pair in data) {
+				map.Call("set", pair.Key, pair.Value);
 			}
+		}
+
+		map.Call("set", key, value);
 	
-			map.Call("set", key, value);
-		
-			_tealiumClass.CallStatic<bool>("track", null, map, name);
-		}));
+		_tealiumClass.CallStatic("track", null, map, name);
+
 #elif UNITY_IPHONE && !UNITY_EDITOR
+		
 		if(data == null) {
 			_TealiumTrackPrepare(1);
 		} else {
@@ -236,6 +199,7 @@ public class Tealium {
 		
 		_TealiumTrackSet(key, value);			
 		_TealiumTrackSend(name);		
+		
 #else
 		if(!this._silencedLogs) {
 
@@ -283,7 +247,7 @@ public class Tealium {
 	public static void Start () {
 #if UNITY_ANDROID && !UNITY_EDITOR
 		if(_instance != null) {
-			_instance._currentActivity.Call("runOnUiThread", _instance._resumeRunnable);
+			_instance._tealiumClass.CallStatic("onResume", _instance._currentActivity);
 		}
 #endif
 	}
@@ -291,11 +255,7 @@ public class Tealium {
 	public static void OnApplicationPause(bool paused) {
 #if UNITY_ANDROID && !UNITY_EDITOR
 		if(_instance != null) {
-			if(paused) {
-				_instance._currentActivity.Call("runOnUiThread", _instance._pauseRunnable);
-			} else {
-				_instance._currentActivity.Call("runOnUiThread", _instance._resumeRunnable);
-			}
+			_instance._tealiumClass.CallStatic("onPause", _instance._currentActivity);
 		}
 #endif		
 	}
