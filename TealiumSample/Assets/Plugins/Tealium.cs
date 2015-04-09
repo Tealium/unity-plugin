@@ -97,7 +97,7 @@ public class Tealium {
 		
 		AndroidJavaObject tealiumConfig = new AndroidJavaClass("com.tealium.library.Tealium$Config")
 			.CallStatic<AndroidJavaObject>("create", _instance._currentActivity, accountName, profileName, environmentName);
-		tealiumConfig.Call<AndroidJavaObject>("setHTTPSEnabled", config.IsHTTPSDisabled);	
+		tealiumConfig.Call<AndroidJavaObject>("setHTTPSEnabled", !config.IsHTTPSDisabled);	
 		
 		if(config.IsErrorLogSilent) {
 			tealiumConfig.Call<AndroidJavaObject>("setLibraryLogLevel", new AndroidJavaClass("com.tealium.library.Tealium$LogLevel")
@@ -255,7 +255,11 @@ public class Tealium {
 	public static void OnApplicationPause(bool paused) {
 #if UNITY_ANDROID && !UNITY_EDITOR
 		if(_instance != null) {
-			_instance._tealiumClass.CallStatic("onPause", _instance._currentActivity);
+			if(paused) {
+				_instance._tealiumClass.CallStatic("onPause", _instance._currentActivity);
+			} else {
+				_instance._tealiumClass.CallStatic("onResume", _instance._currentActivity);
+			}
 		}
 #endif		
 	}
