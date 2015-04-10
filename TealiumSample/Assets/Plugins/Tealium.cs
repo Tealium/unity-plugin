@@ -52,10 +52,10 @@ public class Tealium {
 #elif UNITY_ANDROID && !UNITY_EDITOR
 	
 	// This handle is used to run operations in the main thread.
-	private AndroidJavaObject _currentActivity = null;
+	//private AndroidJavaObject _currentActivity = null;
 
 	// Singleton interface handle.
-	private AndroidJavaClass _tealiumClass = null;
+	private AndroidJavaClass _tealiumClass = new AndroidJavaClass("com.tealium.library.Tealium");
 
 #else
 	
@@ -91,7 +91,7 @@ public class Tealium {
 		_instance._silencedErrors = config.IsErrorLogSilent;
 		
 #if UNITY_ANDROID && !UNITY_EDITOR
-
+		/*
 	    _instance._currentActivity = new AndroidJavaClass("com.unity3d.player.UnityPlayer")
 			.GetStatic<AndroidJavaObject>("currentActivity");	
 		
@@ -109,7 +109,7 @@ public class Tealium {
 		
 		_instance._tealiumClass = new AndroidJavaClass("com.tealium.library.Tealium");
 		_instance._tealiumClass.CallStatic("initialize", tealiumConfig);
-	
+		*/
 #elif UNITY_IPHONE && !UNITY_EDITOR
 		
 		int options = 0;
@@ -174,7 +174,7 @@ public class Tealium {
 		
 #if UNITY_ANDROID && !UNITY_EDITOR
 
-		AndroidJavaObject map = new AndroidJavaObject("com.tealium.unity.DataMap", data == null ? 1 : data.Count + 1);
+		AndroidJavaObject map = new AndroidJavaObject("com.tealium.unityplugin.Dictionary", data == null ? 1 : data.Count + 1);
 
 		if(data != null) {
 			foreach(KeyValuePair<string, string> pair in data) {
@@ -242,25 +242,5 @@ public class Tealium {
 		} else {
 			Debug.LogWarning("Tealium.trackViewEvent(...) called when Library is uninitialized.");
 		}
-	}
-	
-	public static void Start () {
-#if UNITY_ANDROID && !UNITY_EDITOR
-		if(_instance != null) {
-			_instance._tealiumClass.CallStatic("onResume", _instance._currentActivity);
-		}
-#endif
-	}
-	
-	public static void OnApplicationPause(bool paused) {
-#if UNITY_ANDROID && !UNITY_EDITOR
-		if(_instance != null) {
-			if(paused) {
-				_instance._tealiumClass.CallStatic("onPause", _instance._currentActivity);
-			} else {
-				_instance._tealiumClass.CallStatic("onResume", _instance._currentActivity);
-			}
-		}
-#endif		
 	}
 }

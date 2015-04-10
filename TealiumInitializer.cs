@@ -15,11 +15,5 @@ public class TealiumInitializer : MonoBehaviour {
 			{"custom_alpha", "alpha"}
 			, {"custom_beta", "beta"}
 		});
-
-		Tealium.Start();
-	}
-	
-	void OnApplicationPause(bool pause) {
-		Tealium.OnApplicationPause(pause);
 	}
 }
