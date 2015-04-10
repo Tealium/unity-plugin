@@ -1,5 +1,8 @@
 <resources>
 
     <string name="app_name">TealiumUnity</string>
+    <string name="tealium_account">tealiummobile</string>
+    <string name="tealium_profile">demo</string>
+    <string name="tealium_environment">dev</string>
 
 </resources>
