@@ -38,16 +38,16 @@ public class Tealium {
 
 
 	[DllImport ("__Internal")]
-	private static extern void _TealiumInitialize (string accountName, string profileName, string environmentName, int options);
+	private static extern void Tealium_Initialize (string accountName, string profileName, string environmentName, int options);
 
 	[DllImport ("__Internal")]
-	private static extern void _TealiumTrackPrepare(int capacity);
+	private static extern void Tealium_TrackPrepare(int capacity);
 	
 	[DllImport ("__Internal")]
-	private static extern void _TealiumTrackSet(string key, string value);
+	private static extern void Tealium_TrackSet(string key, string value);
 
 	[DllImport ("__Internal")]
-	private static extern void _TealiumTrackSend(string eventType);
+	private static extern void Tealium_TrackSend(string eventType);
 
 #elif UNITY_ANDROID && !UNITY_EDITOR
 	
@@ -124,7 +124,7 @@ public class Tealium {
 			options = options | (1 << 4) ; // TLDisplayVerboseLogs = 1 << 4
 		}
 		
-		_TealiumInitialize(accountName, profileName, environmentName, options);		
+		Tealium_Initialize(accountName, profileName, environmentName, options);		
 
 #else
 		_instance._silencedLogs = config.IsDebugLogSilent;
@@ -189,16 +189,16 @@ public class Tealium {
 #elif UNITY_IPHONE && !UNITY_EDITOR
 		
 		if(data == null) {
-			_TealiumTrackPrepare(1);
+			Tealium_TrackPrepare(1);
 		} else {
-			_TealiumTrackPrepare(data.Count + 1);
+			Tealium_TrackPrepare(data.Count + 1);
 			foreach(KeyValuePair<string, string> pair in data) {
-				_TealiumTrackSet(pair.Key, pair.Value);
+				Tealium_TrackSet(pair.Key, pair.Value);
 			}
 		}
 		
-		_TealiumTrackSet(key, value);			
-		_TealiumTrackSend(name);		
+		Tealium_TrackSet(key, value);			
+		Tealium_TrackSend(name);		
 		
 #else
 		if(!this._silencedLogs) {

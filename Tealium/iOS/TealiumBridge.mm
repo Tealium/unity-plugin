@@ -8,7 +8,11 @@ NSString * TEALStringFromCString (const char* string) {
 #import <Foundation/NSJSONSerialization.h>
 
 extern "C" {
-    void _TealiumInitialize(const char* accountName, const char* profileName, const char* environmentName, int options) {
+    void Tealium_Initialize(const char* accountName,
+                            const char* profileName,
+                            const char* environmentName,
+                            int options) {
+        
         [Tealium initSharedInstance:TEALStringFromCString(accountName)
                             profile:TEALStringFromCString(profileName)
                              target:TEALStringFromCString(environmentName)
@@ -17,30 +21,35 @@ extern "C" {
         
     }
     
-    static NSMutableDictionary *newDispatch = nil;
+    static NSMutableDictionary *_tealiumStagedDispatch = nil;
     
-    void _TealiumTrackPrepare(int capacity) {
-        newDispatch = [NSMutableDictionary dictionaryWithCapacity: capacity];
+    void Tealium_TrackPrepare(int capacity) {
+        _tealiumStagedDispatch = [NSMutableDictionary dictionaryWithCapacity: capacity];
     }
     
-    void _TealiumTrackSet(const char* key, const char* value) {
-        if(newDispatch) {
-            [newDispatch setObject: TEALStringFromCString(value)
-                            forKey: TEALStringFromCString(key)];
+    void Tealium_TrackSet(const char* key,
+                          const char* value) {
+        if(_tealiumStagedDispatch) {
+            [_tealiumStagedDispatch setObject: TEALStringFromCString(value)
+                                       forKey: TEALStringFromCString(key)];
         } else {
-            NSLog(@"_TealiumTrackSet(const char*, const char*) called before _TealiumTrackPrepare(int)");
+            NSLog(@"Tealium_TrackSet(const char*, const char*) called before Tealium_TrackPrepare(int)");
         }
     }
     
-    void _TealiumTrackSend(const char* eventType) {
-        if(newDispatch) {
+    void Tealium_TrackSend(const char* eventType) {
+        
+        if(_tealiumStagedDispatch) {
             
-            [Tealium trackCallType:TEALStringFromCString(eventType)
-                        customData:newDispatch
+            NSString *callType = TEALStringFromCString(eventType);
+            NSLog(@"%s callType: %@", __FUNCTION__, callType);
+            
+            [Tealium trackCallType:callType
+                        customData:_tealiumStagedDispatch
                             object:nil];
-            newDispatch = nil;
+            _tealiumStagedDispatch = nil;
         } else {
-            NSLog(@"_TealiumTrackSend(const char*) called before _TealiumTrackPrepare(int)");
+            NSLog(@"Tealium_TrackSend(const char*) called before Tealium_TrackPrepare(int)");
         }
     }
 }
