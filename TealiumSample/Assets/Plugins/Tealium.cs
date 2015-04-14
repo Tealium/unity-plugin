@@ -1,11 +1,11 @@
-using UnityEngine;
 using System;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
 
 
-public class Tealium {
+public class Tealium : MonoBehaviour {
 
 	private Tealium() {}
 
@@ -13,13 +13,13 @@ public class Tealium {
 
 
 	[DllImport ("__Internal")]
-	private static extern void Tealium_TrackPrepare(int capacity);
+	private static extern IntPtr Tealium_EventCreate();
 	
 	[DllImport ("__Internal")]
-	private static extern void Tealium_TrackSet(string key, string value);
+	private static extern void Tealium_EventAddPair(IntPtr evt, string key, string value);
 
 	[DllImport ("__Internal")]
-	private static extern void Tealium_TrackSend(string eventType);
+	private static extern void Tealium_TrackEvent(IntPtr evt, string eventType);
 
 #elif UNITY_ANDROID && !UNITY_EDITOR
 	
@@ -59,19 +59,17 @@ public class Tealium {
 		_tealiumClass.CallStatic("track", null, map, name);
 
 #elif UNITY_IPHONE && !UNITY_EDITOR
-		
-		if(data == null) {
-			Tealium_TrackPrepare(1);
-		} else {
-			Tealium_TrackPrepare(data.Count + 1);
-			foreach(KeyValuePair<string, string> pair in data) {
-				Tealium_TrackSet(pair.Key, pair.Value);
+
+        IntPtr eventPtr = Tealium_EventCreate();
+
+		if (data != null) {
+            foreach(KeyValuePair<string, string> pair in data) {
+				Tealium_EventAddPair(eventPtr, pair.Key, pair.Value);
 			}
 		}
-		
-		Tealium_TrackSet(key, value);			
-		Tealium_TrackSend(name);		
-		
+
+		Tealium_TrackEvent(eventPtr, name);			
+
 #else
 
 

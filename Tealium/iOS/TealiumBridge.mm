@@ -1,14 +1,34 @@
 
+#import <TealiumLibrary/Tealium.h>
+#import <Foundation/Foundation.h>
+
+#pragma mark - ARC Helpers
+
+#if __has_feature(objc_arc)
+
+#define TEAL_BRIDGE_RETAINED __bridge_retained
+#define TEAL_BRIDGE_TRANSFER __bridge_transfer
+
+#else
+
+#define TEAL_BRIDGE_RETAINED
+#define TEAL_BRIDGE_TRANSFER
+
+#endif
+
+#pragma mark - String Helplers
+
 NSString * TEALStringFromCString (const char* string) {
     return [NSString stringWithCString:string
                               encoding:NSUTF8StringEncoding];
 }
 
-#import <TealiumLibrary/Tealium.h>
-#import <Foundation/NSJSONSerialization.h>
+
+
+#pragma mark - Tealium iOS Bridge
 
 extern "C" {
-    
+
     static BOOL _tealiumIsInitialized = NO;
     
     void Tealium_InitializeIfNeeded() {
@@ -23,38 +43,41 @@ extern "C" {
         
         _tealiumIsInitialized = YES;
     }
-    
-    static NSMutableDictionary *_tealiumStagedDispatch = nil;
-    
-    void Tealium_TrackPrepare(int capacity) {
-        _tealiumStagedDispatch = [NSMutableDictionary dictionaryWithCapacity: capacity];
+
+    void *Tealium_EventCreate() {
+        return (TEAL_BRIDGE_RETAINED void *)[NSMutableDictionary new];
     }
     
-    void Tealium_TrackSet(const char* key,
-                          const char* value) {
-        if(_tealiumStagedDispatch) {
-            [_tealiumStagedDispatch setObject: TEALStringFromCString(value)
-                                       forKey: TEALStringFromCString(key)];
-        } else {
-            NSLog(@"Tealium_TrackSet(const char*, const char*) called before Tealium_TrackPrepare(int)");
+    void Tealium_EventAddPair(void *event,
+                              const char* cKey,
+                              const char* cValue) {
+        if (event) {
+            NSMutableDictionary *data = (NSMutableDictionary *)event;
+
+            NSString *key   = TEALStringFromCString(cKey);
+            NSString *value = TEALStringFromCString(cValue);
+
+            data[key] = value;
         }
     }
     
-    void Tealium_TrackSend(const char* eventType) {
+    void Tealium_TrackEvent(void *event,
+                            const char* eventType) {
 
         Tealium_InitializeIfNeeded();
         
-        if(_tealiumStagedDispatch) {
+        if(event) {
             
             NSString *callType = TEALStringFromCString(eventType);
-            NSLog(@"%s callType: %@", __FUNCTION__, callType);
+
+            NSMutableDictionary *data = (TEAL_BRIDGE_TRANSFER NSMutableDictionary *)event;
             
             [Tealium trackCallType:callType
-                        customData:_tealiumStagedDispatch
+                        customData:data
                             object:nil];
-            _tealiumStagedDispatch = nil;
+
         } else {
-            NSLog(@"Tealium_TrackSend(const char*) called before Tealium_TrackPrepare(int)");
+            NSLog(@"Tealium_TrackEvent(void *event, const eventType*) called without an event");
         }
     }
 }
