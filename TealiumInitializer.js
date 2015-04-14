@@ -13,9 +13,4 @@ function Start() {
 	
 	Tealium.TrackView("First Level", data);
 	
-	Tealium.Start();
-}
-	
-function OnApplicationPause(pause: boolean) {
-	Tealium.OnApplicationPause(pause);
 }

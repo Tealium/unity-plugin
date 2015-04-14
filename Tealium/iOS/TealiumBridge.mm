@@ -8,17 +8,20 @@ NSString * TEALStringFromCString (const char* string) {
 #import <Foundation/NSJSONSerialization.h>
 
 extern "C" {
-    void Tealium_Initialize(const char* accountName,
-                            const char* profileName,
-                            const char* environmentName,
-                            int options) {
+    
+    static BOOL _tealiumIsInitialized = NO;
+    
+    void Tealium_InitializeIfNeeded() {
         
-        [Tealium initSharedInstance:TEALStringFromCString(accountName)
-                            profile:TEALStringFromCString(profileName)
-                             target:TEALStringFromCString(environmentName)
-                            options:options];
+        if (_tealiumIsInitialized) {
+            return;
+        }
+        [Tealium initSharedInstance:@"tealiummobile"
+                            profile:@"demo"
+                             target:@"dev"
+                            options:TLDisableHTTPS|TLDisplayVerboseLogs];
         
-        
+        _tealiumIsInitialized = YES;
     }
     
     static NSMutableDictionary *_tealiumStagedDispatch = nil;
@@ -38,6 +41,8 @@ extern "C" {
     }
     
     void Tealium_TrackSend(const char* eventType) {
+
+        Tealium_InitializeIfNeeded();
         
         if(_tealiumStagedDispatch) {
             
