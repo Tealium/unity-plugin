@@ -1,15 +1,19 @@
 package com.tealium.unityplugin;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
+import android.os.Build;
 import android.os.Bundle;
-
+import android.webkit.WebView;
 import com.tealium.library.Tealium;
+import com.tealium.library.Tealium.LogLevel;
 
 public class UnityApplication extends Application {
 
+	@SuppressLint("NewApi")
 	@Override
 	public void onCreate() {
 		super.onCreate();
@@ -34,7 +38,21 @@ public class UnityApplication extends Application {
 			throw new RuntimeException("tealium_account, tealium_profile, & tealium_environment are required strings.", e);
 		}
 
-		Tealium.initialize(Tealium.Config.create(this, accountName, profileName, environmentName)
-			.setLibraryLogLevel(Tealium.LogLevel.VERBOSE));
+		Tealium.Config config = Tealium.Config.create(this, accountName, profileName, environmentName);
+
+		if (BuildConfig.DEBUG) {
+			config.setLibraryLogLevel(LogLevel.VERBOSE)
+				.setJavaScriptLogLevel(LogLevel.VERBOSE)
+				.setHTTPSEnabled(false);
+			if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+				WebView.setWebContentsDebuggingEnabled(true);
+			}
+		} else {
+			config.setLibraryLogLevel(LogLevel.WARN)
+				.setJavaScriptLogLevel(LogLevel.SILENT)
+				.setHTTPSEnabled(true);
+		}
+
+		Tealium.initialize(config);
 	}
 }
