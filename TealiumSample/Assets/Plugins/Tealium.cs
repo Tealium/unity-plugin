@@ -1,5 +1,5 @@
-using System;
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -71,7 +71,7 @@ public class Tealium : MonoBehaviour {
 		Tealium_TrackEvent(eventPtr, name);			
 
 #else
-
+		if (Debug.isDebugBuild) {
 
 			if(data == null) {
 				data = new Dictionary<string, string>();
@@ -86,6 +86,7 @@ public class Tealium : MonoBehaviour {
 			}
 		
 			Debug.Log(log + "}");
+		}
 
 #endif
 	}

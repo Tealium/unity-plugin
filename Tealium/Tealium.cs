@@ -1,5 +1,5 @@
-using System;
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
@@ -10,7 +10,6 @@ public class Tealium : MonoBehaviour {
 	private Tealium() {}
 
 #if UNITY_IPHONE && !UNITY_EDITOR
-
 
 	[DllImport ("__Internal")]
 	private static extern IntPtr Tealium_EventCreate();
@@ -71,6 +70,7 @@ public class Tealium : MonoBehaviour {
 		Tealium_TrackEvent(eventPtr, name);			
 
 #else
+		if (Debug.isDebugBuild) {
 
 
 			if(data == null) {
@@ -86,6 +86,7 @@ public class Tealium : MonoBehaviour {
 			}
 		
 			Debug.Log(log + "}");
+		}
 
 #endif
 	}
