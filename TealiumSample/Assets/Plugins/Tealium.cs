@@ -72,22 +72,23 @@ public class Tealium {
 		_TealiumTrackSend(name);		
 		
 #else
+		if (Debug.isDebugBuild) {
 
-
-		if(data == null) {
-			data = new Dictionary<string, string>();
-		}
+			if(data == null) {
+				data = new Dictionary<string, string>();
+			}
 		
-		data[key] = value;
+			data[key] = value;
 
-		string log = name + ": {\r\n";
+			string log = name + ": {\r\n";
 
-		foreach(KeyValuePair<string, string> pair in data) {
-			log += String.Format("\t{0} : {1}\r\n", pair.Key, pair.Value);
+			foreach(KeyValuePair<string, string> pair in data) {
+				log += String.Format("\t{0} : {1}\r\n", pair.Key, pair.Value);
+			}
+
+			Debug.Log(log + "}");
 		}
 	
-		Debug.Log(log + "}");
-
 #endif
 	}
 	

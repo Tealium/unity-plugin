@@ -32,5 +32,10 @@
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
             <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
         </activity>
+		<meta-data android:name="com.tealium.library.ACCOUNT" android:value="tealiummobile" />
+		<meta-data android:name="com.tealium.library.PROFILE" android:value="demo" />
+		<meta-data android:name="com.tealium.library.ENVIRONMENT" android:value="dev" />
+		<!--TODO: remove for release builds-->
+		<meta-data android:name="com.tealium.library.DEBUG" android:value="true" />
     </application>
 </manifest>
