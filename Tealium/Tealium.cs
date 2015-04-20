@@ -21,11 +21,7 @@ public class Tealium : MonoBehaviour {
 	private static extern void Tealium_TrackEvent(IntPtr evt, string eventType);
 
 #elif UNITY_ANDROID && !UNITY_EDITOR
-	
-	// This handle is used to run operations in the main thread.
-	//private AndroidJavaObject _currentActivity = null;
 
-	// Singleton interface handle.
 	private static AndroidJavaClass _tealiumClass = new AndroidJavaClass("com.tealium.library.Tealium");
 
 #else
