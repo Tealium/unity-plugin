@@ -3,7 +3,7 @@ Unity Mobile Plugin
 
 ### Brief ###
 
-This plugin provides the means to tag Unity3d applications for the purposes of leveraging [Tealium's tag management platform (Tealium IQ)](http://tealium.com/products/enterprise-tag-management/). 
+This plugin provides the means to tag Unity applications for the purposes of leveraging [Tealium's tag management platform (Tealium IQ)](http://tealium.com/products/enterprise-tag-management/). 
 
 Tealium's [mobile solution](http://tealium.com/products/enterprise-tag-management/mobile/) permits an app to add, remove or edit analytic services remotely, in real-time, without requiring a code rebuild or new release to take effect.
 
@@ -19,7 +19,7 @@ Tealium's [mobile solution](http://tealium.com/products/enterprise-tag-managemen
 
 ### Requirements ###
 
-* Unity 4.3+
+* Unity 4.5+
 * iOS and/or Android Target
  * NOTE: For alternative platforms, the plugin mocks functionality and will still not throw Exceptions. 
  
@@ -66,22 +66,23 @@ Additional frameworks are necessary to run the Tealium Plugin on iOS, the [Advan
 
 #### Android ####
 
-The Tealium Plugin has a base AndroidManifest.xml which is a copy of Unity3d's AndroidManifest.xml but with the ```android.permission.ACCESS_NETWORK_STATE``` permission included. The [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-android-project) has  detailed instructions on how to further modify this file. 
+The plugin will run without any complications out of the box with default configuration. However; it is necessary to update the project's Tealium *account-profile-environment* and can be done so in the plugin's custom AndroidManifest.xml file. 
 
-#### Use Proxy to verify (optional)
+The [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-android-project) has  detailed instructions on the Android implementation. 
 
-When deployed on an iOS or Android environment, you can use an HTTP proxy to confirm successful retrieval of configuration data from our multi-CDN and to confirm successful delivery of a tracking call. Several popular third-party options are:
+#### Dispatch Verification
+The two recommended methods for dispatch verification are:
 
-- [Charles Proxy](http://www.charlesproxy.com)
-- [Wireshark](http://www.wireshark.org)
-- [HTTP Scoop](http://www.tuffcode.com)
+- AudienceStream Live Events
+- Vendor Dashboard
 
-Tealium's multi-CDN configuration address is *http://tags.tiqcdn.com*.  You may have to use the [disable HTTPS Config option](../../wiki/Tealium-API.Config#config-disablehttpsbool-disable) when you init the library to permit proxying.
+AudienceStream live events provides real time visualization of dispatched data if the Tealium DataCloud Tag has been added the same TIQ account-profile used to init the library:
 
-If you have access to the Tealium Community site, detailed instructions on how to setup Charles Proxy on an iDevice can be found at: https://community.tealiumiq.com/posts/624994
+![](../../wiki/images/EventStore.png)
 
-Alternatively, you can use an analytic service with real-time reporting to confirm delivery of dispatches.  This verification method requires both an active analytics account (i.e. [Google Analytics](http://www.google.com/analytics/)) and an active [Tealium IQ](http://tealium.com) account to enable mapping.  If you have both of these, consult the Tealium community post at: https://community.tealiumiq.com/posts/568700
+An analytic vendor with real time processing, such as [Google Analytics](http://www.google.com/analytics/)), can also be used to verify dispatches if the data sources have been properly mapped to the target vendors' variables. 
 
+Note: vendors without real-time processing may take up to several hours to update their reporting.
 
 ### Contact Us ###
 Questions or comments?
