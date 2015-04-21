@@ -1,5 +1,5 @@
 
-#import <TealiumLibrary/Tealium.h>
+#import "Tealium.h"
 #import <Foundation/Foundation.h>
 
 #pragma mark - ARC Helpers
