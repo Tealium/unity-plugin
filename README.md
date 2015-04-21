@@ -66,9 +66,9 @@ Additional frameworks are necessary to run the Tealium Plugin on iOS, the [Advan
 
 #### Android ####
 
-The Tealium Plugin has a base AndroidManifest.xml which is a copy of Unity's AndroidManifest.xml with some additions. It will still be necessary to update the AndroidManifest to the project's Tealium *account-profile-environment*. If the final application will support devices < API 14, all activities will need to natively call ```Tealium.onResume(this)``` and ```Tealium.onPause(this)``` in their activity's onResume and onPause methods respectively. 
+The plugin will run without any complications out of the box with default configuration. However; it is necessary to update the project's Tealium *account-profile-environment* and can be done so in the plugin's custom AndroidManifest.xml file. 
 
-The [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-android-project) has  detailed instructions on how to further modify this file. 
+The [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-android-project) has  detailed instructions on the Android implementation. 
 
 #### Dispatch Verification
 The two recommended methods for dispatch verification are:
