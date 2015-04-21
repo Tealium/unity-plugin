@@ -1,16 +1,19 @@
 
 #import "Tealium.h"
+#import "TealiumConstants.h"
 #import <Foundation/Foundation.h>
 
 #pragma mark - ARC Helpers
 
 #if __has_feature(objc_arc)
 
+#define TEAL_BRIDGE __bridge
 #define TEAL_BRIDGE_RETAINED __bridge_retained
 #define TEAL_BRIDGE_TRANSFER __bridge_transfer
 
 #else
 
+#define TEAL_BRIDGE
 #define TEAL_BRIDGE_RETAINED
 #define TEAL_BRIDGE_TRANSFER
 
@@ -36,10 +39,13 @@ extern "C" {
         if (_tealiumIsInitialized) {
             return;
         }
+        
+        NSUInteger options = TLDisableHTTPS|TLDisplayVerboseLogs;
+        
         [Tealium initSharedInstance:@"tealiummobile"
                             profile:@"demo"
                              target:@"dev"
-                            options:TLDisableHTTPS|TLDisplayVerboseLogs];
+                            options:(TealiumOptions)options];
         
         _tealiumIsInitialized = YES;
     }
@@ -52,7 +58,7 @@ extern "C" {
                               const char* cKey,
                               const char* cValue) {
         if (event) {
-            NSMutableDictionary *data = (NSMutableDictionary *)event;
+            NSMutableDictionary *data = (TEAL_BRIDGE NSMutableDictionary *)event;
 
             NSString *key   = TEALStringFromCString(cKey);
             NSString *value = TEALStringFromCString(cValue);
