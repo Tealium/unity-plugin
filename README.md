@@ -62,7 +62,7 @@ Congratulations! You have successfully implemented the Tealium Plugin into your 
 
 #### iOS
 
-The exported iOS Xcode project requires the ```-ObjC``` linker flag to your project's ```Build Settings``` under the subsection ```Other Linker Flags```. 
+The exported iOS Xcode project requires the ```-ObjC``` linker flag to be added to your project's ```Build Settings``` under the subsection ```Other Linker Flags```. 
 
 For Unity 5.x and above we have provided a build post processor class you can copy from the ```Editor``` directory into your proejct's ```Assets/Editor``` directory.  
 
