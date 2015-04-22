@@ -39,6 +39,7 @@ onto your dev machine by clicking on the *Clone to Desktop* or *Download ZIP* bu
 OR 
 
 2b1. Create an empty *Plugins* directory
+
 2b2. Copy the contents of the *Plugins* directory into your projects *Plugins* directory. 
 
 
