@@ -66,6 +66,14 @@ The exported iOS Xcode project requires the ```-ObjC``` linker flag to be added 
 
 For Unity 5.x and above we have provided a build post processor class you can copy from the ```Editor``` directory into your project's ```Assets/Editor``` directory.  
 
+Either of the above solutions will result in a functioning Tealium library.  However the default instance will need to be changed to your desire Tealium Account/Profile/Environment.  You can edit these valuus at the top of the ```Plugins/iOS/TealiumBridge.mm``` file:
+
+```objective-c
+#define TEALIUM_ACCOUNT_NAME     @"tealiummobile"
+#define TEALIUM_PROFILE_NAME     @"demo"
+#define TEALIUM_ENVIRONMENT_NAME @"dev"
+```
+
 For more information please see the [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-ios-project).
 
 #### Android ####
