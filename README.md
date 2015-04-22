@@ -21,7 +21,7 @@ Tealium's [mobile solution](http://tealium.com/products/enterprise-tag-managemen
 
 * Unity 4.5+
 * iOS and/or Android Target
- * NOTE: For alternative platforms, the plugin mocks functionality and will still not throw Exceptions. 
+ * NOTE: For alternative platforms, the plugin mocks functionality and will not throw Exceptions. 
  
 ### Quick Start ###
 
@@ -34,13 +34,18 @@ onto your dev machine by clicking on the *Clone to Desktop* or *Download ZIP* bu
 
 ####2. Add To Project 
 
-2a. Create an empty "Plugins" directory or copy the repo's "Plugins" in your project's "Assets" directory. 
+2a1. Copy the repo's *Plugins* folder into your project's *Assets* directory.
 
-2b. If you created an empty "Plugins" directory, copy the contents of the "Plugins" directory into your projects "Plugins" directory.
+OR 
+
+2b1. Create an empty *Plugins* directory
+2b2. Copy the contents of the *Plugins* directory into your projects *Plugins* directory. 
+
+
 
 ![](../../wiki/images/copy.png)
 
-2c. Depending which language you are using, copy one of the following into your "Assets" directory.
+2c. Depending which language you are using, copy one of the following into your *Assets* directory.
 
 * JavaScript: TealiumInitializer.js
 * C#: TealiumInitializer.cs
@@ -66,7 +71,7 @@ The exported iOS Xcode project requires the ```-ObjC``` linker flag to be added 
 
 For Unity 5.x and above we have provided a build post processor class you can copy from the ```Editor``` directory into your project's ```Assets/Editor``` directory.  
 
-Either of the above solutions will result in a functioning Tealium library.  However the default instance will need to be changed to your desire Tealium Account/Profile/Environment.  You can edit these valuus at the top of the ```Plugins/iOS/TealiumBridge.mm``` file:
+Either of the above solutions will result in a functioning Tealium library.  However the default instance will need to be changed to your desire Tealium Account/Profile/Environment.  You can edit these values at the top of the ```Plugins/iOS/TealiumBridge.mm``` file:
 
 ```objective-c
 #define TEALIUM_ACCOUNT_NAME     @"tealiummobile"
@@ -92,7 +97,7 @@ AudienceStream live events provides real time visualization of dispatched data i
 
 ![](../../wiki/images/EventStore.png)
 
-An analytic vendor with real time processing, such as [Google Analytics](http://www.google.com/analytics/)), can also be used to verify dispatches if the data sources have been properly mapped to the target vendors' variables. 
+An analytic vendor with real time processing, such as [Google Analytics](http://www.google.com/analytics/), can also be used to verify dispatches if the data sources have been properly mapped to the target vendors' variables. 
 
 Note: vendors without real-time processing may take up to several hours to update their reporting.
 
