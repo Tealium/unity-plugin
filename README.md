@@ -34,9 +34,9 @@ onto your dev machine by clicking on the *Clone to Desktop* or *Download ZIP* bu
 
 ####2. Add To Project 
 
-2a. Create a "Plugins" directory in your project's "Assets" directory, if not already present. 
+2a. Create an empty "Plugins" directory or copy the repo's "Plugins" in your project's "Assets" directory. 
 
-2b. Copy the contents of the "Tealium" directory into the "Plugins" directory.
+2b. If you created an empty "Plugins" directory, copy the contents of the "Plugins" directory into your projects "Plugins" directory.
 
 ![](../../wiki/images/copy.png)
 
@@ -62,7 +62,11 @@ Congratulations! You have successfully implemented the Tealium Plugin into your 
 
 #### iOS
 
-Additional frameworks are necessary to run the Tealium Plugin on iOS, the [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-ios-project) has instructions on how to do this.
+The exported iOS Xcode project requires the ```-ObjC``` linker flag to your project's ```Build Settings``` under the subsection ```Other Linker Flags```. 
+
+For Unity 5.x and above we have provided a build post processor class you can copy from the ```Editor``` director into your proejct's ```Assets/Editor``` directory.  
+
+For more information please see the [Advanced Guide](../../wiki/Advanced-Guide#deploying-to-an-ios-project).
 
 #### Android ####
 
