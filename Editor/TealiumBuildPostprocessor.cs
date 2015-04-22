@@ -25,7 +25,7 @@ public class TealiumBuildPostprocessor {
       
     #if UNITY_IOS
 
-      string projPath = path + "/Unity-iPhone.xcodeproj/project.pbxproj";
+      string projPath = pathToBuiltProject + "/Unity-iPhone.xcodeproj/project.pbxproj";
        
       PBXProject proj = new PBXProject ();
       proj.ReadFromString (File.ReadAllText (projPath));
