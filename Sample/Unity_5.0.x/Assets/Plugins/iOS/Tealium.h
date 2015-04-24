@@ -67,11 +67,11 @@
  @param options Tealium Options to configure the library. Multiple options may be used using a pipe (|) operator between options. Enter "0" or TLNone for no options.
  @param customData NSDictionary of additional global custom data added to every dispatch
  */
-+ (void) initSharedInstance: (NSString*) accountName
-                    profile: (NSString*) profileName
-                     target: (NSString*) environmentName
-                    options: (TealiumOptions) options
-           globalCustomData: (NSDictionary*)customData;
++ (void) initSharedInstance:(NSString *)accountName
+                    profile:(NSString *)profileName
+                     target:(NSString *)environmentName
+                    options:(TealiumOptions)options
+           globalCustomData:(NSDictionary *)customData;
 
 /**
  Legacy version 3.0 Class-level init method. This method now calls the new recommended Class-level init method above, with no globalCustomData.
@@ -81,10 +81,10 @@
  @param environmentName Target profile environment (dev, qa, etc.)
  @param options USe Tealium Options constants to configure the library.
  */
-+ (void) initSharedInstance: (NSString*) accountName
-                    profile: (NSString*) profileName
-                     target: (NSString*) environmentName
-                    options: (TealiumOptions) options;
++ (void) initSharedInstance:(NSString *)accountName
+                    profile:(NSString *)profileName
+                     target:(NSString *)environmentName
+                    options:(TealiumOptions)options;
 
 /**
  Legacy version 1.0 Class-level init method. This method now calls the new recommended Class-level init method above, with no options or globalCustomData.
@@ -93,9 +93,9 @@
  @param profileName Target Account profile
  @param environmentName Target profile environment (dev, qa, etc.)
  */
-+ (void) initSharedInstance: (NSString*) accountName
-                    profile: (NSString*) profileName
-                     target: (NSString*) environmentName;
++ (void) initSharedInstance:(NSString *)accountName
+                    profile:(NSString *)profileName
+                     target:(NSString *)environmentName;
 
 /**
  New universal method for firing all manual tracking calls. Takes advantage of the auto-detected default data sources and additional Custom Data methods below (ie addCustomData:to: and addGlobalCustomData:).
@@ -104,7 +104,9 @@
  @param eventData NSDictionary with custom data. Keys become Tealium IQ Data Sources. Values will be the value passed into the analytic variable mapped to the Data Source.
  @param object NSObject source of the call if you want auto property detection added to the tracking call for a particular object 
  */
-+ (void) trackCallType:(NSString*)callType customData:(NSDictionary*)data object:(NSObject*)object;
++ (void) trackCallType:(NSString *)callType
+            customData:(NSDictionary *)data
+                object:(NSObject *)object;
 
 /**
  Puts Tealium tagger to permenant sleep. This is an optional method if your app has a manual option for users to disable analytic tracking. Enable must be called to reactivate. Supercedes any remote configuration settings.
@@ -120,14 +122,14 @@
  Use this method to access a copy of the library's global custom data dictionary.
  
  */
-+ (NSMutableDictionary*) globalCustomData;
++ (NSMutableDictionary *) globalCustomData;
 
 /**
  Use this method to add or edit additional data points to the global custom data that is availabe to all dispatches.
  
  @param additionalCustomData NSDictionary collection of any additional key-value data points to add or replace key-value pairs in the global custom data.
  */
-+ (void) addGlobalCustomData:(NSDictionary*)additionalCustomData;
++ (void) addGlobalCustomData:(NSDictionary *)additionalCustomData;
 
 /**
  Use this method to remove data points from the global custom data that is availabe to all dispatches.
@@ -141,7 +143,7 @@
  
  @param object is the target object to associate the custom data with. Required.
  */
-+ (NSMutableDictionary*) customDataForObject:(NSObject*)object;
++ (NSMutableDictionary *) customDataForObject:(NSObject *)object;
 
 /**
  Use this method to add or edit custom data with a dispatch from a target object.
@@ -149,14 +151,14 @@
  @param customData NSDictionary collection of any additional key-value data points to associate with the target object. Required.
  @param object Any NSObject subclass that is the source trigger for the custom data. Required.
  */
-+ (void) addCustomData:(NSDictionary*)customData toObject:(NSObject*)object;
++ (void) addCustomData:(NSDictionary *)customData toObject:(NSObject *)object;
 
 /**
  Use this method to remove custom data associated with the target object.
  
  @param keys NSArray collection of keys whose key-value pairs you wish to remove from the target object's custom data.
  */
-+ (void) removeCustomDataForKeys:(NSArray *)keys forObject:(NSObject*)object;
++ (void) removeCustomDataForKeys:(NSArray *)keys forObject:(NSObject *)object;
 
 /**
  Add this method to your app delegate's application:didRegisterForRemoteNotificationsWithDeviceToken:  Required if wanting to make use of dynamic Push services via TIQ.
@@ -186,8 +188,8 @@
  @param queue The target thread that should process the command block.
  @param command A block of code to be executed in the event this remote command id is triggered.
  */
-+ (void) addRemoteCommandId:(NSString*)name
-                description:(NSString*)description
++ (void) addRemoteCommandId:(NSString *)name
+                description:(NSString *)description
                 targetQueue:(dispatch_queue_t)queue
                       block:(void(^)(TealiumRemoteCommandResponse*response))command;
 
