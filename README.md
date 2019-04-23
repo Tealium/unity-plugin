@@ -1,27 +1,14 @@
-# Tealium Unity Plugin
+# Tealium plugin for Unity
 
-This plugin brings the power of [Tealium's mobile tag management solution](http://tealium.com/products/tealium-for-mobile/) to Unity applications.  It provides a bridge to the native [Android](https://github.com/Tealium/android-library) and [iOS](https://github.com/Tealium/ios-library) libraries.
+## Documentation
 
-## What is Tealium iQ Tag Management ? 
+For full documentation, please see the Tealium Learning Community:
 
-The [Tealium iQ™](http://tealium.com/products/tealium-iq-tag-management-system/) tag management system is a powerful and highly extensible solution that helps marketers easily manage their mission-critical technologies across web and mobile channels. Tealium iQ drives the complexity out of vendor tag deployments and is the cornerstone for achieving unified marketing, i.e., the ability to harmonize applications and data to drive superior cross-channel customer interactions.
-
-## How To Get Started
-
-* Check out the [Getting Started](https://github.com/Tealium/unity-plugin/wiki/Getting-Started) guide for a step by step walkthough of adding Tealium to an extisting project  
-* Read the [plugin](https://github.com/Tealium/unity-plugin/wiki/Tealium-API), [Android](https://github.com/Tealium/android-library/wiki/API-Tealium) and [iOS](https://github.com/Tealium/ios-library/wiki/API-4.x) APIs
-* There are many other useful articles in the [wiki](https://github.com/Tealium/unity-plugin/wiki)
-
-## Communication
-
-* If you have **code questions** or have experienced **errors** please post an issue in the [issues page](../../issues)
-* If you have **general questions** or want to network with other users please visit the [Tealium Learning Community](https://community.tealiumiq.com)
-* If you have **account specific questions** please contact your Tealium account manager
+[Tealium for Unity](https://docs.tealium.com/)
 
 ## License
 
-Use of this software is subject to the terms and conditions of the license agreement contained in the file titled "LICENSE.txt".  Please read the license before downloading or using any of the files contained in this repository. By downloading or using any of these files, you are agreeing to be bound by and comply with the license agreement.
+Use of this software is subject to the terms and conditions of the license agreement contained in the file titled "LICENSE.txt". Please read the license before downloading or using any of the files contained in this repository. By downloading or using any of these files, you are agreeing to be bound by and comply with the license agreement.
 
---------------------------------------------
-
-Copyright (C) 2012-2015, Tealium Inc.
+---
+Copyright (C) 2012-2019, Tealium Inc.
