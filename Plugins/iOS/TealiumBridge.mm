@@ -35,9 +35,9 @@ NSString * TEALStringFromCString (const char* string) {
 }
 
 TEALDispatchType dispatchTypeFromString (NSString* string) {
-    //Bridge code only supports View/Link events
-    //We'll default to Link event types.
-    if ([string isEqualToString:@"view"]){
+    // Bridge code only supports View/Link events
+    // We'll default to Link event types.
+    if ([string isEqualToString:@"view"]) {
         return TEALDispatchTypeView;
     }
     return TEALDispatchTypeActivity;
