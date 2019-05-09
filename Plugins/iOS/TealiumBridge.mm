@@ -1,13 +1,15 @@
 
-#import "Tealium.h"
-#import "TealiumConstants.h"
+#import <TealiumIOS/Tealium.h>
+#import <TealiumIOS/TEALDispatch.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIDevice.h>
 
 #pragma mark - TEALIUM iQ Settings: Account / Profile / Target
+#define TEALIUM_INSTANCE_NAME    @"tealium_main"
 #define TEALIUM_ACCOUNT_NAME     @"tealiummobile"
 #define TEALIUM_PROFILE_NAME     @"demo"
 #define TEALIUM_ENVIRONMENT_NAME @"dev"
+#define TEALIUM_DATA_SOURCE      @""
 
 #pragma mark - ARC Helpers
 
@@ -32,6 +34,14 @@ NSString * TEALStringFromCString (const char* string) {
                               encoding:NSUTF8StringEncoding];
 }
 
+TEALDispatchType dispatchTypeFromString (NSString* string) {
+    // Bridge code only supports View/Link events
+    // We'll default to Link event types.
+    if ([string isEqualToString:@"view"]) {
+        return TEALDispatchTypeView;
+    }
+    return TEALDispatchTypeActivity;
+}
 
 
 #pragma mark - Tealium iOS Bridge
@@ -44,28 +54,13 @@ extern "C" {
         
         dispatch_once(&onceToken, ^{
 
-            NSUInteger options      = TLDisplayVerboseLogs;
-            NSString *platform      = @"ios_unity";
-            NSString *systemVersion = [[UIDevice currentDevice] systemVersion];
+            TEALConfiguration *config = [TEALConfiguration configurationWithAccount:TEALIUM_ACCOUNT_NAME            
+                                                                         profile:TEALIUM_PROFILE_NAME
+                                                                    environment:TEALIUM_ENVIRONMENT_NAME
+                                                                     datasource:TEALIUM_DATA_SOURCE];
             
-            NSTimeInterval timestamp    = [[NSDate date] timeIntervalSince1970];
-            NSString *timestampString   = [@(timestamp) stringValue];
-
-            NSString *overrideURL = [NSString stringWithFormat:@"https://tags.tiqcdn.com/utag/%@/%@/%@/mobile.html?library_version=%@&timestamp=%@&os_version=%@&platform=%@",
-                                     TEALIUM_ACCOUNT_NAME,
-                                     TEALIUM_PROFILE_NAME,
-                                     TEALIUM_ENVIRONMENT_NAME,
-                                     TealiumLibraryVersion,
-                                     timestampString,
-                                     systemVersion,
-                                     platform];
-            
-            [Tealium initSharedInstance:TEALIUM_ACCOUNT_NAME
-                                profile:TEALIUM_PROFILE_NAME
-                                 target:TEALIUM_ENVIRONMENT_NAME
-                                options:(TealiumOptions)options
-                       globalCustomData:@{TealiumDSK_OverrideUrl:overrideURL}];
-            
+            [Tealium newInstanceForKey:TEALIUM_INSTANCE_NAME
+                          configuration:config];
         });
     }
     
@@ -87,22 +82,25 @@ extern "C" {
     }
     
     void Tealium_TrackEvent(void *event,
-                            const char* eventType) {
+                            const char* eventType,
+                            const char* eventName) {
         
         Tealium_InitializeIfNeeded();
         
         if (event) {
             
             NSString *callType = TEALStringFromCString(eventType);
+            NSString *eventTitle = TEALStringFromCString(eventName);
             
             NSMutableDictionary *data = (TEAL_BRIDGE_TRANSFER NSMutableDictionary *)event;
             
-            [Tealium trackCallType:callType
-                        customData:data
-                            object:nil];
-            
+            Tealium *instance = [Tealium instanceForKey:TEALIUM_INSTANCE_NAME];
+            [instance trackType:dispatchTypeFromString(callType)
+                          title:eventTitle
+                    dataSources:data completion:nil];
+
         } else {
-            NSLog(@"Tealium_TrackEvent(void *event, const eventType*) called without an event");
+            NSLog(@"Tealium_TrackEvent(void *event, const eventType*, const eventName*) called without an event");
         }
     }
 }
