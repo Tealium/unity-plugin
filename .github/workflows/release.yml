@@ -1,0 +1,17 @@
+name: Uploads Unity Package to Release
+
+on:
+  release:
+    types:
+      - created
+jobs:
+  upload:
+    name: Upload Unity Package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Upload   
+        uses: AButler/upload-release-assets@v2.0
+        with:
+          files: './Tealium.unitypackage'
+          repo-token: ${{ secrets.GITHUB_TOKEN }}  

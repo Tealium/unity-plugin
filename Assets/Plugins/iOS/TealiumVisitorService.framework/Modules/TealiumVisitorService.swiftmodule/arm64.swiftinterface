@@ -1,0 +1,106 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TealiumVisitorService
+import Foundation
+import Swift
+import TealiumCore
+@_hasMissingDesignatedInitializers public class VisitorServiceRetriever {
+  @objc deinit
+}
+public protocol VisitorServiceDelegate : AnyObject {
+  func didUpdate(visitorProfile: TealiumVisitorService.TealiumVisitorProfile)
+}
+public enum VisitorServiceStatus : Swift.Int {
+  case ready
+  case blocked
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol VisitorServiceManagerProtocol {
+  func startProfileUpdates(visitorId: Swift.String)
+  func requestVisitorProfile()
+}
+@_hasMissingDesignatedInitializers public class VisitorServiceManager : TealiumVisitorService.VisitorServiceManagerProtocol {
+  weak public var delegate: TealiumVisitorService.VisitorServiceDelegate?
+  public var cachedProfile: TealiumVisitorService.TealiumVisitorProfile? {
+    get
+  }
+  public func startProfileUpdates(visitorId: Swift.String)
+  public func requestVisitorProfile()
+  @objc deinit
+}
+extension VisitorServiceManager {
+  public func didUpdate(visitorProfile: TealiumVisitorService.TealiumVisitorProfile)
+}
+public class VisitorServiceModule : TealiumCore.Collector, TealiumCore.DispatchListener {
+  final public let id: Swift.String
+  public var config: TealiumCore.TealiumConfig
+  public var data: [Swift.String : Any]?
+  required public init(context: TealiumCore.TealiumContext, delegate: TealiumCore.ModuleDelegate?, diskStorage: TealiumCore.TealiumDiskStorageProtocol?, completion: ((Swift.Result<Swift.Bool, Swift.Error>, [Swift.String : Any]?)) -> Swift.Void)
+  public func willTrack(request: TealiumCore.TealiumRequest)
+  @objc deinit
+}
+public struct TealiumVisitorProfile : Swift.Codable {
+  public var audiences: [Swift.String : Swift.String]?
+  public var badges: [Swift.String : Swift.Bool]?
+  public var dates: [Swift.String : Swift.Int64]?
+  public var booleans: [Swift.String : Swift.Bool]?
+  public var arraysOfBooleans: [Swift.String : [Swift.Bool]]?
+  public var numbers: [Swift.String : Swift.Double]?
+  public var arraysOfNumbers: [Swift.String : [Swift.Double]]?
+  public var tallies: [Swift.String : [Swift.String : Swift.Double]]?
+  public var strings: [Swift.String : Swift.String]?
+  public var arraysOfStrings: [Swift.String : [Swift.String]]?
+  public var setsOfStrings: [Swift.String : Swift.Set<Swift.String>]?
+  public var currentVisit: TealiumVisitorService.TealiumCurrentVisitProfile?
+  public init(from decoder: Swift.Decoder) throws
+  public var isEmpty: Swift.Bool {
+    get
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct TealiumCurrentVisitProfile : Swift.Codable {
+  public var dates: [Swift.String : Swift.Int64]?
+  public var booleans: [Swift.String : Swift.Bool]?
+  public var arraysOfBooleans: [Swift.String : [Swift.Bool]]?
+  public var numbers: [Swift.String : Swift.Double]?
+  public var arraysOfNumbers: [Swift.String : [Swift.Double]]?
+  public var tallies: [Swift.String : [Swift.String : Swift.Double]]?
+  public var strings: [Swift.String : Swift.String]?
+  public var arraysOfStrings: [Swift.String : [Swift.String]]?
+  public var setsOfStrings: [Swift.String : Swift.Set<Swift.String>]?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension Tealium {
+  public var visitorService: TealiumVisitorService.VisitorServiceManager? {
+    get
+  }
+}
+extension Collectors {
+  public static let VisitorService: TealiumVisitorService.VisitorServiceModule.Type
+}
+extension TealiumConfig {
+  public var visitorServiceRefresh: TealiumCore.TealiumRefreshInterval? {
+    get
+    set
+  }
+  public var visitorServiceDelegate: TealiumVisitorService.VisitorServiceDelegate? {
+    get
+    set
+  }
+  public var visitorServiceOverrideURL: Swift.String? {
+    get
+    set
+  }
+  public var visitorServiceOverrideProfile: Swift.String? {
+    get
+    set
+  }
+}
+extension TealiumVisitorService.VisitorServiceStatus : Swift.Equatable {}
+extension TealiumVisitorService.VisitorServiceStatus : Swift.Hashable {}
+extension TealiumVisitorService.VisitorServiceStatus : Swift.RawRepresentable {}

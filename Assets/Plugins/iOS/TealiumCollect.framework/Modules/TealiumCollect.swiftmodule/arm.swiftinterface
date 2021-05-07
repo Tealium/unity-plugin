@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TealiumCollect
+import Foundation
+import Swift
+import TealiumCore
+extension TealiumConfig {
+  public var overrideCollectURL: Swift.String? {
+    get
+    set
+  }
+  public var overrideCollectBatchURL: Swift.String? {
+    get
+    set
+  }
+  public var overrideCollectProfile: Swift.String? {
+    get
+    set
+  }
+  public var overrideCollectDomain: Swift.String? {
+    get
+    set
+  }
+}
+extension Dispatchers {
+  public static let Collect: TealiumCollect.CollectModule.Type
+}
+public enum CollectError : Swift.String, Foundation.LocalizedError {
+  case collectNotInitialized
+  case unknownResponseType
+  case xErrorDetected
+  case non200Response
+  case noDataToTrack
+  case unknownIssueWithSend
+  case invalidDispatchURL
+  case trackNotApplicableForCollectModule
+  case invalidBatchRequest
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum CollectKey {
+  public static let errorHeaderKey: Swift.String
+}
+public protocol CollectProtocol {
+  func dispatch(data: [Swift.String : Any], completion: TealiumCore.ModuleCompletion?)
+  func dispatchBatch(data: [Swift.String : Any], completion: TealiumCore.ModuleCompletion?)
+}
+public class CollectModule : TealiumCore.Dispatcher {
+  final public let id: Swift.String
+  public var config: TealiumCore.TealiumConfig
+  required public init(config: TealiumCore.TealiumConfig, delegate: TealiumCore.ModuleDelegate, completion: TealiumCore.ModuleCompletion?)
+  public func dynamicTrack(_ request: TealiumCore.TealiumRequest, completion: TealiumCore.ModuleCompletion?)
+  @objc deinit
+}
+extension TealiumCollect.CollectError : Swift.Equatable {}
+extension TealiumCollect.CollectError : Swift.Hashable {}
+extension TealiumCollect.CollectError : Swift.RawRepresentable {}
