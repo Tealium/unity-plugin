@@ -4,7 +4,7 @@ on: [pull_request]
 
 jobs:
   build:
-    - name: Create Unity Package
+    name: Create Unity Package
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2 
