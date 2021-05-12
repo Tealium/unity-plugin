@@ -44,7 +44,6 @@ public class TealiumUnityPlugin : MonoBehaviour
         {
             if (tealium == null)
             {
-
                     #if UNITY_ANDROID
                         tealium = new TealiumAndroid ();
                     #elif UNITY_IPHONE
@@ -202,6 +201,14 @@ public class TealiumUnityPlugin : MonoBehaviour
     {
         if (onInitialized != null)
         {
+            if (success) {
+                Dictionary<string, object> pluginData = new Dictionary<string, object> {
+                    {"plugin_name", "Tealium-Unity"},
+                    {"plugin_version", "2.0.0"}
+                };
+                Tealium.AddToDataLayer(pluginData, Expiry.Forever);
+            }
+        
             onInitialized(success);
         }
     }

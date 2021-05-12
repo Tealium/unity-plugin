@@ -14,7 +14,7 @@ NSString * TEALStringFromCString (const char* string) {
                               encoding:NSUTF8StringEncoding];
 }
 
-char* TEALCStringFromString(const NSString* nsString)
+char* TEALCStringToString(const NSString* nsString)
 {
     if (nsString == NULL)
         return NULL;
@@ -101,7 +101,7 @@ extern "C"
     char* Tealium_GetFromDataLayer(const char* cKey) {
         NSString *key = TEALStringFromCString(cKey);
         NSString *value = [[TealiumUnityPlugin shared] getFromDataLayer:key];
-        return TEALCStringFromString(value);
+        return TEALCStringToString(value);
     }
 
     void Tealium_RemoveFromDataLayer(const char* cKeys) {
