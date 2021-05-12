@@ -1,0 +1,23 @@
+name: Creates and Commits Unity Package
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Create Unity Package
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2      
+      - name: Build Package
+        run: ./build.sh
+      - name: Commit New Unity Package
+        run: |
+          git add ./Tealium.unitypackage
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Add New Unity Package"
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
