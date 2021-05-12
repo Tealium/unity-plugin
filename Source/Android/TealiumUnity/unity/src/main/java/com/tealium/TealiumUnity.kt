@@ -6,8 +6,8 @@ import android.util.Log
 import com.tealium.core.Tealium
 import com.tealium.core.consent.ConsentCategory
 import com.tealium.core.consent.ConsentStatus
-import com.tealium.core.persistence.Expiry
 import com.tealium.remotecommanddispatcher.remoteCommands
+import com.unity3d.player.UnityPlayer
 import org.json.JSONArray
 import org.json.JSONObject
 
@@ -16,18 +16,26 @@ object TealiumUnity {
     private var tealium: Tealium? = null
 
     @JvmStatic
-    fun initialize(context: Context, config: String): Boolean { //
+    fun initialize(context: Context, config: String) {
         toTealiumConfig(context as Application, JSONObject(config))?.let { tealiumConfig ->
             tealium = Tealium.create(INSTANCE_NAME, tealiumConfig) {
                 Log.d(BuildConfig.TAG, "Instance Initialized")
-                dataLayer.putString("plugin_name", PLUGIN_NAME, Expiry.FOREVER)
-                dataLayer.putString("plugin_version", PLUGIN_VERSION, Expiry.FOREVER)
                 events.subscribe(EmitterListeners())
             }
-            return true
+
+            UnityPlayer.UnitySendMessage(
+                "TealiumAndroid",
+                "HandleInitialized",
+                "true"
+            )
         } ?: run {
             Log.w(BuildConfig.TAG, "Failed to initialize instance.")
-            return false
+
+            UnityPlayer.UnitySendMessage(
+                "TealiumAndroid",
+                "HandleInitialized",
+                "false"
+            )
         }
     }
 
@@ -118,17 +126,13 @@ object TealiumUnity {
     fun removeFromDataLayer(keys: String) {
         val keyList = JSONArray(keys).toFriendlyList()
         keyList.forEach {
-            tealium?.apply {
-                dataLayer.remove(it as String)
-            }
+            tealium?.dataLayer?.remove(it as String)
         }
     }
 
     @JvmStatic
     fun setConsentStatus(status: String) {
-        tealium?.apply {
-            consentManager.userConsentStatus = ConsentStatus.consentStatus(status)
-        }
+        tealium?.consentManager?.userConsentStatus = ConsentStatus.consentStatus(status)
     }
 
     @JvmStatic
@@ -140,12 +144,10 @@ object TealiumUnity {
     fun setConsentCategories(categories: String) {
         val categorySet = mutableSetOf<String>()
         JSONArray(categories).toFriendlyList().map {
-            categorySet.add((it as Map<*, *>)["Value"] as String) // comes in as [{"Value":"cookieMatch"},... from unity. Dumb.
+            categorySet.add((it as Map<*, *>)["Value"] as String)
         }
-        tealium?.apply {
-            consentManager.userConsentCategories =
-                ConsentCategory.consentCategories(categorySet.toSet())
-        }
+        tealium?.consentManager?.userConsentCategories =
+            ConsentCategory.consentCategories(categorySet.toSet())
     }
 
     @JvmStatic
@@ -160,9 +162,7 @@ object TealiumUnity {
 
     @JvmStatic
     fun addRemoteCommand(id: String) {
-        tealium?.apply {
-            tealium?.remoteCommands?.add(RemoteCommandListener(id))
-        }
+        tealium?.remoteCommands?.add(RemoteCommandListener(id))
     }
 
     @JvmStatic
@@ -172,16 +172,12 @@ object TealiumUnity {
 
     @JvmStatic
     fun joinTrace(id: String) {
-        tealium?.apply {
-            joinTrace(id)
-        }
+        tealium?.joinTrace(id)
     }
 
     @JvmStatic
     fun leaveTrace() {
-        tealium?.apply {
-            leaveTrace()
-        }
+        tealium?.leaveTrace()
     }
 
     @JvmStatic

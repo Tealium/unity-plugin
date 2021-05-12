@@ -21,12 +21,7 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
         AndroidJavaObject context = activity.Call<AndroidJavaObject>("getApplicationContext");
         _tealiumUnityObject = new AndroidJavaClass(KOTLIN_STATIC_TEALIUM);
 
-        bool initialized = _tealiumUnityObject.CallStatic<bool>("initialize", context, JsonConvert.SerializeObject(config));
-
-        if (callback != null)
-        {
-            callback.Invoke(initialized);
-        }
+        _tealiumUnityObject.CallStatic("initialize", context, JsonConvert.SerializeObject(config));
     }
     public void Terminate()
     {
@@ -118,6 +113,15 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
     }
     public void SetConsentExpiryListener(Action callback) {
         // do nothing
+    }
+
+    public void HandleInitialized(string response)
+    {
+        bool didInitialize = false;
+        if (response == "true") {
+            didInitialize = true;
+        }
+        TealiumUnityPlugin.OnInitialized(didInitialize);
     }
 
     public void HandleRemoteCommandResponse(string response)
