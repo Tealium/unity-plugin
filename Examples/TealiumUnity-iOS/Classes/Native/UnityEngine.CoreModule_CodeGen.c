@@ -6233,14 +6233,14 @@ static const Il2CppRGCTXDefinition s_rgctxValues[125] =
 extern const CustomAttributesCacheGenerator g_UnityEngine_CoreModule_AttributeGenerators[];
 static TypeDefinitionIndex s_staticConstructorsToRunAtStartup[9] = 
 {
-	3581,
-	3702,
-	3703,
-	3704,
-	3705,
-	3706,
-	3707,
-	3708,
+	3563,
+	3684,
+	3685,
+	3686,
+	3687,
+	3688,
+	3689,
+	3690,
 	0,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_CoreModule_CodeGenModule;

@@ -132,7 +132,7 @@ struct EqualityComparer_1_t829FA61CB2E3F44919C33906E6E2AAB980F92A33;
 // System.Collections.Generic.EqualityComparer`1<System.Decimal>
 struct EqualityComparer_1_t8DEFD05D2D8D8002C02FA66172C15E3517169951;
 // System.Collections.Generic.EqualityComparer`1<TealiumCommon.Dispatchers>
-struct EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B;
+struct EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2;
 // System.Collections.Generic.EqualityComparer`1<System.Double>
 struct EqualityComparer_1_t0B28105570C969D8B3F60B337DF2ACDF8C63C825;
 // System.Collections.Generic.EqualityComparer`1<System.Guid>
@@ -212,7 +212,7 @@ struct ObjectEqualityComparer_1_t678985C7D7CF95444418EC7B6B4E2E648063A38D;
 // System.Collections.Generic.ObjectEqualityComparer`1<System.Decimal>
 struct ObjectEqualityComparer_1_tEF799F55BA8E90FC54EF2FC16DFB87627D1B5931;
 // System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>
-struct ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF;
+struct ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB;
 // System.Collections.Generic.ObjectEqualityComparer`1<System.Double>
 struct ObjectEqualityComparer_1_t62B66F29BAC66D074B0D372B6EEEAAC4DEEF1135;
 // System.Collections.Generic.ObjectEqualityComparer`1<System.Guid>
@@ -296,11 +296,11 @@ struct Predicate_1_t842A4F020A7223F89AAD26B7AD9110DCAD811E0F;
 // System.Predicate`1<System.Char>
 struct Predicate_1_t954B92A28F72E25951E55FC9B1A87DA3F93B2D0E;
 // System.Predicate`1<TealiumCommon.Collectors>
-struct Predicate_1_t9EEBAEA1F4253498B68D3C793183799601A4E4A4;
+struct Predicate_1_tAE811FB277AA02C4730A4AD197B20656E9F76A31;
 // System.Predicate`1<UnityEngine.Color32>
 struct Predicate_1_t93F7DA898B9782B61675EAFF1A2C6B68D454627E;
 // System.Predicate`1<TealiumCommon.ConsentCategories>
-struct Predicate_1_tA54F0BA31FE2E248D67817E794F09B51CE1087B1;
+struct Predicate_1_tC7681BBF1AD14BAD4B2C5B7025C4152E343A3EA5;
 // System.Predicate`1<System.DateTime>
 struct Predicate_1_tFE9DEB206A2987C6D95A5441C298ABC8562F7A7C;
 // System.Predicate`1<System.DateTimeOffset>
@@ -308,7 +308,7 @@ struct Predicate_1_t803408604C4FD59CC3B2BF9C64B5C46E27E6B267;
 // System.Predicate`1<System.Decimal>
 struct Predicate_1_t939D2CADEA1FCA483BADA5089EAF3EDF45539819;
 // System.Predicate`1<TealiumCommon.Dispatchers>
-struct Predicate_1_tA021C1778B01A691342E7E923E7A6637FF5B9BFE;
+struct Predicate_1_tEE92FCA88EB117C8648C533E684B3E8F40B97A64;
 // System.Predicate`1<System.Double>
 struct Predicate_1_t0E330E9BFAE196FB8D650A01EF09715D5B3C63DC;
 // System.Predicate`1<System.Int16>
@@ -424,7 +424,7 @@ struct DecimalU5BU5D_tAA3302A4A6ACCE77638A2346993A0FAAE2F9FDBA;
 // System.Delegate[]
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8;
 // TealiumCommon.Dispatchers[]
-struct DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329;
+struct DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F;
 // System.Double[]
 struct DoubleU5BU5D_t8E1B42EB2ABB79FBD193A6B8C8D97A7CDE44A4FB;
 // System.Guid[]
@@ -567,14 +567,14 @@ IL2CPP_EXTERN_C RuntimeClass* ArrayTypeMismatchException_tFD610FDA00012564CB75AF
 IL2CPP_EXTERN_C RuntimeClass* Boolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Byte_t0111FAB8B8685667EDDAF77683F0D8F86B659056_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Char_tFF60D8E7E89A20BE2294A003734341BD1DF43E14_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Collectors_tA053787C2D4616D831C26CA4F927382C1E405185_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Color32_tDB54A78627878A7D2DE42BB028D64306A18E858D_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTimeOffset_t205B59B1EFB6646DCE3CC50553377BF6023615B5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTime_tEAF2CD16E071DF5441F40822E4CFE880E5245405_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Debug_tEB68BCBEB8EFD60F8043C67146DC05E7F50F374B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Decimal_t2978B229CA86D3B7BA66A0AEEE014E0DE4F940D7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Double_t42821932CB52DE2057E685D0E1AF3DE5033D2181_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int16_tD0F031114106263BB459DA1F099FF9F42691295A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Int32Enum_t9B63F771913F2B6D586F1173B44A41FBE26F6B5C_il2cpp_TypeInfo_var;
@@ -665,7 +665,7 @@ struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
 struct DateTimeOffsetU5BU5D_t81746224316E5FC7189685EFB35488C8CED41826;
 struct DecimalU5BU5D_tAA3302A4A6ACCE77638A2346993A0FAAE2F9FDBA;
 struct DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8;
-struct DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329;
+struct DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F;
 struct DoubleU5BU5D_t8E1B42EB2ABB79FBD193A6B8C8D97A7CDE44A4FB;
 struct GuidU5BU5D_t6DCED1B9FC5592C43FAA73D81705104BD18151B8;
 struct Int16U5BU5D_tD134F1E6F746D4C09C987436805256C210C2FFCD;
@@ -824,24 +824,24 @@ public:
 
 
 // System.Collections.Generic.EqualityComparer`1<TealiumCommon.Dispatchers>
-struct EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B  : public RuntimeObject
+struct EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2  : public RuntimeObject
 {
 public:
 
 public:
 };
 
-struct EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B_StaticFields
+struct EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2_StaticFields
 {
 public:
 	// System.Collections.Generic.EqualityComparer`1<T> modreq(System.Runtime.CompilerServices.IsVolatile) System.Collections.Generic.EqualityComparer`1::defaultComparer
-	EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B * ___defaultComparer_0;
+	EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 * ___defaultComparer_0;
 
 public:
-	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B_StaticFields, ___defaultComparer_0)); }
-	inline EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B * get_defaultComparer_0() const { return ___defaultComparer_0; }
-	inline EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
-	inline void set_defaultComparer_0(EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B * value)
+	inline static int32_t get_offset_of_defaultComparer_0() { return static_cast<int32_t>(offsetof(EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2_StaticFields, ___defaultComparer_0)); }
+	inline EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 * get_defaultComparer_0() const { return ___defaultComparer_0; }
+	inline EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 ** get_address_of_defaultComparer_0() { return &___defaultComparer_0; }
+	inline void set_defaultComparer_0(EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 * value)
 	{
 		___defaultComparer_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___defaultComparer_0), (void*)value);
@@ -2489,7 +2489,7 @@ public:
 
 
 // System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>
-struct ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF  : public EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B
+struct ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB  : public EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2
 {
 public:
 
@@ -3097,14 +3097,14 @@ public:
 
 
 // TealiumCommon.Collectors
-struct Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723 
+struct Collectors_tA053787C2D4616D831C26CA4F927382C1E405185 
 {
 public:
 	// System.String TealiumCommon.Collectors::<Value>k__BackingField
 	String_t* ___U3CValueU3Ek__BackingField_0;
 
 public:
-	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723, ___U3CValueU3Ek__BackingField_0)); }
+	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Collectors_tA053787C2D4616D831C26CA4F927382C1E405185, ___U3CValueU3Ek__BackingField_0)); }
 	inline String_t* get_U3CValueU3Ek__BackingField_0() const { return ___U3CValueU3Ek__BackingField_0; }
 	inline String_t** get_address_of_U3CValueU3Ek__BackingField_0() { return &___U3CValueU3Ek__BackingField_0; }
 	inline void set_U3CValueU3Ek__BackingField_0(String_t* value)
@@ -3115,12 +3115,12 @@ public:
 };
 
 // Native definition for P/Invoke marshalling of TealiumCommon.Collectors
-struct Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723_marshaled_pinvoke
+struct Collectors_tA053787C2D4616D831C26CA4F927382C1E405185_marshaled_pinvoke
 {
 	char* ___U3CValueU3Ek__BackingField_0;
 };
 // Native definition for COM marshalling of TealiumCommon.Collectors
-struct Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723_marshaled_com
+struct Collectors_tA053787C2D4616D831C26CA4F927382C1E405185_marshaled_com
 {
 	Il2CppChar* ___U3CValueU3Ek__BackingField_0;
 };
@@ -3238,14 +3238,14 @@ public:
 
 
 // TealiumCommon.ConsentCategories
-struct ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F 
+struct ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A 
 {
 public:
 	// System.String TealiumCommon.ConsentCategories::<Value>k__BackingField
 	String_t* ___U3CValueU3Ek__BackingField_0;
 
 public:
-	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F, ___U3CValueU3Ek__BackingField_0)); }
+	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A, ___U3CValueU3Ek__BackingField_0)); }
 	inline String_t* get_U3CValueU3Ek__BackingField_0() const { return ___U3CValueU3Ek__BackingField_0; }
 	inline String_t** get_address_of_U3CValueU3Ek__BackingField_0() { return &___U3CValueU3Ek__BackingField_0; }
 	inline void set_U3CValueU3Ek__BackingField_0(String_t* value)
@@ -3256,12 +3256,12 @@ public:
 };
 
 // Native definition for P/Invoke marshalling of TealiumCommon.ConsentCategories
-struct ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F_marshaled_pinvoke
+struct ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A_marshaled_pinvoke
 {
 	char* ___U3CValueU3Ek__BackingField_0;
 };
 // Native definition for COM marshalling of TealiumCommon.ConsentCategories
-struct ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F_marshaled_com
+struct ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A_marshaled_com
 {
 	Il2CppChar* ___U3CValueU3Ek__BackingField_0;
 };
@@ -3468,14 +3468,14 @@ public:
 
 
 // TealiumCommon.Dispatchers
-struct Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 
+struct Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 
 {
 public:
 	// System.String TealiumCommon.Dispatchers::<Value>k__BackingField
 	String_t* ___U3CValueU3Ek__BackingField_0;
 
 public:
-	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236, ___U3CValueU3Ek__BackingField_0)); }
+	inline static int32_t get_offset_of_U3CValueU3Ek__BackingField_0() { return static_cast<int32_t>(offsetof(Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5, ___U3CValueU3Ek__BackingField_0)); }
 	inline String_t* get_U3CValueU3Ek__BackingField_0() const { return ___U3CValueU3Ek__BackingField_0; }
 	inline String_t** get_address_of_U3CValueU3Ek__BackingField_0() { return &___U3CValueU3Ek__BackingField_0; }
 	inline void set_U3CValueU3Ek__BackingField_0(String_t* value)
@@ -3486,12 +3486,12 @@ public:
 };
 
 // Native definition for P/Invoke marshalling of TealiumCommon.Dispatchers
-struct Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236_marshaled_pinvoke
+struct Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5_marshaled_pinvoke
 {
 	char* ___U3CValueU3Ek__BackingField_0;
 };
 // Native definition for COM marshalling of TealiumCommon.Dispatchers
-struct Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236_marshaled_com
+struct Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5_marshaled_com
 {
 	Il2CppChar* ___U3CValueU3Ek__BackingField_0;
 };
@@ -6959,7 +6959,7 @@ public:
 
 
 // System.Predicate`1<TealiumCommon.Collectors>
-struct Predicate_1_t9EEBAEA1F4253498B68D3C793183799601A4E4A4  : public MulticastDelegate_t
+struct Predicate_1_tAE811FB277AA02C4730A4AD197B20656E9F76A31  : public MulticastDelegate_t
 {
 public:
 
@@ -6977,7 +6977,7 @@ public:
 
 
 // System.Predicate`1<TealiumCommon.ConsentCategories>
-struct Predicate_1_tA54F0BA31FE2E248D67817E794F09B51CE1087B1  : public MulticastDelegate_t
+struct Predicate_1_tC7681BBF1AD14BAD4B2C5B7025C4152E343A3EA5  : public MulticastDelegate_t
 {
 public:
 
@@ -7013,7 +7013,7 @@ public:
 
 
 // System.Predicate`1<TealiumCommon.Dispatchers>
-struct Predicate_1_tA021C1778B01A691342E7E923E7A6637FF5B9BFE  : public MulticastDelegate_t
+struct Predicate_1_tEE92FCA88EB117C8648C533E684B3E8F40B97A64  : public MulticastDelegate_t
 {
 public:
 
@@ -7428,37 +7428,37 @@ public:
 	}
 };
 // TealiumCommon.Dispatchers[]
-struct DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329  : public RuntimeArray
+struct DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F  : public RuntimeArray
 {
 public:
-	ALIGN_FIELD (8) Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  m_Items[1];
+	ALIGN_FIELD (8) Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  m_Items[1];
 
 public:
-	inline Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  GetAt(il2cpp_array_size_t index) const
+	inline Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  GetAt(il2cpp_array_size_t index) const
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items[index];
 	}
-	inline Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 * GetAddressAt(il2cpp_array_size_t index)
+	inline Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 * GetAddressAt(il2cpp_array_size_t index)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		return m_Items + index;
 	}
-	inline void SetAt(il2cpp_array_size_t index, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  value)
+	inline void SetAt(il2cpp_array_size_t index, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  value)
 	{
 		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___U3CValueU3Ek__BackingField_0), (void*)NULL);
 	}
-	inline Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  GetAtUnchecked(il2cpp_array_size_t index) const
+	inline Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  GetAtUnchecked(il2cpp_array_size_t index) const
 	{
 		return m_Items[index];
 	}
-	inline Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 * GetAddressAtUnchecked(il2cpp_array_size_t index)
+	inline Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 * GetAddressAtUnchecked(il2cpp_array_size_t index)
 	{
 		return m_Items + index;
 	}
-	inline void SetAtUnchecked(il2cpp_array_size_t index, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  value)
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  value)
 	{
 		m_Items[index] = value;
 		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___U3CValueU3Ek__BackingField_0), (void*)NULL);
@@ -9744,21 +9744,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectEqualityComparer_1__ctor_mF23CE7D4
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Boolean System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::Equals(T,T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectEqualityComparer_1_Equals_m3ED22E471DA52294E10D37E1C8E421707075357C_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___x0, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___y1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectEqualityComparer_1_Equals_m07BD0626D2A10CCBED80E05EBD86E0782555A722_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___x0, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___y1, const RuntimeMethod* method)
 {
 	{
 	}
 	{
 	}
 	{
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_2 = ___y1;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_3 = (Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 )L_2;
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_2 = ___y1;
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_3 = (Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 )L_2;
 		RuntimeObject * L_4 = Box(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), &L_3);
 		RuntimeObject * L_5 = Box(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), (&___x0));
 		NullCheck((RuntimeObject *)L_5);
 		bool L_6;
 		L_6 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (RuntimeObject *)L_5, (RuntimeObject *)L_4);
-		___x0 = *(Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 *)UnBox(L_5);
+		___x0 = *(Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 *)UnBox(L_5);
 		return (bool)L_6;
 	}
 
@@ -9780,7 +9780,7 @@ IL_0030:
 	}
 }
 // System.Int32 System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::GetHashCode(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_GetHashCode_mA23D224204D9547F80B54DAE15CB9EF5A7C357FE_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___obj0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_GetHashCode_mC462D8993DE68A963B0FE4D655B96256374689C0_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___obj0, const RuntimeMethod* method)
 {
 	{
 		goto IL_000a;
@@ -9795,12 +9795,12 @@ IL_000a:
 		NullCheck((RuntimeObject *)L_1);
 		int32_t L_2;
 		L_2 = VirtFuncInvoker0< int32_t >::Invoke(2 /* System.Int32 System.Object::GetHashCode() */, (RuntimeObject *)L_1);
-		___obj0 = *(Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 *)UnBox(L_1);
+		___obj0 = *(Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 *)UnBox(L_1);
 		return (int32_t)L_2;
 	}
 }
 // System.Int32 System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::IndexOf(T[],T,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_IndexOf_mF4A64DC8FC77A98D79A4781C257EEE5F541387E1_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* ___array0, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_IndexOf_m0337338E3CDA8B209A610740A8F4BF84E25BF129_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* ___array0, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
@@ -9819,11 +9819,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_IndexOf_mF4A
 
 IL_0011:
 	{
-		DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* L_4 = ___array0;
+		DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* L_4 = ___array0;
 		int32_t L_5 = V_1;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		goto IL_0021;
 	}
 	{
@@ -9859,24 +9859,24 @@ IL_002b:
 
 IL_002f:
 	{
-		DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* L_13 = ___array0;
+		DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* L_13 = ___array0;
 		int32_t L_14 = V_2;
 		NullCheck(L_13);
 		int32_t L_15 = L_14;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
 	}
 	{
-		DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* L_17 = ___array0;
+		DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* L_17 = ___array0;
 		int32_t L_18 = V_2;
 		NullCheck(L_17);
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_19 = ___value1;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_20 = (Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 )L_19;
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_19 = ___value1;
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_20 = (Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 )L_19;
 		RuntimeObject * L_21 = Box(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), &L_20);
 		RuntimeObject * L_22 = Box(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), ((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))));
 		NullCheck((RuntimeObject *)L_22);
 		bool L_23;
 		L_23 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (RuntimeObject *)L_22, (RuntimeObject *)L_21);
-		*((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))) = *(Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 *)UnBox(L_22);
+		*((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))) = *(Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 *)UnBox(L_22);
 		if (!L_23)
 		{
 			goto IL_005b;
@@ -9909,7 +9909,7 @@ IL_0063:
 	}
 }
 // System.Int32 System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::LastIndexOf(T[],T,System.Int32,System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_LastIndexOf_m5097991F92B244BAF18A03EDF6106C6E77F37583_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* ___array0, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_LastIndexOf_mE804C6925FC47C45B586ED33F0204C4A7F19C2EF_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* ___array0, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___value1, int32_t ___startIndex2, int32_t ___count3, const RuntimeMethod* method)
 {
 	int32_t V_0 = 0;
 	int32_t V_1 = 0;
@@ -9928,11 +9928,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_LastIndexOf_
 
 IL_0013:
 	{
-		DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* L_4 = ___array0;
+		DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* L_4 = ___array0;
 		int32_t L_5 = V_1;
 		NullCheck(L_4);
 		int32_t L_6 = L_5;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_7 = (L_4)->GetAt(static_cast<il2cpp_array_size_t>(L_6));
 		goto IL_0023;
 	}
 	{
@@ -9968,24 +9968,24 @@ IL_002d:
 
 IL_0031:
 	{
-		DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* L_13 = ___array0;
+		DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* L_13 = ___array0;
 		int32_t L_14 = V_2;
 		NullCheck(L_13);
 		int32_t L_15 = L_14;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_16 = (L_13)->GetAt(static_cast<il2cpp_array_size_t>(L_15));
 	}
 	{
-		DispatchersU5BU5D_t31B18D2DAEC57A90657E6693909E4B30675BD329* L_17 = ___array0;
+		DispatchersU5BU5D_tFCF7F97682A71BC9DBCF385C1B44C24A17BF5E1F* L_17 = ___array0;
 		int32_t L_18 = V_2;
 		NullCheck(L_17);
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_19 = ___value1;
-		Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  L_20 = (Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 )L_19;
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_19 = ___value1;
+		Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  L_20 = (Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 )L_19;
 		RuntimeObject * L_21 = Box(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), &L_20);
 		RuntimeObject * L_22 = Box(IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 0), ((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))));
 		NullCheck((RuntimeObject *)L_22);
 		bool L_23;
 		L_23 = VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, (RuntimeObject *)L_22, (RuntimeObject *)L_21);
-		*((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))) = *(Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 *)UnBox(L_22);
+		*((L_17)->GetAddressAt(static_cast<il2cpp_array_size_t>(L_18))) = *(Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 *)UnBox(L_22);
 		if (!L_23)
 		{
 			goto IL_005d;
@@ -10018,15 +10018,15 @@ IL_0065:
 	}
 }
 // System.Boolean System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::Equals(System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectEqualityComparer_1_Equals_mE2D960254A59572B64889B19FFA0D12371DAAAC1_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ObjectEqualityComparer_1_Equals_m627B634FAE009EEA8601A1CA71F50DD4E22081DC_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, RuntimeObject * ___obj0, const RuntimeMethod* method)
 {
 	{
 		RuntimeObject * L_0 = ___obj0;
-		return (bool)((!(((RuntimeObject*)(ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF *)((ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF *)IsInst((RuntimeObject*)L_0, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 1)))) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
+		return (bool)((!(((RuntimeObject*)(ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB *)((ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB *)IsInst((RuntimeObject*)L_0, IL2CPP_RGCTX_DATA(method->klass->rgctx_data, 1)))) <= ((RuntimeObject*)(RuntimeObject *)NULL)))? 1 : 0);
 	}
 }
 // System.Int32 System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::GetHashCode()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_GetHashCode_mBD171453C30B55951FCC4AAD4568A08DAE8C5349_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_GetHashCode_m9FB98E151EB34B2C98B9CC5AE10B4009359F5D03_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, const RuntimeMethod* method)
 {
 	{
 		NullCheck((RuntimeObject *)__this);
@@ -10042,11 +10042,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t ObjectEqualityComparer_1_GetHashCode_
 	}
 }
 // System.Void System.Collections.Generic.ObjectEqualityComparer`1<TealiumCommon.Dispatchers>::.ctor()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectEqualityComparer_1__ctor_mB4FC459E1CC70353633798F68A075F31245353FA_gshared (ObjectEqualityComparer_1_t929453812260B7E25276E9539253444CAC87D0CF * __this, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ObjectEqualityComparer_1__ctor_mCBDB2257BD8CECFA3A905D337D3F95C5731A46E2_gshared (ObjectEqualityComparer_1_t236B6FAEFBEF939875F607AAA191DF84DEFA46CB * __this, const RuntimeMethod* method)
 {
 	{
-		NullCheck((EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B *)__this);
-		((  void (*) (EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((EqualityComparer_1_t77AAB9D6EE37DBE82475C61472D83D2229F7632B *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
+		NullCheck((EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 *)__this);
+		((  void (*) (EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 *, const RuntimeMethod*))IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2)->methodPointer)((EqualityComparer_1_t9828B86647A95CBE19D93A35B365A460CC471BD2 *)__this, /*hidden argument*/IL2CPP_RGCTX_METHOD_INFO(method->klass->rgctx_data, 2));
 		return;
 	}
 }
@@ -21020,14 +21020,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_mB14BEA10476BD5750
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void System.Predicate`1<TealiumCommon.Collectors>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m82A8AD289A367B8925B10A9174579017584D063A_gshared (Predicate_1_t9EEBAEA1F4253498B68D3C793183799601A4E4A4 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_mA11B806EEDB6968A474958106EB0AE69846CB4DD_gshared (Predicate_1_tAE811FB277AA02C4730A4AD197B20656E9F76A31 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
 // System.Boolean System.Predicate`1<TealiumCommon.Collectors>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mDE1573C85F2AB45FEA6C1A3CA7EECEAD06F215F2_gshared (Predicate_1_t9EEBAEA1F4253498B68D3C793183799601A4E4A4 * __this, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723  ___obj0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m6EB50FF4CA9058228D49D17B29ACC5084DA69DA2_gshared (Predicate_1_tAE811FB277AA02C4730A4AD197B20656E9F76A31 * __this, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185  ___obj0, const RuntimeMethod* method)
 {
 	bool result = false;
 	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
@@ -21061,13 +21061,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mDE1573C85F2AB45FEA6C
 			if (___parameterCount == 1)
 			{
 				// open
-				typedef bool (*FunctionPointerType) (Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723 , const RuntimeMethod*);
+				typedef bool (*FunctionPointerType) (Collectors_tA053787C2D4616D831C26CA4F927382C1E405185 , const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___obj0, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef bool (*FunctionPointerType) (void*, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723 , const RuntimeMethod*);
+				typedef bool (*FunctionPointerType) (void*, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185 , const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___obj0, targetMethod);
 			}
 		}
@@ -21079,16 +21079,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mDE1573C85F2AB45FEA6C
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< bool, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723  >::Invoke(targetMethod, targetThis, ___obj0);
+						result = GenericInterfaceFuncInvoker1< bool, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185  >::Invoke(targetMethod, targetThis, ___obj0);
 					else
-						result = GenericVirtFuncInvoker1< bool, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723  >::Invoke(targetMethod, targetThis, ___obj0);
+						result = GenericVirtFuncInvoker1< bool, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185  >::Invoke(targetMethod, targetThis, ___obj0);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< bool, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___obj0);
+						result = InterfaceFuncInvoker1< bool, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___obj0);
 					else
-						result = VirtFuncInvoker1< bool, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___obj0);
+						result = VirtFuncInvoker1< bool, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___obj0);
 				}
 			}
 			else
@@ -21100,7 +21100,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mDE1573C85F2AB45FEA6C
 				}
 				else
 				{
-					typedef bool (*FunctionPointerType) (void*, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723 , const RuntimeMethod*);
+					typedef bool (*FunctionPointerType) (void*, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185 , const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___obj0, targetMethod);
 				}
 			}
@@ -21109,20 +21109,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mDE1573C85F2AB45FEA6C
 	return result;
 }
 // System.IAsyncResult System.Predicate`1<TealiumCommon.Collectors>::BeginInvoke(T,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Predicate_1_BeginInvoke_mB63EE58E2B97CD960ADDB7CCBEC29F11721AAA0F_gshared (Predicate_1_t9EEBAEA1F4253498B68D3C793183799601A4E4A4 * __this, Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723  ___obj0, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Predicate_1_BeginInvoke_m9655F3AF160D074EA9158C2A22554C5B769C2F0E_gshared (Predicate_1_tAE811FB277AA02C4730A4AD197B20656E9F76A31 * __this, Collectors_tA053787C2D4616D831C26CA4F927382C1E405185  ___obj0, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Collectors_tA053787C2D4616D831C26CA4F927382C1E405185_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	void *__d_args[2] = {0};
-	__d_args[0] = Box(Collectors_tF2C4928DE0A75E12B7700E84D52749D66D48F723_il2cpp_TypeInfo_var, &___obj0);
+	__d_args[0] = Box(Collectors_tA053787C2D4616D831C26CA4F927382C1E405185_il2cpp_TypeInfo_var, &___obj0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);;
 }
 // System.Boolean System.Predicate`1<TealiumCommon.Collectors>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_mC4A3FE7C3E8C4AC17D09791021C29472157FEA79_gshared (Predicate_1_t9EEBAEA1F4253498B68D3C793183799601A4E4A4 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_mEC7C468E17B332366713A9DC0116E0983662A7C1_gshared (Predicate_1_tAE811FB277AA02C4730A4AD197B20656E9F76A31 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 	return *(bool*)UnBox ((RuntimeObject*)__result);;
@@ -21252,14 +21252,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_m171BA9848B6664534
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void System.Predicate`1<TealiumCommon.ConsentCategories>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_mD9C7D9C38CE71BDAF3686D8F5F0B06EA400612D8_gshared (Predicate_1_tA54F0BA31FE2E248D67817E794F09B51CE1087B1 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m6B938946427D625210D0099010DB6E22AF44DD76_gshared (Predicate_1_tC7681BBF1AD14BAD4B2C5B7025C4152E343A3EA5 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
 // System.Boolean System.Predicate`1<TealiumCommon.ConsentCategories>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m39ED3093396C24DE9064E0665D905F186D273B9F_gshared (Predicate_1_tA54F0BA31FE2E248D67817E794F09B51CE1087B1 * __this, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F  ___obj0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mE91D65D9E48922184071B188DCB834EDCE4F10DD_gshared (Predicate_1_tC7681BBF1AD14BAD4B2C5B7025C4152E343A3EA5 * __this, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A  ___obj0, const RuntimeMethod* method)
 {
 	bool result = false;
 	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
@@ -21293,13 +21293,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m39ED3093396C24DE9064
 			if (___parameterCount == 1)
 			{
 				// open
-				typedef bool (*FunctionPointerType) (ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F , const RuntimeMethod*);
+				typedef bool (*FunctionPointerType) (ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A , const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___obj0, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef bool (*FunctionPointerType) (void*, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F , const RuntimeMethod*);
+				typedef bool (*FunctionPointerType) (void*, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A , const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___obj0, targetMethod);
 			}
 		}
@@ -21311,16 +21311,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m39ED3093396C24DE9064
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< bool, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F  >::Invoke(targetMethod, targetThis, ___obj0);
+						result = GenericInterfaceFuncInvoker1< bool, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A  >::Invoke(targetMethod, targetThis, ___obj0);
 					else
-						result = GenericVirtFuncInvoker1< bool, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F  >::Invoke(targetMethod, targetThis, ___obj0);
+						result = GenericVirtFuncInvoker1< bool, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A  >::Invoke(targetMethod, targetThis, ___obj0);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< bool, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___obj0);
+						result = InterfaceFuncInvoker1< bool, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___obj0);
 					else
-						result = VirtFuncInvoker1< bool, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___obj0);
+						result = VirtFuncInvoker1< bool, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___obj0);
 				}
 			}
 			else
@@ -21332,7 +21332,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m39ED3093396C24DE9064
 				}
 				else
 				{
-					typedef bool (*FunctionPointerType) (void*, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F , const RuntimeMethod*);
+					typedef bool (*FunctionPointerType) (void*, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A , const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___obj0, targetMethod);
 				}
 			}
@@ -21341,20 +21341,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m39ED3093396C24DE9064
 	return result;
 }
 // System.IAsyncResult System.Predicate`1<TealiumCommon.ConsentCategories>::BeginInvoke(T,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Predicate_1_BeginInvoke_m7752243BF5FFB4B00848556C593A7612954C19A4_gshared (Predicate_1_tA54F0BA31FE2E248D67817E794F09B51CE1087B1 * __this, ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F  ___obj0, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Predicate_1_BeginInvoke_mCACA1D27DF64C563A094CE0F877230D5903F344E_gshared (Predicate_1_tC7681BBF1AD14BAD4B2C5B7025C4152E343A3EA5 * __this, ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A  ___obj0, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	void *__d_args[2] = {0};
-	__d_args[0] = Box(ConsentCategories_t7F1FDE7995E2ABB2BEF4A4DC381AE8DEE9B8429F_il2cpp_TypeInfo_var, &___obj0);
+	__d_args[0] = Box(ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A_il2cpp_TypeInfo_var, &___obj0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);;
 }
 // System.Boolean System.Predicate`1<TealiumCommon.ConsentCategories>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_m553186F2465A868D8C2F5EEDB8BBE1ACA1870A99_gshared (Predicate_1_tA54F0BA31FE2E248D67817E794F09B51CE1087B1 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_m47DAC8FB611902392CABB4279FC9FEE4EC9BCA5F_gshared (Predicate_1_tC7681BBF1AD14BAD4B2C5B7025C4152E343A3EA5 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 	return *(bool*)UnBox ((RuntimeObject*)__result);;
@@ -21716,14 +21716,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_m873656F3B6566D231
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // System.Void System.Predicate`1<TealiumCommon.Dispatchers>::.ctor(System.Object,System.IntPtr)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_mB41793274F291302CBBB727E00F897E7EC247225_gshared (Predicate_1_tA021C1778B01A691342E7E923E7A6637FF5B9BFE * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Predicate_1__ctor_m4BE6BAF38E5DECDA28C20B71D4A8E13041FAD2DC_gshared (Predicate_1_tEE92FCA88EB117C8648C533E684B3E8F40B97A64 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method)
 {
 	__this->set_method_ptr_0(il2cpp_codegen_get_method_pointer((RuntimeMethod*)___method1));
 	__this->set_method_3(___method1);
 	__this->set_m_target_2(___object0);
 }
 // System.Boolean System.Predicate`1<TealiumCommon.Dispatchers>::Invoke(T)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m277642DFE59CDF83F4E02F44EE2BFB043B701D6A_gshared (Predicate_1_tA021C1778B01A691342E7E923E7A6637FF5B9BFE * __this, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___obj0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_mAC5A8FED641FD2FAA4EF7A83D8CB51F0C955998B_gshared (Predicate_1_tEE92FCA88EB117C8648C533E684B3E8F40B97A64 * __this, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___obj0, const RuntimeMethod* method)
 {
 	bool result = false;
 	DelegateU5BU5D_t677D8FE08A5F99E8EE49150B73966CD6E9BF7DB8* delegateArrayToInvoke = __this->get_delegates_11();
@@ -21757,13 +21757,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m277642DFE59CDF83F4E0
 			if (___parameterCount == 1)
 			{
 				// open
-				typedef bool (*FunctionPointerType) (Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 , const RuntimeMethod*);
+				typedef bool (*FunctionPointerType) (Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 , const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(___obj0, targetMethod);
 			}
 			else
 			{
 				// closed
-				typedef bool (*FunctionPointerType) (void*, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 , const RuntimeMethod*);
+				typedef bool (*FunctionPointerType) (void*, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 , const RuntimeMethod*);
 				result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___obj0, targetMethod);
 			}
 		}
@@ -21775,16 +21775,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m277642DFE59CDF83F4E0
 				if (il2cpp_codegen_method_is_generic_instance(targetMethod))
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = GenericInterfaceFuncInvoker1< bool, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  >::Invoke(targetMethod, targetThis, ___obj0);
+						result = GenericInterfaceFuncInvoker1< bool, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  >::Invoke(targetMethod, targetThis, ___obj0);
 					else
-						result = GenericVirtFuncInvoker1< bool, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  >::Invoke(targetMethod, targetThis, ___obj0);
+						result = GenericVirtFuncInvoker1< bool, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  >::Invoke(targetMethod, targetThis, ___obj0);
 				}
 				else
 				{
 					if (il2cpp_codegen_method_is_interface_method(targetMethod))
-						result = InterfaceFuncInvoker1< bool, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___obj0);
+						result = InterfaceFuncInvoker1< bool, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), il2cpp_codegen_method_get_declaring_type(targetMethod), targetThis, ___obj0);
 					else
-						result = VirtFuncInvoker1< bool, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___obj0);
+						result = VirtFuncInvoker1< bool, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  >::Invoke(il2cpp_codegen_method_get_slot(targetMethod), targetThis, ___obj0);
 				}
 			}
 			else
@@ -21796,7 +21796,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m277642DFE59CDF83F4E0
 				}
 				else
 				{
-					typedef bool (*FunctionPointerType) (void*, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236 , const RuntimeMethod*);
+					typedef bool (*FunctionPointerType) (void*, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5 , const RuntimeMethod*);
 					result = ((FunctionPointerType)targetMethodPointer)(targetThis, ___obj0, targetMethod);
 				}
 			}
@@ -21805,20 +21805,20 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_Invoke_m277642DFE59CDF83F4E0
 	return result;
 }
 // System.IAsyncResult System.Predicate`1<TealiumCommon.Dispatchers>::BeginInvoke(T,System.AsyncCallback,System.Object)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Predicate_1_BeginInvoke_mB0AC1B21AA34E3169AE846D71C7355C6C6079576_gshared (Predicate_1_tA021C1778B01A691342E7E923E7A6637FF5B9BFE * __this, Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236  ___obj0, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Predicate_1_BeginInvoke_mA6CC9F2F12D1F07C36FC545B9B4080D76026441E_gshared (Predicate_1_tEE92FCA88EB117C8648C533E684B3E8F40B97A64 * __this, Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5  ___obj0, AsyncCallback_tA7921BEF974919C46FF8F9D9867C567B200BB0EA * ___callback1, RuntimeObject * ___object2, const RuntimeMethod* method)
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	void *__d_args[2] = {0};
-	__d_args[0] = Box(Dispatchers_tB9298ED86C40129DF8BF09E2B9EBEC23F8C5A236_il2cpp_TypeInfo_var, &___obj0);
+	__d_args[0] = Box(Dispatchers_tC45CF8E91B154CF2A657C5A5C6A70220B5A894E5_il2cpp_TypeInfo_var, &___obj0);
 	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);;
 }
 // System.Boolean System.Predicate`1<TealiumCommon.Dispatchers>::EndInvoke(System.IAsyncResult)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_m4821C4E827DF629D8026E21E77FA34CABF6DB66B_gshared (Predicate_1_tA021C1778B01A691342E7E923E7A6637FF5B9BFE * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Predicate_1_EndInvoke_m3C32E7BF6834DCCBCE42EAEDB557F2AF8E787A7D_gshared (Predicate_1_tEE92FCA88EB117C8648C533E684B3E8F40B97A64 * __this, RuntimeObject* ___result0, const RuntimeMethod* method)
 {
 	RuntimeObject *__result = il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result0, 0);
 	return *(bool*)UnBox ((RuntimeObject*)__result);;
