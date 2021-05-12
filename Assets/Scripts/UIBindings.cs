@@ -74,10 +74,10 @@ public class UIBindings : MonoBehaviour
                                                      dataSource: "abc123",
                                                      logLevel: LogLevel.Dev,
                                                      consentPolicy: ConsentPolicy.GDPR,
-                                                     consentExpiry: new ConsentExpiry(2, TimeUnit.Minutes),
+                                                     consentExpiry: new ConsentExpiry(10, TimeUnit.Minutes),
                                                      batchingEnabled: false,
                                                      visitorServiceEnabled: true,
-                                                     useRemoteLibrarySettings: false);
+                                                     useRemoteLibrarySettings: true);
 
     void Start() {
         traceIdInputField.onEndEdit.AddListener(delegate {SetTraceId(traceIdInputField);});
