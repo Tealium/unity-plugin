@@ -1,0 +1,4 @@
+framework module TealiumTagManagement {
+  header "TealiumTagManagement-Swift.h"
+  requires objc
+}
