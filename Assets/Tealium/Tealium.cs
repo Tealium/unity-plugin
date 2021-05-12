@@ -206,7 +206,7 @@ public class TealiumUnityPlugin : MonoBehaviour
                     {"plugin_name", "Tealium-Unity"},
                     {"plugin_version", "2.0.0"}
                 };
-                Tealium.addToDataLayer(pluginData, Expiry.Forever);
+                Tealium.AddToDataLayer(pluginData, Expiry.Forever);
             }
         
             onInitialized(success);
