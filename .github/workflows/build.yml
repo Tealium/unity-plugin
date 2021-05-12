@@ -4,10 +4,14 @@ on: [pull_request]
 
 jobs:
   build:
-    name: Create Unity Package
+    - name: Create Unity Package
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2      
+      - uses: actions/checkout@v2 
+      - name: Setup Unity
+        uses: kuler90/setup-unity@v1
+        with:
+          unity-modules: [ios, android]     
       - name: Build Package
         run: ./build.sh
       - name: Commit New Unity Package
