@@ -1,3 +1,0 @@
-include ':unity'
-include ':app'
-rootProject.name = "Tealium Unity"

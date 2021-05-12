@@ -1,8 +1,6 @@
 package com.tealium
 
 const val INSTANCE_NAME: String = "main"
-const val PLUGIN_NAME: String = "Tealium-Unity"
-const val PLUGIN_VERSION: String = "2.0.0"
 
 const val KEY_CONFIG_ACCOUNT: String = "account"
 const val KEY_CONFIG_PROFILE: String = "profile"
