@@ -1777,7 +1777,6 @@ GameObject:
   - component: {fileID: 966861144}
   - component: {fileID: 966861143}
   - component: {fileID: 966861142}
-  - component: {fileID: 966861146}
   - component: {fileID: 966861147}
   m_Layer: 5
   m_Name: Canvas
@@ -1884,35 +1883,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &966861146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 966861141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cb3487cacd40473891acc19a501caf2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  traceIdInputField: {fileID: 1773985183}
-  initializeButton: {fileID: 223974227}
-  terminateTealiumButton: {fileID: 1928283064}
-  joinTraceButton: {fileID: 855260358}
-  leaveTraceButton: {fileID: 1256554659}
-  trackEventButton: {fileID: 368232795}
-  trackViewButton: {fileID: 1767856974}
-  addToDataLayerButton: {fileID: 209769344}
-  getFromDataLayerButton: {fileID: 892082727}
-  removeFromDataLayerButton: {fileID: 193789852}
-  setConsentStatusButton: {fileID: 1504087900}
-  getConsentStatusButton: {fileID: 970589071}
-  setConsentCategoriesButton: {fileID: 366445903}
-  getConsentCategoriesButton: {fileID: 1601854998}
-  getVisitorIdButton: {fileID: 1679733673}
-  addRemoteCommandButton: {fileID: 1820530351}
-  removeRemoteCommandButton: {fileID: 2062269045}
 --- !u!114 &966861147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1922,7 +1892,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 966861141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f539e596404574f72a9c363a670e5003, type: 3}
+  m_Script: {fileID: 11500000, guid: 04d27e8f170de45a28a2faf2b9150537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   traceIdInputField: {fileID: 1773985183}
