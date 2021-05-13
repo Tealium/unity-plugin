@@ -21,13 +21,12 @@ object TealiumUnity {
             tealium = Tealium.create(INSTANCE_NAME, tealiumConfig) {
                 Log.d(BuildConfig.TAG, "Instance Initialized")
                 events.subscribe(EmitterListeners())
+                UnityPlayer.UnitySendMessage(
+                    "TealiumAndroid",
+                    "HandleInitialized",
+                    "true"
+                )
             }
-
-            UnityPlayer.UnitySendMessage(
-                "TealiumAndroid",
-                "HandleInitialized",
-                "true"
-            )
         } ?: run {
             Log.w(BuildConfig.TAG, "Failed to initialize instance.")
 

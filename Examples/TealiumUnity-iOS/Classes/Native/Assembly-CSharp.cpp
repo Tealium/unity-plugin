@@ -477,6 +477,7 @@ IL2CPP_EXTERN_C RuntimeClass* UnityAction_t22E545F8BE0A62EE051C6A83E209587A0DB1C
 IL2CPP_EXTERN_C RuntimeClass* VisitorServiceDelegateMessage_t17E8D0A5B0CCF9C7BF0FB35AFD179961BE6E6E19_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral017374E8ECAE4B86D8977D4B6E92BC35F4E13E4D;
 IL2CPP_EXTERN_C String_t* _stringLiteral01BD8DB9C9332D9B333844352B3110A8B78AB46F;
+IL2CPP_EXTERN_C String_t* _stringLiteral02F2672A2588C4D7BA0187704DBA8BD316215C06;
 IL2CPP_EXTERN_C String_t* _stringLiteral0533F02BB4D6E446972E566470632374F09D49BD;
 IL2CPP_EXTERN_C String_t* _stringLiteral0555D0346590ED5624B6F5D3A6FD2785FD9479F1;
 IL2CPP_EXTERN_C String_t* _stringLiteral07756FCF72584F7AFE92F5DB492B5516EC1E5F96;
@@ -537,6 +538,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral74F649435800A0F67D0E1CDB9823ADFC792B824F
 IL2CPP_EXTERN_C String_t* _stringLiteral7D144960E57E3EF7E0052B89CD26C2BABBEEF061;
 IL2CPP_EXTERN_C String_t* _stringLiteral80B9862F6FD4673A33E49F33829053D1CC06403D;
 IL2CPP_EXTERN_C String_t* _stringLiteral8243BA18D267E0E612210F4920079D9700A5DEEF;
+IL2CPP_EXTERN_C String_t* _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443;
 IL2CPP_EXTERN_C String_t* _stringLiteral83D75EFE10E61242D8B77D81FC841EF3AF75EF8F;
 IL2CPP_EXTERN_C String_t* _stringLiteral85D392ABE7C69C3680F6D252A9C10DA6C7A0CD82;
 IL2CPP_EXTERN_C String_t* _stringLiteral8B007FEEE7F01F5720797883DA11C9E9CB1DEA9E;
@@ -544,6 +546,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral8DE0CBA7BF0AAAFA4927500E94B54EAA544A2E0C
 IL2CPP_EXTERN_C String_t* _stringLiteral900D858FE9ABCD2ED2B25CD27110A78ADCC6EC6B;
 IL2CPP_EXTERN_C String_t* _stringLiteral9104E82394351D786F4B739689D0B28ACF18A43D;
 IL2CPP_EXTERN_C String_t* _stringLiteral9114DD7DD6A3CF73058180EE667FF9F9CE534BB6;
+IL2CPP_EXTERN_C String_t* _stringLiteral954BBC812AACF71904ACD1434A6D76410C6F51D3;
 IL2CPP_EXTERN_C String_t* _stringLiteral97AEAF8286750D25335E64A2CADB274C5AD23115;
 IL2CPP_EXTERN_C String_t* _stringLiteral997B02E0A865F8EDC8D6D7622CBA8EE63AD5126D;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026;
@@ -551,6 +554,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9D3C58D1F3CEF1AB927ED915580D68088D68760D
 IL2CPP_EXTERN_C String_t* _stringLiteralA17474CA0C600D38D899463D436DB6E0973F01A2;
 IL2CPP_EXTERN_C String_t* _stringLiteralA1CF2D9EE7291076F273B2585551F9172E574891;
 IL2CPP_EXTERN_C String_t* _stringLiteralA38A73589D1C87B982AF83CCBC174E6D4FD4B5FD;
+IL2CPP_EXTERN_C String_t* _stringLiteralA5E9BDCF3052BE3EE5CEED6F8E915ADD60CA5CF7;
 IL2CPP_EXTERN_C String_t* _stringLiteralA87AE8C2F7BB38664D171D518236DD501272A587;
 IL2CPP_EXTERN_C String_t* _stringLiteralA8CDC49139C9F70342D7D90A72F625062B7DD35C;
 IL2CPP_EXTERN_C String_t* _stringLiteralAA92536F38C607AF7686E47C8B03BD65BC2C4059;
@@ -562,6 +566,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralAD40952BA6B8CDA9C3035B44E0644559D395E4B4
 IL2CPP_EXTERN_C String_t* _stringLiteralB65ECA33680532128DA5A0848B42E2C8C7A2A54D;
 IL2CPP_EXTERN_C String_t* _stringLiteralB6D795FBD58CC7592D955A219374339A323801A9;
 IL2CPP_EXTERN_C String_t* _stringLiteralB721BD1BCAA2A9CAA44D8DAA69E9645567BF5329;
+IL2CPP_EXTERN_C String_t* _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2;
 IL2CPP_EXTERN_C String_t* _stringLiteralB8F70E34B8CAFB60E91E803AC048C2A88EBAE345;
 IL2CPP_EXTERN_C String_t* _stringLiteralB8FF942E118389A9B5468029ADBFCA8D7512D496;
 IL2CPP_EXTERN_C String_t* _stringLiteralB91C0B9B01341768775B9133B367C86C196061C8;
@@ -583,11 +588,11 @@ IL2CPP_EXTERN_C String_t* _stringLiteralDC0FBD54AAB0A9BDDAF97372B7B718E106E0D9C7
 IL2CPP_EXTERN_C String_t* _stringLiteralE2774502F33D6B239EAD1FA8BB0237F98927B1D2;
 IL2CPP_EXTERN_C String_t* _stringLiteralE70104D82091DB49D9519330472492177C05ECB5;
 IL2CPP_EXTERN_C String_t* _stringLiteralE9665AE49C73D0859A034EB155329FA4C96D5FCC;
-IL2CPP_EXTERN_C String_t* _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6;
 IL2CPP_EXTERN_C String_t* _stringLiteralEAA8D9C3445FEBFE3701DDB0406A86D63B80BB2F;
 IL2CPP_EXTERN_C String_t* _stringLiteralEBF5FE0CBF3EEA67902EEA700B7216E3DB0D8E84;
 IL2CPP_EXTERN_C String_t* _stringLiteralEC2B7F0999AB6232F33E80E1C302826259D2C491;
 IL2CPP_EXTERN_C String_t* _stringLiteralF0EA69757FB672884F04F8AD4D86E697C451BEE2;
+IL2CPP_EXTERN_C String_t* _stringLiteralF147D875B33D888D0BC0057608BE47CB0D915297;
 IL2CPP_EXTERN_C String_t* _stringLiteralF325D7CCF99454491B411A6E8426AD89E9298D31;
 IL2CPP_EXTERN_C String_t* _stringLiteralF79B3927124CE34A31910F4AD953084FA0AD4BB6;
 IL2CPP_EXTERN_C String_t* _stringLiteralFA855702F3E0239B3B0D1F427461543C440733A6;
@@ -601,7 +606,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_m04AB9C97A43F052D4C9087E31AD
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_m06E9A7B9D7CDFC2CB1E74306042E5CF2BE8E5E5B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_m2A1B34C27CAE6ED7FD924E5F59C0A1ACBBF22C38_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1__ctor_mA671E933C9D3DAE4E3F71D34FDDA971739618158_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_CallStatic_TisString_t_m5A20C2CE3D48240700CE5881319C2557947CDC7A_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_Call_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC5ED59BBD9C24EFFD98D8C3819C7E15DFE08F412_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC84C97A7EC20ED712D21107C9FA32E0785021153_RuntimeMethod_var;
@@ -5965,10 +5969,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * AndroidJavaObject_GetStatic_T
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* Array_Empty_TisRuntimeObject_m1FBC21243DF3542384C523801E8CA8A97606C747_gshared_inline (const RuntimeMethod* method);
 // !!0 UnityEngine.AndroidJavaObject::Call<System.Object>(System.String,System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * AndroidJavaObject_Call_TisRuntimeObject_mB802C2A6B0365A1670402D283EB7FA241C326B0E_gshared (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * __this, String_t* ___methodName0, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___args1, const RuntimeMethod* method);
-// !!0 UnityEngine.AndroidJavaObject::CallStatic<System.Boolean>(System.String,System.Object[])
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB_gshared (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * __this, String_t* ___methodName0, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___args1, const RuntimeMethod* method);
-// System.Void System.Action`1<System.Boolean>::Invoke(!0)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_gshared (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * __this, bool ___obj0, const RuntimeMethod* method);
 // !!0 UnityEngine.AndroidJavaObject::CallStatic<System.Object>(System.String,System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject * AndroidJavaObject_CallStatic_TisRuntimeObject_m29BD05B7A29F937D71B746DFFE889B90E1142509_gshared (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * __this, String_t* ___methodName0, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___args1, const RuntimeMethod* method);
 // !!0 Newtonsoft.Json.JsonConvert::DeserializeObject<System.Object>(System.String)
@@ -6003,6 +6003,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ConsentPolicy_tC84611A3D580E420D2
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_mE6BF870B04922441F9F2760E782DEE6EE682615A_gshared (Dictionary_2_tBD1E3221EBD04CEBDA49B84779912E91F56B958D * __this, RuntimeObject * ___key0, RuntimeObject * ___value1, const RuntimeMethod* method);
 // System.Boolean System.Collections.Generic.Dictionary`2<System.Object,System.Object>::Remove(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_Remove_m32325BAD86F31C471AEBE80C6A7A8A6908EB0611_gshared (Dictionary_2_tBD1E3221EBD04CEBDA49B84779912E91F56B958D * __this, RuntimeObject * ___key0, const RuntimeMethod* method);
+// System.Void System.Action`1<System.Boolean>::Invoke(!0)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_gshared (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * __this, bool ___obj0, const RuntimeMethod* method);
 // System.Void System.Action`1<System.Object>::Invoke(!0)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1_Invoke_m587509C88BB83721D7918D89DF07606BB752D744_gshared (Action_1_tD9663D9715FAA4E62035CFCF1AD4D094EE7872DC * __this, RuntimeObject * ___obj0, const RuntimeMethod* method);
 // System.Collections.Generic.Dictionary`2/Enumerator<!0,!1> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::GetEnumerator()
@@ -6155,16 +6157,6 @@ inline AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * AndroidJava
 }
 // System.String Newtonsoft.Json.JsonConvert::SerializeObject(System.Object)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_mA9001ADA0DB9EA238BED332AB41743609EB6AD9D (RuntimeObject * ___value0, const RuntimeMethod* method);
-// !!0 UnityEngine.AndroidJavaObject::CallStatic<System.Boolean>(System.String,System.Object[])
-inline bool AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * __this, String_t* ___methodName0, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___args1, const RuntimeMethod* method)
-{
-	return ((  bool (*) (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E *, String_t*, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*, const RuntimeMethod*))AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB_gshared)(__this, ___methodName0, ___args1, method);
-}
-// System.Void System.Action`1<System.Boolean>::Invoke(!0)
-inline void Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5 (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * __this, bool ___obj0, const RuntimeMethod* method)
-{
-	((  void (*) (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 *, bool, const RuntimeMethod*))Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_gshared)(__this, ___obj0, method);
-}
 // System.Void UnityEngine.AndroidJavaObject::CallStatic(System.String,System.Object[])
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB (AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * __this, String_t* ___methodName0, ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* ___args1, const RuntimeMethod* method);
 // System.Type System.Object::GetType()
@@ -6209,6 +6201,10 @@ inline List_1_t3F3B41E08D663A886693A5C3F202EDB3D8914117 * List_1_ConvertAll_TisC
 {
 	return ((  List_1_t3F3B41E08D663A886693A5C3F202EDB3D8914117 * (*) (List_1_t6C9F81EDBF0F4A31A9B0DA372D2EF34BDA3A1AF3 *, Converter_2_t1A1B828D0A7F9ECE1DB19923D5B0D244C0590118 *, const RuntimeMethod*))List_1_ConvertAll_TisConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A_m0D1256632E9A34CBD9BD1E7610071AC774571ED1_gshared)(__this, ___converter0, method);
 }
+// System.Boolean System.String::op_Equality(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method);
+// System.Void TealiumUnityPlugin::OnInitialized(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumUnityPlugin_OnInitialized_m82F0A2E4D96DE573DDA321B3744ED0FFCAC3B6FE (bool ___success0, const RuntimeMethod* method);
 // System.Void TealiumUnityPlugin::OnRemoteCommandCompletion(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumUnityPlugin_OnRemoteCommandCompletion_m615FEA22AB87DF7983DE602460C42D813DF61BD1 (String_t* ___payload0, const RuntimeMethod* method);
 // System.Void TealiumUnityPlugin::OnVisitorServiceUpdate(System.String)
@@ -6289,6 +6285,13 @@ inline void Dictionary_2_set_Item_m4A823B95FF63222C99CEB2CEA5D2B9C72159CB22 (Dic
 inline bool Dictionary_2_Remove_m0D984C0C6C1ABE13FBFD0300F1BE325115995A15 (Dictionary_2_tA582BF436674B8CBA45DA2033E1A98F298DBADA9 * __this, String_t* ___key0, const RuntimeMethod* method)
 {
 	return ((  bool (*) (Dictionary_2_tA582BF436674B8CBA45DA2033E1A98F298DBADA9 *, String_t*, const RuntimeMethod*))Dictionary_2_Remove_m32325BAD86F31C471AEBE80C6A7A8A6908EB0611_gshared)(__this, ___key0, method);
+}
+// TealiumCommon.Expiry TealiumCommon.Expiry::get_Forever()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Expiry_t0A9C53DBF1E7B726C2CE0D6777EF236AF9C51610  Expiry_get_Forever_m4351AEE1513AD854D3902AD4CC9AA9E799901DE1 (const RuntimeMethod* method);
+// System.Void System.Action`1<System.Boolean>::Invoke(!0)
+inline void Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5 (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * __this, bool ___obj0, const RuntimeMethod* method)
+{
+	((  void (*) (Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 *, bool, const RuntimeMethod*))Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_gshared)(__this, ___obj0, method);
 }
 // System.Collections.Generic.Dictionary`2<System.String,System.Object> TealiumUnityPlugin::ConvertValuesToCollections(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * TealiumUnityPlugin_ConvertValuesToCollections_mAC11F22B332070A759E4AFD9108C6D2DD2E519CF (Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * ___dictionary0, const RuntimeMethod* method);
@@ -6392,8 +6395,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumiOS_remoteCommandReceived_m21FFC7
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A (String_t* ___payload0, const RuntimeMethod* method);
 // System.Void TealiumiOS::consentExpirationReceived()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E (const RuntimeMethod* method);
-// System.Void TealiumUnityPlugin::OnInitialized(System.Boolean)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumUnityPlugin_OnInitialized_m82F0A2E4D96DE573DDA321B3744ED0FFCAC3B6FE (bool ___success0, const RuntimeMethod* method);
 // System.Void TealiumiOS/InitializeDelegateMessage::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void InitializeDelegateMessage__ctor_m8EC9122E0BB661FD268F8A13AF2D52E8ACB1DC3D (InitializeDelegateMessage_t006B477A85E999BD347A50E0296FD67AFCFDE125 * __this, RuntimeObject * ___object0, intptr_t ___method1, const RuntimeMethod* method);
 // System.Void TealiumiOS::Tealium_SetInitializeDelegate(TealiumiOS/InitializeDelegateMessage)
@@ -6452,8 +6453,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ConsentExpiryDelegateMessage__ctor_mCA87
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumiOS_Tealium_SetConsentExpiryDelegate_mB605727470979A48ACE05CFF314BF7D87E2A2448 (ConsentExpiryDelegateMessage_t56C1C8F2F5E948C17B96D183482462AF7A070F02 * ___callback0, const RuntimeMethod* method);
 // System.String TealiumiOS::Tealium_GetVisitorId()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TealiumiOS_Tealium_GetVisitorId_m1DBCDF67C18D5ECE65737F9192F085E318777579 (const RuntimeMethod* method);
-// System.Boolean System.String::op_Equality(System.String,System.String)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB (String_t* ___a0, String_t* ___b1, const RuntimeMethod* method);
 // System.Void TealiumCommon.TimeUnit::set_Value(System.String)
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TimeUnit_set_Value_m6A402797AEE22FAFF282663636940F8FE5265682_inline (TimeUnit_t40B4DA56D09455FB588BA652C00169EF53A6F501 * __this, String_t* ___value0, const RuntimeMethod* method);
 // System.Void TealiumCommon.TimeUnit::.ctor(System.String)
@@ -8126,9 +8125,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_Initialize_m06A7AA8D6A4AC
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_Call_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC5ED59BBD9C24EFFD98D8C3819C7E15DFE08F412_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_GetStatic_TisAndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E_mC84C97A7EC20ED712D21107C9FA32E0785021153_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Array_Empty_TisRuntimeObject_m1FBC21243DF3542384C523801E8CA8A97606C747_RuntimeMethod_var);
@@ -8143,7 +8140,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_Initialize_m06A7AA8D6A4AC
 		s_Il2CppMethodInitialized = true;
 	}
 	AndroidJavaObject_t10188D5695DCD09C9F621B44B0A8C93A2281236E * V_0 = NULL;
-	bool V_1 = false;
 	{
 		// AndroidJavaClass playerClass = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_0 = (AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 *)il2cpp_codegen_object_new(AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4_il2cpp_TypeInfo_var);
@@ -8164,7 +8160,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_Initialize_m06A7AA8D6A4AC
 		AndroidJavaClass__ctor_mEFF9F51871F231955D97DABDE9AB4A6B4EDA5541(L_4, _stringLiteralF79B3927124CE34A31910F4AD953084FA0AD4BB6, /*hidden argument*/NULL);
 		IL2CPP_RUNTIME_CLASS_INIT(TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A_il2cpp_TypeInfo_var);
 		((TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A_StaticFields*)il2cpp_codegen_static_fields_for(TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A_il2cpp_TypeInfo_var))->set__tealiumUnityObject_6(L_4);
-		// bool initialized = _tealiumUnityObject.CallStatic<bool>("initialize", context, JsonConvert.SerializeObject(config));
+		// _tealiumUnityObject.CallStatic("initialize", context, JsonConvert.SerializeObject(config));
 		AndroidJavaClass_t52E934B16476D72AA6E4B248F989F2F825EB62D4 * L_5 = ((TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A_StaticFields*)il2cpp_codegen_static_fields_for(TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A_il2cpp_TypeInfo_var))->get__tealiumUnityObject_6();
 		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_6 = (ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE*)SZArrayNew(ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE_il2cpp_TypeInfo_var, (uint32_t)2);
 		ObjectU5BU5D_tC1F4EE0DB0B7300255F5FD4AF64FE4C585CF5ADE* L_7 = L_6;
@@ -8181,26 +8177,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_Initialize_m06A7AA8D6A4AC
 		ArrayElementTypeCheck (L_9, L_11);
 		(L_9)->SetAt(static_cast<il2cpp_array_size_t>(1), (RuntimeObject *)L_11);
 		NullCheck(L_5);
-		bool L_12;
-		L_12 = AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB(L_5, _stringLiteralD289A15F06D391673864A3B5CEDBFF42865743C1, L_9, /*hidden argument*/AndroidJavaObject_CallStatic_TisBoolean_t07D1E3F34E4813023D64F584DFF7B34C9D922F37_m08A8ECF220D35069EF5A4A50C2F38E925F0852FB_RuntimeMethod_var);
-		V_1 = L_12;
-		// if (callback != null)
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_13 = ___callback1;
-		if (!L_13)
-		{
-			goto IL_0060;
-		}
-	}
-	{
-		// callback.Invoke(initialized);
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_14 = ___callback1;
-		bool L_15 = V_1;
-		NullCheck(L_14);
-		Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5(L_14, L_15, /*hidden argument*/Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_RuntimeMethod_var);
-	}
-
-IL_0060:
-	{
+		AndroidJavaObject_CallStatic_m5A97968767E1603C021023809276443ED24577FB(L_5, _stringLiteralD289A15F06D391673864A3B5CEDBFF42865743C1, L_9, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -8765,6 +8742,44 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_SetVisitorServiceListener
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_SetConsentExpiryListener_m2F705815A0701BA4DFC9C82C98ED1460D797D0C3 (TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A * __this, Action_tAF41423D285AE0862865348CF6CE51CD085ABBA6 * ___callback0, const RuntimeMethod* method)
 {
 	{
+		// }
+		return;
+	}
+}
+// System.Void TealiumAndroid::HandleInitialized(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumAndroid_HandleInitialized_m80C6E28D8A22AC3EC3090842C9DFAE8DEEC87BCD (TealiumAndroid_t629EC3F5396B47E8B94268DB29F4EC12F4ABA63A * __this, String_t* ___response0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	{
+		// bool didInitialize = false;
+		V_0 = (bool)0;
+		// if (response == "true") {
+		String_t* L_0 = ___response0;
+		bool L_1;
+		L_1 = String_op_Equality_m2B91EE68355F142F67095973D32EB5828B7B73CB(L_0, _stringLiteralB7C45DD316C68ABF3429C20058C2981C652192F2, /*hidden argument*/NULL);
+		if (!L_1)
+		{
+			goto IL_0011;
+		}
+	}
+	{
+		// didInitialize = true;
+		V_0 = (bool)1;
+	}
+
+IL_0011:
+	{
+		// TealiumUnityPlugin.OnInitialized(didInitialize);
+		bool L_2 = V_0;
+		IL2CPP_RUNTIME_CLASS_INIT(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
+		TealiumUnityPlugin_OnInitialized_m82F0A2E4D96DE573DDA321B3744ED0FFCAC3B6FE(L_2, /*hidden argument*/NULL);
 		// }
 		return;
 	}
@@ -9919,28 +9934,71 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TealiumUnityPlugin_OnInitialized_m82F0A2
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_Add_m005F33425CDAEC23027518EC759F8F439AF34F3F_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2__ctor_mCD0C2F0325B7677B9BC340A60AA3FB9C7A88FF63_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TealiumUnity_tE933D2A39E57355E315E0333B382E94E1E5C742C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral02F2672A2588C4D7BA0187704DBA8BD316215C06);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral954BBC812AACF71904ACD1434A6D76410C6F51D3);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA5E9BDCF3052BE3EE5CEED6F8E915ADD60CA5CF7);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF147D875B33D888D0BC0057608BE47CB0D915297);
 		s_Il2CppMethodInitialized = true;
 	}
+	Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * V_0 = NULL;
 	{
 		// if (onInitialized != null)
 		IL2CPP_RUNTIME_CLASS_INIT(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
 		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_0 = ((TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_StaticFields*)il2cpp_codegen_static_fields_for(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var))->get_onInitialized_5();
 		if (!L_0)
 		{
-			goto IL_0012;
+			goto IL_004b;
 		}
 	}
 	{
-		// onInitialized(success);
+		// if (success) {
+		bool L_1 = ___success0;
+		if (!L_1)
+		{
+			goto IL_0040;
+		}
+	}
+	{
+		// Dictionary<string, object> pluginData = new Dictionary<string, object> {
+		//     {"plugin_name", "Tealium-Unity"},
+		//     {"plugin_version", "2.0.0"}
+		// };
+		Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * L_2 = (Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 *)il2cpp_codegen_object_new(Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399_il2cpp_TypeInfo_var);
+		Dictionary_2__ctor_mCD0C2F0325B7677B9BC340A60AA3FB9C7A88FF63(L_2, /*hidden argument*/Dictionary_2__ctor_mCD0C2F0325B7677B9BC340A60AA3FB9C7A88FF63_RuntimeMethod_var);
+		Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * L_3 = L_2;
+		NullCheck(L_3);
+		Dictionary_2_Add_m005F33425CDAEC23027518EC759F8F439AF34F3F(L_3, _stringLiteralF147D875B33D888D0BC0057608BE47CB0D915297, _stringLiteralA5E9BDCF3052BE3EE5CEED6F8E915ADD60CA5CF7, /*hidden argument*/Dictionary_2_Add_m005F33425CDAEC23027518EC759F8F439AF34F3F_RuntimeMethod_var);
+		Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * L_4 = L_3;
+		NullCheck(L_4);
+		Dictionary_2_Add_m005F33425CDAEC23027518EC759F8F439AF34F3F(L_4, _stringLiteral02F2672A2588C4D7BA0187704DBA8BD316215C06, _stringLiteral954BBC812AACF71904ACD1434A6D76410C6F51D3, /*hidden argument*/Dictionary_2_Add_m005F33425CDAEC23027518EC759F8F439AF34F3F_RuntimeMethod_var);
+		V_0 = L_4;
+		// Tealium.AddToDataLayer(pluginData, Expiry.Forever);
 		IL2CPP_RUNTIME_CLASS_INIT(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
-		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_1 = ((TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_StaticFields*)il2cpp_codegen_static_fields_for(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var))->get_onInitialized_5();
-		bool L_2 = ___success0;
-		NullCheck(L_1);
-		Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5(L_1, L_2, /*hidden argument*/Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_RuntimeMethod_var);
+		RuntimeObject* L_5;
+		L_5 = TealiumUnityPlugin_get_Tealium_mA72005D735B160353EB60AC4879D0C5E14443D26(/*hidden argument*/NULL);
+		Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 * L_6 = V_0;
+		Expiry_t0A9C53DBF1E7B726C2CE0D6777EF236AF9C51610  L_7;
+		L_7 = Expiry_get_Forever_m4351AEE1513AD854D3902AD4CC9AA9E799901DE1(/*hidden argument*/NULL);
+		NullCheck(L_5);
+		InterfaceActionInvoker2< Dictionary_2_t692011309BA94F599C6042A381FC9F8B3CB08399 *, Expiry_t0A9C53DBF1E7B726C2CE0D6777EF236AF9C51610  >::Invoke(3 /* System.Void TealiumUnity::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry) */, TealiumUnity_tE933D2A39E57355E315E0333B382E94E1E5C742C_il2cpp_TypeInfo_var, L_5, L_6, L_7);
 	}
 
-IL_0012:
+IL_0040:
+	{
+		// onInitialized(success);
+		IL2CPP_RUNTIME_CLASS_INIT(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
+		Action_1_tCE2D770918A65CAD277C08C4E8C05385EA267E83 * L_8 = ((TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_StaticFields*)il2cpp_codegen_static_fields_for(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var))->get_onInitialized_5();
+		bool L_9 = ___success0;
+		NullCheck(L_8);
+		Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5(L_8, L_9, /*hidden argument*/Action_1_Invoke_m95E5C9FC67F7B0BDC3CD5E00AC5D4C8A00C97AC5_RuntimeMethod_var);
+	}
+
+IL_004b:
 	{
 		// }
 		return;
@@ -11972,9 +12030,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetFromDataLayer_mE4B598D5297
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral22F3BAAB2501358F68F77B55B5F54106FA5E9513);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4C51D470AC0641F3E2EC6C3FFB38E4016479E1BA);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAA92536F38C607AF7686E47C8B03BD65BC2C4059);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralE2774502F33D6B239EAD1FA8BB0237F98927B1D2);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralFDF0534EBA6EB1A67BBC132BFF33873CDB4D222F);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -12012,7 +12070,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetFromDataLayer_mE4B598D5297
 		String_t* L_4 = V_0;
 		String_t* L_5;
 		L_5 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteralAA92536F38C607AF7686E47C8B03BD65BC2C4059, L_4, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_5, _stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)138), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_5, _stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)138), /*hidden argument*/NULL);
 	}
 
 IL_0052:
@@ -12084,7 +12142,7 @@ IL_007a:
 		String_t* L_17 = V_3;
 		String_t* L_18;
 		L_18 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteralE2774502F33D6B239EAD1FA8BB0237F98927B1D2, L_17, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_18, _stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)146), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_18, _stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)146), /*hidden argument*/NULL);
 	}
 
 IL_00a6:
@@ -12148,8 +12206,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetConsentStatus_m21C0142321F
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral4827BEB48F29F752BC93D6F0267F5475FED87286);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral8B007FEEE7F01F5720797883DA11C9E9CB1DEA9E);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		s_Il2CppMethodInitialized = true;
 	}
 	ConsentStatus_t5219A98C05BF93FF9210D952B69AC47D05DD4275  V_0;
@@ -12164,7 +12222,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetConsentStatus_m21C0142321F
 		L_1 = ConsentStatus_get_Value_m3D4D2B61997537368BC42C33003E0B2B1C207683_inline((ConsentStatus_t5219A98C05BF93FF9210D952B69AC47D05DD4275 *)(&V_0), /*hidden argument*/NULL);
 		String_t* L_2;
 		L_2 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteral8B007FEEE7F01F5720797883DA11C9E9CB1DEA9E, L_1, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_2, _stringLiteral4827BEB48F29F752BC93D6F0267F5475FED87286, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)152), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_2, _stringLiteral4827BEB48F29F752BC93D6F0267F5475FED87286, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)152), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -12198,8 +12256,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetConsentCategories_mBE30549
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_U3CGetConsentCategoriesU3Eb__31_0_m2D61AF39E273540056DF8158030FA6051D659612_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tF699958692696720EF8FA6F6D4A55BCD2D1CD775_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEC2B7F0999AB6232F33E80E1C302826259D2C491);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -12209,7 +12267,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetConsentCategories_mBE30549
 	List_1_t3F3B41E08D663A886693A5C3F202EDB3D8914117 * G_B1_1 = NULL;
 	{
 		// TealiumLogger.Log("Consent Categories: ");
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteralEC2B7F0999AB6232F33E80E1C302826259D2C491, _stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)155), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteralEC2B7F0999AB6232F33E80E1C302826259D2C491, _stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)155), /*hidden argument*/NULL);
 		// List<ConsentCategories> caetgories = TealiumUnityPlugin.GetConsentCategories();
 		IL2CPP_RUNTIME_CLASS_INIT(TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
 		List_1_t3F3B41E08D663A886693A5C3F202EDB3D8914117 * L_0;
@@ -12253,9 +12311,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetVisitorId_mB35F1FB2E242356
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&TealiumUnityPlugin_t5D2B6AAC506D8B4012CC6331BAA029D90FDBF175_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralA87AE8C2F7BB38664D171D518236DD501272A587);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD103784ED04668A8FD0831522D70B3FC4A8CB604);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -12265,7 +12323,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_GetVisitorId_mB35F1FB2E242356
 		L_0 = TealiumUnityPlugin_GetVisitorId_mC32629F5F5894F2957A052E5514856D8F45424AB(/*hidden argument*/NULL);
 		String_t* L_1;
 		L_1 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteralA87AE8C2F7BB38664D171D518236DD501272A587, L_0, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_1, _stringLiteralD103784ED04668A8FD0831522D70B3FC4A8CB604, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)159), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_1, _stringLiteralD103784ED04668A8FD0831522D70B3FC4A8CB604, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)159), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -12490,7 +12548,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_PrintPayload_mF90DFFBD8D8E484
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_t046ADD1F0B1F4BD3323ABEE6BA9E41C189BDC21A_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral1168E92C164109D6220480DEDA987085B2A21155);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6FAC6B4EA422E003DA0FEDE5FBA42BBF299FCF44);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		s_Il2CppMethodInitialized = true;
 	}
 	String_t* V_0 = NULL;
@@ -12514,7 +12572,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIBindings_PrintPayload_mF90DFFBD8D8E484
 		String_t* L_4 = V_0;
 		String_t* L_5;
 		L_5 = String_Concat_m89EAB4C6A96B0E5C3F87300D6BE78D386B9EFC44(L_3, _stringLiteral1168E92C164109D6220480DEDA987085B2A21155, L_4, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_5, _stringLiteral6FAC6B4EA422E003DA0FEDE5FBA42BBF299FCF44, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)205), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_5, _stringLiteral6FAC6B4EA422E003DA0FEDE5FBA42BBF299FCF44, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)205), /*hidden argument*/NULL);
 	}
 
 IL_002a:
@@ -13448,9 +13506,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CInitializeU3Eb__20_0_m77F67E5
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CU3Ec_tF699958692696720EF8FA6F6D4A55BCD2D1CD775_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral3A0E6CD4C2B4B5BA22C8E682F54AA2B34D752309);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral97AEAF8286750D25335E64A2CADB274C5AD23115);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralCCA211C529D0094B1F45AD2162763BFF2B90C721);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		s_Il2CppMethodInitialized = true;
 	}
 	Action_1_t6B2EAA2D3491CBA6FEF1ECDF624EEF00DFD194C1 * G_B3_0 = NULL;
@@ -13471,7 +13529,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CInitializeU3Eb__20_0_m77F67E5
 	}
 	{
 		// TealiumLogger.Log(" *** TealiumUnityPlugin Successfully Initialized *** ");
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteralCCA211C529D0094B1F45AD2162763BFF2B90C721, _stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)104), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteralCCA211C529D0094B1F45AD2162763BFF2B90C721, _stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)104), /*hidden argument*/NULL);
 		// TealiumUnityPlugin.SetConsentStatus(ConsentStatus.Consented);
 		ConsentStatus_t5219A98C05BF93FF9210D952B69AC47D05DD4275  L_1;
 		L_1 = ConsentStatus_get_Consented_m9F182B2BFCEC85B322FE586C14E862268023924B(/*hidden argument*/NULL);
@@ -13562,7 +13620,7 @@ IL_0092:
 IL_0098:
 	{
 		// TealiumLogger.Log(" *** TealiumUnityPlugin Failed to Initialize *** ");
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteral97AEAF8286750D25335E64A2CADB274C5AD23115, _stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)110), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteral97AEAF8286750D25335E64A2CADB274C5AD23115, _stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)110), /*hidden argument*/NULL);
 		// });
 		return;
 	}
@@ -13606,13 +13664,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CInitializeU3Eb__20_3_m3A6AD46
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D3C58D1F3CEF1AB927ED915580D68088D68760D);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
 		// TealiumUnityPlugin.SetConsentExpiryListener(() => TealiumLogger.Log("Consent Expired!!"));
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteral9D3C58D1F3CEF1AB927ED915580D68088D68760D, _stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)108), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(_stringLiteral9D3C58D1F3CEF1AB927ED915580D68088D68760D, _stringLiteral69FBC7A041E2A8D2BB53C20F3EBB5DA1C681DF54, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)108), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -13624,7 +13682,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CGetFromDataLayerU3Eb__26_0_mE
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral5AFAA7BAA3AA52751E1A9DD533CF54E0FA75CFB3);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -13635,7 +13693,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CGetFromDataLayerU3Eb__26_0_mE
 		L_1 = VirtFuncInvoker0< String_t* >::Invoke(3 /* System.String System.Object::ToString() */, L_0);
 		String_t* L_2;
 		L_2 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(_stringLiteral5AFAA7BAA3AA52751E1A9DD533CF54E0FA75CFB3, L_1, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_2, _stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)141), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_2, _stringLiteral47E51CB89A03894BCF35AB92221DE66D4828740A, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)141), /*hidden argument*/NULL);
 		return;
 	}
 }
@@ -13646,8 +13704,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CGetConsentCategoriesU3Eb__31_
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
@@ -13656,7 +13714,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CGetConsentCategoriesU3Eb__31_
 		L_0 = ConsentCategories_get_Value_m6AC4948877BE59ACB65340ED08ED4C1F7F80351B_inline((ConsentCategories_tF4E75B1115F8C078535676085F1E013AEAC8FB5A *)(&___category0), /*hidden argument*/NULL);
 		String_t* L_1;
 		L_1 = String_Concat_m4B4AB72618348C5DFBFBA8DED84B9E2EBDB55E1B(L_0, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, /*hidden argument*/NULL);
-		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_1, _stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026, _stringLiteralEA137BC41889BB9269AB7A81B5E26D8EF62BE2B6, ((int32_t)157), /*hidden argument*/NULL);
+		TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4(L_1, _stringLiteral9D22C2A3A26C4E89E2E19093F880B595F695E026, _stringLiteral82666FF19C4F6A293E3DF39137AE0A0E3B129443, ((int32_t)157), /*hidden argument*/NULL);
 		return;
 	}
 }
