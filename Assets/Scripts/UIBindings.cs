@@ -6,58 +6,60 @@ using System.Collections.Generic;
 using TealiumCommon;
 using Newtonsoft.Json;
 
+#nullable enable
+
 public class UIBindings : MonoBehaviour
 {
     [SerializeField]
-    private InputField traceIdInputField;
+    private InputField? traceIdInputField;
     
     [SerializeField]
-    private Button initializeButton;
+    private Button? initializeButton;
 
     [SerializeField]
-    private Button terminateTealiumButton;
+    private Button? terminateTealiumButton;
 
     [SerializeField]
-    private Button joinTraceButton;
+    private Button? joinTraceButton;
 
     [SerializeField]
-    private Button leaveTraceButton;
+    private Button? leaveTraceButton;
 
     [SerializeField]
-    private Button trackEventButton;
+    private Button? trackEventButton;
 
     [SerializeField]
-    private Button trackViewButton;
+    private Button? trackViewButton;
 
     [SerializeField]
-    private Button addToDataLayerButton;
+    private Button? addToDataLayerButton;
 
     [SerializeField]
-    private Button getFromDataLayerButton;
+    private Button? getFromDataLayerButton;
 
     [SerializeField]
-    private Button removeFromDataLayerButton;
+    private Button? removeFromDataLayerButton;
 
     [SerializeField]
-    private Button setConsentStatusButton;
+    private Button? setConsentStatusButton;
     
     [SerializeField]
-    private Button getConsentStatusButton;
+    private Button? getConsentStatusButton;
 
     [SerializeField]
-    private Button setConsentCategoriesButton;
+    private Button? setConsentCategoriesButton;
 
     [SerializeField]
-    private Button getConsentCategoriesButton;
+    private Button? getConsentCategoriesButton;
 
     [SerializeField]
-    private Button getVisitorIdButton;
+    private Button? getVisitorIdButton;
 
     [SerializeField]
-    private Button addRemoteCommandButton;
+    private Button? addRemoteCommandButton;
 
     [SerializeField]
-    private Button removeRemoteCommandButton;
+    private Button? removeRemoteCommandButton;
     private string traceId = "";
     private TealiumConfig config = new TealiumConfig("tealiummobile",
                                                      "demo",
@@ -77,26 +79,27 @@ public class UIBindings : MonoBehaviour
                                                      consentExpiry: new ConsentExpiry(10, TimeUnit.Minutes),
                                                      batchingEnabled: false,
                                                      visitorServiceEnabled: true,
+                                                     customVisitorId: "my_custom_id_123456",
                                                      useRemoteLibrarySettings: true);
 
     void Start() {
-        traceIdInputField.onEndEdit.AddListener(delegate {SetTraceId(traceIdInputField);});
-        initializeButton.onClick.AddListener(Initialize);
-        terminateTealiumButton.onClick.AddListener(TerminateTealium);
-        joinTraceButton.onClick.AddListener(JoinTrace);
-        leaveTraceButton.onClick.AddListener(LeaveTrace);
-        trackEventButton.onClick.AddListener(TrackEvent);
-        trackViewButton.onClick.AddListener(TrackView);
-        addToDataLayerButton.onClick.AddListener(AddToDataLayer);
-        getFromDataLayerButton.onClick.AddListener(GetFromDataLayer);
-        removeFromDataLayerButton.onClick.AddListener(RemoveFromDataLayer);
-        setConsentStatusButton.onClick.AddListener(SetConsentStatus);
-        getConsentStatusButton.onClick.AddListener(GetConsentStatus);
-        setConsentCategoriesButton.onClick.AddListener(SetConsentCategories);
-        getConsentCategoriesButton.onClick.AddListener(GetConsentCategories);
-        getVisitorIdButton.onClick.AddListener(GetVisitorId);
-        addRemoteCommandButton.onClick.AddListener(AddRemoteCommand);
-        removeRemoteCommandButton.onClick.AddListener(RemoveRemoteCommand);
+        traceIdInputField?.onEndEdit.AddListener(delegate {SetTraceId(traceIdInputField);});
+        initializeButton?.onClick.AddListener(Initialize);
+        terminateTealiumButton?.onClick.AddListener(TerminateTealium);
+        joinTraceButton?.onClick.AddListener(JoinTrace);
+        leaveTraceButton?.onClick.AddListener(LeaveTrace);
+        trackEventButton?.onClick.AddListener(TrackEvent);
+        trackViewButton?.onClick.AddListener(TrackView);
+        addToDataLayerButton?.onClick.AddListener(AddToDataLayer);
+        getFromDataLayerButton?.onClick.AddListener(GetFromDataLayer);
+        removeFromDataLayerButton?.onClick.AddListener(RemoveFromDataLayer);
+        setConsentStatusButton?.onClick.AddListener(SetConsentStatus);
+        getConsentStatusButton?.onClick.AddListener(GetConsentStatus);
+        setConsentCategoriesButton?.onClick.AddListener(SetConsentCategories);
+        getConsentCategoriesButton?.onClick.AddListener(GetConsentCategories);
+        getVisitorIdButton?.onClick.AddListener(GetVisitorId);
+        addRemoteCommandButton?.onClick.AddListener(AddRemoteCommand);
+        removeRemoteCommandButton?.onClick.AddListener(RemoveRemoteCommand);
     } 
 
     void Initialize() => TealiumUnityPlugin.Initialize(config, success => {
@@ -125,15 +128,20 @@ public class UIBindings : MonoBehaviour
         }}
     }));
     void TrackView() => TealiumUnityPlugin.Track(new TealiumView("unity_view")); 
-    void AddToDataLayer() => TealiumUnityPlugin.AddToDataLayer(new Dictionary<string, object> {
-        {"test_string", "stringValue"},
-        {"test_list", new List<double> {3.99, 4.00}},
-        {"test_dictionary", new Dictionary<string, string> {{"fizzer", "buzzer"}}}
-    }, Expiry.Session);
+    void AddToDataLayer() { 
+        TealiumUnityPlugin.AddToDataLayer(new Dictionary<string, object> {
+            {"test_string", "stringValue"},
+            {"test_list", new List<double> {3.99, 4.00}},
+            {"test_dictionary", new Dictionary<string, string> {{"fizzer", "buzzer"}}}
+        }, Expiry.Session);
+        TealiumUnityPlugin.AddToDataLayer(new Dictionary<string, object> {
+            {"test_volatile", "stringValue"},
+        }, Expiry.UntilRestart);
+    }
     void GetFromDataLayer() {
-        string? stringValue = (string)TealiumUnityPlugin.GetFromDataLayer("test_string");
-        List<object>? listValue = (List<object>)TealiumUnityPlugin.GetFromDataLayer("test_list");
-        Dictionary<string, object>? dictionaryValue = (Dictionary<string, object>)TealiumUnityPlugin.GetFromDataLayer("test_dictionary");
+        string? stringValue = (string?)TealiumUnityPlugin.GetFromDataLayer("test_string");
+        List<object>? listValue = (List<object>?)TealiumUnityPlugin.GetFromDataLayer("test_list");
+        Dictionary<string, object>? dictionaryValue = (Dictionary<string, object>?)TealiumUnityPlugin.GetFromDataLayer("test_dictionary");
         if (stringValue != null) {
             TealiumLogger.Log($"test_string from dataLayer: {stringValue}");
         }
@@ -153,8 +161,8 @@ public class UIBindings : MonoBehaviour
     void SetConsentCategories() => TealiumUnityPlugin.SetConsentCategories(SetRandomConsentCategories()); 
     void GetConsentCategories() {
         TealiumLogger.Log("Consent Categories: ");
-        List<ConsentCategories> caetgories = TealiumUnityPlugin.GetConsentCategories();
-        caetgories.ForEach(category => TealiumLogger.Log($"{category.Value} "));
+        List<ConsentCategories> categories = TealiumUnityPlugin.GetConsentCategories();
+        categories.ForEach(category => TealiumLogger.Log($"{category.Value} "));
     }
     void GetVisitorId()  => TealiumLogger.Log($"Visitor Id: {TealiumUnityPlugin.GetVisitorId()}");
     void TerminateTealium() => TealiumUnityPlugin.Terminate();

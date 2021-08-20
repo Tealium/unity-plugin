@@ -7,12 +7,14 @@ using UnityEngine;
 using TealiumCommon;
 using System;
 
+#nullable enable
+
 public class TealiumAndroid : MonoBehaviour, TealiumUnity
 {
 
     static TealiumAndroid _instance = new GameObject("TealiumAndroid").AddComponent<TealiumAndroid>();
     private const string KOTLIN_STATIC_TEALIUM = "com.tealium.TealiumUnity";
-    private static AndroidJavaClass _tealiumUnityObject;
+    private static AndroidJavaClass? _tealiumUnityObject;
 
     public void Initialize(TealiumConfig config, Action<bool>? callback = null)
     {
@@ -21,11 +23,11 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
         AndroidJavaObject context = activity.Call<AndroidJavaObject>("getApplicationContext");
         _tealiumUnityObject = new AndroidJavaClass(KOTLIN_STATIC_TEALIUM);
 
-        _tealiumUnityObject.CallStatic("initialize", context, JsonConvert.SerializeObject(config));
+        _tealiumUnityObject?.CallStatic("initialize", context, JsonConvert.SerializeObject(config));
     }
     public void Terminate()
     {
-        _tealiumUnityObject.CallStatic("terminate");
+        _tealiumUnityObject?.CallStatic("terminate");
     }
 
     public void Track(TealiumDispatch dispatch)
@@ -41,15 +43,15 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
             TealiumView tealView = (TealiumView)dispatch;
             payload = JsonConvert.SerializeObject(tealView);
         }
-        _tealiumUnityObject.CallStatic("track", payload);
+        _tealiumUnityObject?.CallStatic("track", payload);
     }
 
     public void AddToDataLayer(Dictionary<string, object> data, Expiry expiry) =>
-        _tealiumUnityObject.CallStatic("addToDataLayer", JsonConvert.SerializeObject(data), expiry.Value);
+        _tealiumUnityObject?.CallStatic("addToDataLayer", JsonConvert.SerializeObject(data), expiry.Value);
 
     public object? GetFromDataLayer(string id)
     {
-        string? data = _tealiumUnityObject.CallStatic<string>("getFromDataLayer", id);
+        string? data = _tealiumUnityObject?.CallStatic<string>("getFromDataLayer", id);
         if (data == null) {
             return null;
         }
@@ -59,23 +61,23 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
     }
 
     public void RemoveFromDataLayer(List<string> keys) =>
-        _tealiumUnityObject.CallStatic("removeFromDataLayer", JsonConvert.SerializeObject(keys));
+        _tealiumUnityObject?.CallStatic("removeFromDataLayer", JsonConvert.SerializeObject(keys));
 
-    public void SetConsentStatus(ConsentStatus status) => _tealiumUnityObject.CallStatic("setConsentStatus", status.Value);
+    public void SetConsentStatus(ConsentStatus status) => _tealiumUnityObject?.CallStatic("setConsentStatus", status.Value);
 
 
     public ConsentStatus GetConsentStatus()
     {
-        string status = _tealiumUnityObject.CallStatic<string>("getConsentStatus");
-        return ConsentStatus.FromString(status);
+        string? status = _tealiumUnityObject?.CallStatic<string>("getConsentStatus");
+        return status != null ? ConsentStatus.FromString(status) : ConsentStatus.Unknown;
     }
 
     public void SetConsentCategories(List<ConsentCategories> categories) =>
-        _tealiumUnityObject.CallStatic("setConsentCategories", JsonConvert.SerializeObject(categories));
+        _tealiumUnityObject?.CallStatic("setConsentCategories", JsonConvert.SerializeObject(categories));
 
     public List<ConsentCategories>? GetConsentCategories()
     {
-        string? categories = _tealiumUnityObject.CallStatic<string>("getConsentCategories");
+        string? categories = _tealiumUnityObject?.CallStatic<string>("getConsentCategories");
         if (categories == null) {
             return null;
         }
@@ -85,27 +87,27 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
 
     public void AddRemoteCommand(string id, Action<Dictionary<string, object>> callback)
     {
-        _tealiumUnityObject.CallStatic("addRemoteCommand", id);
+        _tealiumUnityObject?.CallStatic("addRemoteCommand", id);
     }
 
     public void RemoveRemoteCommand(string id)
     {
-        _tealiumUnityObject.CallStatic("removeRemoteCommand", id);
+        _tealiumUnityObject?.CallStatic("removeRemoteCommand", id);
     }
 
     public void JoinTrace(string id)
     {
-        _tealiumUnityObject.CallStatic("joinTrace", id);
+        _tealiumUnityObject?.CallStatic("joinTrace", id);
     }
 
     public void LeaveTrace()
     {
-        _tealiumUnityObject.CallStatic("leaveTrace");
+        _tealiumUnityObject?.CallStatic("leaveTrace");
     }
 
     public string? GetVisitorId()
     {
-        return _tealiumUnityObject.CallStatic<string>("getVisitorId");
+        return _tealiumUnityObject?.CallStatic<string>("getVisitorId");
     }
 
     public void SetVisitorServiceListener(Action<Dictionary<string, object>> callback) {
