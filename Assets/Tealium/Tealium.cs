@@ -14,6 +14,8 @@ using static TealiumAndroid;
 using static TealiumiOS;
 #endif
 
+#nullable enable
+
 public interface TealiumUnity
 {
     void Initialize(TealiumConfig config, Action<bool>? callback = null);
@@ -37,7 +39,7 @@ public interface TealiumUnity
 
 public class TealiumUnityPlugin : MonoBehaviour
 {
-    private static TealiumUnity tealium;
+    private static TealiumUnity? tealium = null;
     public static TealiumUnity Tealium
     {
         get
@@ -55,8 +57,8 @@ public class TealiumUnityPlugin : MonoBehaviour
     }
     private static Action<bool>? onInitialized;
     private static Dictionary<string, Action<Dictionary<string, object>>> onRemoteCommandCompletionCallbacks = new Dictionary<string, Action<Dictionary<string, object>>>();
-    private static Action<Dictionary<string, object>> onVisitorServiceDidUpdate;
-    private static Action onConsentExpiration;
+    private static Action<Dictionary<string, object>>? onVisitorServiceDidUpdate;
+    private static Action? onConsentExpiration;
 
     /// <summary>
     /// Initializes Tealium with a [TealiumConfig] object
@@ -131,7 +133,7 @@ public class TealiumUnityPlugin : MonoBehaviour
     ///
     /// </summary>
     /// <returns>[List<ConsentCategories>] The current consent categories for which the user has consented</returns>
-    public static List<ConsentCategories> GetConsentCategories() => Tealium.GetConsentCategories();
+    public static List<ConsentCategories> GetConsentCategories() => Tealium.GetConsentCategories() ?? new List<ConsentCategories>();
 
     /// <summary>
     /// Adds a [RemoteCommand] to the [RemoteCommands] Dispatcher

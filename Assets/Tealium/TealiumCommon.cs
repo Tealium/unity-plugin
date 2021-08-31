@@ -7,12 +7,14 @@ using Newtonsoft.Json.Linq;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
+#nullable enable
+
 namespace TealiumCommon
 {
     public struct Collectors
     {
         private Collectors(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
         public static Collectors AppData { get { return new Collectors("AppData"); } }
         public static Collectors Connectivity { get { return new Collectors("Connectivity"); } }
         public static Collectors DeviceData { get { return new Collectors("DeviceData"); } }
@@ -22,7 +24,7 @@ namespace TealiumCommon
     public struct Dispatchers
     {
         private Dispatchers(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
 
         public static Dispatchers TagManagement { get { return new Dispatchers("TagManagement"); } }
         public static Dispatchers Collect { get { return new Dispatchers("Collect"); } }
@@ -32,7 +34,7 @@ namespace TealiumCommon
     public struct TealiumEnvironment
     {
         private TealiumEnvironment(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
 
         public static TealiumEnvironment DEV { get { return new TealiumEnvironment("dev"); } }
         public static TealiumEnvironment QA { get { return new TealiumEnvironment("qa"); } }
@@ -42,7 +44,7 @@ namespace TealiumCommon
     public struct Expiry
     {
         private Expiry(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
 
         public static Expiry Forever { get { return new Expiry("forever"); } }
         public static Expiry Session { get { return new Expiry("session"); } }
@@ -52,7 +54,7 @@ namespace TealiumCommon
     public struct ConsentPolicy
     {
         private ConsentPolicy(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
 
         public static ConsentPolicy GDPR { get { return new ConsentPolicy("gdpr"); } }
         public static ConsentPolicy CCPA { get { return new ConsentPolicy("ccpa"); } }
@@ -61,7 +63,7 @@ namespace TealiumCommon
     public struct ConsentStatus
     {
         private ConsentStatus(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
 
         public static ConsentStatus Consented { get { return new ConsentStatus("consented"); } }
         public static ConsentStatus NotConsented { get { return new ConsentStatus("notConsented"); } }
@@ -73,7 +75,7 @@ namespace TealiumCommon
     public struct LogLevel
     {
         private LogLevel(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
         public static LogLevel Dev { get { return new LogLevel("dev"); } }
         public static LogLevel Qa { get { return new LogLevel("qa"); } }
         public static LogLevel Prod { get { return new LogLevel("prod"); } }
@@ -83,7 +85,7 @@ namespace TealiumCommon
     public struct ConsentCategories
     {
         private ConsentCategories(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
         public static ConsentCategories Analytics { get { return new ConsentCategories("analytics"); } }
         public static ConsentCategories Affiliates { get { return new ConsentCategories("affiliates"); } }
         public static ConsentCategories DisplayAds { get { return new ConsentCategories("displayAds"); } }
@@ -106,7 +108,7 @@ namespace TealiumCommon
     public struct TimeUnit
     {
         private TimeUnit(string value) { Value = value; }
-        public string Value { get; set; }
+        public string Value { get; }
         public static TimeUnit Minutes { get { return new TimeUnit("minutes"); } }
         public static TimeUnit Hours { get { return new TimeUnit("hours"); } }
         public static TimeUnit Days { get { return new TimeUnit("days"); } }
@@ -213,31 +215,33 @@ namespace TealiumCommon
 
     public abstract class TealiumDispatch
     {
-        public Dictionary<string, object> dataLayer;
-        public string type;
+        public readonly Dictionary<string, object>? dataLayer;
+        public readonly string type;
+
+        protected TealiumDispatch(String type, Dictionary<string, object>? dataLayer) 
+        {
+            this.type = type;
+            this.dataLayer = dataLayer;
+        }
     }
 
     public sealed class TealiumView : TealiumDispatch
     {
-        public string type = "view";
         public string viewName;
-        public Dictionary<string, object> dataLayer;
-        public TealiumView(string name, Dictionary<string, object>? dataLayer = null)
+
+        public TealiumView(string name, Dictionary<string, object>? dataLayer = null) : base("view", dataLayer)
         {
             this.viewName = name;
-            this.dataLayer = dataLayer;
         }
     }
 
     public sealed class TealiumEvent : TealiumDispatch
     {
-        public string type = "event";
         public string eventName;
-        public Dictionary<string, object> dataLayer;
-        public TealiumEvent(string name, Dictionary<string, object>? dataLayer = null)
+
+        public TealiumEvent(string name, Dictionary<string, object>? dataLayer = null) : base("event", dataLayer)
         {
             this.eventName = name;
-            this.dataLayer = dataLayer;
         }
     }
 
@@ -246,7 +250,7 @@ namespace TealiumCommon
         // usage : Logger.Log("Something Happened");
         //            : Logger.Log($" Log some variable { i }");
         //
-        public static void Log(string msg, [CallerMemberName] string methodName = null, [CallerFilePath] string fileName = null, [CallerLineNumber] int lineNo = -1)
+        public static void Log(string msg, [CallerMemberName] string? methodName = null, [CallerFilePath] string? fileName = null, [CallerLineNumber] int lineNo = -1)
         {
             UnityEngine.Debug.LogFormat( LogType.Log, LogOption.NoStacktrace, null, "{0}", $"{msg}" ?? "NULL" );
         }

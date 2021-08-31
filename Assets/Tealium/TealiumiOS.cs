@@ -11,6 +11,8 @@ using System.IO;
 using TealiumCommon;
 using AOT;
 
+#nullable enable
+
 public sealed class TealiumiOS : TealiumUnity
 {
 

@@ -1,9 +1,4 @@
-import TealiumCore
-import TealiumCollect
-import TealiumLifecycle
-import TealiumRemoteCommands
-import TealiumTagManagement
-import TealiumVisitorService
+import TealiumSwift
 
 @objc public protocol TealiumUnityInitializeDelegate {
     func didInitialize(_ success: Bool)

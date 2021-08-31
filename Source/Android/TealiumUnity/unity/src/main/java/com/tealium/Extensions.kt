@@ -55,7 +55,10 @@ fun toTealiumConfig(app: Application, configObj: JSONObject): TealiumConfig? {
         missingRequiredProperty(KEY_CONFIG_ENV)
         Environment.PROD
     }
-    val collectors = (configObj.optJSONArray(KEY_CONFIG_COLLECTORS))?.toCollectorFactories()
+    val collectors = (configObj.optJSONArray(KEY_CONFIG_COLLECTORS))?.also {
+        // Swift has TimeCollector enabled by default
+        it.put(COLLECTORS_TIME)
+    }?.toCollectorFactories()
     val modules = mutableListOf<Any>().apply {
         (configObj.optBoolean(KEY_VISITOR_SERVICE_ENABLED, false)).let {
             if (it) add(MODULES_VISITOR_SERVICE)
@@ -83,6 +86,11 @@ fun toTealiumConfig(app: Application, configObj: JSONObject): TealiumConfig? {
         // Data Source Id
         configObj.isNull(KEY_CONFIG_DATA_SOURCE).let {
             if (!it) dataSourceId = configObj.getString(KEY_CONFIG_DATA_SOURCE)
+        }
+
+        // Custom Visitor Id
+        configObj.isNull(KEY_CUSTOM_VISITOR_ID).let {
+            if (!it) existingVisitorId = configObj.getString(KEY_CUSTOM_VISITOR_ID)
         }
 
         // Collect Settings
@@ -200,6 +208,7 @@ fun expiryFromString(name: String?) =
     if (!name.isNullOrBlank()) {
         when (name.toLowerCase(Locale.ROOT)) {
             "forever" -> Expiry.FOREVER
+            "untilrestart" -> Expiry.UNTIL_RESTART
             else -> Expiry.SESSION
         }
     } else Expiry.SESSION

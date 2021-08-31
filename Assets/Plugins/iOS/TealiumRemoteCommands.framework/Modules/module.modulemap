@@ -1,4 +1,0 @@
-framework module TealiumRemoteCommands {
-  header "TealiumRemoteCommands-Swift.h"
-  requires objc
-}
