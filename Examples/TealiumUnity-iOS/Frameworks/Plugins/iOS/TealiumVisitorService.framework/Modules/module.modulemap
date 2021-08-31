@@ -1,0 +1,4 @@
+framework module TealiumVisitorService {
+  header "TealiumVisitorService-Swift.h"
+  requires objc
+}

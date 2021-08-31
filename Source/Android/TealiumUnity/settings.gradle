@@ -1,1 +1,3 @@
-include 'tealium-unity'
+include ':unity'
+include ':app'
+rootProject.name = "Tealium Unity"

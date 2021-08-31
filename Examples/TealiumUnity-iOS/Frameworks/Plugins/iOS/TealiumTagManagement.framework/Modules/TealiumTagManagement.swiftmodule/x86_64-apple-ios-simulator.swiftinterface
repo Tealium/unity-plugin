@@ -1,0 +1,50 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name TealiumTagManagement
+import Foundation
+import Swift
+import TealiumCore
+import UIKit
+import WebKit
+extension TealiumConfig {
+  public var webViewDelegates: [WebKit.WKNavigationDelegate]? {
+    get
+    set
+  }
+  public var webviewProcessPool: WebKit.WKProcessPool? {
+    get
+    set
+  }
+  public var webviewConfig: WebKit.WKWebViewConfiguration {
+    get
+    set
+  }
+  public var tagManagementOverrideURL: Swift.String? {
+    get
+    set
+  }
+  public var webviewURL: Foundation.URL? {
+    get
+  }
+  public var rootView: UIKit.UIView? {
+    get
+    set
+  }
+  public var shouldAddCookieObserver: Swift.Bool {
+    get
+    set
+  }
+}
+extension Tealium {
+  public func updateRootView(_ view: UIKit.UIView)
+}
+extension Dispatchers {
+  public static let TagManagement: TealiumTagManagement.TagManagementModule.Type
+}
+public class TagManagementModule : TealiumCore.Dispatcher {
+  final public let id: Swift.String
+  public var config: TealiumCore.TealiumConfig
+  required public init(config: TealiumCore.TealiumConfig, delegate: TealiumCore.ModuleDelegate, completion: TealiumCore.ModuleCompletion?)
+  public func dynamicTrack(_ track: TealiumCore.TealiumRequest, completion: TealiumCore.ModuleCompletion?)
+  @objc deinit
+}
