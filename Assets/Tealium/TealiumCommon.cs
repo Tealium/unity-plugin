@@ -128,6 +128,7 @@ namespace TealiumCommon
         public string? overrideCollectURL;
         public string? overrideCollectBatchURL;
         public string? overrideCollectDomain;
+        public string? overrideCollectProfile;
         public string? overrideLibrarySettingsURL;
         public string? overrideTagManagementURL;
         public bool? deepLinkTrackingEnabled;
@@ -140,6 +141,7 @@ namespace TealiumCommon
         public bool? lifecycleAutotrackingEnabled;
         public bool? useRemoteLibrarySettings;
         public bool? visitorServiceEnabled;
+        public bool? sessionCountingEnabled;
 
         public TealiumConfig(
             string account,
@@ -154,6 +156,7 @@ namespace TealiumCommon
             string? overrideCollectURL = null,
             string? overrideCollectBatchURL = null,
             string? overrideCollectDomain = null,
+            string? overrideCollectProfile = null,
             string? overrideLibrarySettingsURL = null,
             string? overrideTagManagementURL = null,
             bool? deepLinkTrackingEnabled = null,
@@ -165,7 +168,8 @@ namespace TealiumCommon
             bool? batchingEnabled = null,
             bool? lifecycleAutotrackingEnabled = null,
             bool? useRemoteLibrarySettings = null,
-            bool? visitorServiceEnabled = null
+            bool? visitorServiceEnabled = null,
+            bool? sessionCountingEnabled = null
      )
         {
             this.account = account;
@@ -179,6 +183,7 @@ namespace TealiumCommon
             this.overrideCollectURL = overrideCollectURL;
             this.overrideCollectBatchURL = overrideCollectBatchURL;
             this.overrideCollectDomain = overrideCollectDomain;
+            this.overrideCollectProfile = overrideCollectProfile;
             this.overrideLibrarySettingsURL = overrideLibrarySettingsURL;
             this.overrideTagManagementURL = overrideTagManagementURL;
             this.deepLinkTrackingEnabled = deepLinkTrackingEnabled;
@@ -191,6 +196,7 @@ namespace TealiumCommon
             this.lifecycleAutotrackingEnabled = lifecycleAutotrackingEnabled;
             this.useRemoteLibrarySettings = useRemoteLibrarySettings;
             this.visitorServiceEnabled = visitorServiceEnabled;
+            this.sessionCountingEnabled = sessionCountingEnabled;
         }
 
     }

@@ -7,6 +7,7 @@ import com.tealium.core.Tealium
 import com.tealium.core.consent.ConsentCategory
 import com.tealium.core.consent.ConsentStatus
 import com.tealium.remotecommanddispatcher.remoteCommands
+import com.tealium.remotecommands.BuildConfig
 import com.unity3d.player.UnityPlayer
 import org.json.JSONArray
 import org.json.JSONObject
@@ -36,6 +37,12 @@ object TealiumUnity {
                 "false"
             )
         }
+    }
+
+    @JvmStatic
+    fun gatherTrackData(): String {
+        val data = tealium?.gatherTrackData()
+        return JSONObject(data?.toMap() ?: emptyMap<String, Any>()).toString()
     }
 
     @JvmStatic

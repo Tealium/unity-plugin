@@ -41,6 +41,7 @@ public enum TealiumUnityConstants {
         case useRemoteLibrarySettings
         case logLevel
         case overrideCollectURL
+        case overrideCollectProfile
         case batchingEnabled
         case overrideCollectBatchURL
         case overrideTagManagementURL
@@ -49,6 +50,7 @@ public enum TealiumUnityConstants {
         case deepLinkTrackingEnabled
         case visitorServiceEnabled
         case memoryReportingEnabled
+        case sessionCountingEnabled
     }
     
     enum Dispatch: String {

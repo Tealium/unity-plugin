@@ -30,6 +30,17 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
         _tealiumUnityObject?.CallStatic("terminate");
     }
 
+    public void GatherTrackData(Action<Dictionary<string, object>>? callback = null) {
+        string trackDataString = _tealiumUnityObject?.CallStatic<string>("gatherTrackData");
+        if (trackDataString != null) {
+            Dictionary<string, object> decodedTrackData = JsonConvert.DeserializeObject<Dictionary<string, object>>(trackDataString);
+            Dictionary<string, object> finalTrackData = TealiumHelpers.ConvertValuesToCollections(decodedTrackData);
+            if (callback != null) {
+                callback(finalTrackData);
+            }
+        }
+    }
+
     public void Track(TealiumDispatch dispatch)
     {
         string? payload = null;
@@ -56,7 +67,7 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
             return null;
         }
         Dictionary<string, object> dataDictionary = JsonConvert.DeserializeObject<Dictionary<string, object>>(data);
-        object? dataValue = TealiumUnityPlugin.ToCollections(dataDictionary[id]);
+        object? dataValue = TealiumHelpers.ToCollections(dataDictionary[id]);
         return dataValue;
     }
 
@@ -89,6 +100,7 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
     {
         _tealiumUnityObject?.CallStatic("addRemoteCommand", id);
     }
+    
 
     public void RemoveRemoteCommand(string id)
     {

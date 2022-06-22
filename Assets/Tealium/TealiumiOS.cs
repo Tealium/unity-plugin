@@ -20,6 +20,9 @@ public sealed class TealiumiOS : TealiumUnity
     private static extern void Tealium_Initialize(string config);
 
     [DllImport("__Internal")]
+    private static extern void Tealium_GatherTrackData();
+
+    [DllImport("__Internal")]
     private static extern void Tealium_Track(string dispatch);
 
     [DllImport("__Internal")]
@@ -65,6 +68,9 @@ public sealed class TealiumiOS : TealiumUnity
     private static extern void Tealium_SetInitializeDelegate(InitializeDelegateMessage callback);
 
     [DllImport("__Internal")]
+    private static extern void Tealium_SetTrackDataDelegate(GatherTrackDataDelegateMessage callback);
+
+    [DllImport("__Internal")]
     private static extern void Tealium_SetRemoteCommandDelegate(RemoteCommandDelegateMessage callback);
 
     [DllImport("__Internal")]
@@ -76,6 +82,11 @@ public sealed class TealiumiOS : TealiumUnity
     [MonoPInvokeCallback(typeof(InitializeDelegateMessage))] 
     private static void initializationResponseReceived(bool success) {
         TealiumUnityPlugin.OnInitialized(success);
+    }
+    private delegate void GatherTrackDataDelegateMessage(string trackData);
+    [MonoPInvokeCallback(typeof(GatherTrackDataDelegateMessage))]
+    private static void trackDataResponseReceived(string trackData) {
+        TealiumUnityPlugin.OnTrackDataCompletion(trackData);
     }
     private delegate void RemoteCommandDelegateMessage(string payload);
     [MonoPInvokeCallback(typeof(RemoteCommandDelegateMessage))]
@@ -99,6 +110,14 @@ public sealed class TealiumiOS : TealiumUnity
         string? configString = JsonConvert.SerializeObject(config);
         Tealium_Initialize(configString);
     }
+
+    public void GatherTrackData(Action<Dictionary<string, object>>? callback = null) {
+        if (callback != null) {
+            Tealium_SetTrackDataDelegate(trackDataResponseReceived);
+        }
+        Tealium_GatherTrackData();
+    }
+
     public void Terminate() => Tealium_Terminate();
 
     public void Track(TealiumDispatch dispatch) {
@@ -118,7 +137,7 @@ public sealed class TealiumiOS : TealiumUnity
             return null;
         }
         Dictionary<string, object> valueDictionary = JsonConvert.DeserializeObject<Dictionary<string, object>>(valueString);
-        object value = TealiumUnityPlugin.ToCollections(valueDictionary[id]);
+        object value = TealiumHelpers.ToCollections(valueDictionary[id]);
         return value;
     }
     public void RemoveFromDataLayer(List<string> keys) {

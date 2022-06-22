@@ -35,6 +35,9 @@ public class UIBindings : MonoBehaviour
     private Button? addToDataLayerButton;
 
     [SerializeField]
+    private Button? gatherTrackDataButton;
+
+    [SerializeField]
     private Button? getFromDataLayerButton;
 
     [SerializeField]
@@ -85,6 +88,7 @@ public class UIBindings : MonoBehaviour
     void Start() {
         traceIdInputField?.onEndEdit.AddListener(delegate {SetTraceId(traceIdInputField);});
         initializeButton?.onClick.AddListener(Initialize);
+        gatherTrackDataButton?.onClick.AddListener(GatherTrackData);
         terminateTealiumButton?.onClick.AddListener(TerminateTealium);
         joinTraceButton?.onClick.AddListener(JoinTrace);
         leaveTraceButton?.onClick.AddListener(LeaveTrace);
@@ -113,6 +117,8 @@ public class UIBindings : MonoBehaviour
            TealiumLogger.Log(" *** TealiumUnityPlugin Failed to Initialize *** "); 
         }
     });
+
+    void GatherTrackData() => TealiumUnityPlugin.GatherTrackData((callback) => PrintPayload("Gather Track Data Response: ", callback));
     void JoinTrace() => TealiumUnityPlugin.JoinTrace(traceId);
     void LeaveTrace() => TealiumUnityPlugin.LeaveTrace(); 
     void TrackEvent() => TealiumUnityPlugin.Track(new TealiumEvent("unity_event", new Dictionary<string, object> {
