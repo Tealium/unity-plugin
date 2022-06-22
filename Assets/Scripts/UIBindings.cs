@@ -65,7 +65,7 @@ public class UIBindings : MonoBehaviour
     private Button? removeRemoteCommandButton;
     private string traceId = "";
     private TealiumConfig config = new TealiumConfig("tealiummobile",
-                                                     "demo",
+                                                     "tyler-test",
                                                      TealiumEnvironment.DEV,
                                                      new List<Dispatchers> { 
                                                         Dispatchers.TagManagement,
@@ -76,12 +76,13 @@ public class UIBindings : MonoBehaviour
                                                         Collectors.DeviceData,
                                                         Collectors.Lifecycle,
                                                         Collectors.Connectivity },
-                                                     dataSource: "abc123",
                                                      logLevel: LogLevel.Dev,
                                                      consentPolicy: ConsentPolicy.GDPR,
+                                                     overrideCollectProfile: "override_collect_profile_key_test",
                                                      consentExpiry: new ConsentExpiry(10, TimeUnit.Minutes),
                                                      batchingEnabled: false,
                                                      visitorServiceEnabled: true,
+                                                     sessionCountingEnabled: true,
                                                      customVisitorId: "my_custom_id_123456",
                                                      useRemoteLibrarySettings: true);
 
