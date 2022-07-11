@@ -1904,6 +1904,7 @@ MonoBehaviour:
   trackEventButton: {fileID: 368232795}
   trackViewButton: {fileID: 1767856974}
   addToDataLayerButton: {fileID: 209769344}
+  gatherTrackDataButton: {fileID: 1008387999}
   getFromDataLayerButton: {fileID: 892082727}
   removeFromDataLayerButton: {fileID: 193789852}
   setConsentStatusButton: {fileID: 1504087900}
