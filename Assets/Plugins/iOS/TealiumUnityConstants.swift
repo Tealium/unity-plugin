@@ -44,6 +44,7 @@ public enum TealiumUnityConstants {
         case batchingEnabled
         case overrideCollectBatchURL
         case overrideCollectProfile
+        case overrideCollectDomain
         case overrideTagManagementURL
         case overrideLibrarySettingsURL
         case qrTraceEnabled

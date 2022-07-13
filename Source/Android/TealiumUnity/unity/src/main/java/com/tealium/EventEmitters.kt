@@ -5,7 +5,6 @@ import com.tealium.core.consent.ConsentManagementPolicy
 import com.tealium.core.consent.ConsentStatus
 import com.tealium.core.consent.UserConsentPreferences
 import com.tealium.core.messaging.UserConsentPreferencesUpdatedListener
-import com.tealium.remotecommands.BuildConfig
 import com.tealium.remotecommands.RemoteCommand
 import com.tealium.visitorservice.VisitorProfile
 import com.tealium.visitorservice.VisitorUpdatedListener

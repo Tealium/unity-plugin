@@ -65,7 +65,7 @@ public class UIBindings : MonoBehaviour
     private Button? removeRemoteCommandButton;
     private string traceId = "";
     private TealiumConfig config = new TealiumConfig("tealiummobile",
-                                                     "tyler-test",
+                                                     "demo",
                                                      TealiumEnvironment.DEV,
                                                      new List<Dispatchers> { 
                                                         Dispatchers.TagManagement,
