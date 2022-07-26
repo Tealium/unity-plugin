@@ -35,6 +35,9 @@ public class UIBindings : MonoBehaviour
     private Button? addToDataLayerButton;
 
     [SerializeField]
+    private Button? gatherTrackDataButton;
+
+    [SerializeField]
     private Button? getFromDataLayerButton;
 
     [SerializeField]
@@ -73,18 +76,20 @@ public class UIBindings : MonoBehaviour
                                                         Collectors.DeviceData,
                                                         Collectors.Lifecycle,
                                                         Collectors.Connectivity },
-                                                     dataSource: "abc123",
                                                      logLevel: LogLevel.Dev,
                                                      consentPolicy: ConsentPolicy.GDPR,
+                                                     overrideCollectProfile: "override_collect_profile_key_test",
                                                      consentExpiry: new ConsentExpiry(10, TimeUnit.Minutes),
                                                      batchingEnabled: false,
                                                      visitorServiceEnabled: true,
+                                                     sessionCountingEnabled: true,
                                                      customVisitorId: "my_custom_id_123456",
                                                      useRemoteLibrarySettings: true);
 
     void Start() {
         traceIdInputField?.onEndEdit.AddListener(delegate {SetTraceId(traceIdInputField);});
         initializeButton?.onClick.AddListener(Initialize);
+        gatherTrackDataButton?.onClick.AddListener(GatherTrackData);
         terminateTealiumButton?.onClick.AddListener(TerminateTealium);
         joinTraceButton?.onClick.AddListener(JoinTrace);
         leaveTraceButton?.onClick.AddListener(LeaveTrace);
@@ -113,6 +118,8 @@ public class UIBindings : MonoBehaviour
            TealiumLogger.Log(" *** TealiumUnityPlugin Failed to Initialize *** "); 
         }
     });
+
+    void GatherTrackData() => TealiumUnityPlugin.GatherTrackData((callback) => PrintPayload("Gather Track Data Response: ", callback));
     void JoinTrace() => TealiumUnityPlugin.JoinTrace(traceId);
     void LeaveTrace() => TealiumUnityPlugin.LeaveTrace(); 
     void TrackEvent() => TealiumUnityPlugin.Track(new TealiumEvent("unity_event", new Dictionary<string, object> {

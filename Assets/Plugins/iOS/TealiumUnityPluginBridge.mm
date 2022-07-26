@@ -29,17 +29,21 @@ char* TEALCStringToString(const NSString* nsString)
 #pragma mark - Delegation
 
 InitializeDelegateCallbackFunction initializeDelegate = NULL;
+TrackDataDelegateCallbackFunction trackDataDelegate = NULL;
 RemoteCommandDelegateCallbackFunction remoteCommandDelegate = NULL;
 VisitorServiceDelegateCallbackFunction visitorServiceDelegate = NULL;
 ConsentExpiryDelegateCallbackFunction consentExpiryDelegate = NULL;
 
-@interface TealiumUnityDelegateBridge: NSObject<TealiumUnityInitializeDelegate,
+@interface TealiumUnityDelegateBridge: NSObject<
+    TealiumUnityInitializeDelegate,
+    TealiumUnityTrackDataDeletage,
     TealiumUnityRemoteCommandDelegate,
     TealiumUnityVisitorServiceDelegate, 
     TealiumConsentExpiryDelegate>
 @end
 
 static TealiumUnityDelegateBridge *__initalizeDelegate = nil;
+static TealiumUnityDelegateBridge *__trackDataDelegate = nil;
 static TealiumUnityDelegateBridge *__remoteCommandDelegate = nil;
 static TealiumUnityDelegateBridge *__visitorServiceDelegate = nil;
 static TealiumUnityDelegateBridge *__consentExpiryDelegate = nil;
@@ -50,6 +54,13 @@ static TealiumUnityDelegateBridge *__consentExpiryDelegate = nil;
     if (initializeDelegate != NULL) {
         initializeDelegate(success);
      }
+}
+
+-(void)didReceiveTrackDataWithData:(NSString* _Nullable)data {
+    char* cTrackData = TEALCStringToString(data);
+    if (trackDataDelegate != NULL) {
+        trackDataDelegate(cTrackData);
+    }
 }
 
 -(void)didReceiveRemoteCommandWith:(NSString *)payload {
@@ -80,6 +91,10 @@ extern "C"
     void Tealium_Initialize(const char* cConfig) {
         NSString *config = TEALStringFromCString(cConfig);
         [[TealiumUnityPlugin shared] initialize:config];
+    }
+
+    void Tealium_GatherTrackData() {
+        [[TealiumUnityPlugin shared] gatherTrackData];
     }
 
     void Tealium_Terminate() {
@@ -160,6 +175,14 @@ extern "C"
         [TealiumUnityPlugin shared].initializeDelegate = __initalizeDelegate;
         
         initializeDelegate = callback;
+    }
+
+    void Tealium_SetTrackDataDelegate(TrackDataDelegateCallbackFunction callback) {
+        if (!__trackDataDelegate) {
+            __trackDataDelegate = [[TealiumUnityDelegateBridge alloc] init];
+        }
+        [TealiumUnityPlugin shared].trackDataDelegate = __trackDataDelegate;
+        trackDataDelegate = callback;
     }
 
     void Tealium_SetRemoteCommandDelegate(RemoteCommandDelegateCallbackFunction callback) {

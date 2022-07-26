@@ -43,12 +43,15 @@ public enum TealiumUnityConstants {
         case overrideCollectURL
         case batchingEnabled
         case overrideCollectBatchURL
+        case overrideCollectProfile
+        case overrideCollectDomain
         case overrideTagManagementURL
         case overrideLibrarySettingsURL
         case qrTraceEnabled
         case deepLinkTrackingEnabled
         case visitorServiceEnabled
         case memoryReportingEnabled
+        case sessionCountingEnabled
     }
     
     enum Dispatch: String {

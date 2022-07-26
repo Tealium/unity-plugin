@@ -4,6 +4,10 @@ import TealiumSwift
     func didInitialize(_ success: Bool)
 }
 
+@objc public protocol TealiumUnityTrackDataDeletage {
+    func didReceiveTrackData(data: String?)
+}
+
 @objc public protocol TealiumUnityRemoteCommandDelegate {
     func didReceiveRemoteCommand(with payload: String?)
 }
@@ -25,6 +29,7 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
     private var config: TealiumConfig?
     
     @objc public weak var initializeDelegate: TealiumUnityInitializeDelegate?
+    @objc public weak var trackDataDelegate: TealiumUnityTrackDataDeletage?
     @objc public weak var remoteCommandDelegate: TealiumUnityRemoteCommandDelegate?
     @objc public weak var visitorServiceDelegate: TealiumUnityVisitorServiceDelegate?
     @objc public weak var consentExpiryDelegate: TealiumConsentExpiryDelegate? {
@@ -117,6 +122,16 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
             return nil
         }
         return jsonString
+    }
+
+    @objc
+    public func gatherTrackData() {
+        tealium?.gatherTrackData(completion: { [weak self] trackData in
+            guard let trackDataString = trackData.jsonString else {
+                return
+            }
+            self?.trackDataDelegate?.didReceiveTrackData(data: trackDataString)
+        })
     }
 
     @objc

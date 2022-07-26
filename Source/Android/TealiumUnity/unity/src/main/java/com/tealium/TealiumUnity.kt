@@ -39,6 +39,12 @@ object TealiumUnity {
     }
 
     @JvmStatic
+    fun gatherTrackData(): String {
+        val data = tealium?.gatherTrackData()
+        return JSONObject(data?.toMap() ?: emptyMap<String, Any>()).toString()
+    }
+
+    @JvmStatic
     fun terminate() {
         tealium = null
         Tealium.destroy(INSTANCE_NAME)

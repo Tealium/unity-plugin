@@ -89,6 +89,10 @@ public extension TealiumUnityPlugin {
             localConfig.overrideCollectURL = overrideCollectURL
         }
         
+        if let overrideCollectProfile = dictionary[.overrideCollectProfile] as? String {
+            localConfig.overrideCollectProfile = overrideCollectProfile
+        }
+
         if let overrideTagManagementURL = dictionary[.overrideTagManagementURL] as? String {
             localConfig.tagManagementOverrideURL = overrideTagManagementURL
         }
@@ -112,6 +116,10 @@ public extension TealiumUnityPlugin {
            visitorServiceEnabled == true {
             configCollectors.append(Collectors.VisitorService)
             localConfig.visitorServiceDelegate = self
+        }
+
+        if let sessionCountingEnabled = dictionary[.sessionCountingEnabled] as? Bool {
+            localConfig.sessionCountingEnabled = sessionCountingEnabled
         }
         
         localConfig.collectors = configCollectors

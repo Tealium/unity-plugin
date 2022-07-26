@@ -2,10 +2,7 @@ package com.tealium
 
 import android.app.Application
 import android.util.Log
-import com.tealium.collectdispatcher.CollectDispatcher
-import com.tealium.collectdispatcher.overrideCollectBatchUrl
-import com.tealium.collectdispatcher.overrideCollectDomain
-import com.tealium.collectdispatcher.overrideCollectUrl
+import com.tealium.collectdispatcher.*
 import com.tealium.core.*
 import com.tealium.core.collection.AppCollector
 import com.tealium.core.collection.ConnectivityCollector
@@ -21,6 +18,7 @@ import com.tealium.lifecycle.isAutoTrackingEnabled
 import com.tealium.remotecommanddispatcher.RemoteCommandDispatcher
 import com.tealium.tagmanagementdispatcher.TagManagementDispatcher
 import com.tealium.tagmanagementdispatcher.overrideTagManagementUrl
+import com.tealium.tagmanagementdispatcher.sessionCountingEnabled
 import com.tealium.visitorservice.VisitorProfile
 import com.tealium.visitorservice.VisitorService
 import org.json.JSONArray
@@ -103,6 +101,9 @@ fun toTealiumConfig(app: Application, configObj: JSONObject): TealiumConfig? {
         configObj.isNull(KEY_COLLECT_OVERRIDE_DOMAIN).let {
             if (!it) overrideCollectDomain = configObj.getString(KEY_COLLECT_OVERRIDE_DOMAIN)
         }
+        configObj.isNull(KEY_COLLECT_OVERRIDE_PROFILE).let {
+            if (!it) overrideCollectProfile = configObj.getString(KEY_COLLECT_OVERRIDE_PROFILE)
+        }
 
         // Library Settings
         configObj.isNull(KEY_SETTINGS_OVERRIDE_URL).let {
@@ -165,6 +166,10 @@ fun toTealiumConfig(app: Application, configObj: JSONObject): TealiumConfig? {
         configObj.isNull(KEY_LIFECYCLE_AUTO_TRACKING_ENABLED).let {
             if (!it) isAutoTrackingEnabled =
                 configObj.getBoolean(KEY_LIFECYCLE_AUTO_TRACKING_ENABLED)
+        }
+
+        configObj.isNull(KEY_SESSION_COUNTING_ENABLED).let {
+            if (!it) sessionCountingEnabled = configObj.getBoolean(KEY_SESSION_COUNTING_ENABLED)
         }
     }
 

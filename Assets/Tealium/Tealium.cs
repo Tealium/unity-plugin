@@ -19,6 +19,7 @@ using static TealiumiOS;
 public interface TealiumUnity
 {
     void Initialize(TealiumConfig config, Action<bool>? callback = null);
+    void GatherTrackData(Action<Dictionary<string, object>>? callback = null);
     void Terminate();
     void Track(TealiumDispatch dispatch);
     void AddToDataLayer(Dictionary<string, object> data, Expiry expiry);
@@ -56,6 +57,7 @@ public class TealiumUnityPlugin : MonoBehaviour
         }
     }
     private static Action<bool>? onInitialized;
+    private static Action<Dictionary<string, object>>? onTrackDataDidUpdate;
     private static Dictionary<string, Action<Dictionary<string, object>>> onRemoteCommandCompletionCallbacks = new Dictionary<string, Action<Dictionary<string, object>>>();
     private static Action<Dictionary<string, object>>? onVisitorServiceDidUpdate;
     private static Action? onConsentExpiration;
@@ -70,6 +72,12 @@ public class TealiumUnityPlugin : MonoBehaviour
     {
         onInitialized = callback;
         Tealium.Initialize(config, callback);
+    }
+
+    public static void GatherTrackData(Action<Dictionary<string, object>>? callback = null)
+    {
+        onTrackDataDidUpdate = callback;
+        Tealium.GatherTrackData(callback);
     }
 
     /// <summary>
@@ -206,7 +214,7 @@ public class TealiumUnityPlugin : MonoBehaviour
             if (success) {
                 Dictionary<string, object> pluginData = new Dictionary<string, object> {
                     {"plugin_name", "Tealium-Unity"},
-                    {"plugin_version", "2.0.0"}
+                    {"plugin_version", "2.0.1"}
                 };
                 Tealium.AddToDataLayer(pluginData, Expiry.Forever);
             }
@@ -214,10 +222,20 @@ public class TealiumUnityPlugin : MonoBehaviour
             onInitialized(success);
         }
     }
+
+    public static void OnTrackDataCompletion(string trackdata)
+    {
+        Dictionary<string, object> decodedTrackData = JsonConvert.DeserializeObject<Dictionary<string, object>>(trackdata);
+        Dictionary<string, object> finalTrackData = TealiumHelpers.ConvertValuesToCollections(decodedTrackData);
+        if (onTrackDataDidUpdate != null) {
+            onTrackDataDidUpdate(finalTrackData);
+        }
+    }
+
     public static void OnRemoteCommandCompletion(string payload)
     {
         Dictionary<string, object> decodedPayload = JsonConvert.DeserializeObject<Dictionary<string, object>>(payload);
-        Dictionary<string, object> finalPayload = ConvertValuesToCollections(decodedPayload);
+        Dictionary<string, object> finalPayload = TealiumHelpers.ConvertValuesToCollections(decodedPayload);
         string? commandId = (string)finalPayload["command_id"];
         if (commandId != null && onRemoteCommandCompletionCallbacks[commandId] != null)
         {
@@ -228,7 +246,7 @@ public class TealiumUnityPlugin : MonoBehaviour
     public static void OnVisitorServiceUpdate(string payload)
     {
         Dictionary<string, object> decodedPayload = JsonConvert.DeserializeObject<Dictionary<string, object>>(payload);
-        Dictionary<string, object> finalPayload = ConvertValuesToCollections(decodedPayload);
+        Dictionary<string, object> finalPayload = TealiumHelpers.ConvertValuesToCollections(decodedPayload);
         if (onVisitorServiceDidUpdate != null)
         {
             onVisitorServiceDidUpdate(finalPayload);
@@ -240,22 +258,5 @@ public class TealiumUnityPlugin : MonoBehaviour
         {
             onConsentExpiration();
         }
-    }
-
-    private static Dictionary<string, object> ConvertValuesToCollections(Dictionary<string, object> dictionary)
-    {
-        Dictionary<string, object> result = new Dictionary<string, object>();
-        foreach (KeyValuePair<string, object> entry in dictionary)
-        {
-            result[entry.Key] = ToCollections(entry.Value);
-        }
-        return result;
-    }
-
-    public static object ToCollections(object o)
-    {
-        if (o is JObject jo) return jo.ToObject<IDictionary<string, object>>().ToDictionary(k => k.Key, v => ToCollections(v.Value));
-        if (o is JArray ja) return ja.ToObject<List<object>>().Select(ToCollections).ToList();
-        return o;
     }
 }
