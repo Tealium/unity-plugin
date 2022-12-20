@@ -9,6 +9,7 @@ typedef struct
 
     UIKeyboardType              keyboardType;
     UITextAutocorrectionType    autocorrectionType;
+    UITextSpellCheckingType     spellcheckingType;
     UIKeyboardAppearance        appearance;
 
     BOOL multiline;
@@ -22,6 +23,7 @@ KeyboardShowParam;
 @interface KeyboardDelegate : NSObject<UITextFieldDelegate, UITextViewDelegate>
 {
 }
+- (void)setPendingSelectionRequest;
 - (BOOL)textFieldShouldReturn:(UITextField*)textField;
 - (void)textInputDone:(id)sender;
 - (void)textInputCancel:(id)sender;
@@ -53,6 +55,7 @@ KeyboardShowParam;
 - (CGRect)queryArea;
 - (NSString*)getText;
 - (void)setText:(NSString*)newText;
+- (BOOL)hasExternalKeyboard;
 
 @property (readonly, nonatomic, getter = queryArea)               CGRect          area;
 @property (readonly, nonatomic)                                 BOOL            active;

@@ -34,7 +34,12 @@ public interface TealiumUnity
     void JoinTrace(string id);
     void LeaveTrace();
     string? GetVisitorId();
+    void ResetVisitorId();
+    void ClearStoredVisitorIds();
     void SetVisitorServiceListener(Action<Dictionary<string, object>> callback);
+    void SetVisitorIdListener(Action<string> callback);
+
+
     void SetConsentExpiryListener(Action callback);
 }
 
@@ -60,6 +65,7 @@ public class TealiumUnityPlugin : MonoBehaviour
     private static Action<Dictionary<string, object>>? onTrackDataDidUpdate;
     private static Dictionary<string, Action<Dictionary<string, object>>> onRemoteCommandCompletionCallbacks = new Dictionary<string, Action<Dictionary<string, object>>>();
     private static Action<Dictionary<string, object>>? onVisitorServiceDidUpdate;
+    private static Action<string>? onVisitorIdDidUpdate;
     private static Action? onConsentExpiration;
 
     /// <summary>
@@ -179,6 +185,14 @@ public class TealiumUnityPlugin : MonoBehaviour
     /// </summary>
     public static void LeaveTrace() => Tealium.LeaveTrace();
 
+    public static void ResetVisitorId() {
+        Tealium.ResetVisitorId();
+    }
+
+    public static void ClearStoredVisitorIds() {
+        Tealium.ClearStoredVisitorIds();
+    }
+
     /// <summary>
     /// Sets the callback for the [VisitorService] update
     ///
@@ -188,6 +202,11 @@ public class TealiumUnityPlugin : MonoBehaviour
     {
         onVisitorServiceDidUpdate = callback;
         Tealium.SetVisitorServiceListener(callback);
+    }
+
+    public static void SetVisitorIdListener(Action<string> callback) {
+        onVisitorIdDidUpdate = callback;
+        Tealium.SetVisitorIdListener(callback);
     }
 
     /// <summary>
@@ -250,6 +269,11 @@ public class TealiumUnityPlugin : MonoBehaviour
         if (onVisitorServiceDidUpdate != null)
         {
             onVisitorServiceDidUpdate(finalPayload);
+        }
+    }
+    public static void OnVisitorIdUpdate(string id) {
+        if (onVisitorIdDidUpdate != null) {
+            onVisitorIdDidUpdate(id);
         }
     }
     public static void OnConsentExpiration()

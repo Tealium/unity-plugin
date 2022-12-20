@@ -54,4 +54,5 @@ const val KEY_LIFECYCLE_AUTO_TRACKING_ENABLED = "lifecycleAutotrackingEnabled"
 
 const val KEY_VISITOR_SERVICE_ENABLED = "visitorServiceEnabled"
 const val KEY_CUSTOM_VISITOR_ID = "customVisitorId"
+const val KEY_CONFIG_VISITOR_IDENTITY_KEY = "visitorIdentityKey"
 const val KEY_SESSION_COUNTING_ENABLED = "sessionCountingEnabled"

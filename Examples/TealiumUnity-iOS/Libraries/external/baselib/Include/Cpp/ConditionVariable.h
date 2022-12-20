@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Time.h"
+#include "Lock.h"
 #include <cstdint>
 
 #if PLATFORM_FUTEX_NATIVE_SUPPORT
@@ -13,8 +14,6 @@ namespace baselib
 {
     BASELIB_CPP_INTERFACE
     {
-        class Lock;
-
         // Conceptually a condition variable is a queue of threads, associated with a monitor, on which a thread may wait for some condition to become true.
         //
         // Thus each condition variable c is associated with an assertion Pc. While a thread is waiting on a condition variable, that thread is not considered

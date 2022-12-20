@@ -131,9 +131,19 @@ static bool _enableRunLoopAcceptInput = false;
     if (targetFPS <= 0)
         targetFPS = UnityGetTargetFPS();
     if (targetFPS > maxFPS)
+    {
         targetFPS = maxFPS;
+        UnitySetTargetFPS(targetFPS);
+        return;
+    }
 
     _enableRunLoopAcceptInput = (targetFPS == maxFPS && UnityDeviceCPUCount() > 1);
+
+#if UNITY_HAS_IOSSDK_15_0 && UNITY_HAS_TVOSSDK_15_0
+    if (@available(iOS 15.0, tvOS 15.0, *))
+        _displayLink.preferredFrameRateRange = CAFrameRateRangeMake(targetFPS, targetFPS, targetFPS);
+    else
+#endif
     _displayLink.preferredFramesPerSecond = targetFPS;
 }
 
@@ -167,11 +177,6 @@ extern "C" void UnityFramerateChangeCallback(int targetFPS)
     [GetAppController() callbackFramerateChange: targetFPS];
 }
 
-extern "C" void UnityInitMainScreenRenderingCallback()
-{
-    [GetAppController().mainDisplay initRendering];
-}
-
 static NSBundle*        _MetalBundle    = nil;
 static id<MTLDevice>    _MetalDevice    = nil;
 
@@ -197,6 +202,7 @@ static int SelectRenderingAPIImpl()
         return api;
 
 #if TARGET_IPHONE_SIMULATOR || TARGET_TVOS_SIMULATOR
+    printf_console("On Simulator, Metal is supported only from iOS 13, and it requires at least macOS 10.15 and Xcode 11. Setting no graphics device.\n");
     return apiNoGraphics;
 #else
     assert(false);

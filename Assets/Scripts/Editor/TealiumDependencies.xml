@@ -24,12 +24,12 @@
          Additional repositories can be added using the "repositories" element.
     -->
     <androidPackage spec="com.tealium:remotecommands:1.0.1" />
-    <androidPackage spec="com.tealium:kotlin-core:1.4.1" />
+    <androidPackage spec="com.tealium:kotlin-core:1.5.1" />
     <androidPackage spec="com.tealium:kotlin-collect-dispatcher:1.1.0" />
     <androidPackage spec="com.tealium:kotlin-lifecycle:1.1.1" />
-    <androidPackage spec="com.tealium:kotlin-remotecommand-dispatcher:1.1.1" />
-    <androidPackage spec="com.tealium:kotlin-tagmanagement-dispatcher:1.1.2" />
-    <androidPackage spec="com.tealium:kotlin-visitor-service:1.1.0" />
+    <androidPackage spec="com.tealium:kotlin-remotecommand-dispatcher:1.2.1" />
+    <androidPackage spec="com.tealium:kotlin-tagmanagement-dispatcher:1.2.0" />
+    <androidPackage spec="com.tealium:kotlin-visitor-service:1.1.1" />
     <!-- <androidPackage spec="...."> -->
       <!-- androidSdkPackageIds is optional and contains the set of Android
            SDK package manager components (packages) this package requires.
@@ -92,7 +92,7 @@
      -->
      <!-- <iosPod name="tealium-swift" version="~> 2.6.5" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" /> -->
-    <iosPod name="tealium-swift" version="~> 2.6" bitcodeEnabled="true"
+    <iosPod name="tealium-swift" version="~> 2.8" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" 
             modular_headers="true"
             subspecs="['Core','TagManagement','Collect','Lifecycle','RemoteCommands','VisitorService']" />

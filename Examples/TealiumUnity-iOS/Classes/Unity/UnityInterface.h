@@ -17,7 +17,7 @@ typedef void    (*UnityPluginRenderMarkerFunc)(int marker);
 
 // new rendering plugin api
 typedef void    (*UnityPluginLoadFunc)(struct IUnityInterfaces* unityInterfaces);
-typedef void    (*UnityPluginUnloadFunc)();
+typedef void    (*UnityPluginUnloadFunc)(void);
 
 
 // log handler function
@@ -37,45 +37,47 @@ extern "C" {
 
 void    UnityInitRuntime(int argc, char* argv[]);
 void    UnityInitApplicationNoGraphics(const char* appPathName);
-void    UnityUnloadApplication();
+void    UnityUnloadApplication(void);
 void    UnityQuitApplication(int exitCode);
-void    UnityInitApplicationGraphics();
-void    UnityCleanup();
-void    UnityLoadApplication();
-void    UnityLoadApplicationFromSceneLessState();
-void    UnityPlayerLoop();                  // normal player loop
-void    UnityBatchPlayerLoop();             // batch mode like player loop, without rendering (usable for background processing)
+void    UnityInitApplicationGraphics(void);
+void    UnityCleanup(void);
+void    UnityLoadApplication(void);
+void    UnityLoadApplicationFromSceneLessState(void);
+void    UnityPlayerLoop(void);              // normal player loop
+void    UnityBatchPlayerLoop(void);         // batch mode like player loop, without rendering (usable for background processing)
 void    UnitySetPlayerFocus(int focused);   // send OnApplicationFocus() message to scripts
-void    UnityLowMemory();
+void    UnityLowMemory(void);
 void    UnityPause(int pause);
-void    UnitySuppressPauseMessage();
-int     UnityIsPaused();                    // 0 if player is running, 1 if paused
-void    UnityWillPause();                   // send the message that app will pause
-void    UnityWillResume();                  // send the message that app will resume
-void    UnityDeliverUIEvents();             // unity processing impacting UI will be called in there
+void    UnitySuppressPauseMessage(void);
+int     UnityIsPaused(void);                // 0 if player is running, 1 if paused
+void    UnityWillPause(void);               // send the message that app will pause
+void    UnityWillResume(void);              // send the message that app will resume
+void    UnityDeliverUIEvents(void);         // unity processing impacting UI will be called in there
+void    UnityWaitForFrame();
 
-void    UnityInputProcess();                // no longer used, will be removed soon
+void    UnityInputProcess(void);            // no longer used, will be removed soon
 
 
 // rendering
 
-int     UnityGetRenderingAPI();
-void    UnityFinishRendering();
-void    UnityDisplayLinkCallback(double machAbsoluteTimeSeconds);
+int     UnityGetRenderingAPI(void);
+void    UnityFinishRendering(void);
+void    UnityDisplayLinkCallback(double /*machAbsoluteTimeSeconds*/); // argument is not used anymore
 
 // controling player internals
 
 // TODO: needs some cleanup
 void    UnitySetAudioSessionActive(int active);
-void    UnityGLInvalidateState();
-void    UnityReloadResources();
-int     UnityIsCaptureScreenshotRequested();
-void    UnityCaptureScreenshot();
+void    UnityGLInvalidateState(void);
+void    UnityReloadResources(void);
+int     UnityIsCaptureScreenshotRequested(void);
+void    UnityCaptureScreenshot(void);
 void    UnitySendMessage(const char* obj, const char* method, const char* msg);
 void    UnityUpdateMuteState(int mute);
-void    UnityUpdateAudioOutputState();
-
-EAGLContext*        UnityGetDataContextGLES();
+void    UnityUpdateAudioOutputState(void);
+int     UnityShouldMuteOtherAudioSources(void);
+int     UnityShouldPrepareForIOSRecording(void);
+int     UnityIsAudioManagerAvailableAndEnabled(void);
 
 #ifdef __cplusplus
 void    UnitySetLogEntryHandler(LogEntryHandler newHandler);
@@ -100,11 +102,12 @@ void    UnityRequestRenderingResolution(unsigned w, unsigned h);
 
 int     UnityIsOrientationEnabled(unsigned /*ScreenOrientation*/ orientation);
 
-int     UnityHasOrientationRequest();
-int     UnityShouldAutorotate();
-int     UnityShouldChangeAllowedOrientations();
-int     UnityRequestedScreenOrientation(); // returns ScreenOrientation
-void    UnityOrientationRequestWasCommitted();
+int     UnityHasOrientationRequest(void);
+int     UnityShouldAutorotate(void);
+int     UnityAutorotationStatusChanged(void);
+int     UnityShouldChangeAllowedOrientations(void);
+int     UnityRequestedScreenOrientation(void); // returns ScreenOrientation
+void    UnityOrientationRequestWasCommitted(void);
 
 int     UnityReportResizeView(unsigned w, unsigned h, unsigned /*ScreenOrientation*/ contentOrientation);   // returns ScreenOrientation
 void    UnityReportSafeAreaChange(float x, float y, float w, float h);
@@ -114,30 +117,35 @@ void    UnityReportDisplayCutouts(const float* x, const float* y, const float* w
 
 // player settings
 
-int     UnityDisableDepthAndStencilBuffers();
-int     UnityUseAnimatedAutorotation();
+int     UnityDisableDepthAndStencilBuffers(void);
+int     UnityUseAnimatedAutorotation(void);
 int     UnityGetDesiredMSAASampleCount(int defaultSampleCount);
-int     UnityGetSRGBRequested();
-int     UnityGetWideColorRequested();
-int     UnityGetHDRModeRequested();
-int     UnityGetShowActivityIndicatorOnLoading();
-int     UnityGetAccelerometerFrequency();
-int     UnityGetTargetFPS();
-int     UnityGetUseCustomAppBackgroundBehavior();
-int     UnityGetDeferSystemGesturesTopEdge();
-int     UnityGetDeferSystemGesturesBottomEdge();
-int     UnityGetDeferSystemGesturesLeftEdge();
-int     UnityGetDeferSystemGesturesRightEdge();
-int     UnityGetHideHomeButton();
-int     UnityMetalFramebufferOnly();
-int     UnityMetalMemorylessDepth();
-int     UnityPreserveFramebufferAlpha();
+int     UnityGetSRGBRequested(void);
+int     UnityGetWideColorRequested(void);
+int     UnityGetHDRModeRequested(void);
+int     UnityGetShowActivityIndicatorOnLoading(void);
+int     UnityGetAccelerometerFrequency(void);
+int     UnityGetTargetFPS(void);
+int     UnityGetUseCustomAppBackgroundBehavior(void);
+int     UnityGetDeferSystemGesturesTopEdge(void);
+int     UnityGetDeferSystemGesturesBottomEdge(void);
+int     UnityGetDeferSystemGesturesLeftEdge(void);
+int     UnityGetDeferSystemGesturesRightEdge(void);
+int     UnityGetHideHomeButton(void);
+int     UnityMetalFramebufferOnly(void);
+int     UnityMetalMemorylessDepth(void);
+int     UnityPreserveFramebufferAlpha(void);
+void    UnitySetTargetFPS(int targetFPS);
 void    UnitySetAbsoluteURL(const char* url);
 
 // push notifications
 #if !PLATFORM_TVOS
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 void    UnitySendLocalNotification(UILocalNotification* notification);
+#pragma clang pop
 #endif
+
 void    UnitySendRemoteNotification(NSDictionary* notification);
 void    UnitySendDeviceToken(NSData* deviceToken);
 void    UnitySendRemoteNotificationError(NSError* error);
@@ -169,7 +177,7 @@ void    UnitySetKeyState(int key, int /*bool*/ state);
 void    UnitySetKeyboardKeyState(int key, int /*bool*/ state);
 void    UnitySendKeyboardCommand(UIKeyCommand* command);
 
-// WWW connection handling
+// UnityWebRequest handling
 
 void    UnityReportWebRequestStatus(void* udata, int status);
 void    UnityReportWebRequestNetworkError(void* udata, int status);
@@ -180,12 +188,13 @@ void    UnityReportWebRequestFinishedLoadingData(void* udata);
 void    UnityWebRequestRelease(void* udata);
 void    UnityReportWebRequestSentData(void* udata, unsigned totalWritten, unsigned expectedTotal);
 int     UnityReportWebRequestValidateCertificate(void* udata, const void* certificateData, unsigned certificateSize);
+unsigned long long UnityWebRequestResetUpload(void* udata);
 const void*   UnityWebRequestGetUploadData(void* udata, unsigned* bufferSize);
 void    UnityWebRequestConsumeUploadData(void* udata, unsigned consumedSize);
 
 // AVCapture
 
-void    UnityReportAVCapturePermission();
+void    UnityReportAVCapturePermission(void* userData);
 void    UnityDidCaptureVideoFrame(intptr_t tex, void* udata);
 
 // logging override
@@ -209,7 +218,7 @@ void    UnitySendTouchesEnded(NSSet* touches, UIEvent* event);
 void    UnitySendTouchesCancelled(NSSet* touches, UIEvent* event);
 void    UnitySendTouchesMoved(NSSet* touches, UIEvent* event);
 
-void    UnityCancelTouches();
+void    UnityCancelTouches(void);
 
 #ifdef __cplusplus
 } // extern "C"
@@ -225,13 +234,16 @@ extern "C" {
 #endif
 
 // UnityAppController.mm
-UIViewController*       UnityGetGLViewController();
-UIView*                 UnityGetGLView();
-UIWindow*               UnityGetMainWindow();
-enum ScreenOrientation  UnityCurrentOrientation();
+UIViewController*       UnityGetGLViewController(void);
+UIView*                 UnityGetGLView(void);
+UIWindow*               UnityGetMainWindow(void);
+enum ScreenOrientation  UnityCurrentOrientation(void);
 
 // Unity/DisplayManager.mm
 float                   UnityScreenScaleFactor(UIScreen* screen);
+
+// Unity/DeviceSettings.mm
+int                     UnityDeviceHasCutout(void);
 
 #ifdef __cplusplus
 } // extern "C"
@@ -247,68 +259,67 @@ extern "C" {
 #endif
 
 // iPhone_Sensors.mm
-void            UnityInitJoysticks();
-void            UnityCoreMotionStart();
-void            UnityCoreMotionStop();
-void            UnityUpdateAccelerometerData();
+void            UnityInitJoysticks(void);
+void            UnityCoreMotionStart(void);
+void            UnityCoreMotionStop(void);
+void            UnityUpdateAccelerometerData(void);
 int             UnityIsGyroEnabled(int idx);
-int             UnityIsGyroAvailable();
-void            UnityUpdateGyroData();
+int             UnityIsGyroAvailable(void);
+void            UnityUpdateGyroData(void);
 void            UnitySetGyroUpdateInterval(int idx, float interval);
 float           UnityGetGyroUpdateInterval(int idx);
-void            UnityUpdateJoystickData();
-NSArray*        UnityGetJoystickNames();
+void            UnityUpdateJoystickData(void);
+NSArray*        UnityGetJoystickNames(void);
 void            UnityGetJoystickAxisName(int idx, int axis, char* buffer, int maxLen);
 void            UnityGetNiceKeyname(int key, char* buffer, int maxLen);
 
 // UnityAppController+Rendering.mm
-void            UnityInitMainScreenRenderingCallback();
-void            UnityGfxInitedCallback();
+void            UnityGfxInitedCallback(void);
 void            UnityPresentContextCallback(struct UnityFrameStats const* frameStats);
 void            UnityFramerateChangeCallback(int targetFPS);
-int             UnitySelectedRenderingAPI();
+int             UnitySelectedRenderingAPI(void);
 
-NSBundle*           UnityGetMetalBundle();
-MTLDeviceRef        UnityGetMetalDevice();
-MTLCommandQueueRef  UnityGetMetalCommandQueue();
-MTLCommandQueueRef  UnityGetMetalDrawableCommandQueue();
-int UnityCommandQueueMaxCommandBufferCountMTL();
+NSBundle*           UnityGetMetalBundle(void);
+MTLDeviceRef        UnityGetMetalDevice(void);
+MTLCommandQueueRef  UnityGetMetalCommandQueue(void);
+MTLCommandQueueRef  UnityGetMetalDrawableCommandQueue(void);
+int UnityCommandQueueMaxCommandBufferCountMTL(void);
 
-UnityRenderBufferHandle UnityBackbufferColor();
-UnityRenderBufferHandle UnityBackbufferDepth();
+UnityRenderBufferHandle UnityBackbufferColor(void);
+UnityRenderBufferHandle UnityBackbufferDepth(void);
 
-int             UnityIsWideColorSupported();
+int             UnityIsWideColorSupported(void);
 
 // UI/ActivityIndicator.mm
-void            UnityStartActivityIndicator();
-void            UnityStopActivityIndicator();
+void            UnityStartActivityIndicator(void);
+void            UnityStopActivityIndicator(void);
 
 // UI/Keyboard.mm
 void            UnityKeyboard_Create(unsigned keyboardType, int autocorrection, int multiline, int secure, int alert, const char* text, const char* placeholder, int characterLimit);
-void            UnityKeyboard_Show();
-void            UnityKeyboard_Hide();
+void            UnityKeyboard_Show(void);
+void            UnityKeyboard_Hide(void);
 void            UnityKeyboard_GetRect(float* x, float* y, float* w, float* h);
 void            UnityKeyboard_SetText(const char* text);
-NSString*       UnityKeyboard_GetText();
-int             UnityKeyboard_IsActive();
-int             UnityKeyboard_Status();
+NSString*       UnityKeyboard_GetText(void);
+int             UnityKeyboard_IsActive(void);
+int             UnityKeyboard_Status(void);
 void            UnityKeyboard_SetInputHidden(int hidden);
-int             UnityKeyboard_IsInputHidden();
+int             UnityKeyboard_IsInputHidden(void);
 void            UnityKeyboard_SetCharacterLimit(unsigned characterLimit);
 
-int             UnityKeyboard_CanGetSelection();
+int             UnityKeyboard_CanGetSelection(void);
 void            UnityKeyboard_GetSelection(int* location, int* range);
-int             UnityKeyboard_CanSetSelection();
+int             UnityKeyboard_CanSetSelection(void);
 void            UnityKeyboard_SetSelection(int location, int range);
 
 // UI/UnityViewControllerBase.mm
-void            UnityNotifyHideHomeButtonChange();
-void            UnityNotifyDeferSystemGesturesChange();
+void            UnityNotifyHideHomeButtonChange(void);
+void            UnityNotifyDeferSystemGesturesChange(void);
 
 
 // Unity/AVCapture.mm
 int             UnityGetAVCapturePermission(int captureTypes);
-void            UnityRequestAVCapturePermission(int captureTypes);
+void            UnityRequestAVCapturePermission(int captureTypes, void* userData);
 
 // Unity/CameraCapture.mm
 void            UnityEnumVideoCaptureDevices(void* udata, void(*callback)(void* udata, const char* name, int frontFacing, int autoFocusPointSupported, int kind, const int* resolutions, int resCount));
@@ -324,39 +335,39 @@ int             UnityCameraCaptureSetAutoFocusPoint(void* capture, float x, floa
 
 
 // Unity/DeviceSettings.mm
-const char*     UnityDeviceUniqueIdentifier();
-const char*     UnityVendorIdentifier();
-const char*     UnityAdIdentifier();
-int             UnityAdTrackingEnabled();
-int             UnityGetLowPowerModeEnabled();
-int             UnityGetWantsSoftwareDimming();
+const char*     UnityDeviceUniqueIdentifier(void);
+const char*     UnityVendorIdentifier(void);
+const char*     UnityAdIdentifier(void);
+int             UnityAdTrackingEnabled(void);
+int             UnityGetLowPowerModeEnabled(void);
+int             UnityGetWantsSoftwareDimming(void);
 void            UnitySetWantsSoftwareDimming(int enabled);
-int             UnityGetIosAppOnMac();
-const char*     UnityDeviceName();
-const char*     UnitySystemName();
-const char*     UnitySystemVersion();
-const char*     UnityDeviceModel();
-int             UnityDeviceCPUCount();
-int             UnityGetPhysicalMemory();
-int             UnityDeviceGeneration();
-float           UnityDeviceDPI();
-const char*     UnitySystemLanguage();
-int             UnityDeviceSupportsUpsideDown();
+int             UnityGetIosAppOnMac(void);
+const char*     UnityDeviceName(void);
+const char*     UnitySystemName(void);
+const char*     UnitySystemVersion(void);
+const char*     UnityDeviceModel(void);
+int             UnityDeviceCPUCount(void);
+int             UnityGetPhysicalMemory(void);
+int             UnityDeviceGeneration(void);
+float           UnityDeviceDPI(void);
+const char*     UnitySystemLanguage(void);
+int             UnityDeviceSupportsUpsideDown(void);
 
 // Unity/DisplayManager.mm
 void            UnityActivateScreenForRendering(void* nativeDisplay);
-void            UnityStartFrameRendering();
-void            UnityDestroyUnityRenderSurfaces();
-int             UnityMainScreenRefreshRate();
+void            UnityStartFrameRendering(void);
+void            UnityDestroyUnityRenderSurfaces(void);
+int             UnityMainScreenRefreshRate(void);
 void            UnitySetBrightness(float brightness);
-float           UnityGetBrightness();
+float           UnityGetBrightness(void);
 
 // Unity/Filesystem.mm
-const char*     UnityDataBundleDir();
+const char*     UnityDataBundleDir(void);
 void            UnitySetDataBundleDirWithBundleId(const char * bundleId);
-const char*     UnityDocumentsDir();
-const char*     UnityLibraryDir();
-const char*     UnityCachesDir();
+const char*     UnityDocumentsDir(void);
+const char*     UnityLibraryDir(void);
+const char*     UnityCachesDir(void);
 int             UnityUpdateNoBackupFlag(const char* path, int setFlag); // Returns 1 if successful, otherwise 0
 
 // Unity/WWWConnection.mm
@@ -366,21 +377,24 @@ void            UnityDestroyWWWConnection(void* connection);
 void            UnityShouldCancelWWW(const void* connection);
 
 // Unity/FullScreenVideoPlayer.mm
-int             UnityIsFullScreenPlaying();
-void            TryResumeFullScreenVideo();
+int             UnityIsFullScreenPlaying(void);
+void            TryResumeFullScreenVideo(void);
 
 //Apple TV Remote
-int         UnityGetAppleTVRemoteAllowExitToMenu();
+int         UnityGetAppleTVRemoteAllowExitToMenu(void);
 void        UnitySetAppleTVRemoteAllowExitToMenu(int val);
-int         UnityGetAppleTVRemoteAllowRotation();
+int         UnityGetAppleTVRemoteAllowRotation(void);
 void        UnitySetAppleTVRemoteAllowRotation(int val);
-int         UnityGetAppleTVRemoteReportAbsoluteDpadValues();
+int         UnityGetAppleTVRemoteReportAbsoluteDpadValues(void);
 void        UnitySetAppleTVRemoteReportAbsoluteDpadValues(int val);
-int         UnityGetAppleTVRemoteTouchesEnabled();
+int         UnityGetAppleTVRemoteTouchesEnabled(void);
 void        UnitySetAppleTVRemoteTouchesEnabled(int val);
 
 // Unity/UnityReplayKit.mm
-void         UnityShouldCreateReplayKitOverlay();
+void         UnityShouldCreateReplayKitOverlay(void);
+
+// Runtime analytics
+void UnitySendEmbeddedLaunchEvent(int launchType); // Tracks events when application is launched from native host app (Unity as a Library)
 
 #ifdef __cplusplus
 } // extern "C"

@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+
+target 'UnityFramework' do
+  pod 'tealium-swift', '~> 2.8', :modular_headers => true, :subspecs => ['Core','TagManagement','Collect','Lifecycle','RemoteCommands','VisitorService']
+end
+target 'Unity-iPhone' do
+  pod 'tealium-swift', '~> 2.8', :modular_headers => true, :subspecs => ['Core','TagManagement','Collect','Lifecycle','RemoteCommands','VisitorService']
+end
+use_frameworks!
+

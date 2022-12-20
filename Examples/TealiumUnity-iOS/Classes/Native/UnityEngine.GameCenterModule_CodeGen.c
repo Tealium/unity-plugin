@@ -17,627 +17,626 @@
 // 0x00000003 System.Void UnityEngine.SocialPlatforms.ISocialPlatform::LoadFriends(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
 // 0x00000004 System.Boolean UnityEngine.SocialPlatforms.ILocalUser::get_authenticated()
 // 0x00000005 System.Void UnityEngine.SocialPlatforms.Range::.ctor(System.Int32,System.Int32)
-extern void Range__ctor_mD7BBA6A816E8FBFDDC618308BC5D5882297443F8 (void);
+extern void Range__ctor_m54D7381A4A3634B7B0AF0847B848EBB8786B876B (void);
 // 0x00000006 System.String UnityEngine.SocialPlatforms.ILeaderboard::get_id()
 // 0x00000007 UnityEngine.SocialPlatforms.UserScope UnityEngine.SocialPlatforms.ILeaderboard::get_userScope()
 // 0x00000008 UnityEngine.SocialPlatforms.Range UnityEngine.SocialPlatforms.ILeaderboard::get_range()
 // 0x00000009 UnityEngine.SocialPlatforms.TimeScope UnityEngine.SocialPlatforms.ILeaderboard::get_timeScope()
 // 0x0000000A System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::.ctor()
-extern void LocalUser__ctor_mE1D89C27BD5A6DAE982610A87A472E736644605A (void);
+extern void LocalUser__ctor_m6D2AE6DFC61CEC39842944D970E2B2B5547CBE97 (void);
 // 0x0000000B System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetFriends(UnityEngine.SocialPlatforms.IUserProfile[])
-extern void LocalUser_SetFriends_m54CD46805170EDB993E87E0A9FA3BF82A910E489 (void);
+extern void LocalUser_SetFriends_m369BCB8021FB5A359B11D2ACB2F1CCD3DFBF0F6B (void);
 // 0x0000000C System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetAuthenticated(System.Boolean)
-extern void LocalUser_SetAuthenticated_mCAFB7406BCB0A184B405E25695F280DA52EFE582 (void);
+extern void LocalUser_SetAuthenticated_m1A7992E986F32450A1A97409AF772DC3A0F47E44 (void);
 // 0x0000000D System.Void UnityEngine.SocialPlatforms.Impl.LocalUser::SetUnderage(System.Boolean)
-extern void LocalUser_SetUnderage_mA767EE5BC8615E452A6CC57376CA9B9DA601386E (void);
+extern void LocalUser_SetUnderage_m84D3621386D7E917F7D4AD7D2C00DE8CA8AD278C (void);
 // 0x0000000E System.Boolean UnityEngine.SocialPlatforms.Impl.LocalUser::get_authenticated()
-extern void LocalUser_get_authenticated_m7D219E0639A779F4527590E43E66F31C2A482BD1 (void);
+extern void LocalUser_get_authenticated_m3121DA81FF48CFFB4024ADECEE98F8E686497C54 (void);
 // 0x0000000F System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::.ctor()
-extern void UserProfile__ctor_m65DBFCC8D74A39E029B7EEBF5B24A8790C3668AA (void);
+extern void UserProfile__ctor_m12A26F8BDE41F4B55A645BB1D4038E81A877E680 (void);
 // 0x00000010 System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::.ctor(System.String,System.String,System.String,System.Boolean,UnityEngine.SocialPlatforms.UserState,UnityEngine.Texture2D)
-extern void UserProfile__ctor_m82A71921E766018566AFB09BCE3091C8F1055F39 (void);
+extern void UserProfile__ctor_m3649D0E00F816E2712CA936DDBC55ADBC336BBF1 (void);
 // 0x00000011 System.String UnityEngine.SocialPlatforms.Impl.UserProfile::ToString()
-extern void UserProfile_ToString_mE86E8A99DF0EE73C93A55624E890806213567924 (void);
+extern void UserProfile_ToString_mEB091241EC114F4F42D2CE15F127B83556EBE45D (void);
 // 0x00000012 System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::SetUserName(System.String)
-extern void UserProfile_SetUserName_m25580633F0CE2894355406F1F8C86CCEA3E79BBA (void);
+extern void UserProfile_SetUserName_m107512A03197354BAF98514ED92D647F4FC778DA (void);
 // 0x00000013 System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::SetUserID(System.String)
-extern void UserProfile_SetUserID_mD1A6F3DEE1C2887A8EDF41444C1D13A2835DF719 (void);
+extern void UserProfile_SetUserID_m32F417A48D4FDC4ED180EA2AD92F875996DA3353 (void);
 // 0x00000014 System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::SetLegacyUserID(System.String)
-extern void UserProfile_SetLegacyUserID_m707552F7298E3A711C41FF8744C8309276E398A4 (void);
+extern void UserProfile_SetLegacyUserID_m3A0B0F4DD6782D40B5CF6D575B670EC96396F030 (void);
 // 0x00000015 System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::SetUserGameID(System.String)
-extern void UserProfile_SetUserGameID_mF610AEAED6A05E06A24F1C2DC82EC8BD5CAAB4E0 (void);
+extern void UserProfile_SetUserGameID_m9A90E716F9DB8138181F748243D7BB12BCCAA2D5 (void);
 // 0x00000016 System.Void UnityEngine.SocialPlatforms.Impl.UserProfile::SetImage(UnityEngine.Texture2D)
-extern void UserProfile_SetImage_m756E17B9BFE41D572C76A506E2BDA81A2D7D9605 (void);
+extern void UserProfile_SetImage_mEBC25331E4B4E201DB02A0442C473829E07D6221 (void);
 // 0x00000017 System.String UnityEngine.SocialPlatforms.Impl.UserProfile::get_userName()
-extern void UserProfile_get_userName_mB127337E5455C94299C39FB66C2965FF3421142E (void);
+extern void UserProfile_get_userName_mDAAF12B06B939DDAAB6F10E8CB40B21C48A94F30 (void);
 // 0x00000018 System.String UnityEngine.SocialPlatforms.Impl.UserProfile::get_id()
-extern void UserProfile_get_id_m2C9612A3B81A7F76F86C4FE87AD4D3FADEF3E385 (void);
+extern void UserProfile_get_id_m16A4060A0C7E4480F68D6915E6FAB15EAE973336 (void);
 // 0x00000019 System.Boolean UnityEngine.SocialPlatforms.Impl.UserProfile::get_isFriend()
-extern void UserProfile_get_isFriend_m7ACC8963AD01FB384D215AF8C215DD93CB5322EA (void);
+extern void UserProfile_get_isFriend_m353D113C22BFA80F0E9A1DBEC40E4EF4984AC4EC (void);
 // 0x0000001A UnityEngine.SocialPlatforms.UserState UnityEngine.SocialPlatforms.Impl.UserProfile::get_state()
-extern void UserProfile_get_state_mF93F969F5923A0A3528923E5A452138D00D4E248 (void);
+extern void UserProfile_get_state_mF5F8CF4E71CD46ADBCC58E5A3AFA715B3E5F9D4A (void);
 // 0x0000001B System.Void UnityEngine.SocialPlatforms.Impl.Achievement::.ctor(System.String,System.Double,System.Boolean,System.Boolean,System.DateTime)
-extern void Achievement__ctor_m6BFE0E7DB18B35A485855AC3B1C0D4E25AB56C0C (void);
+extern void Achievement__ctor_mE4B26ACD8E4220F645864036B7F9AD2E7D746B85 (void);
 // 0x0000001C System.Void UnityEngine.SocialPlatforms.Impl.Achievement::.ctor(System.String,System.Double)
-extern void Achievement__ctor_m8E491BFB569F645FC9BF4CC8F58F5718C54901E0 (void);
+extern void Achievement__ctor_m18A74E7A97AEBD079DA90A210C02C6CE47B44FFC (void);
 // 0x0000001D System.Void UnityEngine.SocialPlatforms.Impl.Achievement::.ctor()
-extern void Achievement__ctor_m570954380BDC68F860E558D037369D03269C72A4 (void);
+extern void Achievement__ctor_m9EA819E3F3EA4B91F8998D54EF2F5B2B1E29976F (void);
 // 0x0000001E System.String UnityEngine.SocialPlatforms.Impl.Achievement::ToString()
-extern void Achievement_ToString_m443278D0F151B7B9BAF041785378EFEAC98E6052 (void);
+extern void Achievement_ToString_m15B103F95C549FCED0D581FBACD73E47310C9EAC (void);
 // 0x0000001F System.String UnityEngine.SocialPlatforms.Impl.Achievement::get_id()
-extern void Achievement_get_id_m39931C0B44D8A4948E12527FDE77C9211028267B (void);
+extern void Achievement_get_id_m0BDCED7ECE8BA170E619212CB2D23BD28322A0A6 (void);
 // 0x00000020 System.Void UnityEngine.SocialPlatforms.Impl.Achievement::set_id(System.String)
-extern void Achievement_set_id_m16A4091CBC207FB287FEFF608C5F45D9D21106A0 (void);
+extern void Achievement_set_id_mF2FB90F3D2F1F38DBDB449C956B8B35BAF6108EE (void);
 // 0x00000021 System.Double UnityEngine.SocialPlatforms.Impl.Achievement::get_percentCompleted()
-extern void Achievement_get_percentCompleted_m864BBAA8D955D724A506E62F6741B52D43F38F9D (void);
+extern void Achievement_get_percentCompleted_mC0BFB768F39C110F2A851B5089C300E1C879D860 (void);
 // 0x00000022 System.Void UnityEngine.SocialPlatforms.Impl.Achievement::set_percentCompleted(System.Double)
-extern void Achievement_set_percentCompleted_mD433F22DBB60B94FD45CC2A73C9A22C93B0CB9CB (void);
+extern void Achievement_set_percentCompleted_mFB33E191E8D7557E178EEC6DB80B616C268824BD (void);
 // 0x00000023 System.Boolean UnityEngine.SocialPlatforms.Impl.Achievement::get_completed()
-extern void Achievement_get_completed_m26C3793203BC368F6A44678FEB4E8B94976DC66F (void);
+extern void Achievement_get_completed_m5A625BD69E129E468D83A98CF4CAA4AA28E0B2BF (void);
 // 0x00000024 System.Boolean UnityEngine.SocialPlatforms.Impl.Achievement::get_hidden()
-extern void Achievement_get_hidden_m732D2ED47F705384C1A8CA28E40AADE16944CD11 (void);
+extern void Achievement_get_hidden_m343030FB2BE6636313A09DEDCB02BE0ADB5E3A8E (void);
 // 0x00000025 System.DateTime UnityEngine.SocialPlatforms.Impl.Achievement::get_lastReportedDate()
-extern void Achievement_get_lastReportedDate_m0C90E0EB0392E57E70D62D2FB182527613BB285C (void);
+extern void Achievement_get_lastReportedDate_mEACB3BADB0996AF967B26378FA48BC964E68F091 (void);
 // 0x00000026 System.Void UnityEngine.SocialPlatforms.Impl.AchievementDescription::.ctor(System.String,System.String,UnityEngine.Texture2D,System.String,System.String,System.Boolean,System.Int32)
-extern void AchievementDescription__ctor_m5EA1DE335B7A97FCDE944FBFD2B979D870D3F37A (void);
+extern void AchievementDescription__ctor_mB5F9A234974FEC3BB146511929791A1D8846E2EF (void);
 // 0x00000027 System.String UnityEngine.SocialPlatforms.Impl.AchievementDescription::ToString()
-extern void AchievementDescription_ToString_m48909B3814359ED0FAF88F29F3B80C024F0C5D36 (void);
+extern void AchievementDescription_ToString_m25F3CC08322EAB311EDBC23D85F067387706DE02 (void);
 // 0x00000028 System.Void UnityEngine.SocialPlatforms.Impl.AchievementDescription::SetImage(UnityEngine.Texture2D)
-extern void AchievementDescription_SetImage_mB1653A512095EE6A795031B009513071A559C248 (void);
+extern void AchievementDescription_SetImage_m16FC76EE05781DB25586A64D3B0D6CE3E6213CF5 (void);
 // 0x00000029 System.String UnityEngine.SocialPlatforms.Impl.AchievementDescription::get_id()
-extern void AchievementDescription_get_id_mD5FEE2DBF0C88887C99E3EDCD9BC65C32EFBAD4A (void);
+extern void AchievementDescription_get_id_mC954988F8344E3B7E316D15EBD240A85D06A77C7 (void);
 // 0x0000002A System.Void UnityEngine.SocialPlatforms.Impl.AchievementDescription::set_id(System.String)
-extern void AchievementDescription_set_id_m61C4DA5B9AD3353518524A8E34723CE7836D432E (void);
+extern void AchievementDescription_set_id_m48924C51CD1E02F0416AC540DC2214E4D64AF411 (void);
 // 0x0000002B System.String UnityEngine.SocialPlatforms.Impl.AchievementDescription::get_title()
-extern void AchievementDescription_get_title_mF4E46C1A1BBF0087858BE6046604D00DB130E81F (void);
+extern void AchievementDescription_get_title_m196C3AEC0457C25D95B16309E12AB246D054CB67 (void);
 // 0x0000002C System.String UnityEngine.SocialPlatforms.Impl.AchievementDescription::get_achievedDescription()
-extern void AchievementDescription_get_achievedDescription_m4901EFA817B61139B1A5284CAF14378A531B7537 (void);
+extern void AchievementDescription_get_achievedDescription_m4EB337E95791A795A79F2C75F909E64747B682B5 (void);
 // 0x0000002D System.String UnityEngine.SocialPlatforms.Impl.AchievementDescription::get_unachievedDescription()
-extern void AchievementDescription_get_unachievedDescription_m90706792FD9A6FD0BC4975E41E531F91AEC3F33C (void);
+extern void AchievementDescription_get_unachievedDescription_mE98806AB14F770F2A9CBA7E1024052FA259D43E5 (void);
 // 0x0000002E System.Boolean UnityEngine.SocialPlatforms.Impl.AchievementDescription::get_hidden()
-extern void AchievementDescription_get_hidden_m8FDE6EBDC27F05F8D04B53B4F044B5B06F2EDA0A (void);
+extern void AchievementDescription_get_hidden_mA35899496122E49F7333BB5F5B5B6AE0E68F017E (void);
 // 0x0000002F System.Int32 UnityEngine.SocialPlatforms.Impl.AchievementDescription::get_points()
-extern void AchievementDescription_get_points_mCBD1A433E28AC73B7AECBE3E41FFDB6B335031AF (void);
+extern void AchievementDescription_get_points_m222DBD457CA6F5629758C211668917507B316DB3 (void);
 // 0x00000030 System.Void UnityEngine.SocialPlatforms.Impl.Score::.ctor(System.String,System.Int64)
-extern void Score__ctor_m88494757EDE00B4CA1BE7027A1F84C82E09EC958 (void);
+extern void Score__ctor_mCA767E4E990F5CB9657921695D4983D721BEA751 (void);
 // 0x00000031 System.Void UnityEngine.SocialPlatforms.Impl.Score::.ctor(System.String,System.Int64,System.String,System.DateTime,System.String,System.Int32)
-extern void Score__ctor_m94026C33B1E9EE0F31614511DB8F512E8A7A4FE3 (void);
+extern void Score__ctor_mD90E3983F2E8AF6001AB7C5E54497752F21E0F31 (void);
 // 0x00000032 System.String UnityEngine.SocialPlatforms.Impl.Score::ToString()
-extern void Score_ToString_mBE1B8E8846C633AAA58A0680C888F21915454FC4 (void);
+extern void Score_ToString_m497A4E6B7AA8D2B8433137127949781736A16037 (void);
 // 0x00000033 System.String UnityEngine.SocialPlatforms.Impl.Score::get_leaderboardID()
-extern void Score_get_leaderboardID_m079BDC75AED9D8C06DC36F78AC233171F023FB4F (void);
+extern void Score_get_leaderboardID_m46C97C5AFC37C00BFBEE51457BD6149B874E114A (void);
 // 0x00000034 System.Void UnityEngine.SocialPlatforms.Impl.Score::set_leaderboardID(System.String)
-extern void Score_set_leaderboardID_m05255F12ADDC2FC6D7E9646CBAE68D2924E66F65 (void);
+extern void Score_set_leaderboardID_m6F297139EFA0D2AA106B58FA267AFF7A147A85DB (void);
 // 0x00000035 System.Int64 UnityEngine.SocialPlatforms.Impl.Score::get_value()
-extern void Score_get_value_m750646EDC0619A11179177F597C21374F13FCB9E (void);
+extern void Score_get_value_m2978563520D7392815E60349F89A5A1B5516DE5E (void);
 // 0x00000036 System.Void UnityEngine.SocialPlatforms.Impl.Score::set_value(System.Int64)
-extern void Score_set_value_mFECF5E9D1928EEAE7E46F497CDA159549EEB74C4 (void);
+extern void Score_set_value_m7332E2AAE1792ECEA5016FA51F4E4403CDA120C3 (void);
 // 0x00000037 System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::.ctor()
-extern void Leaderboard__ctor_mC09955DEF2101303E698FC13E1BBFFA90B3365F4 (void);
+extern void Leaderboard__ctor_mFB0608CFF4A090982904F495B84A91DC0FAC5B73 (void);
 // 0x00000038 System.String UnityEngine.SocialPlatforms.Impl.Leaderboard::ToString()
-extern void Leaderboard_ToString_mE59DCCF117736269AF0C6CD21876DB3448BD14ED (void);
+extern void Leaderboard_ToString_m13D23F36219548442D56D029B561F628305F3500 (void);
 // 0x00000039 System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::SetLocalUserScore(UnityEngine.SocialPlatforms.IScore)
-extern void Leaderboard_SetLocalUserScore_m17939BC032AC6FDCC1152234807C50E97A72D600 (void);
+extern void Leaderboard_SetLocalUserScore_m424D44D0AFCBA825FA9604E8BBB538854E1E0C4E (void);
 // 0x0000003A System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::SetMaxRange(System.UInt32)
-extern void Leaderboard_SetMaxRange_m5D699FC22BC5BED04386C4B6D4661663B49FD3B4 (void);
+extern void Leaderboard_SetMaxRange_m1C820B01C8989228954B466EDC4C1B8DC95EDE5B (void);
 // 0x0000003B System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::SetScores(UnityEngine.SocialPlatforms.IScore[])
-extern void Leaderboard_SetScores_m2DB8C9FB943AD849B23FCEB56D76FAE4E11C2084 (void);
+extern void Leaderboard_SetScores_m0ACEEFFAD67AE7F7DC644DD034F5F2C431265943 (void);
 // 0x0000003C System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::SetTitle(System.String)
-extern void Leaderboard_SetTitle_m5FE6EFFE4099E7BA2B7F1F6644B0A9E1C5A93627 (void);
+extern void Leaderboard_SetTitle_mF9ECC4ECBF137AF4C5AD6A2338AB8786D86EADF2 (void);
 // 0x0000003D System.String[] UnityEngine.SocialPlatforms.Impl.Leaderboard::GetUserFilter()
-extern void Leaderboard_GetUserFilter_m229A294CB0ED73326836FABAC438E517F6517550 (void);
+extern void Leaderboard_GetUserFilter_m859FFF97FCAF7D42B215AA0166FCB6B8B0025FF3 (void);
 // 0x0000003E System.String UnityEngine.SocialPlatforms.Impl.Leaderboard::get_id()
-extern void Leaderboard_get_id_m4A262BB19BCACE6C9B19874F5D68C777846C6CD6 (void);
+extern void Leaderboard_get_id_mA5577E5D07BEE409EF2CDE6177AEB90547554770 (void);
 // 0x0000003F System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::set_id(System.String)
-extern void Leaderboard_set_id_mC863AFBCE6B992935BCE9E8B567CDA40CCD94B42 (void);
+extern void Leaderboard_set_id_m384FB70C2196021186F68CDCB7EA91DF88129719 (void);
 // 0x00000040 UnityEngine.SocialPlatforms.UserScope UnityEngine.SocialPlatforms.Impl.Leaderboard::get_userScope()
-extern void Leaderboard_get_userScope_m8304E736582482D0E5705C109D95F0CEDF2EE54C (void);
+extern void Leaderboard_get_userScope_m84E19D835910E26104D25567BA0B1C6A518FC5C1 (void);
 // 0x00000041 System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::set_userScope(UnityEngine.SocialPlatforms.UserScope)
-extern void Leaderboard_set_userScope_m66BBCC760CDAF1C44639BD10E4D901EFD7C3F778 (void);
+extern void Leaderboard_set_userScope_m43E61AEA535770AB7D3A6E67B72917D954CB048A (void);
 // 0x00000042 UnityEngine.SocialPlatforms.Range UnityEngine.SocialPlatforms.Impl.Leaderboard::get_range()
-extern void Leaderboard_get_range_mB9C6C91869423F791E017B71FCDB17A354585519 (void);
+extern void Leaderboard_get_range_m98008ADA839E76C8D69D152F7FC6EDBF2F6985DB (void);
 // 0x00000043 System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::set_range(UnityEngine.SocialPlatforms.Range)
-extern void Leaderboard_set_range_m29352D47548D750E0E42EC9627C861C69D084444 (void);
+extern void Leaderboard_set_range_mD56709B5A37AEEB0BA5D6702261CA840891849EA (void);
 // 0x00000044 UnityEngine.SocialPlatforms.TimeScope UnityEngine.SocialPlatforms.Impl.Leaderboard::get_timeScope()
-extern void Leaderboard_get_timeScope_mE1F4CBEBE4B2E1E6BD245E3BE518680F13BBF276 (void);
+extern void Leaderboard_get_timeScope_mB7893524B11F9CF2C739B269C6CA34F19B1FC95E (void);
 // 0x00000045 System.Void UnityEngine.SocialPlatforms.Impl.Leaderboard::set_timeScope(UnityEngine.SocialPlatforms.TimeScope)
-extern void Leaderboard_set_timeScope_m36122610C955D05BD7FC713415CA78076986B901 (void);
+extern void Leaderboard_set_timeScope_m3248C6661CA59EDF283927C63D9030FD1763E3EE (void);
 // 0x00000046 UnityEngine.SocialPlatforms.Impl.UserProfile UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData::ToUserProfile()
-extern void GcUserProfileData_ToUserProfile_m500A5A38D89D400333D9ED8D2005449AFEC91F24 (void);
+extern void GcUserProfileData_ToUserProfile_m887526D751D39B2B34AA0BE6C79509C2A50BEFF0 (void);
 // 0x00000047 System.Void UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData::AddToArray(UnityEngine.SocialPlatforms.Impl.UserProfile[]&,System.Int32)
-extern void GcUserProfileData_AddToArray_mA189B901FEF32E5CA9AF7DEB58D8143E87E41EC2 (void);
+extern void GcUserProfileData_AddToArray_m9CC6C97BD081C9EC250AAA5E9BDCD398AF724BFB (void);
 // 0x00000048 UnityEngine.SocialPlatforms.Impl.AchievementDescription UnityEngine.SocialPlatforms.GameCenter.GcAchievementDescriptionData::ToAchievementDescription()
-extern void GcAchievementDescriptionData_ToAchievementDescription_m9942E64237B72699916331A3EED62FC8E0DB8B86 (void);
+extern void GcAchievementDescriptionData_ToAchievementDescription_mA95A2FA7D828072E68C98ADBED56D66FAA59AEA3 (void);
 // 0x00000049 UnityEngine.SocialPlatforms.Impl.Achievement UnityEngine.SocialPlatforms.GameCenter.GcAchievementData::ToAchievement()
-extern void GcAchievementData_ToAchievement_mA3EFDC224A485DA99E1ED1CC90DEEB2CB68B539E (void);
+extern void GcAchievementData_ToAchievement_mCE88D5DB0AD1F428DFA7C6B6288F1EAC1B4382C4 (void);
 // 0x0000004A UnityEngine.SocialPlatforms.Impl.Score UnityEngine.SocialPlatforms.GameCenter.GcScoreData::ToScore()
-extern void GcScoreData_ToScore_m6B29510CCE935E2A67EAFC653CB4A0A4B8B32B49 (void);
+extern void GcScoreData_ToScore_m14704CC9F232CE249D9C85D2E8D330ADBE1C459E (void);
 // 0x0000004B System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ClearAchievementDescriptions(System.Int32)
-extern void GameCenterPlatform_ClearAchievementDescriptions_mA72C2A90928D81926EF8BCAB66F7150DE0E489CD (void);
+extern void GameCenterPlatform_ClearAchievementDescriptions_mFC1EA8309028E0924972B226438470B9007D92E0 (void);
 // 0x0000004C System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetAchievementDescription(UnityEngine.SocialPlatforms.GameCenter.GcAchievementDescriptionData,System.Int32)
-extern void GameCenterPlatform_SetAchievementDescription_mC153A5A1641CD0ACD697FCA5F8AE700E3AC5D556 (void);
+extern void GameCenterPlatform_SetAchievementDescription_m530A5F9FDDD2C0007A58FC9E68F8C21EC48FFB15 (void);
 // 0x0000004D System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetAchievementDescriptionImage(UnityEngine.Texture2D,System.Int32)
-extern void GameCenterPlatform_SetAchievementDescriptionImage_mF30697C06E102BA695C5C0A8F1CA7DF665DA592C (void);
+extern void GameCenterPlatform_SetAchievementDescriptionImage_m21884A1BD6385140C991949EFFC896404EF5BA95 (void);
 // 0x0000004E System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerAchievementDescriptionCallback(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)
-extern void GameCenterPlatform_TriggerAchievementDescriptionCallback_m2B6DE7A6A44E667D121C17D2F00EC3126E4F83FE (void);
+extern void GameCenterPlatform_TriggerAchievementDescriptionCallback_mBBF292A4186082DE2BD7EBF5F786594E4564C9A4 (void);
 // 0x0000004F System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::AuthenticateCallbackWrapper(System.Int32,System.String)
-extern void GameCenterPlatform_AuthenticateCallbackWrapper_m589656EB520DF6FDBD4A01FEF3C81E01F5AAE2AB (void);
+extern void GameCenterPlatform_AuthenticateCallbackWrapper_m030305128E55F176608EA02E1E2552909A7BFA44 (void);
 // 0x00000050 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ClearFriends(System.Int32)
-extern void GameCenterPlatform_ClearFriends_m9B33314190B858DB062C30278B9588351B2424BC (void);
+extern void GameCenterPlatform_ClearFriends_m5A9B4FE4208774C7767D3EF233274E1C6A386F09 (void);
 // 0x00000051 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetFriends(UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData,System.Int32)
-extern void GameCenterPlatform_SetFriends_m2C5398BD94DE525FC80494D147F1A66B134511D6 (void);
+extern void GameCenterPlatform_SetFriends_m9B06BB8D8CF682E23E6A8FB91670EC68C38B4398 (void);
 // 0x00000052 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetFriendImage(UnityEngine.Texture2D,System.Int32)
-extern void GameCenterPlatform_SetFriendImage_m0345E60955A58236E7FAF8AFEB97609976891A27 (void);
+extern void GameCenterPlatform_SetFriendImage_mC34CA45D3A0D10096BD37B2247619B01862FD371 (void);
 // 0x00000053 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerFriendsCallbackWrapper(System.Action`1<System.Boolean>,System.Int32)
-extern void GameCenterPlatform_TriggerFriendsCallbackWrapper_mAAC5526F5A3C56F30959252B475576C305BB7D1B (void);
+extern void GameCenterPlatform_TriggerFriendsCallbackWrapper_m2ED663BBC2B8F74E037B1278DD3D72D714B7FCB4 (void);
 // 0x00000054 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::AchievementCallbackWrapper(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>,UnityEngine.SocialPlatforms.GameCenter.GcAchievementData[])
-extern void GameCenterPlatform_AchievementCallbackWrapper_m752E3607DDB87BD4D46C63005991FA059EB34A34 (void);
+extern void GameCenterPlatform_AchievementCallbackWrapper_m1E3513F7AEC65F3F7EAE2F3883767C013093E44B (void);
 // 0x00000055 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ProgressCallbackWrapper(System.Action`1<System.Boolean>,System.Boolean)
-extern void GameCenterPlatform_ProgressCallbackWrapper_m936927D783018BF2401D54CA92F8B968C2E3D2B9 (void);
+extern void GameCenterPlatform_ProgressCallbackWrapper_mEDA52DE039187237EBE9C68F9927B0E2FE303599 (void);
 // 0x00000056 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ScoreCallbackWrapper(System.Action`1<System.Boolean>,System.Boolean)
-extern void GameCenterPlatform_ScoreCallbackWrapper_m7F03AD845F9F4969A3ABCE49518FCBCFEB8D1F6A (void);
+extern void GameCenterPlatform_ScoreCallbackWrapper_mFB255ED6101BF11FAC8243FFFC7519D8007E820E (void);
 // 0x00000057 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ScoreLoaderCallbackWrapper(System.Action`1<UnityEngine.SocialPlatforms.IScore[]>,UnityEngine.SocialPlatforms.GameCenter.GcScoreData[])
-extern void GameCenterPlatform_ScoreLoaderCallbackWrapper_m8E18C1133A5C05CF4449F9D3FADE430BEBBF0DA1 (void);
+extern void GameCenterPlatform_ScoreLoaderCallbackWrapper_mD443A4F13366527344A2312132357A948D9E97D2 (void);
 // 0x00000058 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::UnityEngine.SocialPlatforms.ISocialPlatform.LoadFriends(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
-extern void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m1DFD532E0674BB256884F22C83495D9FFBB66CB0 (void);
+extern void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2588423AB4981E834EDBF91FAFBC14B34CE5A315 (void);
 // 0x00000059 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::UnityEngine.SocialPlatforms.ISocialPlatform.Authenticate(UnityEngine.SocialPlatforms.ILocalUser,System.Action`1<System.Boolean>)
-extern void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m1906287A9BD6679297200FD68303DA2CA9BB4EFB (void);
+extern void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_mD2BD6C6784B53686B875E94B35538729377EEC0C (void);
 // 0x0000005A System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::UnityEngine.SocialPlatforms.ISocialPlatform.Authenticate(UnityEngine.SocialPlatforms.ILocalUser,System.Action`2<System.Boolean,System.String>)
-extern void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m3ACFDDBE3CD2501B919983BEDF89463CE33572BE (void);
+extern void GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m00EE28E82D18463D20F3938E89FF9EC634C14E57 (void);
 // 0x0000005B UnityEngine.SocialPlatforms.ILocalUser UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::get_localUser()
-extern void GameCenterPlatform_get_localUser_m7E985071FAA0B7393A5B2A056917DF06B41BD0A4 (void);
+extern void GameCenterPlatform_get_localUser_m3EEB7917C0629DBADEE2DCF8E979BBA09A83AF92 (void);
 // 0x0000005C System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::PopulateLocalUser()
-extern void GameCenterPlatform_PopulateLocalUser_m06D6DF4CD813CC6AB95B84289871700D99C4EF42 (void);
+extern void GameCenterPlatform_PopulateLocalUser_m515CBF35A27FA7F5873C236B8C7CDE226FB5F839 (void);
 // 0x0000005D System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadAchievementDescriptions(System.Action`1<UnityEngine.SocialPlatforms.IAchievementDescription[]>)
-extern void GameCenterPlatform_LoadAchievementDescriptions_m72A5167A9328B903358163FC83A800B9FCEB9AD6 (void);
+extern void GameCenterPlatform_LoadAchievementDescriptions_m2ABE78471BB5B0FD49A5E640881F940411EF2E7D (void);
 // 0x0000005E System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ReportProgress(System.String,System.Double,System.Action`1<System.Boolean>)
-extern void GameCenterPlatform_ReportProgress_mD284779838DA024C5CA4EC40D1B2ECA25569D5C0 (void);
+extern void GameCenterPlatform_ReportProgress_m84D8EA9E8FF51493E28468EDB8FB330D112725C7 (void);
 // 0x0000005F System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadAchievements(System.Action`1<UnityEngine.SocialPlatforms.IAchievement[]>)
-extern void GameCenterPlatform_LoadAchievements_m63737CE0EF90F20A31DD1F43EE3D39D79836DF7F (void);
+extern void GameCenterPlatform_LoadAchievements_m23EED7C060A33D403C9F91F5F95CFA2C12AB90B9 (void);
 // 0x00000060 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ReportScore(System.Int64,System.String,System.Action`1<System.Boolean>)
-extern void GameCenterPlatform_ReportScore_m2ACB935864BC415729EF552832518FA3FF890171 (void);
+extern void GameCenterPlatform_ReportScore_mC2F686533059939CF30468D9D46E14C84AABAF2E (void);
 // 0x00000061 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadScores(System.String,System.Action`1<UnityEngine.SocialPlatforms.IScore[]>)
-extern void GameCenterPlatform_LoadScores_mC191ABA1B69A13CC88A44AF25BD89E1D289CBF52 (void);
+extern void GameCenterPlatform_LoadScores_mC159C539D06107214560137F98CB37C14013B48D (void);
 // 0x00000062 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadScores(UnityEngine.SocialPlatforms.ILeaderboard,System.Action`1<System.Boolean>)
-extern void GameCenterPlatform_LoadScores_m54BF2C6FAB4A19BC80B168F3BB985BDBAFA96A1B (void);
+extern void GameCenterPlatform_LoadScores_m12ED827C5C14AE481BDFB6C12DC973A46CF53056 (void);
 // 0x00000063 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LeaderboardCallbackWrapper(System.Action`1<System.Boolean>,System.Boolean)
-extern void GameCenterPlatform_LeaderboardCallbackWrapper_m1D0797D04EBCFC94424E7033C9E02D3DA4A8A4B1 (void);
+extern void GameCenterPlatform_LeaderboardCallbackWrapper_m1649B9086337504F3E9C92EFC7A14EC33A0945C8 (void);
 // 0x00000064 System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::GetLoading(UnityEngine.SocialPlatforms.ILeaderboard)
-extern void GameCenterPlatform_GetLoading_m06F9588A6143126F03D9C0AAEAA853EC1C9FC3C1 (void);
+extern void GameCenterPlatform_GetLoading_m8B553D2C428CCC0172953A741C624A1A5F344617 (void);
 // 0x00000065 System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::VerifyAuthentication()
-extern void GameCenterPlatform_VerifyAuthentication_m9605DB240711AB73F461074D8B93F195E894554E (void);
+extern void GameCenterPlatform_VerifyAuthentication_mC223F7D625EB6B61E71D4BE11B43BC9F18D37DE9 (void);
 // 0x00000066 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowAchievementsUI()
-extern void GameCenterPlatform_ShowAchievementsUI_m425068FBB95E73A5E2C34A8045394F9583F27728 (void);
+extern void GameCenterPlatform_ShowAchievementsUI_m0401580BA149B7E30547E7E05DC4644CB7E2DBA6 (void);
 // 0x00000067 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowLeaderboardUI()
-extern void GameCenterPlatform_ShowLeaderboardUI_m25410C4C825818ABC415F3231AFD4C0B3D80100C (void);
+extern void GameCenterPlatform_ShowLeaderboardUI_m10D84DC004496337D2927EA748EEEE0689FF6284 (void);
 // 0x00000068 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ClearUsers(System.Int32)
-extern void GameCenterPlatform_ClearUsers_m242535F1ED28589D2C91D12CB1FB3330BBE116A1 (void);
+extern void GameCenterPlatform_ClearUsers_mD07BEA5DE18FFE16AB24B58BC25ECC2162E48AF1 (void);
 // 0x00000069 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetUser(UnityEngine.SocialPlatforms.GameCenter.GcUserProfileData,System.Int32)
-extern void GameCenterPlatform_SetUser_m67E0DEED2E11D8B4E1EFFB03AB95573F1418903C (void);
+extern void GameCenterPlatform_SetUser_m06A17FCCC11FA6C2C98CE7CE838622D173DB2401 (void);
 // 0x0000006A System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SetUserImage(UnityEngine.Texture2D,System.Int32)
-extern void GameCenterPlatform_SetUserImage_m36FDEC3247298B1308E85BA4BFD1F8AAAD0E9E7E (void);
+extern void GameCenterPlatform_SetUserImage_mEACDE90F767F0A0716AFEE720F0C5E03A33E7268 (void);
 // 0x0000006B System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerUsersCallbackWrapper(System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
-extern void GameCenterPlatform_TriggerUsersCallbackWrapper_mBF798F547F7094681E0B5B5FFEEE221DD7E4CC33 (void);
+extern void GameCenterPlatform_TriggerUsersCallbackWrapper_m5D6D81C96398BADB38D69AE72B21D3C5BEF4DD36 (void);
 // 0x0000006C System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadUsers(System.String[],System.Action`1<UnityEngine.SocialPlatforms.IUserProfile[]>)
-extern void GameCenterPlatform_LoadUsers_m10FB18D65C6C997E1AB6F0BEB27891B0C1A4923C (void);
+extern void GameCenterPlatform_LoadUsers_m616D01C1A67469537A3F2D02DC934D57CE4B01A2 (void);
 // 0x0000006D System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SafeSetUserImage(UnityEngine.SocialPlatforms.Impl.UserProfile[]&,UnityEngine.Texture2D,System.Int32)
-extern void GameCenterPlatform_SafeSetUserImage_m346275823D7FDD78D062A4E746AE1C6D2A82F849 (void);
+extern void GameCenterPlatform_SafeSetUserImage_mC41DE236FBD6A8FAA86053E8114004ECE7638257 (void);
 // 0x0000006E System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::SafeClearArray(UnityEngine.SocialPlatforms.Impl.UserProfile[]&,System.Int32)
-extern void GameCenterPlatform_SafeClearArray_m3A96AB8175D512B8EECD0EB25B80769914D34D07 (void);
+extern void GameCenterPlatform_SafeClearArray_m3F2C8854EB63AE16CC62EA55FA9621EEEC889FAC (void);
 // 0x0000006F UnityEngine.SocialPlatforms.ILeaderboard UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::CreateLeaderboard()
-extern void GameCenterPlatform_CreateLeaderboard_mC2B336F8C9569B3FD7059ED7861B208DD44B0EAB (void);
+extern void GameCenterPlatform_CreateLeaderboard_m4D487F47156DF1F0EE7DA44946D4ED48936689BB (void);
 // 0x00000070 UnityEngine.SocialPlatforms.IAchievement UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::CreateAchievement()
-extern void GameCenterPlatform_CreateAchievement_mC8BE646E6BB63CCF284C62FABEE712BF7590DB1A (void);
+extern void GameCenterPlatform_CreateAchievement_mD92E4A555CBCE298E00F99220CF3930DE64DE35B (void);
 // 0x00000071 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::TriggerResetAchievementCallback(System.Boolean)
-extern void GameCenterPlatform_TriggerResetAchievementCallback_m2E643A3EF41033D83DB9C85BE1090B88735209B4 (void);
+extern void GameCenterPlatform_TriggerResetAchievementCallback_m974E37996477654351E01C2902390BEECA5550CF (void);
 // 0x00000072 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Authenticate()
-extern void GameCenterPlatform_Authenticate_mB8E4AEEB9851A5F0545980B87B72181CFF0B550C (void);
+extern void GameCenterPlatform_Authenticate_m20B972476A98E4DC285612EE25D77B156A781EED (void);
 // 0x00000073 System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::GetAuthenticated()
-extern void GameCenterPlatform_GetAuthenticated_m8A876D69350A2F69A65D25DBE9A4FDAB04C51C4D (void);
+extern void GameCenterPlatform_GetAuthenticated_m5D7A9F8E5D366FBA79F17D8F145A11FCB736CD36 (void);
 // 0x00000074 System.String UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserName()
-extern void GameCenterPlatform_Internal_UserName_m7C31CCEE889F1F57D3B6670E15B269C341201F8A (void);
+extern void GameCenterPlatform_Internal_UserName_m25B73FE26ECF4E377AE567B7D08E36AD0400EA6D (void);
 // 0x00000075 System.String UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserID()
-extern void GameCenterPlatform_Internal_UserID_m6824E492EA2AB9A62D41799A4B1867E3BD0D2FD2 (void);
+extern void GameCenterPlatform_Internal_UserID_mA06FF3D7F55FD66F63F13D796C2CE4F75C5052D3 (void);
 // 0x00000076 System.String UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_UserGameID()
-extern void GameCenterPlatform_Internal_UserGameID_mBA46211C39FE80D6AA3861101144FADD41A5D04E (void);
+extern void GameCenterPlatform_Internal_UserGameID_m50723F3AB1DF0ADF196CE3802A59D39827DDACEE (void);
 // 0x00000077 System.String UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LegacyUserID()
-extern void GameCenterPlatform_Internal_LegacyUserID_mCC8B227725CC5C36B02A81C7DD02CC094A71113F (void);
+extern void GameCenterPlatform_Internal_LegacyUserID_m0FAEDABEB8196642D0ACBEEFFAAA0A34C971FCAA (void);
 // 0x00000078 System.Boolean UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::GetIsUnderage()
-extern void GameCenterPlatform_GetIsUnderage_m7776069236A4DAC99BCFE0920155F901A18B1EC4 (void);
+extern void GameCenterPlatform_GetIsUnderage_m9B4B89CF2DE9A5200EA9703C6C340854E7302F45 (void);
 // 0x00000079 UnityEngine.Texture2D UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::GetUserImage()
-extern void GameCenterPlatform_GetUserImage_mA57365C677E0CB5B1C1B6B8E20361C9D58DA73C5 (void);
+extern void GameCenterPlatform_GetUserImage_mC24801D65578DA05FC1367DE548D57E6C10858C4 (void);
 // 0x0000007A System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::LoadFriends(System.Object)
-extern void GameCenterPlatform_LoadFriends_mF485A93E33F5672A6EDDC74B856AD432FBF12803 (void);
+extern void GameCenterPlatform_LoadFriends_m1EB5C35E82F8408E36C3DB47356D6198E6516203 (void);
 // 0x0000007B System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::InternalLoadAchievementDescriptions(System.Object)
-extern void GameCenterPlatform_InternalLoadAchievementDescriptions_mEF3BDD5E9E1C4B53A18B2C848D526E695CDB94E4 (void);
+extern void GameCenterPlatform_InternalLoadAchievementDescriptions_m25895D2455BE47558511DA3353A78728045BBB7A (void);
 // 0x0000007C System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::InternalLoadAchievements(System.Object)
-extern void GameCenterPlatform_InternalLoadAchievements_mC483E963DB55E8CE904297B7A7D08BA872C8C5F0 (void);
+extern void GameCenterPlatform_InternalLoadAchievements_mE1DE7A99AC5421D83A90891545A13154503A24C8 (void);
 // 0x0000007D System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::InternalReportProgress(System.String,System.Double,System.Object)
-extern void GameCenterPlatform_InternalReportProgress_mE347276319A49E97397DEAA0726B6156746CD2D0 (void);
+extern void GameCenterPlatform_InternalReportProgress_mC287DD08303ADC0C0AA5CDD7E64A19A23CF9CC65 (void);
 // 0x0000007E System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::InternalReportScore(System.Int64,System.String,System.Object)
-extern void GameCenterPlatform_InternalReportScore_mAEE46DC335CB58B4B60855A1C0F417D0A2337FB7 (void);
+extern void GameCenterPlatform_InternalReportScore_m5BD67253E46A7B04DBABB10AE74D92EEBFB34CA4 (void);
 // 0x0000007F System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::InternalLoadScores(System.String,System.Object)
-extern void GameCenterPlatform_InternalLoadScores_m782C2E75372DB95426C859CA5BE221FFFE9787CF (void);
+extern void GameCenterPlatform_InternalLoadScores_m2F9795BEEBAADBFD30835FDCA37120CAF01E4D39 (void);
 // 0x00000080 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowAchievementsUI()
-extern void GameCenterPlatform_Internal_ShowAchievementsUI_mC48635E42795B0F70BA5EAC29CDD5F3FEECF80D0 (void);
+extern void GameCenterPlatform_Internal_ShowAchievementsUI_m2570D8A2789253DC03808182E5DDB12F6F3CAA78 (void);
 // 0x00000081 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_ShowLeaderboardUI()
-extern void GameCenterPlatform_Internal_ShowLeaderboardUI_m1902CC112F48CC4A35F3E0C170957D48016D8BF5 (void);
+extern void GameCenterPlatform_Internal_ShowLeaderboardUI_m8E07D464AA4195EA8391BE3906804B6ECD05742F (void);
 // 0x00000082 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::Internal_LoadUsers(System.String[],System.Object)
-extern void GameCenterPlatform_Internal_LoadUsers_m59FCA59D1367C1AA3B73768481CAF37DD189B9E6 (void);
+extern void GameCenterPlatform_Internal_LoadUsers_m999E05472208C579E960909336F9A62CB91D7BDB (void);
 // 0x00000083 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ResetAllAchievements()
-extern void GameCenterPlatform_ResetAllAchievements_mE9D28FB583D98AA4088C5F343547F0D6417CEFE1 (void);
+extern void GameCenterPlatform_ResetAllAchievements_mC15426C08E5DC78F2B3F0AA8FA7DF8E1CC28C9D9 (void);
 // 0x00000084 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowDefaultAchievementBanner(System.Boolean)
-extern void GameCenterPlatform_ShowDefaultAchievementBanner_mF87D9C8A302CF0AD0A3111427040B689B5B613BE (void);
+extern void GameCenterPlatform_ShowDefaultAchievementBanner_m4F1DFCD4CB1C1C807B8612D20D87EB10A47B9E79 (void);
 // 0x00000085 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ResetAllAchievements(System.Action`1<System.Boolean>)
-extern void GameCenterPlatform_ResetAllAchievements_m0D1E0F3E02F0F8F11B2BC6259032DACD60C95E93 (void);
+extern void GameCenterPlatform_ResetAllAchievements_m156692A6235E505894A9C40EB6864414277D0C90 (void);
 // 0x00000086 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowDefaultAchievementCompletionBanner(System.Boolean)
-extern void GameCenterPlatform_ShowDefaultAchievementCompletionBanner_mF2DF755184E4F2608334418643FD5FB1767B2825 (void);
+extern void GameCenterPlatform_ShowDefaultAchievementCompletionBanner_m7335AE6D96A8126E369D3CF0F3581BAF08C4CF00 (void);
 // 0x00000087 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowLeaderboardUI(System.String,UnityEngine.SocialPlatforms.TimeScope)
-extern void GameCenterPlatform_ShowLeaderboardUI_m22ADB2F97963833741FE633EE2D9B332077A3458 (void);
+extern void GameCenterPlatform_ShowLeaderboardUI_m3508CE4760382751BD4DE3064472948579E333CB (void);
 // 0x00000088 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::ShowSpecificLeaderboardUI(System.String,System.Int32)
-extern void GameCenterPlatform_ShowSpecificLeaderboardUI_m1D82E3387839C941131D76AB186E98F48B5043EB (void);
+extern void GameCenterPlatform_ShowSpecificLeaderboardUI_m8020D079A7C759AA9223588CC35501ADEE137096 (void);
 // 0x00000089 System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::.ctor()
-extern void GameCenterPlatform__ctor_m12106EF272A85BC20F2CA464C0A92DF42CAB375A (void);
+extern void GameCenterPlatform__ctor_m341814BE3C4AC9683D3C828F744775C56E3B37A8 (void);
 // 0x0000008A System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform::.cctor()
-extern void GameCenterPlatform__cctor_mE88589D1A6F81068B6E9E2E837C61535E74B4D72 (void);
+extern void GameCenterPlatform__cctor_m6FA1E62C4DAFFDCE1885B5240E0FF2332542B580 (void);
 // 0x0000008B System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform/<>c__DisplayClass21_0::.ctor()
-extern void U3CU3Ec__DisplayClass21_0__ctor_mEAC1B8E5722EF1563CE164CE0A2C2EF061A3B65B (void);
+extern void U3CU3Ec__DisplayClass21_0__ctor_m88E5FDE6B93424368864BF746056A7FC84B7D830 (void);
 // 0x0000008C System.Void UnityEngine.SocialPlatforms.GameCenter.GameCenterPlatform/<>c__DisplayClass21_0::<UnityEngine.SocialPlatforms.ISocialPlatform.Authenticate>b__0(System.Boolean,System.String)
-extern void U3CU3Ec__DisplayClass21_0_U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Eb__0_m4B82E8613D69236F6B072A688C556241D1CA9E5C (void);
+extern void U3CU3Ec__DisplayClass21_0_U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Eb__0_m9AE0F3B20150C0C9F14CCAEF54A67A6E8F47E04A (void);
 // 0x0000008D System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::.ctor(UnityEngine.SocialPlatforms.Impl.Leaderboard)
-extern void GcLeaderboard__ctor_mC6DCBFD1A415763A634A19381C936254D8B2F4E7 (void);
+extern void GcLeaderboard__ctor_mE6ABD1A5D616A3371023FB53BAAA34C638081632 (void);
 // 0x0000008E System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Finalize()
-extern void GcLeaderboard_Finalize_m0DA6F9152780D5EFC4EE884E5CAA6A469CE81E2A (void);
+extern void GcLeaderboard_Finalize_mFB136BB37E37121BCC3288CED360961840FC4663 (void);
 // 0x0000008F System.Boolean UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Contains(UnityEngine.SocialPlatforms.Impl.Leaderboard)
-extern void GcLeaderboard_Contains_m599B4319BA3FD351DC157B5E23D0489D8186279C (void);
+extern void GcLeaderboard_Contains_m08D3F5665F1A25DBDC41B9D98461D5DBB98DCD48 (void);
 // 0x00000090 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetScores(UnityEngine.SocialPlatforms.GameCenter.GcScoreData[])
-extern void GcLeaderboard_SetScores_m0FE1B289E42EAF2415193FFA1BEAE3FE38AA6B4B (void);
+extern void GcLeaderboard_SetScores_mEBD889F27BCC226B108D4BB5DD6E24C3BF893F24 (void);
 // 0x00000091 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetLocalScore(UnityEngine.SocialPlatforms.GameCenter.GcScoreData)
-extern void GcLeaderboard_SetLocalScore_mB3EB59503BACFA37E9F112DB5E1906174C67AF32 (void);
+extern void GcLeaderboard_SetLocalScore_mE4B7C301194F99B8CE19D4514825303AAEA54CDB (void);
 // 0x00000092 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetMaxRange(System.UInt32)
-extern void GcLeaderboard_SetMaxRange_m9926B80DD3377EF7798718F0FD57587DADE4DC31 (void);
+extern void GcLeaderboard_SetMaxRange_m387A4CB1A33D2B3C4A5ED16B8877F00D0AA44B80 (void);
 // 0x00000093 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::SetTitle(System.String)
-extern void GcLeaderboard_SetTitle_m964511DCF53C69F7208CDC1DFD68885E2BCECF2A (void);
+extern void GcLeaderboard_SetTitle_m979181BD4D8E63155ECB306F3E9FE90CE0973208 (void);
 // 0x00000094 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Internal_LoadScores(System.String,System.Int32,System.Int32,System.String[],System.Int32,System.Int32,System.Object)
-extern void GcLeaderboard_Internal_LoadScores_mDFC3A947F5DC0FC7EF83B6C5B605D93BC959675F (void);
+extern void GcLeaderboard_Internal_LoadScores_m94273C598B909F6E518E4C6A0A1EEFA83BD2ECAD (void);
 // 0x00000095 System.IntPtr UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::GcLeaderboard_LoadScores(System.Object,System.String,System.Int32,System.Int32,System.String[],System.Int32,System.Int32,System.Object)
-extern void GcLeaderboard_GcLeaderboard_LoadScores_mE4F307604F265C0C0EBB3D4F73C69CDDCD0C33EA (void);
+extern void GcLeaderboard_GcLeaderboard_LoadScores_m20BF42809E9482C25142F588CE9BB9E8C41F6AEF (void);
 // 0x00000096 System.Boolean UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Loading()
-extern void GcLeaderboard_Loading_m825936D6AB51CC355DAB8DAAF6177AC4ABBC78B2 (void);
+extern void GcLeaderboard_Loading_m089B19A42B7EA2AB31481F2CA81E47279ABF0E75 (void);
 // 0x00000097 System.Boolean UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::GcLeaderboard_Loading(System.IntPtr)
-extern void GcLeaderboard_GcLeaderboard_Loading_m75421046282EED69E844C5A137EB4D1322934C1C (void);
+extern void GcLeaderboard_GcLeaderboard_Loading_mD5B7534593974433AB2CFD090697855AA782E4DE (void);
 // 0x00000098 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::Dispose()
-extern void GcLeaderboard_Dispose_m54F8C8544A7F65898B6444B3EE11916153C20B6F (void);
+extern void GcLeaderboard_Dispose_m115757D5DFB8FFE4CD11F2D20244965F992A950C (void);
 // 0x00000099 System.Void UnityEngine.SocialPlatforms.GameCenter.GcLeaderboard::GcLeaderboard_Dispose(System.IntPtr)
-extern void GcLeaderboard_GcLeaderboard_Dispose_m45FAF5CB809CC8AA14C925CB11F23D6AD4DF407C (void);
+extern void GcLeaderboard_GcLeaderboard_Dispose_mE88BED6761601809CBFC8B8B88D49FB599E5EE74 (void);
 static Il2CppMethodPointer s_methodPointers[153] = 
 {
 	NULL,
 	NULL,
 	NULL,
 	NULL,
-	Range__ctor_mD7BBA6A816E8FBFDDC618308BC5D5882297443F8,
+	Range__ctor_m54D7381A4A3634B7B0AF0847B848EBB8786B876B,
 	NULL,
 	NULL,
 	NULL,
 	NULL,
-	LocalUser__ctor_mE1D89C27BD5A6DAE982610A87A472E736644605A,
-	LocalUser_SetFriends_m54CD46805170EDB993E87E0A9FA3BF82A910E489,
-	LocalUser_SetAuthenticated_mCAFB7406BCB0A184B405E25695F280DA52EFE582,
-	LocalUser_SetUnderage_mA767EE5BC8615E452A6CC57376CA9B9DA601386E,
-	LocalUser_get_authenticated_m7D219E0639A779F4527590E43E66F31C2A482BD1,
-	UserProfile__ctor_m65DBFCC8D74A39E029B7EEBF5B24A8790C3668AA,
-	UserProfile__ctor_m82A71921E766018566AFB09BCE3091C8F1055F39,
-	UserProfile_ToString_mE86E8A99DF0EE73C93A55624E890806213567924,
-	UserProfile_SetUserName_m25580633F0CE2894355406F1F8C86CCEA3E79BBA,
-	UserProfile_SetUserID_mD1A6F3DEE1C2887A8EDF41444C1D13A2835DF719,
-	UserProfile_SetLegacyUserID_m707552F7298E3A711C41FF8744C8309276E398A4,
-	UserProfile_SetUserGameID_mF610AEAED6A05E06A24F1C2DC82EC8BD5CAAB4E0,
-	UserProfile_SetImage_m756E17B9BFE41D572C76A506E2BDA81A2D7D9605,
-	UserProfile_get_userName_mB127337E5455C94299C39FB66C2965FF3421142E,
-	UserProfile_get_id_m2C9612A3B81A7F76F86C4FE87AD4D3FADEF3E385,
-	UserProfile_get_isFriend_m7ACC8963AD01FB384D215AF8C215DD93CB5322EA,
-	UserProfile_get_state_mF93F969F5923A0A3528923E5A452138D00D4E248,
-	Achievement__ctor_m6BFE0E7DB18B35A485855AC3B1C0D4E25AB56C0C,
-	Achievement__ctor_m8E491BFB569F645FC9BF4CC8F58F5718C54901E0,
-	Achievement__ctor_m570954380BDC68F860E558D037369D03269C72A4,
-	Achievement_ToString_m443278D0F151B7B9BAF041785378EFEAC98E6052,
-	Achievement_get_id_m39931C0B44D8A4948E12527FDE77C9211028267B,
-	Achievement_set_id_m16A4091CBC207FB287FEFF608C5F45D9D21106A0,
-	Achievement_get_percentCompleted_m864BBAA8D955D724A506E62F6741B52D43F38F9D,
-	Achievement_set_percentCompleted_mD433F22DBB60B94FD45CC2A73C9A22C93B0CB9CB,
-	Achievement_get_completed_m26C3793203BC368F6A44678FEB4E8B94976DC66F,
-	Achievement_get_hidden_m732D2ED47F705384C1A8CA28E40AADE16944CD11,
-	Achievement_get_lastReportedDate_m0C90E0EB0392E57E70D62D2FB182527613BB285C,
-	AchievementDescription__ctor_m5EA1DE335B7A97FCDE944FBFD2B979D870D3F37A,
-	AchievementDescription_ToString_m48909B3814359ED0FAF88F29F3B80C024F0C5D36,
-	AchievementDescription_SetImage_mB1653A512095EE6A795031B009513071A559C248,
-	AchievementDescription_get_id_mD5FEE2DBF0C88887C99E3EDCD9BC65C32EFBAD4A,
-	AchievementDescription_set_id_m61C4DA5B9AD3353518524A8E34723CE7836D432E,
-	AchievementDescription_get_title_mF4E46C1A1BBF0087858BE6046604D00DB130E81F,
-	AchievementDescription_get_achievedDescription_m4901EFA817B61139B1A5284CAF14378A531B7537,
-	AchievementDescription_get_unachievedDescription_m90706792FD9A6FD0BC4975E41E531F91AEC3F33C,
-	AchievementDescription_get_hidden_m8FDE6EBDC27F05F8D04B53B4F044B5B06F2EDA0A,
-	AchievementDescription_get_points_mCBD1A433E28AC73B7AECBE3E41FFDB6B335031AF,
-	Score__ctor_m88494757EDE00B4CA1BE7027A1F84C82E09EC958,
-	Score__ctor_m94026C33B1E9EE0F31614511DB8F512E8A7A4FE3,
-	Score_ToString_mBE1B8E8846C633AAA58A0680C888F21915454FC4,
-	Score_get_leaderboardID_m079BDC75AED9D8C06DC36F78AC233171F023FB4F,
-	Score_set_leaderboardID_m05255F12ADDC2FC6D7E9646CBAE68D2924E66F65,
-	Score_get_value_m750646EDC0619A11179177F597C21374F13FCB9E,
-	Score_set_value_mFECF5E9D1928EEAE7E46F497CDA159549EEB74C4,
-	Leaderboard__ctor_mC09955DEF2101303E698FC13E1BBFFA90B3365F4,
-	Leaderboard_ToString_mE59DCCF117736269AF0C6CD21876DB3448BD14ED,
-	Leaderboard_SetLocalUserScore_m17939BC032AC6FDCC1152234807C50E97A72D600,
-	Leaderboard_SetMaxRange_m5D699FC22BC5BED04386C4B6D4661663B49FD3B4,
-	Leaderboard_SetScores_m2DB8C9FB943AD849B23FCEB56D76FAE4E11C2084,
-	Leaderboard_SetTitle_m5FE6EFFE4099E7BA2B7F1F6644B0A9E1C5A93627,
-	Leaderboard_GetUserFilter_m229A294CB0ED73326836FABAC438E517F6517550,
-	Leaderboard_get_id_m4A262BB19BCACE6C9B19874F5D68C777846C6CD6,
-	Leaderboard_set_id_mC863AFBCE6B992935BCE9E8B567CDA40CCD94B42,
-	Leaderboard_get_userScope_m8304E736582482D0E5705C109D95F0CEDF2EE54C,
-	Leaderboard_set_userScope_m66BBCC760CDAF1C44639BD10E4D901EFD7C3F778,
-	Leaderboard_get_range_mB9C6C91869423F791E017B71FCDB17A354585519,
-	Leaderboard_set_range_m29352D47548D750E0E42EC9627C861C69D084444,
-	Leaderboard_get_timeScope_mE1F4CBEBE4B2E1E6BD245E3BE518680F13BBF276,
-	Leaderboard_set_timeScope_m36122610C955D05BD7FC713415CA78076986B901,
-	GcUserProfileData_ToUserProfile_m500A5A38D89D400333D9ED8D2005449AFEC91F24,
-	GcUserProfileData_AddToArray_mA189B901FEF32E5CA9AF7DEB58D8143E87E41EC2,
-	GcAchievementDescriptionData_ToAchievementDescription_m9942E64237B72699916331A3EED62FC8E0DB8B86,
-	GcAchievementData_ToAchievement_mA3EFDC224A485DA99E1ED1CC90DEEB2CB68B539E,
-	GcScoreData_ToScore_m6B29510CCE935E2A67EAFC653CB4A0A4B8B32B49,
-	GameCenterPlatform_ClearAchievementDescriptions_mA72C2A90928D81926EF8BCAB66F7150DE0E489CD,
-	GameCenterPlatform_SetAchievementDescription_mC153A5A1641CD0ACD697FCA5F8AE700E3AC5D556,
-	GameCenterPlatform_SetAchievementDescriptionImage_mF30697C06E102BA695C5C0A8F1CA7DF665DA592C,
-	GameCenterPlatform_TriggerAchievementDescriptionCallback_m2B6DE7A6A44E667D121C17D2F00EC3126E4F83FE,
-	GameCenterPlatform_AuthenticateCallbackWrapper_m589656EB520DF6FDBD4A01FEF3C81E01F5AAE2AB,
-	GameCenterPlatform_ClearFriends_m9B33314190B858DB062C30278B9588351B2424BC,
-	GameCenterPlatform_SetFriends_m2C5398BD94DE525FC80494D147F1A66B134511D6,
-	GameCenterPlatform_SetFriendImage_m0345E60955A58236E7FAF8AFEB97609976891A27,
-	GameCenterPlatform_TriggerFriendsCallbackWrapper_mAAC5526F5A3C56F30959252B475576C305BB7D1B,
-	GameCenterPlatform_AchievementCallbackWrapper_m752E3607DDB87BD4D46C63005991FA059EB34A34,
-	GameCenterPlatform_ProgressCallbackWrapper_m936927D783018BF2401D54CA92F8B968C2E3D2B9,
-	GameCenterPlatform_ScoreCallbackWrapper_m7F03AD845F9F4969A3ABCE49518FCBCFEB8D1F6A,
-	GameCenterPlatform_ScoreLoaderCallbackWrapper_m8E18C1133A5C05CF4449F9D3FADE430BEBBF0DA1,
-	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m1DFD532E0674BB256884F22C83495D9FFBB66CB0,
-	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m1906287A9BD6679297200FD68303DA2CA9BB4EFB,
-	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m3ACFDDBE3CD2501B919983BEDF89463CE33572BE,
-	GameCenterPlatform_get_localUser_m7E985071FAA0B7393A5B2A056917DF06B41BD0A4,
-	GameCenterPlatform_PopulateLocalUser_m06D6DF4CD813CC6AB95B84289871700D99C4EF42,
-	GameCenterPlatform_LoadAchievementDescriptions_m72A5167A9328B903358163FC83A800B9FCEB9AD6,
-	GameCenterPlatform_ReportProgress_mD284779838DA024C5CA4EC40D1B2ECA25569D5C0,
-	GameCenterPlatform_LoadAchievements_m63737CE0EF90F20A31DD1F43EE3D39D79836DF7F,
-	GameCenterPlatform_ReportScore_m2ACB935864BC415729EF552832518FA3FF890171,
-	GameCenterPlatform_LoadScores_mC191ABA1B69A13CC88A44AF25BD89E1D289CBF52,
-	GameCenterPlatform_LoadScores_m54BF2C6FAB4A19BC80B168F3BB985BDBAFA96A1B,
-	GameCenterPlatform_LeaderboardCallbackWrapper_m1D0797D04EBCFC94424E7033C9E02D3DA4A8A4B1,
-	GameCenterPlatform_GetLoading_m06F9588A6143126F03D9C0AAEAA853EC1C9FC3C1,
-	GameCenterPlatform_VerifyAuthentication_m9605DB240711AB73F461074D8B93F195E894554E,
-	GameCenterPlatform_ShowAchievementsUI_m425068FBB95E73A5E2C34A8045394F9583F27728,
-	GameCenterPlatform_ShowLeaderboardUI_m25410C4C825818ABC415F3231AFD4C0B3D80100C,
-	GameCenterPlatform_ClearUsers_m242535F1ED28589D2C91D12CB1FB3330BBE116A1,
-	GameCenterPlatform_SetUser_m67E0DEED2E11D8B4E1EFFB03AB95573F1418903C,
-	GameCenterPlatform_SetUserImage_m36FDEC3247298B1308E85BA4BFD1F8AAAD0E9E7E,
-	GameCenterPlatform_TriggerUsersCallbackWrapper_mBF798F547F7094681E0B5B5FFEEE221DD7E4CC33,
-	GameCenterPlatform_LoadUsers_m10FB18D65C6C997E1AB6F0BEB27891B0C1A4923C,
-	GameCenterPlatform_SafeSetUserImage_m346275823D7FDD78D062A4E746AE1C6D2A82F849,
-	GameCenterPlatform_SafeClearArray_m3A96AB8175D512B8EECD0EB25B80769914D34D07,
-	GameCenterPlatform_CreateLeaderboard_mC2B336F8C9569B3FD7059ED7861B208DD44B0EAB,
-	GameCenterPlatform_CreateAchievement_mC8BE646E6BB63CCF284C62FABEE712BF7590DB1A,
-	GameCenterPlatform_TriggerResetAchievementCallback_m2E643A3EF41033D83DB9C85BE1090B88735209B4,
-	GameCenterPlatform_Authenticate_mB8E4AEEB9851A5F0545980B87B72181CFF0B550C,
-	GameCenterPlatform_GetAuthenticated_m8A876D69350A2F69A65D25DBE9A4FDAB04C51C4D,
-	GameCenterPlatform_Internal_UserName_m7C31CCEE889F1F57D3B6670E15B269C341201F8A,
-	GameCenterPlatform_Internal_UserID_m6824E492EA2AB9A62D41799A4B1867E3BD0D2FD2,
-	GameCenterPlatform_Internal_UserGameID_mBA46211C39FE80D6AA3861101144FADD41A5D04E,
-	GameCenterPlatform_Internal_LegacyUserID_mCC8B227725CC5C36B02A81C7DD02CC094A71113F,
-	GameCenterPlatform_GetIsUnderage_m7776069236A4DAC99BCFE0920155F901A18B1EC4,
-	GameCenterPlatform_GetUserImage_mA57365C677E0CB5B1C1B6B8E20361C9D58DA73C5,
-	GameCenterPlatform_LoadFriends_mF485A93E33F5672A6EDDC74B856AD432FBF12803,
-	GameCenterPlatform_InternalLoadAchievementDescriptions_mEF3BDD5E9E1C4B53A18B2C848D526E695CDB94E4,
-	GameCenterPlatform_InternalLoadAchievements_mC483E963DB55E8CE904297B7A7D08BA872C8C5F0,
-	GameCenterPlatform_InternalReportProgress_mE347276319A49E97397DEAA0726B6156746CD2D0,
-	GameCenterPlatform_InternalReportScore_mAEE46DC335CB58B4B60855A1C0F417D0A2337FB7,
-	GameCenterPlatform_InternalLoadScores_m782C2E75372DB95426C859CA5BE221FFFE9787CF,
-	GameCenterPlatform_Internal_ShowAchievementsUI_mC48635E42795B0F70BA5EAC29CDD5F3FEECF80D0,
-	GameCenterPlatform_Internal_ShowLeaderboardUI_m1902CC112F48CC4A35F3E0C170957D48016D8BF5,
-	GameCenterPlatform_Internal_LoadUsers_m59FCA59D1367C1AA3B73768481CAF37DD189B9E6,
-	GameCenterPlatform_ResetAllAchievements_mE9D28FB583D98AA4088C5F343547F0D6417CEFE1,
-	GameCenterPlatform_ShowDefaultAchievementBanner_mF87D9C8A302CF0AD0A3111427040B689B5B613BE,
-	GameCenterPlatform_ResetAllAchievements_m0D1E0F3E02F0F8F11B2BC6259032DACD60C95E93,
-	GameCenterPlatform_ShowDefaultAchievementCompletionBanner_mF2DF755184E4F2608334418643FD5FB1767B2825,
-	GameCenterPlatform_ShowLeaderboardUI_m22ADB2F97963833741FE633EE2D9B332077A3458,
-	GameCenterPlatform_ShowSpecificLeaderboardUI_m1D82E3387839C941131D76AB186E98F48B5043EB,
-	GameCenterPlatform__ctor_m12106EF272A85BC20F2CA464C0A92DF42CAB375A,
-	GameCenterPlatform__cctor_mE88589D1A6F81068B6E9E2E837C61535E74B4D72,
-	U3CU3Ec__DisplayClass21_0__ctor_mEAC1B8E5722EF1563CE164CE0A2C2EF061A3B65B,
-	U3CU3Ec__DisplayClass21_0_U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Eb__0_m4B82E8613D69236F6B072A688C556241D1CA9E5C,
-	GcLeaderboard__ctor_mC6DCBFD1A415763A634A19381C936254D8B2F4E7,
-	GcLeaderboard_Finalize_m0DA6F9152780D5EFC4EE884E5CAA6A469CE81E2A,
-	GcLeaderboard_Contains_m599B4319BA3FD351DC157B5E23D0489D8186279C,
-	GcLeaderboard_SetScores_m0FE1B289E42EAF2415193FFA1BEAE3FE38AA6B4B,
-	GcLeaderboard_SetLocalScore_mB3EB59503BACFA37E9F112DB5E1906174C67AF32,
-	GcLeaderboard_SetMaxRange_m9926B80DD3377EF7798718F0FD57587DADE4DC31,
-	GcLeaderboard_SetTitle_m964511DCF53C69F7208CDC1DFD68885E2BCECF2A,
-	GcLeaderboard_Internal_LoadScores_mDFC3A947F5DC0FC7EF83B6C5B605D93BC959675F,
-	GcLeaderboard_GcLeaderboard_LoadScores_mE4F307604F265C0C0EBB3D4F73C69CDDCD0C33EA,
-	GcLeaderboard_Loading_m825936D6AB51CC355DAB8DAAF6177AC4ABBC78B2,
-	GcLeaderboard_GcLeaderboard_Loading_m75421046282EED69E844C5A137EB4D1322934C1C,
-	GcLeaderboard_Dispose_m54F8C8544A7F65898B6444B3EE11916153C20B6F,
-	GcLeaderboard_GcLeaderboard_Dispose_m45FAF5CB809CC8AA14C925CB11F23D6AD4DF407C,
+	LocalUser__ctor_m6D2AE6DFC61CEC39842944D970E2B2B5547CBE97,
+	LocalUser_SetFriends_m369BCB8021FB5A359B11D2ACB2F1CCD3DFBF0F6B,
+	LocalUser_SetAuthenticated_m1A7992E986F32450A1A97409AF772DC3A0F47E44,
+	LocalUser_SetUnderage_m84D3621386D7E917F7D4AD7D2C00DE8CA8AD278C,
+	LocalUser_get_authenticated_m3121DA81FF48CFFB4024ADECEE98F8E686497C54,
+	UserProfile__ctor_m12A26F8BDE41F4B55A645BB1D4038E81A877E680,
+	UserProfile__ctor_m3649D0E00F816E2712CA936DDBC55ADBC336BBF1,
+	UserProfile_ToString_mEB091241EC114F4F42D2CE15F127B83556EBE45D,
+	UserProfile_SetUserName_m107512A03197354BAF98514ED92D647F4FC778DA,
+	UserProfile_SetUserID_m32F417A48D4FDC4ED180EA2AD92F875996DA3353,
+	UserProfile_SetLegacyUserID_m3A0B0F4DD6782D40B5CF6D575B670EC96396F030,
+	UserProfile_SetUserGameID_m9A90E716F9DB8138181F748243D7BB12BCCAA2D5,
+	UserProfile_SetImage_mEBC25331E4B4E201DB02A0442C473829E07D6221,
+	UserProfile_get_userName_mDAAF12B06B939DDAAB6F10E8CB40B21C48A94F30,
+	UserProfile_get_id_m16A4060A0C7E4480F68D6915E6FAB15EAE973336,
+	UserProfile_get_isFriend_m353D113C22BFA80F0E9A1DBEC40E4EF4984AC4EC,
+	UserProfile_get_state_mF5F8CF4E71CD46ADBCC58E5A3AFA715B3E5F9D4A,
+	Achievement__ctor_mE4B26ACD8E4220F645864036B7F9AD2E7D746B85,
+	Achievement__ctor_m18A74E7A97AEBD079DA90A210C02C6CE47B44FFC,
+	Achievement__ctor_m9EA819E3F3EA4B91F8998D54EF2F5B2B1E29976F,
+	Achievement_ToString_m15B103F95C549FCED0D581FBACD73E47310C9EAC,
+	Achievement_get_id_m0BDCED7ECE8BA170E619212CB2D23BD28322A0A6,
+	Achievement_set_id_mF2FB90F3D2F1F38DBDB449C956B8B35BAF6108EE,
+	Achievement_get_percentCompleted_mC0BFB768F39C110F2A851B5089C300E1C879D860,
+	Achievement_set_percentCompleted_mFB33E191E8D7557E178EEC6DB80B616C268824BD,
+	Achievement_get_completed_m5A625BD69E129E468D83A98CF4CAA4AA28E0B2BF,
+	Achievement_get_hidden_m343030FB2BE6636313A09DEDCB02BE0ADB5E3A8E,
+	Achievement_get_lastReportedDate_mEACB3BADB0996AF967B26378FA48BC964E68F091,
+	AchievementDescription__ctor_mB5F9A234974FEC3BB146511929791A1D8846E2EF,
+	AchievementDescription_ToString_m25F3CC08322EAB311EDBC23D85F067387706DE02,
+	AchievementDescription_SetImage_m16FC76EE05781DB25586A64D3B0D6CE3E6213CF5,
+	AchievementDescription_get_id_mC954988F8344E3B7E316D15EBD240A85D06A77C7,
+	AchievementDescription_set_id_m48924C51CD1E02F0416AC540DC2214E4D64AF411,
+	AchievementDescription_get_title_m196C3AEC0457C25D95B16309E12AB246D054CB67,
+	AchievementDescription_get_achievedDescription_m4EB337E95791A795A79F2C75F909E64747B682B5,
+	AchievementDescription_get_unachievedDescription_mE98806AB14F770F2A9CBA7E1024052FA259D43E5,
+	AchievementDescription_get_hidden_mA35899496122E49F7333BB5F5B5B6AE0E68F017E,
+	AchievementDescription_get_points_m222DBD457CA6F5629758C211668917507B316DB3,
+	Score__ctor_mCA767E4E990F5CB9657921695D4983D721BEA751,
+	Score__ctor_mD90E3983F2E8AF6001AB7C5E54497752F21E0F31,
+	Score_ToString_m497A4E6B7AA8D2B8433137127949781736A16037,
+	Score_get_leaderboardID_m46C97C5AFC37C00BFBEE51457BD6149B874E114A,
+	Score_set_leaderboardID_m6F297139EFA0D2AA106B58FA267AFF7A147A85DB,
+	Score_get_value_m2978563520D7392815E60349F89A5A1B5516DE5E,
+	Score_set_value_m7332E2AAE1792ECEA5016FA51F4E4403CDA120C3,
+	Leaderboard__ctor_mFB0608CFF4A090982904F495B84A91DC0FAC5B73,
+	Leaderboard_ToString_m13D23F36219548442D56D029B561F628305F3500,
+	Leaderboard_SetLocalUserScore_m424D44D0AFCBA825FA9604E8BBB538854E1E0C4E,
+	Leaderboard_SetMaxRange_m1C820B01C8989228954B466EDC4C1B8DC95EDE5B,
+	Leaderboard_SetScores_m0ACEEFFAD67AE7F7DC644DD034F5F2C431265943,
+	Leaderboard_SetTitle_mF9ECC4ECBF137AF4C5AD6A2338AB8786D86EADF2,
+	Leaderboard_GetUserFilter_m859FFF97FCAF7D42B215AA0166FCB6B8B0025FF3,
+	Leaderboard_get_id_mA5577E5D07BEE409EF2CDE6177AEB90547554770,
+	Leaderboard_set_id_m384FB70C2196021186F68CDCB7EA91DF88129719,
+	Leaderboard_get_userScope_m84E19D835910E26104D25567BA0B1C6A518FC5C1,
+	Leaderboard_set_userScope_m43E61AEA535770AB7D3A6E67B72917D954CB048A,
+	Leaderboard_get_range_m98008ADA839E76C8D69D152F7FC6EDBF2F6985DB,
+	Leaderboard_set_range_mD56709B5A37AEEB0BA5D6702261CA840891849EA,
+	Leaderboard_get_timeScope_mB7893524B11F9CF2C739B269C6CA34F19B1FC95E,
+	Leaderboard_set_timeScope_m3248C6661CA59EDF283927C63D9030FD1763E3EE,
+	GcUserProfileData_ToUserProfile_m887526D751D39B2B34AA0BE6C79509C2A50BEFF0,
+	GcUserProfileData_AddToArray_m9CC6C97BD081C9EC250AAA5E9BDCD398AF724BFB,
+	GcAchievementDescriptionData_ToAchievementDescription_mA95A2FA7D828072E68C98ADBED56D66FAA59AEA3,
+	GcAchievementData_ToAchievement_mCE88D5DB0AD1F428DFA7C6B6288F1EAC1B4382C4,
+	GcScoreData_ToScore_m14704CC9F232CE249D9C85D2E8D330ADBE1C459E,
+	GameCenterPlatform_ClearAchievementDescriptions_mFC1EA8309028E0924972B226438470B9007D92E0,
+	GameCenterPlatform_SetAchievementDescription_m530A5F9FDDD2C0007A58FC9E68F8C21EC48FFB15,
+	GameCenterPlatform_SetAchievementDescriptionImage_m21884A1BD6385140C991949EFFC896404EF5BA95,
+	GameCenterPlatform_TriggerAchievementDescriptionCallback_mBBF292A4186082DE2BD7EBF5F786594E4564C9A4,
+	GameCenterPlatform_AuthenticateCallbackWrapper_m030305128E55F176608EA02E1E2552909A7BFA44,
+	GameCenterPlatform_ClearFriends_m5A9B4FE4208774C7767D3EF233274E1C6A386F09,
+	GameCenterPlatform_SetFriends_m9B06BB8D8CF682E23E6A8FB91670EC68C38B4398,
+	GameCenterPlatform_SetFriendImage_mC34CA45D3A0D10096BD37B2247619B01862FD371,
+	GameCenterPlatform_TriggerFriendsCallbackWrapper_m2ED663BBC2B8F74E037B1278DD3D72D714B7FCB4,
+	GameCenterPlatform_AchievementCallbackWrapper_m1E3513F7AEC65F3F7EAE2F3883767C013093E44B,
+	GameCenterPlatform_ProgressCallbackWrapper_mEDA52DE039187237EBE9C68F9927B0E2FE303599,
+	GameCenterPlatform_ScoreCallbackWrapper_mFB255ED6101BF11FAC8243FFFC7519D8007E820E,
+	GameCenterPlatform_ScoreLoaderCallbackWrapper_mD443A4F13366527344A2312132357A948D9E97D2,
+	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_LoadFriends_m2588423AB4981E834EDBF91FAFBC14B34CE5A315,
+	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_mD2BD6C6784B53686B875E94B35538729377EEC0C,
+	GameCenterPlatform_UnityEngine_SocialPlatforms_ISocialPlatform_Authenticate_m00EE28E82D18463D20F3938E89FF9EC634C14E57,
+	GameCenterPlatform_get_localUser_m3EEB7917C0629DBADEE2DCF8E979BBA09A83AF92,
+	GameCenterPlatform_PopulateLocalUser_m515CBF35A27FA7F5873C236B8C7CDE226FB5F839,
+	GameCenterPlatform_LoadAchievementDescriptions_m2ABE78471BB5B0FD49A5E640881F940411EF2E7D,
+	GameCenterPlatform_ReportProgress_m84D8EA9E8FF51493E28468EDB8FB330D112725C7,
+	GameCenterPlatform_LoadAchievements_m23EED7C060A33D403C9F91F5F95CFA2C12AB90B9,
+	GameCenterPlatform_ReportScore_mC2F686533059939CF30468D9D46E14C84AABAF2E,
+	GameCenterPlatform_LoadScores_mC159C539D06107214560137F98CB37C14013B48D,
+	GameCenterPlatform_LoadScores_m12ED827C5C14AE481BDFB6C12DC973A46CF53056,
+	GameCenterPlatform_LeaderboardCallbackWrapper_m1649B9086337504F3E9C92EFC7A14EC33A0945C8,
+	GameCenterPlatform_GetLoading_m8B553D2C428CCC0172953A741C624A1A5F344617,
+	GameCenterPlatform_VerifyAuthentication_mC223F7D625EB6B61E71D4BE11B43BC9F18D37DE9,
+	GameCenterPlatform_ShowAchievementsUI_m0401580BA149B7E30547E7E05DC4644CB7E2DBA6,
+	GameCenterPlatform_ShowLeaderboardUI_m10D84DC004496337D2927EA748EEEE0689FF6284,
+	GameCenterPlatform_ClearUsers_mD07BEA5DE18FFE16AB24B58BC25ECC2162E48AF1,
+	GameCenterPlatform_SetUser_m06A17FCCC11FA6C2C98CE7CE838622D173DB2401,
+	GameCenterPlatform_SetUserImage_mEACDE90F767F0A0716AFEE720F0C5E03A33E7268,
+	GameCenterPlatform_TriggerUsersCallbackWrapper_m5D6D81C96398BADB38D69AE72B21D3C5BEF4DD36,
+	GameCenterPlatform_LoadUsers_m616D01C1A67469537A3F2D02DC934D57CE4B01A2,
+	GameCenterPlatform_SafeSetUserImage_mC41DE236FBD6A8FAA86053E8114004ECE7638257,
+	GameCenterPlatform_SafeClearArray_m3F2C8854EB63AE16CC62EA55FA9621EEEC889FAC,
+	GameCenterPlatform_CreateLeaderboard_m4D487F47156DF1F0EE7DA44946D4ED48936689BB,
+	GameCenterPlatform_CreateAchievement_mD92E4A555CBCE298E00F99220CF3930DE64DE35B,
+	GameCenterPlatform_TriggerResetAchievementCallback_m974E37996477654351E01C2902390BEECA5550CF,
+	GameCenterPlatform_Authenticate_m20B972476A98E4DC285612EE25D77B156A781EED,
+	GameCenterPlatform_GetAuthenticated_m5D7A9F8E5D366FBA79F17D8F145A11FCB736CD36,
+	GameCenterPlatform_Internal_UserName_m25B73FE26ECF4E377AE567B7D08E36AD0400EA6D,
+	GameCenterPlatform_Internal_UserID_mA06FF3D7F55FD66F63F13D796C2CE4F75C5052D3,
+	GameCenterPlatform_Internal_UserGameID_m50723F3AB1DF0ADF196CE3802A59D39827DDACEE,
+	GameCenterPlatform_Internal_LegacyUserID_m0FAEDABEB8196642D0ACBEEFFAAA0A34C971FCAA,
+	GameCenterPlatform_GetIsUnderage_m9B4B89CF2DE9A5200EA9703C6C340854E7302F45,
+	GameCenterPlatform_GetUserImage_mC24801D65578DA05FC1367DE548D57E6C10858C4,
+	GameCenterPlatform_LoadFriends_m1EB5C35E82F8408E36C3DB47356D6198E6516203,
+	GameCenterPlatform_InternalLoadAchievementDescriptions_m25895D2455BE47558511DA3353A78728045BBB7A,
+	GameCenterPlatform_InternalLoadAchievements_mE1DE7A99AC5421D83A90891545A13154503A24C8,
+	GameCenterPlatform_InternalReportProgress_mC287DD08303ADC0C0AA5CDD7E64A19A23CF9CC65,
+	GameCenterPlatform_InternalReportScore_m5BD67253E46A7B04DBABB10AE74D92EEBFB34CA4,
+	GameCenterPlatform_InternalLoadScores_m2F9795BEEBAADBFD30835FDCA37120CAF01E4D39,
+	GameCenterPlatform_Internal_ShowAchievementsUI_m2570D8A2789253DC03808182E5DDB12F6F3CAA78,
+	GameCenterPlatform_Internal_ShowLeaderboardUI_m8E07D464AA4195EA8391BE3906804B6ECD05742F,
+	GameCenterPlatform_Internal_LoadUsers_m999E05472208C579E960909336F9A62CB91D7BDB,
+	GameCenterPlatform_ResetAllAchievements_mC15426C08E5DC78F2B3F0AA8FA7DF8E1CC28C9D9,
+	GameCenterPlatform_ShowDefaultAchievementBanner_m4F1DFCD4CB1C1C807B8612D20D87EB10A47B9E79,
+	GameCenterPlatform_ResetAllAchievements_m156692A6235E505894A9C40EB6864414277D0C90,
+	GameCenterPlatform_ShowDefaultAchievementCompletionBanner_m7335AE6D96A8126E369D3CF0F3581BAF08C4CF00,
+	GameCenterPlatform_ShowLeaderboardUI_m3508CE4760382751BD4DE3064472948579E333CB,
+	GameCenterPlatform_ShowSpecificLeaderboardUI_m8020D079A7C759AA9223588CC35501ADEE137096,
+	GameCenterPlatform__ctor_m341814BE3C4AC9683D3C828F744775C56E3B37A8,
+	GameCenterPlatform__cctor_m6FA1E62C4DAFFDCE1885B5240E0FF2332542B580,
+	U3CU3Ec__DisplayClass21_0__ctor_m88E5FDE6B93424368864BF746056A7FC84B7D830,
+	U3CU3Ec__DisplayClass21_0_U3CUnityEngine_SocialPlatforms_ISocialPlatform_AuthenticateU3Eb__0_m9AE0F3B20150C0C9F14CCAEF54A67A6E8F47E04A,
+	GcLeaderboard__ctor_mE6ABD1A5D616A3371023FB53BAAA34C638081632,
+	GcLeaderboard_Finalize_mFB136BB37E37121BCC3288CED360961840FC4663,
+	GcLeaderboard_Contains_m08D3F5665F1A25DBDC41B9D98461D5DBB98DCD48,
+	GcLeaderboard_SetScores_mEBD889F27BCC226B108D4BB5DD6E24C3BF893F24,
+	GcLeaderboard_SetLocalScore_mE4B7C301194F99B8CE19D4514825303AAEA54CDB,
+	GcLeaderboard_SetMaxRange_m387A4CB1A33D2B3C4A5ED16B8877F00D0AA44B80,
+	GcLeaderboard_SetTitle_m979181BD4D8E63155ECB306F3E9FE90CE0973208,
+	GcLeaderboard_Internal_LoadScores_m94273C598B909F6E518E4C6A0A1EEFA83BD2ECAD,
+	GcLeaderboard_GcLeaderboard_LoadScores_m20BF42809E9482C25142F588CE9BB9E8C41F6AEF,
+	GcLeaderboard_Loading_m089B19A42B7EA2AB31481F2CA81E47279ABF0E75,
+	GcLeaderboard_GcLeaderboard_Loading_mD5B7534593974433AB2CFD090697855AA782E4DE,
+	GcLeaderboard_Dispose_m115757D5DFB8FFE4CD11F2D20244965F992A950C,
+	GcLeaderboard_GcLeaderboard_Dispose_mE88BED6761601809CBFC8B8B88D49FB599E5EE74,
 };
-extern void Range__ctor_mD7BBA6A816E8FBFDDC618308BC5D5882297443F8_AdjustorThunk (void);
-extern void GcUserProfileData_ToUserProfile_m500A5A38D89D400333D9ED8D2005449AFEC91F24_AdjustorThunk (void);
-extern void GcUserProfileData_AddToArray_mA189B901FEF32E5CA9AF7DEB58D8143E87E41EC2_AdjustorThunk (void);
-extern void GcAchievementDescriptionData_ToAchievementDescription_m9942E64237B72699916331A3EED62FC8E0DB8B86_AdjustorThunk (void);
-extern void GcAchievementData_ToAchievement_mA3EFDC224A485DA99E1ED1CC90DEEB2CB68B539E_AdjustorThunk (void);
-extern void GcScoreData_ToScore_m6B29510CCE935E2A67EAFC653CB4A0A4B8B32B49_AdjustorThunk (void);
+extern void Range__ctor_m54D7381A4A3634B7B0AF0847B848EBB8786B876B_AdjustorThunk (void);
+extern void GcUserProfileData_ToUserProfile_m887526D751D39B2B34AA0BE6C79509C2A50BEFF0_AdjustorThunk (void);
+extern void GcUserProfileData_AddToArray_m9CC6C97BD081C9EC250AAA5E9BDCD398AF724BFB_AdjustorThunk (void);
+extern void GcAchievementDescriptionData_ToAchievementDescription_mA95A2FA7D828072E68C98ADBED56D66FAA59AEA3_AdjustorThunk (void);
+extern void GcAchievementData_ToAchievement_mCE88D5DB0AD1F428DFA7C6B6288F1EAC1B4382C4_AdjustorThunk (void);
+extern void GcScoreData_ToScore_m14704CC9F232CE249D9C85D2E8D330ADBE1C459E_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[6] = 
 {
-	{ 0x06000005, Range__ctor_mD7BBA6A816E8FBFDDC618308BC5D5882297443F8_AdjustorThunk },
-	{ 0x06000046, GcUserProfileData_ToUserProfile_m500A5A38D89D400333D9ED8D2005449AFEC91F24_AdjustorThunk },
-	{ 0x06000047, GcUserProfileData_AddToArray_mA189B901FEF32E5CA9AF7DEB58D8143E87E41EC2_AdjustorThunk },
-	{ 0x06000048, GcAchievementDescriptionData_ToAchievementDescription_m9942E64237B72699916331A3EED62FC8E0DB8B86_AdjustorThunk },
-	{ 0x06000049, GcAchievementData_ToAchievement_mA3EFDC224A485DA99E1ED1CC90DEEB2CB68B539E_AdjustorThunk },
-	{ 0x0600004A, GcScoreData_ToScore_m6B29510CCE935E2A67EAFC653CB4A0A4B8B32B49_AdjustorThunk },
+	{ 0x06000005, Range__ctor_m54D7381A4A3634B7B0AF0847B848EBB8786B876B_AdjustorThunk },
+	{ 0x06000046, GcUserProfileData_ToUserProfile_m887526D751D39B2B34AA0BE6C79509C2A50BEFF0_AdjustorThunk },
+	{ 0x06000047, GcUserProfileData_AddToArray_m9CC6C97BD081C9EC250AAA5E9BDCD398AF724BFB_AdjustorThunk },
+	{ 0x06000048, GcAchievementDescriptionData_ToAchievementDescription_mA95A2FA7D828072E68C98ADBED56D66FAA59AEA3_AdjustorThunk },
+	{ 0x06000049, GcAchievementData_ToAchievement_mCE88D5DB0AD1F428DFA7C6B6288F1EAC1B4382C4_AdjustorThunk },
+	{ 0x0600004A, GcScoreData_ToScore_m14704CC9F232CE249D9C85D2E8D330ADBE1C459E_AdjustorThunk },
 };
 static const int32_t s_InvokerIndices[153] = 
 {
-	1199,
-	1199,
-	1199,
-	2306,
-	1097,
-	2284,
-	2269,
-	2292,
-	2269,
-	2333,
-	1959,
-	1979,
-	1979,
-	2306,
-	2333,
-	211,
-	2284,
-	1959,
-	1959,
-	1959,
-	1959,
-	1959,
-	2284,
-	2284,
-	2306,
-	2269,
-	286,
+	0,
+	0,
+	0,
+	0,
+	1995,
+	0,
+	0,
+	0,
+	0,
+	4648,
+	3783,
+	3711,
+	3711,
+	4475,
+	4648,
+	250,
+	4548,
+	3783,
+	3783,
+	3783,
+	3783,
+	3783,
+	4548,
+	4548,
+	4475,
+	4525,
+	443,
+	2172,
+	4648,
+	4548,
+	4548,
+	3783,
+	4497,
+	3738,
+	4475,
+	4475,
+	4491,
+	163,
+	4548,
+	3783,
+	4548,
+	3783,
+	4548,
+	4548,
+	4548,
+	4475,
+	4525,
+	2176,
+	244,
+	4548,
+	4548,
+	3783,
+	4526,
+	3764,
+	4648,
+	4548,
+	3783,
+	3861,
+	3783,
+	3783,
+	4548,
+	4548,
+	3783,
+	4525,
+	3763,
+	4560,
+	3796,
+	4525,
+	3763,
+	4548,
+	1815,
+	4548,
+	4548,
+	4548,
+	6941,
+	6344,
+	6367,
+	6945,
+	6350,
+	6941,
+	6345,
+	6367,
+	6367,
+	6370,
+	6365,
+	6365,
+	6370,
+	2179,
+	2179,
+	2179,
+	4548,
+	7095,
+	3783,
+	1207,
+	3783,
 	1193,
-	2333,
-	2284,
-	2284,
-	1959,
-	2259,
-	1936,
-	2306,
-	2306,
-	2254,
-	121,
-	2284,
-	1959,
-	2284,
-	1959,
-	2284,
-	2284,
-	2284,
-	2306,
-	2269,
-	1197,
-	191,
-	2284,
-	2284,
-	1959,
-	2270,
-	1947,
-	2333,
-	2284,
-	1959,
-	1946,
-	1959,
-	1959,
-	2284,
-	2284,
-	1959,
-	2269,
-	1946,
-	2292,
-	1969,
-	2269,
-	1946,
-	2284,
-	1022,
-	2284,
-	2284,
-	2284,
-	3598,
-	3261,
-	3276,
-	3600,
-	3267,
-	3598,
-	3262,
-	3276,
-	3276,
-	3279,
-	3281,
-	3281,
-	3279,
-	1199,
-	1199,
-	1199,
-	2284,
-	3655,
-	1959,
-	781,
-	1959,
-	772,
-	1199,
-	1199,
-	3281,
-	1718,
-	2306,
-	2333,
-	2333,
-	3598,
-	3262,
-	3276,
-	3600,
-	1199,
-	2970,
-	3256,
-	2284,
-	2284,
-	3602,
-	3655,
-	3647,
-	3641,
-	3641,
-	3641,
-	3641,
-	3647,
-	3641,
-	3600,
-	3600,
-	3600,
-	2992,
-	2979,
-	3279,
-	3655,
-	3655,
-	3279,
-	3655,
-	3602,
-	3600,
-	3602,
-	3276,
-	3276,
-	2333,
-	3655,
-	2333,
-	1209,
-	1959,
-	2333,
-	1718,
-	1959,
-	1941,
-	1946,
-	1959,
-	104,
-	2393,
-	2306,
-	3491,
-	2333,
-	3599,
+	2179,
+	2179,
+	6365,
+	2728,
+	4475,
+	4648,
+	4648,
+	6941,
+	6345,
+	6367,
+	6945,
+	2179,
+	5821,
+	6333,
+	4548,
+	4548,
+	6937,
+	7095,
+	7042,
+	7070,
+	7070,
+	7070,
+	7070,
+	7042,
+	7070,
+	6945,
+	6945,
+	6945,
+	5859,
+	5838,
+	6370,
+	7095,
+	7095,
+	6370,
+	7095,
+	6937,
+	6945,
+	6937,
+	6367,
+	6367,
+	4648,
+	7095,
+	4648,
+	1828,
+	3783,
+	4648,
+	2728,
+	3783,
+	3751,
+	3861,
+	3783,
+	144,
+	4779,
+	4475,
+	6531,
+	4648,
+	6943,
 };
-extern const CustomAttributesCacheGenerator g_UnityEngine_GameCenterModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_GameCenterModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_GameCenterModule_CodeGenModule = 
 {
@@ -654,7 +653,6 @@ const Il2CppCodeGenModule g_UnityEngine_GameCenterModule_CodeGenModule =
 	0,
 	NULL,
 	NULL,
-	g_UnityEngine_GameCenterModule_AttributeGenerators,
 	NULL, // module initializer,
 	NULL,
 	NULL,

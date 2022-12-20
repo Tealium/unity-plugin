@@ -13,43 +13,42 @@
 
 
 // 0x00000001 System.Void UnityEngine.Physics2D::.cctor()
-extern void Physics2D__cctor_m2C742CE7156A78480229016DEEF403B45E4DAFEE (void);
+extern void Physics2D__cctor_m538A4AED462ACB3482F9C397DE0B72BCDA2D3CFB (void);
 // 0x00000002 UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_point()
-extern void RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE (void);
+extern void RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B (void);
 // 0x00000003 UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_normal()
-extern void RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637 (void);
+extern void RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2 (void);
 // 0x00000004 System.Single UnityEngine.RaycastHit2D::get_distance()
-extern void RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662 (void);
+extern void RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613 (void);
 // 0x00000005 UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
-extern void RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563 (void);
+extern void RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD (void);
 static Il2CppMethodPointer s_methodPointers[5] = 
 {
-	Physics2D__cctor_m2C742CE7156A78480229016DEEF403B45E4DAFEE,
-	RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE,
-	RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637,
-	RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662,
-	RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563,
+	Physics2D__cctor_m538A4AED462ACB3482F9C397DE0B72BCDA2D3CFB,
+	RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B,
+	RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2,
+	RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613,
+	RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD,
 };
-extern void RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE_AdjustorThunk (void);
-extern void RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637_AdjustorThunk (void);
-extern void RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662_AdjustorThunk (void);
-extern void RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563_AdjustorThunk (void);
+extern void RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B_AdjustorThunk (void);
+extern void RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2_AdjustorThunk (void);
+extern void RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613_AdjustorThunk (void);
+extern void RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[4] = 
 {
-	{ 0x06000002, RaycastHit2D_get_point_m10D5AB3B26EAE62583BE35CFA13A3E40BDAF30AE_AdjustorThunk },
-	{ 0x06000003, RaycastHit2D_get_normal_m6F8B9F4018EFA126CC33126E8E42B09BB5A82637_AdjustorThunk },
-	{ 0x06000004, RaycastHit2D_get_distance_mA910B45BD349A8F70139F6BC1E686F47F40A1662_AdjustorThunk },
-	{ 0x06000005, RaycastHit2D_get_collider_m00F7EC55C36F39E2ED64B31354FB4D9C8938D563_AdjustorThunk },
+	{ 0x06000002, RaycastHit2D_get_point_mB35E988E9E04328EFE926228A18334326721A36B_AdjustorThunk },
+	{ 0x06000003, RaycastHit2D_get_normal_m75F1EBDE347BACEB5A6A6AA72543C740806AB5F2_AdjustorThunk },
+	{ 0x06000004, RaycastHit2D_get_distance_mD0FE1482E2768CF587AFB65488459697EAB64613_AdjustorThunk },
+	{ 0x06000005, RaycastHit2D_get_collider_mB56DFCD16B708852EEBDBB490BC8665DBF7487FD_AdjustorThunk },
 };
 static const int32_t s_InvokerIndices[5] = 
 {
-	3655,
-	2329,
-	2329,
-	2308,
-	2284,
+	7095,
+	4639,
+	4639,
+	4586,
+	4548,
 };
-extern const CustomAttributesCacheGenerator g_UnityEngine_Physics2DModule_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule;
 const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule = 
 {
@@ -66,7 +65,6 @@ const Il2CppCodeGenModule g_UnityEngine_Physics2DModule_CodeGenModule =
 	0,
 	NULL,
 	NULL,
-	g_UnityEngine_Physics2DModule_AttributeGenerators,
 	NULL, // module initializer,
 	NULL,
 	NULL,

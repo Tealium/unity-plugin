@@ -122,7 +122,18 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
         return _tealiumUnityObject?.CallStatic<string>("getVisitorId");
     }
 
+    public void ResetVisitorId() {
+        _tealiumUnityObject?.CallStatic("resetVisitorId");
+    }
+
+    public void ClearStoredVisitorIds() {
+        _tealiumUnityObject?.CallStatic("clearStoredVisitorIds");
+    }
+
     public void SetVisitorServiceListener(Action<Dictionary<string, object>> callback) {
+        // do nothing
+    }
+    public void SetVisitorIdListener(Action<string> callback) {
         // do nothing
     }
     public void SetConsentExpiryListener(Action callback) {
@@ -146,6 +157,10 @@ public class TealiumAndroid : MonoBehaviour, TealiumUnity
     public void HandleVisitorProfileUpdate(string updates)
     {
         TealiumUnityPlugin.OnVisitorServiceUpdate(updates);
+    }
+
+    public void HandleVisitorIdUpdate(string newId) {
+        TealiumUnityPlugin.OnVisitorIdUpdate(newId);
     }
 
     public void HandleConsentUpdate()

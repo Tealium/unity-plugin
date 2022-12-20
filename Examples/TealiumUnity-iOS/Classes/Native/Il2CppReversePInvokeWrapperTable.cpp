@@ -12,18 +12,14 @@
 
 
 
-// System.Char[]
-struct CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34;
-// System.String
-struct String_t;
 // System.Void
-struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 
-struct unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 ;
-struct unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 ;
-struct unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA ;
-struct unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D ;
-struct unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 ;
+struct unitytls_errorstate_tC926EE4582920BE2C1DB1F3F65619B810D5AB902;
+struct unitytls_key_ref_t6BD91D013DF11047C53738FEEB12CE290FDC71A2;
+struct unitytls_tlsctx_tF8BBCBFE1E957B846442DED65ECB89BC5307DEAE;
+struct unitytls_x509list_ref_t6C5C1CF0B720516A681CB741104A164FD8B3CF17;
+struct unitytls_x509name_t8A1108C917795D8FE946B50769ACE51489C7BF5D;
 
 
 IL2CPP_EXTERN_C_BEGIN
@@ -35,174 +31,110 @@ IL2CPP_EXTERN_C_END
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 
-// System.Object
-
-
 // System.ValueType
-struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52  : public RuntimeObject
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
 {
-public:
-
-public:
 };
-
 // Native definition for P/Invoke marshalling of System.ValueType
-struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_pinvoke
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
 {
 };
 // Native definition for COM marshalling of System.ValueType
-struct ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52_marshaled_com
-{
-};
-
-// System.Enum
-struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA  : public ValueType_tDBF999C1B75C48C68621878250DBF6CDBCF51E52
-{
-public:
-
-public:
-};
-
-struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_StaticFields
-{
-public:
-	// System.Char[] System.Enum::enumSeperatorCharArray
-	CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* ___enumSeperatorCharArray_0;
-
-public:
-	inline static int32_t get_offset_of_enumSeperatorCharArray_0() { return static_cast<int32_t>(offsetof(Enum_t23B90B40F60E677A8025267341651C94AE079CDA_StaticFields, ___enumSeperatorCharArray_0)); }
-	inline CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* get_enumSeperatorCharArray_0() const { return ___enumSeperatorCharArray_0; }
-	inline CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34** get_address_of_enumSeperatorCharArray_0() { return &___enumSeperatorCharArray_0; }
-	inline void set_enumSeperatorCharArray_0(CharU5BU5D_t7B7FC5BC8091AA3B9CB0B29CDD80B5EE9254AA34* value)
-	{
-		___enumSeperatorCharArray_0 = value;
-		Il2CppCodeGenWriteBarrier((void**)(&___enumSeperatorCharArray_0), (void*)value);
-	}
-};
-
-// Native definition for P/Invoke marshalling of System.Enum
-struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_pinvoke
-{
-};
-// Native definition for COM marshalling of System.Enum
-struct Enum_t23B90B40F60E677A8025267341651C94AE079CDA_marshaled_com
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
 {
 };
 
 // System.IntPtr
 struct IntPtr_t 
 {
-public:
 	// System.Void* System.IntPtr::m_value
 	void* ___m_value_0;
-
-public:
-	inline static int32_t get_offset_of_m_value_0() { return static_cast<int32_t>(offsetof(IntPtr_t, ___m_value_0)); }
-	inline void* get_m_value_0() const { return ___m_value_0; }
-	inline void** get_address_of_m_value_0() { return &___m_value_0; }
-	inline void set_m_value_0(void* value)
-	{
-		___m_value_0 = value;
-	}
 };
 
 struct IntPtr_t_StaticFields
 {
-public:
 	// System.IntPtr System.IntPtr::Zero
 	intptr_t ___Zero_1;
-
-public:
-	inline static int32_t get_offset_of_Zero_1() { return static_cast<int32_t>(offsetof(IntPtr_t_StaticFields, ___Zero_1)); }
-	inline intptr_t get_Zero_1() const { return ___Zero_1; }
-	inline intptr_t* get_address_of_Zero_1() { return &___Zero_1; }
-	inline void set_Zero_1(intptr_t value)
-	{
-		___Zero_1 = value;
-	}
 };
 
-
 // System.Void
-struct Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5 
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
 {
-public:
 	union
 	{
 		struct
 		{
 		};
-		uint8_t Void_t700C6383A2A510C2CF4DD86DABD5CA9FF70ADAC5__padding[1];
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
 	};
-
-public:
 };
 
+// Mono.Unity.UnityTls/unitytls_x509_ref
+struct unitytls_x509_ref_t9CEB17766B4144117333AB50379B21A357FA4333 
+{
+	// System.UInt64 Mono.Unity.UnityTls/unitytls_x509_ref::handle
+	uint64_t ___handle_0;
+};
 
 // Mono.Unity.UnityTls/unitytls_x509list_ref
-struct unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D 
+struct unitytls_x509list_ref_t6C5C1CF0B720516A681CB741104A164FD8B3CF17 
 {
-public:
 	// System.UInt64 Mono.Unity.UnityTls/unitytls_x509list_ref::handle
 	uint64_t ___handle_0;
-
-public:
-	inline static int32_t get_offset_of_handle_0() { return static_cast<int32_t>(offsetof(unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D, ___handle_0)); }
-	inline uint64_t get_handle_0() const { return ___handle_0; }
-	inline uint64_t* get_address_of_handle_0() { return &___handle_0; }
-	inline void set_handle_0(uint64_t value)
-	{
-		___handle_0 = value;
-	}
 };
-
-
-// Mono.Unity.UnityTls/unitytls_x509verify_result
-struct unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84 
-{
-public:
-	// System.UInt32 Mono.Unity.UnityTls/unitytls_x509verify_result::value__
-	uint32_t ___value___2;
-
-public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(unitytls_x509verify_result_t3CE5D0E50DA56D0A6561757039E6F1F292996B84, ___value___2)); }
-	inline uint32_t get_value___2() const { return ___value___2; }
-	inline uint32_t* get_address_of_value___2() { return &___value___2; }
-	inline void set_value___2(uint32_t value)
-	{
-		___value___2 = value;
-	}
-};
-
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
 
-extern "C" int32_t CDECL ReversePInvokeWrapper_DeflateStreamNative_UnmanagedRead_m1B817101FEA9D3C28DF3C9192F70557465BDFB25(intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2);
-extern "C" int32_t CDECL ReversePInvokeWrapper_DeflateStreamNative_UnmanagedWrite_m531442C0133AA29BF262DFD21F81CCBE5EA7E086(intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2);
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0(intptr_t ___arg0);
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E();
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_initializationResponseReceived_mFD32AC02F83B78CABEB108BA6DA3F3CF53EBE482(int32_t ___success0);
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_remoteCommandReceived_m21FFC75B550A9A5301D143DA0DA208042DA9778D(char* ___payload0);
-extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A(char* ___payload0);
-extern "C" void CDECL ReversePInvokeWrapper_UnityTlsContext_CertificateCallback_m793CC2EDD82935F29A3DEBD1F208DC56EA822E9C(void* ___userData0, unitytls_tlsctx_tA5DB674E2A83ADDD03624096501FCDD29E9DB7FA * ___ctx1, uint8_t* ___cn2, intptr_t ___cnLen3, unitytls_x509name_tC19C2F27FF70AD438A79A5F66E4C5FFA2613EDA6 * ___caList4, intptr_t ___caListLen5, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D * ___chain6, unitytls_key_ref_t7EFBA70561D0E9FD8517038EBC0CC9FCF9AE6B61 * ___key7, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState8);
-extern "C" intptr_t CDECL ReversePInvokeWrapper_UnityTlsContext_ReadCallback_mA0BF382397D912B79B6064B58B6C7C5D97853245(void* ___userData0, uint8_t* ___buffer1, intptr_t ___bufferLen2, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState3);
-extern "C" uint32_t CDECL ReversePInvokeWrapper_UnityTlsContext_VerifyCallback_m8C61EF3A0037483AD56A083CA47D8E4C0404961E(void* ___userData0, unitytls_x509list_ref_tE4376B9592E1AF7E02BB0BB2CE110D8219832D4D  ___chain1, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState2);
-extern "C" intptr_t CDECL ReversePInvokeWrapper_UnityTlsContext_WriteCallback_m466D11090AF989AD1F14E6FE049320297C12A86C(void* ___userData0, uint8_t* ___data1, intptr_t ___bufferLen2, unitytls_errorstate_t0015D496F47B84E1D98D31D5132B27FADB38F499 * ___errorState3);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_CultureInfo_OnCultureInfoChangedInAppX_mDBD419B094B2CFE933BB3F63886A5AB4E44D2DC0(Il2CppChar* ___language0);
+extern "C" int32_t CDECL ReversePInvokeWrapper_DeflateStreamNative_UnmanagedRead_m79E9628F6FF91A3995491997242DD83046C9B704(intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2);
+extern "C" int32_t CDECL ReversePInvokeWrapper_DeflateStreamNative_UnmanagedWrite_m509AE153ECB916CDF755432335FBAB2B51CA1486(intptr_t ___buffer0, int32_t ___length1, intptr_t ___data2);
+extern "C" int64_t CDECL ReversePInvokeWrapper_MonoBtlsBioMono_Control_mE6F92D680A96B8B446D566D221BF925954FF43BB(intptr_t ___instance0, int32_t ___command1, int64_t ___arg2);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsBioMono_OnRead_mE0FF0BFC134CD0F923BBC555E346B7DD7CAD8988(intptr_t ___instance0, intptr_t ___data1, int32_t ___dataLength2, int32_t* ___wantMore3);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsBioMono_OnWrite_m605A12A8B0CE9517927656981580BFA330BED613(intptr_t ___instance0, intptr_t ___data1, int32_t ___dataLength2);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsSsl_PrintErrorsCallback_mF161ADF7DBDB81C47BDD587C87E1275DEE5B7A45(intptr_t ___str0, intptr_t ___len1, intptr_t ___ctx2);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsSslCtx_NativeSelectCallback_m6CA34F71A6093C7260A9F066D6C9FB3CD0CC86DB(intptr_t ___instance0, int32_t ___count1, intptr_t ___sizes2, intptr_t ___data3);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsSslCtx_NativeServerNameCallback_mFF311CE931F6A075940D1B6828D1FB517AF03838(intptr_t ___instance0);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsSslCtx_NativeVerifyCallback_mFDF10D01CAAD040E50EE6F53FC1D4155EF696218(intptr_t ___instance0, int32_t ___preverify_ok1, intptr_t ___store_ctx2);
+extern "C" int32_t CDECL ReversePInvokeWrapper_MonoBtlsX509LookupMono_OnGetBySubject_m15FE6FBEE9849C324E8E099172A581EABEB83FB3(intptr_t ___instance0, intptr_t ___name_ptr1, intptr_t* ___x509_ptr2);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_mB85BF0265E239960FC963DCA74DC67EBCE9480AC(intptr_t ___arg0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_consentExpirationReceived_m6BD20EBA076AD8F9F17576B2A4ADC0821095F351();
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_initializationResponseReceived_mCE75DDB10DB04C7CDAD5C79E686AC95444689C45(int32_t ___success0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_remoteCommandReceived_m329891AE490BF9E5B99477B569A5AE881D646737(char* ___payload0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_trackDataResponseReceived_m560E76CDB97474A552B4663D703FBF7A4823CB3F(char* ___trackData0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_visitorIdUpdateReceived_m5F95C7CF4F502243CB62C15DC4FFA7A5DEF61176(char* ___visitorId0);
+extern "C" void DEFAULT_CALL ReversePInvokeWrapper_TealiumiOS_visitorServiceUpdateReceived_mF7CCAAF7184EF435DBAF5FE8BE8AC7576252514C(char* ___payload0);
+extern "C" void CDECL ReversePInvokeWrapper_UnityTlsContext_CertificateCallback_mF5E626BA2545CFFA64428622678E409702C2045A(void* ___userData0, unitytls_tlsctx_tF8BBCBFE1E957B846442DED65ECB89BC5307DEAE* ___ctx1, uint8_t* ___cn2, intptr_t ___cnLen3, unitytls_x509name_t8A1108C917795D8FE946B50769ACE51489C7BF5D* ___caList4, intptr_t ___caListLen5, unitytls_x509list_ref_t6C5C1CF0B720516A681CB741104A164FD8B3CF17* ___chain6, unitytls_key_ref_t6BD91D013DF11047C53738FEEB12CE290FDC71A2* ___key7, unitytls_errorstate_tC926EE4582920BE2C1DB1F3F65619B810D5AB902* ___errorState8);
+extern "C" intptr_t CDECL ReversePInvokeWrapper_UnityTlsContext_ReadCallback_m15F3A217E44D480CAED06EB5A88503FB6259D7EC(void* ___userData0, uint8_t* ___buffer1, intptr_t ___bufferLen2, unitytls_errorstate_tC926EE4582920BE2C1DB1F3F65619B810D5AB902* ___errorState3);
+extern "C" uint32_t CDECL ReversePInvokeWrapper_UnityTlsContext_VerifyCallback_m75D7C072718405EBBF8A2A9C794C4DDFB2595BD0(void* ___userData0, unitytls_x509list_ref_t6C5C1CF0B720516A681CB741104A164FD8B3CF17 ___chain1, unitytls_errorstate_tC926EE4582920BE2C1DB1F3F65619B810D5AB902* ___errorState2);
+extern "C" intptr_t CDECL ReversePInvokeWrapper_UnityTlsContext_WriteCallback_m53DD70115C97432A676F3E437E8FB42F9FC068F5(void* ___userData0, uint8_t* ___data1, intptr_t ___bufferLen2, unitytls_errorstate_tC926EE4582920BE2C1DB1F3F65619B810D5AB902* ___errorState3);
+extern "C" uint32_t CDECL ReversePInvokeWrapper_UnityTlsProvider_x509verify_callback_m47823254E133F7304ABFAE5A1F0D218402BC5B45(void* ___userData0, unitytls_x509_ref_t9CEB17766B4144117333AB50379B21A357FA4333 ___cert1, uint32_t ___result2, unitytls_errorstate_tC926EE4582920BE2C1DB1F3F65619B810D5AB902* ___errorState3);
 
 
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[];
-const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[11] = 
+const Il2CppMethodPointer g_ReversePInvokeWrapperPointers[23] = 
 {
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_DeflateStreamNative_UnmanagedRead_m1B817101FEA9D3C28DF3C9192F70557465BDFB25),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_DeflateStreamNative_UnmanagedWrite_m531442C0133AA29BF262DFD21F81CCBE5EA7E086),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_m0045E44F7E960D6B4A864D5206D4116249C09BB0),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_initializationResponseReceived_mFD32AC02F83B78CABEB108BA6DA3F3CF53EBE482),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_remoteCommandReceived_m21FFC75B550A9A5301D143DA0DA208042DA9778D),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_CertificateCallback_m793CC2EDD82935F29A3DEBD1F208DC56EA822E9C),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_ReadCallback_mA0BF382397D912B79B6064B58B6C7C5D97853245),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_VerifyCallback_m8C61EF3A0037483AD56A083CA47D8E4C0404961E),
-	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_WriteCallback_m466D11090AF989AD1F14E6FE049320297C12A86C),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_CultureInfo_OnCultureInfoChangedInAppX_mDBD419B094B2CFE933BB3F63886A5AB4E44D2DC0),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_DeflateStreamNative_UnmanagedRead_m79E9628F6FF91A3995491997242DD83046C9B704),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_DeflateStreamNative_UnmanagedWrite_m509AE153ECB916CDF755432335FBAB2B51CA1486),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsBioMono_Control_mE6F92D680A96B8B446D566D221BF925954FF43BB),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsBioMono_OnRead_mE0FF0BFC134CD0F923BBC555E346B7DD7CAD8988),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsBioMono_OnWrite_m605A12A8B0CE9517927656981580BFA330BED613),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsSsl_PrintErrorsCallback_mF161ADF7DBDB81C47BDD587C87E1275DEE5B7A45),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsSslCtx_NativeSelectCallback_m6CA34F71A6093C7260A9F066D6C9FB3CD0CC86DB),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsSslCtx_NativeServerNameCallback_mFF311CE931F6A075940D1B6828D1FB517AF03838),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsSslCtx_NativeVerifyCallback_mFDF10D01CAAD040E50EE6F53FC1D4155EF696218),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_MonoBtlsX509LookupMono_OnGetBySubject_m15FE6FBEE9849C324E8E099172A581EABEB83FB3),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_OSSpecificSynchronizationContext_InvocationEntry_mB85BF0265E239960FC963DCA74DC67EBCE9480AC),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_consentExpirationReceived_m6BD20EBA076AD8F9F17576B2A4ADC0821095F351),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_initializationResponseReceived_mCE75DDB10DB04C7CDAD5C79E686AC95444689C45),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_remoteCommandReceived_m329891AE490BF9E5B99477B569A5AE881D646737),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_trackDataResponseReceived_m560E76CDB97474A552B4663D703FBF7A4823CB3F),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_visitorIdUpdateReceived_m5F95C7CF4F502243CB62C15DC4FFA7A5DEF61176),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_TealiumiOS_visitorServiceUpdateReceived_mF7CCAAF7184EF435DBAF5FE8BE8AC7576252514C),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_CertificateCallback_mF5E626BA2545CFFA64428622678E409702C2045A),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_ReadCallback_m15F3A217E44D480CAED06EB5A88503FB6259D7EC),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_VerifyCallback_m75D7C072718405EBBF8A2A9C794C4DDFB2595BD0),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsContext_WriteCallback_m53DD70115C97432A676F3E437E8FB42F9FC068F5),
+	reinterpret_cast<Il2CppMethodPointer>(ReversePInvokeWrapper_UnityTlsProvider_x509verify_callback_m47823254E133F7304ABFAE5A1F0D218402BC5B45),
 };

@@ -19,15 +19,6 @@
 
 @implementation UnityViewControllerBase (iOS)
 
-ScreenOrientation _currentOrientation;
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear: animated];
-    _currentOrientation = UIViewControllerOrientation(self);
-    AppController_SendUnityViewControllerNotification(kUnityViewDidAppear);
-}
-
 - (BOOL)shouldAutorotate
 {
     return YES;
@@ -86,11 +77,10 @@ ScreenOrientation _currentOrientation;
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
-    // Dropped UIViewControllerOrientation(self) usage to calculate current orientation because
-    // in some cases this method is called after screen has already turned so
-    // UIViewControllerOrientation(self) might give inconsistant results
-    ScreenOrientation curOrient = _currentOrientation;
-    ScreenOrientation newOrient = OrientationAfterTransform(curOrient, [coordinator targetTransform]);
+    // CODE ARCHEOLOGY: we were using UIViewControllerOrientation, but on showing view with "Requires full screen"
+    // CODE ARCHEOLOGY:   we will get the size/orientation *already* set, and the rotation logic would break
+    const ScreenOrientation curOrient = _currentOrientation;
+    const ScreenOrientation newOrient = OrientationAfterTransform(curOrient, [coordinator targetTransform]);
     _currentOrientation = newOrient;
 
     // in case of presentation controller it will take control over orientations
@@ -119,11 +109,28 @@ ScreenOrientation _currentOrientation;
 @end
 
 @implementation UnityDefaultViewController
+
+// these will be updated in one place where we "sync" UI side orientation handling to unity side
+NSUInteger _supportedOrientations;
+
+- (id)init
+{
+    if ((self = [super init]))
+    {
+        NSAssert(UnityShouldAutorotate(), @"UnityDefaultViewController should be used only if unity is set to autorotate");
+        _supportedOrientations = EnabledAutorotationInterfaceOrientations();
+    }
+    return self;
+}
+
+- (void)updateSupportedOrientations
+{
+    _supportedOrientations = EnabledAutorotationInterfaceOrientations();
+}
+
 - (NSUInteger)supportedInterfaceOrientations
 {
-    NSAssert(UnityShouldAutorotate(), @"UnityDefaultViewController should be used only if unity is set to autorotate");
-
-    return EnabledAutorotationInterfaceOrientations();
+    return _supportedOrientations;
 }
 
 @end
@@ -132,6 +139,11 @@ ScreenOrientation _currentOrientation;
 - (NSUInteger)supportedInterfaceOrientations
 {
     return 1 << UIInterfaceOrientationPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -148,6 +160,11 @@ ScreenOrientation _currentOrientation;
     return 1 << UIInterfaceOrientationPortraitUpsideDown;
 }
 
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortraitUpsideDown;
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [GetAppController() updateAppOrientation: UIInterfaceOrientationPortraitUpsideDown];
@@ -160,6 +177,11 @@ ScreenOrientation _currentOrientation;
 - (NSUInteger)supportedInterfaceOrientations
 {
     return 1 << UIInterfaceOrientationLandscapeLeft;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationLandscapeLeft;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -176,6 +198,11 @@ ScreenOrientation _currentOrientation;
     return 1 << UIInterfaceOrientationLandscapeRight;
 }
 
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationLandscapeRight;
+}
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [GetAppController() updateAppOrientation: UIInterfaceOrientationLandscapeRight];
@@ -190,7 +217,7 @@ NSUInteger EnabledAutorotationInterfaceOrientations()
 
     if (UnityIsOrientationEnabled(portrait))
         ret |= (1 << UIInterfaceOrientationPortrait);
-    if (UnityIsOrientationEnabled(portraitUpsideDown))
+    if (UnityDeviceSupportsUpsideDown() && UnityIsOrientationEnabled(portraitUpsideDown))
         ret |= (1 << UIInterfaceOrientationPortraitUpsideDown);
     if (UnityIsOrientationEnabled(landscapeLeft))
         ret |= (1 << UIInterfaceOrientationLandscapeRight);

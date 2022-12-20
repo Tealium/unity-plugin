@@ -63,6 +63,10 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
     // not pretty but seems like easiest way to keep "we are rotating" status
     BOOL            _rotating;
     NSRange         _hiddenSelection;
+    NSRange         _selectionRequest;
+
+    // used for < iOS 14 external keyboard
+    CGFloat         _heightOfKeyboard;
 }
 
 @synthesize area;
@@ -73,6 +77,15 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 @synthesize hasUsedDictation;
 
 
+- (void)setPendingSelectionRequest
+{
+    if (_selectionRequest.location != NSNotFound)
+    {
+        _keyboard.selection = _selectionRequest;
+        _selectionRequest.location = NSNotFound;
+    }
+}
+
 - (BOOL)textFieldShouldReturn:(UITextField*)textFieldObj
 {
     [self textInputDone: nil];
@@ -82,6 +95,7 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 #if PLATFORM_IOS
 - (void)textInputModeDidChange:(NSNotification*)notification
 {
+    [self setPendingSelectionRequest];
     // Apple reports back the primary language of the current keyboard text input mode using BCP 47 language code i.e "en-GB"
     // but this also (undocumented) will return "dictation" when using voice dictation and "emoji" when using the emoji keyboard.
     if ([_keyboard->inputView.textInputMode.primaryLanguage isEqualToString: @"dictation"])
@@ -152,6 +166,7 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
     if (notification.userInfo == nil || inputView == nil)
         return;
 
+    [self setPendingSelectionRequest];
     CGRect srcRect  = [[notification.userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
     CGRect rect     = [UnityGetGLView() convertRect: srcRect fromView: nil];
     rect.origin.y = [UnityGetGLView() frame].size.height - rect.size.height; // iPhone X sometimes reports wrong y value for keyboard
@@ -163,6 +178,17 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 {
     _active = YES;
     UnityKeyboard_LayoutChanged(textField.textInputMode.primaryLanguage);
+
+    // We only need to do this in < iOS 14
+    // Used in keyboardDidShow as keyboardWillShow might not have the height ready yet as it's not on screen and
+    // we're only interested in the height when it's fully on screen.
+    if (@available(iOS 14, tvOS 14, *)) {}
+    else
+    {
+        CGRect srcRect  = [[notification.userInfo objectForKey: UIKeyboardFrameEndUserInfoKey] CGRectValue];
+        CGRect rect     = [UnityGetGLView() convertRect: srcRect fromView: nil];
+        _heightOfKeyboard = rect.size.height;
+    }
 }
 
 - (void)keyboardWillHide:(NSNotification*)notification
@@ -271,8 +297,8 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
     // mind you, all of that is highly empirical.
     // we assume space between items to be 18 [both betwen buttons and on the sides]
     // we also assume that button width would be more less title width exactly (it should be quite close though)
-    const int doneW   = [doneStr sizeWithAttributes: @{NSFontAttributeName: font}].width;
-    const int cancelW = [cancelStr sizeWithAttributes: @{NSFontAttributeName: font}].width;
+    const int doneW   = (int)[doneStr sizeWithAttributes: @{NSFontAttributeName: font}].width;
+    const int cancelW = (int)[cancelStr sizeWithAttributes: @{NSFontAttributeName: font}].width;
     singleLineSystemButtonsSpace = doneW + cancelW + 3 * 18;
 }
 
@@ -289,6 +315,11 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
         textView.delegate = self;
         textView.font = [UIFont systemFontOfSize: 18.0];
         textView.hidden = YES;
+        // For some unknown reason, the `textView` has visual issues when
+        // using Dark Mode (some parts of the view become transparent). See case 1367091.
+        // However, setting alpha to a value different than 1 fixes the issue.
+        if (@available(iOS 13, *))
+            textView.alpha = 0.99;
 #endif
 
         textField = [[UITextField alloc] initWithFrame: CGRectMake(0, 0, 120, 30)];
@@ -328,9 +359,11 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 {
     traits.keyboardType = param.keyboardType;
     traits.autocorrectionType = param.autocorrectionType;
+    traits.spellCheckingType  = param.spellcheckingType;
     traits.keyboardAppearance = param.appearance;
     traits.autocapitalizationType = capitalization;
-    traits.secureTextEntry = param.secure;
+    if (!_inputHidden)
+        traits.secureTextEntry = param.secure;
 }
 
 - (void)setKeyboardParams:(KeyboardShowParam)param
@@ -364,16 +397,10 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
     _multiline = param.multiline;
     if (_multiline)
     {
-        textView.text = initialText;
         [self setTextInputTraits: textView withParam: param withCap: capitalization];
-
-        UITextPosition* end = [textView endOfDocument];
-        UITextRange* endTextRange = [textView textRangeFromPosition: end toPosition: end];
-        [textView setSelectedTextRange: endTextRange];
     }
     else
     {
-        textField.text = initialText;
 #if UNITY_HAS_IOSSDK_12_0
         if (@available(iOS 12.0, *))
         {
@@ -383,31 +410,25 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 #endif
         [self setTextInputTraits: textField withParam: param withCap: capitalization];
         textField.placeholder = [NSString stringWithUTF8String: param.placeholder];
-
-        UITextPosition* end = [textField endOfDocument];
-        UITextRange* endTextRange = [textField textRangeFromPosition: end toPosition: end];
-        [textField setSelectedTextRange: endTextRange];
     }
     inputView = _multiline ? textView : textField;
     editView = _multiline ? textView : fieldToolbar;
 
 #else // PLATFORM_TVOS
-    textField.text = initialText;
     [self setTextInputTraits: textField withParam: param withCap: capitalization];
     textField.placeholder = [NSString stringWithUTF8String: param.placeholder];
     inputView = textField;
     editView = textField;
-
-    UITextPosition* end = [textField endOfDocument];
-    UITextRange* endTextRange = [textField textRangeFromPosition: end toPosition: end];
-    [textField setSelectedTextRange: endTextRange];
 #endif
 
     [self shouldHideInput: _shouldHideInput];
 
+    [KeyboardDelegate Instance].text = initialText;
+
     _status     = Visible;
     UnityKeyboard_StatusChanged(_status);
     _active     = YES;
+    _selectionRequest.location = NSNotFound;
 }
 
 // we need to show/hide keyboard to react to orientation too, so extract we extract UI fiddling
@@ -486,6 +507,10 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
 
     editView.hidden     = _inputHidden ? YES : NO;
     inputView.hidden    = _inputHidden ? YES : NO;
+    if (_inputHidden)
+        textField.secureTextEntry = NO;
+    else
+        textField.secureTextEntry = cachedKeyboardParam.secure;
 }
 
 #if PLATFORM_IOS
@@ -571,6 +596,7 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
     [textInput setSelectedTextRange: textRange];
     if (_inputHidden)
         _hiddenSelection = range;
+    _selectionRequest = range;
 }
 
 + (void)StartReorientation
@@ -639,6 +665,15 @@ extern "C" void UnityKeyboard_LayoutChanged(NSString* layout);
     _inputHidden = hide;
 }
 
+- (BOOL)hasExternalKeyboard
+{
+    // iOS 14 and above has a public API in the GameController framework. If this is missing then this will return false
+    if (@available(iOS 14, tvOS 14, *))
+        return [NSClassFromString(@"GCKeyboard") valueForKey: @"coalescedKeyboard"] != nil;
+    else // The minimum height a software keyboard will be on iOS is 160, A bluetooth keyboard just uses a toolbar which will be smaller than this.
+        return _heightOfKeyboard < 160.0f;
+}
+
 static bool StringContainsEmoji(NSString *string);
 - (BOOL)textField:(UITextField*)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString*)string_
 {
@@ -697,7 +732,17 @@ static bool StringContainsEmoji(NSString *string);
         [textField setText: newText];
 #endif
 
-        return NO;
+        // If we're trying to exceed the max length of the field BUT the text can merge into
+        // precomposed characters then we should allow the input.
+        NSString* precomposedNewText = [currentText precomposedStringWithCompatibilityMapping];
+        __block int count = 0;
+        [precomposedNewText enumerateSubstringsInRange: NSMakeRange(0, [precomposedNewText length]) options: NSStringEnumerationByComposedCharacterSequences
+         usingBlock: ^(NSString *inSubstring, NSRange inSubstringRange, NSRange inEnclosingRange, BOOL *outStop) {
+             count++;
+         }];
+        // count of characters of precomposed string will equal the character limit
+        // if there has been characters merged bringing us under the limit.
+        return count <= _characterLimit;
     }
     else
     {
@@ -733,8 +778,7 @@ static bool StringContainsEmoji(NSString *string);
 extern "C" void UnityKeyboard_Create(unsigned keyboardType, int autocorrection, int multiline, int secure, int alert, const char* text, const char* placeholder, int characterLimit)
 {
 #if PLATFORM_TVOS
-    // Not supported. The API for showing keyboard for editing multi-line text
-    // is not available on tvOS
+    // Not supported. The API for showing keyboard for editing multi-line text is not available on tvOS
     multiline = false;
 #endif
 
@@ -754,10 +798,19 @@ extern "C" void UnityKeyboard_Create(unsigned keyboardType, int autocorrection, 
         UIKeyboardTypeDecimalPad
     };
 
+    // on iOS 15, QuickType bar was decoupled from autocorrection (so it still shows candidates)
+    // for a principle of "the least surprise" we keep it coupled internally, so autocorrection == spellchecking
+    // TODO: should we expose it the control of it?
     static const UITextAutocorrectionType autocorrectionTypes[] =
     {
         UITextAutocorrectionTypeNo,
         UITextAutocorrectionTypeDefault,
+    };
+
+    static const UITextSpellCheckingType spellcheckingTypes[] =
+    {
+        UITextSpellCheckingTypeNo,
+        UITextSpellCheckingTypeDefault,
     };
 
     static const UIKeyboardAppearance keyboardAppearances[] =
@@ -773,6 +826,7 @@ extern "C" void UnityKeyboard_Create(unsigned keyboardType, int autocorrection, 
         text, placeholder,
         keyboardTypes[keyboardType == 12 ? UIKeyboardTypeNumberPad : keyboardType],
         autocorrectionTypes[autocorrection],
+        spellcheckingTypes[autocorrection],
         keyboardAppearances[alert],
         (BOOL)multiline, (BOOL)secure,
         characterLimit,
@@ -887,8 +941,7 @@ extern "C" void UnityKeyboard_SetSelection(int location, int length)
 {
     if (_keyboard)
     {
-        NSRange range = NSMakeRange(location, length);
-        _keyboard.selection = range;
+        _keyboard.selection = NSMakeRange(location, length);
     }
 }
 

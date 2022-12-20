@@ -121,6 +121,10 @@ public extension TealiumUnityPlugin {
         if let sessionCountingEnabled = dictionary[.sessionCountingEnabled] as? Bool {
             localConfig.sessionCountingEnabled = sessionCountingEnabled
         }
+
+        if let visitorIdentityKey = dictionary[.visitorIdentityKey] as? String {
+            localConfig.visitorIdentityKey = visitorIdentityKey
+        }
         
         localConfig.collectors = configCollectors
         localConfig.dispatchers = configDispatchers

@@ -75,7 +75,7 @@ fun toTealiumConfig(app: Application, configObj: JSONObject): TealiumConfig? {
 
     val config = TealiumConfig(
         app, account, profile, environment,
-        collectors = collectors ?: Collectors.core,
+        collectors = Collectors.core.toMutableSet(),
         modules = modules ?: mutableSetOf(),
         dispatchers = dispatchers ?: mutableSetOf()
     )
@@ -89,6 +89,10 @@ fun toTealiumConfig(app: Application, configObj: JSONObject): TealiumConfig? {
         // Custom Visitor Id
         configObj.isNull(KEY_CUSTOM_VISITOR_ID).let {
             if (!it) existingVisitorId = configObj.getString(KEY_CUSTOM_VISITOR_ID)
+        }
+
+        configObj.isNull(KEY_CONFIG_VISITOR_IDENTITY_KEY).let {
+            if (!it) visitorIdentityKey = configObj.getString(KEY_CONFIG_VISITOR_IDENTITY_KEY)
         }
 
         // Collect Settings

@@ -32,6 +32,7 @@ InitializeDelegateCallbackFunction initializeDelegate = NULL;
 TrackDataDelegateCallbackFunction trackDataDelegate = NULL;
 RemoteCommandDelegateCallbackFunction remoteCommandDelegate = NULL;
 VisitorServiceDelegateCallbackFunction visitorServiceDelegate = NULL;
+VisitorIdDelegateCallbackFunction visitorIdDelegate = NULL;
 ConsentExpiryDelegateCallbackFunction consentExpiryDelegate = NULL;
 
 @interface TealiumUnityDelegateBridge: NSObject<
@@ -39,6 +40,7 @@ ConsentExpiryDelegateCallbackFunction consentExpiryDelegate = NULL;
     TealiumUnityTrackDataDeletage,
     TealiumUnityRemoteCommandDelegate,
     TealiumUnityVisitorServiceDelegate, 
+    TealiumUnityVisitorIdDelegate,
     TealiumConsentExpiryDelegate>
 @end
 
@@ -46,6 +48,7 @@ static TealiumUnityDelegateBridge *__initalizeDelegate = nil;
 static TealiumUnityDelegateBridge *__trackDataDelegate = nil;
 static TealiumUnityDelegateBridge *__remoteCommandDelegate = nil;
 static TealiumUnityDelegateBridge *__visitorServiceDelegate = nil;
+static TealiumUnityDelegateBridge *__visitorIdDelegate = nil;
 static TealiumUnityDelegateBridge *__consentExpiryDelegate = nil;
 
 @implementation TealiumUnityDelegateBridge
@@ -81,6 +84,13 @@ static TealiumUnityDelegateBridge *__consentExpiryDelegate = nil;
     if (consentExpiryDelegate != NULL) {
         consentExpiryDelegate();
      }
+}
+
+- (void)didReceiveVisitorIdUpdateWith:(NSString * _Nullable)newId {
+    char* cNewId = TEALCStringToString(newId);
+    if (visitorIdDelegate != NULL) {
+        visitorIdDelegate(cNewId);
+    }
 }
 
 @end
@@ -158,6 +168,14 @@ extern "C"
         return TEALCStringToString(visitorId);
     }
 
+    void Tealium_ResetVisitorId() {
+        [[TealiumUnityPlugin shared] resetVisitorId];
+    }
+
+    void Tealium_ClearStoredVisitorIds() {
+        [[TealiumUnityPlugin shared] clearStoredVisitorIds];
+    }
+
     void Tealium_AddRemoteCommand(const char* cId) {
         NSString *commandId = TEALStringFromCString(cId);
         [[TealiumUnityPlugin shared] addRemoteCommand:commandId];
@@ -201,6 +219,14 @@ extern "C"
         [TealiumUnityPlugin shared].visitorServiceDelegate = __visitorServiceDelegate;
         
         visitorServiceDelegate = callback;
+    }
+
+    void Tealium_SetVisitorIdDelegate(VisitorIdDelegateCallbackFunction callback) {
+        if (!__visitorIdDelegate) {
+            __visitorIdDelegate = [[TealiumUnityDelegateBridge alloc] init];
+        }
+        [TealiumUnityPlugin shared].visitorIdDelegate = __visitorIdDelegate;
+        visitorIdDelegate = callback;
     }
 
     void Tealium_SetConsentExpiryDelegate(ConsentExpiryDelegateCallbackFunction callback) {

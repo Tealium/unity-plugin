@@ -5,6 +5,7 @@ import com.tealium.core.consent.ConsentManagementPolicy
 import com.tealium.core.consent.ConsentStatus
 import com.tealium.core.consent.UserConsentPreferences
 import com.tealium.core.messaging.UserConsentPreferencesUpdatedListener
+import com.tealium.core.messaging.VisitorIdUpdatedListener
 import com.tealium.remotecommands.RemoteCommand
 import com.tealium.visitorservice.VisitorProfile
 import com.tealium.visitorservice.VisitorUpdatedListener
@@ -12,7 +13,7 @@ import com.unity3d.player.UnityPlayer
 import org.json.JSONException
 import org.json.JSONObject
 
-class EmitterListeners() : VisitorUpdatedListener, UserConsentPreferencesUpdatedListener {
+class EmitterListeners() : VisitorUpdatedListener, VisitorIdUpdatedListener, UserConsentPreferencesUpdatedListener {
     override fun onVisitorUpdated(visitorProfile: VisitorProfile) {
         try {
             VisitorProfile.toFriendlyMutableMap(visitorProfile).let {
@@ -26,6 +27,14 @@ class EmitterListeners() : VisitorUpdatedListener, UserConsentPreferencesUpdated
         } catch (jex: JSONException) {
             Logger.qa(BuildConfig.TAG, "${jex.message}")
         }
+    }
+
+    override fun onVisitorIdUpdated(visitorId: String) {
+        UnityPlayer.UnitySendMessage(
+            "TealiumAndroid",
+            "HandleVisitorIdUpdate",
+            visitorId
+        )
     }
 
     override fun onUserConsentPreferencesUpdated(
