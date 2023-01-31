@@ -96,17 +96,17 @@
             minTargetSdk="9.0" addToAllTargets="true" 
             modular_headers="true"
             subspecs="['Core','TagManagement','Collect','Lifecycle','RemoteCommands','VisitorService']" />
-        <!-- <iosPod name="tealium-swift/Core" version="~> 2.4" bitcodeEnabled="true"
+        <!-- <iosPod name="tealium-swift/Core" version="~> 2.9" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" />
-        <iosPod name="tealium-swift/TagManagement" version="~> 2.4" bitcodeEnabled="true"
+        <iosPod name="tealium-swift/TagManagement" version="~> 2.9" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" />
-        <iosPod name="tealium-swift/Collect" version="~> 2.4" bitcodeEnabled="true"
+        <iosPod name="tealium-swift/Collect" version="~> 2.9" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" />
-        <iosPod name="tealium-swift/Lifecycle" version="~> 2.4" bitcodeEnabled="true"
+        <iosPod name="tealium-swift/Lifecycle" version="~> 2.9" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" />
-        <iosPod name="tealium-swift/RemoteCommands" version="~> 2.4" bitcodeEnabled="true"
+        <iosPod name="tealium-swift/RemoteCommands" version="~> 2.9" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" />
-        <iosPod name="tealium-swift/VisitorService" version="~> 2.4" bitcodeEnabled="true"
+        <iosPod name="tealium-swift/VisitorService" version="~> 2.9" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" /> -->
             <!-- subspecs="Core,TagManagement,Collect,Lifecycle,RemoteCommands,VisitorService" -->
       <!-- Set of source URIs to search for this Cocoapod spec.

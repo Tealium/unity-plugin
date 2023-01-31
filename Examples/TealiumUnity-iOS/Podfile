@@ -9,4 +9,3 @@ target 'Unity-iPhone' do
   pod 'tealium-swift', '~> 2.8', :modular_headers => true, :subspecs => ['Core','TagManagement','Collect','Lifecycle','RemoteCommands','VisitorService']
 end
 use_frameworks!
-
