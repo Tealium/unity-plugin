@@ -478,7 +478,6 @@ static void ReportJoystickXYZWAxes(int idx, int xaxis, int yaxis, int zaxis, int
     UnitySetJoystickPosition(idx + 1, waxis, xyzw.w);
 }
 
-#if PLATFORM_TVOS
 static void ReportJoystickMicro(int idx, GCMicroGamepad* gamepad)
 {
     GCControllerDirectionPad* dpad = [gamepad dpad];
@@ -493,28 +492,6 @@ static void ReportJoystickMicro(int idx, GCMicroGamepad* gamepad)
 
     ReportJoystickButton(idx, BTN_A, [gamepad buttonA]);
     ReportJoystickButton(idx, BTN_X, [gamepad buttonX]);
-}
-
-#endif
-
-static void ReportJoystickBasic(int idx, GCGamepad* gamepad)
-{
-    GCControllerDirectionPad* dpad = [gamepad dpad];
-
-    UnitySetJoystickPosition(idx + 1, 0, GetAxisValue([dpad xAxis]));
-    UnitySetJoystickPosition(idx + 1, 1, -GetAxisValue([dpad yAxis]));
-    ReportJoystickButton(idx, BTN_DPAD_UP, [dpad up]);
-    ReportJoystickButton(idx, BTN_DPAD_RIGHT, [dpad right]);
-    ReportJoystickButton(idx, BTN_DPAD_DOWN, [dpad down]);
-    ReportJoystickButton(idx, BTN_DPAD_LEFT, [dpad left]);
-
-    ReportJoystickButton(idx, BTN_A, [gamepad buttonA]);
-    ReportJoystickButton(idx, BTN_B, [gamepad buttonB]);
-    ReportJoystickButton(idx, BTN_Y, [gamepad buttonY]);
-    ReportJoystickButton(idx, BTN_X, [gamepad buttonX]);
-
-    ReportJoystickButton(idx, BTN_L1, [gamepad leftShoulder]);
-    ReportJoystickButton(idx, BTN_R1, [gamepad rightShoulder]);
 }
 
 static void ReportJoystickExtended(int idx, GCExtendedGamepad* gamepad)
@@ -621,12 +598,8 @@ static void ReportJoystick(GCController* controller, int idx)
 
     if ([controller extendedGamepad] != nil)
         ReportJoystickExtended(idx, [controller extendedGamepad]);
-    else if ([controller gamepad] != nil)
-        ReportJoystickBasic(idx, [controller gamepad]);
-#if PLATFORM_TVOS
     else if ([controller microGamepad] != nil)
         ReportJoystickMicro(idx, [controller microGamepad]);
-#endif
     else
     {
         // TODO: do something with not supported gamepad profiles
@@ -791,10 +764,8 @@ UnitySetLastLocation(double timestamp,
     float verticalAccuracy);
 
 extern "C" void
-UnitySetLastHeading(float magneticHeading,
-    float trueHeading,
-    float rawX, float rawY, float rawZ,
-    double timestamp);
+UnitySetLastHeading(float magneticHeading, float trueHeading, float headingAccuracy,
+    float rawX, float rawY, float rawZ, double timestamp);
 
 #if UNITY_USES_LOCATION
 struct LocationServiceInfo
@@ -999,6 +970,7 @@ bool LocationService::IsHeadingAvailable()
 
     UnitySetLastHeading(UnityReorientHeading(newHeading.magneticHeading),
         UnityReorientHeading(newHeading.trueHeading),
+        newHeading.headingAccuracy,
         reorientedRawHeading.x, reorientedRawHeading.y, reorientedRawHeading.z,
         [newHeading.timestamp timeIntervalSince1970]);
 }

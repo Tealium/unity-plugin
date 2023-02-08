@@ -1,10 +1,5 @@
 import Foundation
-import TealiumCore
-import TealiumCollect
-import TealiumLifecycle
-import TealiumRemoteCommands
-import TealiumTagManagement
-import TealiumVisitorService
+import TealiumSwift
 
 public extension TealiumUnityPlugin {     
     
@@ -93,11 +88,11 @@ public extension TealiumUnityPlugin {
         if let overrideCollectURL = dictionary[.overrideCollectURL] as? String {
             localConfig.overrideCollectURL = overrideCollectURL
         }
-
+        
         if let overrideCollectProfile = dictionary[.overrideCollectProfile] as? String {
             localConfig.overrideCollectProfile = overrideCollectProfile
         }
-        
+
         if let overrideTagManagementURL = dictionary[.overrideTagManagementURL] as? String {
             localConfig.tagManagementOverrideURL = overrideTagManagementURL
         }
@@ -125,6 +120,10 @@ public extension TealiumUnityPlugin {
 
         if let sessionCountingEnabled = dictionary[.sessionCountingEnabled] as? Bool {
             localConfig.sessionCountingEnabled = sessionCountingEnabled
+        }
+
+        if let visitorIdentityKey = dictionary[.visitorIdentityKey] as? String {
+            localConfig.visitorIdentityKey = visitorIdentityKey
         }
         
         localConfig.collectors = configCollectors

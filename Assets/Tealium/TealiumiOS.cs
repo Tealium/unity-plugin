@@ -65,6 +65,12 @@ public sealed class TealiumiOS : TealiumUnity
     private static extern string Tealium_GetVisitorId();
 
     [DllImport("__Internal")]
+    private static extern void Tealium_ResetVisitorId();
+
+    [DllImport("__Internal")]
+    private static extern void Tealium_ClearStoredVisitorIds();
+
+    [DllImport("__Internal")]
     private static extern void Tealium_SetInitializeDelegate(InitializeDelegateMessage callback);
 
     [DllImport("__Internal")]
@@ -75,6 +81,9 @@ public sealed class TealiumiOS : TealiumUnity
 
     [DllImport("__Internal")]
     private static extern void Tealium_SetVisitorServiceDelegate(VisitorServiceDelegateMessage callback);
+
+    [DllImport("__Internal")]
+    private static extern void Tealium_SetVisitorIdDelegate(VisitorIdDelegateMessage callback);
     
     [DllImport("__Internal")]
     private static extern void Tealium_SetConsentExpiryDelegate(ConsentExpiryDelegateMessage callback);
@@ -97,6 +106,11 @@ public sealed class TealiumiOS : TealiumUnity
     [MonoPInvokeCallback(typeof(VisitorServiceDelegateMessage))]
     private static void visitorServiceUpdateReceived(string payload) {
         TealiumUnityPlugin.OnVisitorServiceUpdate(payload);
+    }
+    private delegate void VisitorIdDelegateMessage(string payload);
+    [MonoPInvokeCallback(typeof(VisitorIdDelegateMessage))]
+    private static void visitorIdUpdateReceived(string visitorId) {
+        TealiumUnityPlugin.OnVisitorIdUpdate(visitorId);
     }
     private delegate void ConsentExpiryDelegateMessage();
     [MonoPInvokeCallback(typeof(ConsentExpiryDelegateMessage))]
@@ -156,6 +170,7 @@ public sealed class TealiumiOS : TealiumUnity
     public void JoinTrace(string id) => Tealium_JoinTrace(id);
     public void LeaveTrace() => Tealium_LeaveTrace();
     public void SetVisitorServiceListener(Action<Dictionary<string, object>> callback) => Tealium_SetVisitorServiceDelegate(visitorServiceUpdateReceived);
+    public void SetVisitorIdListener(Action<string> callback) => Tealium_SetVisitorIdDelegate(visitorIdUpdateReceived);
     public void SetConsentExpiryListener(Action callback) => Tealium_SetConsentExpiryDelegate(consentExpirationReceived);
     public string? GetVisitorId() {
         string visitorId = Tealium_GetVisitorId();
@@ -163,7 +178,9 @@ public sealed class TealiumiOS : TealiumUnity
             return null;
         } 
         return visitorId;
-    } 
+    }
+    public void ResetVisitorId() => Tealium_ResetVisitorId();
+    public void ClearStoredVisitorIds() => Tealium_ClearStoredVisitorIds();
 
 }
 

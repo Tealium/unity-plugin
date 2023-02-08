@@ -189,4 +189,14 @@ object TealiumUnity {
     fun getVisitorId(): String {
         return tealium?.visitorId ?: ""
     }
+
+    @JvmStatic
+    fun resetVisitorId() {
+        tealium?.resetVisitorId()
+    }
+
+    @JvmStatic
+    fun clearStoredVisitorIds() {
+        tealium?.clearStoredVisitorIds()
+    }
 }

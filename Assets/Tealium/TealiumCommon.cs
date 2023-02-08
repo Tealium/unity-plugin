@@ -142,6 +142,7 @@ namespace TealiumCommon
         public bool? useRemoteLibrarySettings;
         public bool? visitorServiceEnabled;
         public bool? sessionCountingEnabled;
+        public string? visitorIdentityKey;
 
         public TealiumConfig(
             string account,
@@ -169,7 +170,8 @@ namespace TealiumCommon
             bool? lifecycleAutotrackingEnabled = null,
             bool? useRemoteLibrarySettings = null,
             bool? visitorServiceEnabled = null,
-            bool? sessionCountingEnabled = null
+            bool? sessionCountingEnabled = null,
+            string? visitorIdentityKey = null
      )
         {
             this.account = account;
@@ -197,6 +199,7 @@ namespace TealiumCommon
             this.useRemoteLibrarySettings = useRemoteLibrarySettings;
             this.visitorServiceEnabled = visitorServiceEnabled;
             this.sessionCountingEnabled = sessionCountingEnabled;
+            this.visitorIdentityKey = visitorIdentityKey;
         }
 
     }

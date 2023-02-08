@@ -16,7 +16,6 @@
 #endif
 
 #include "Internal/UndefineCompilerMacros.h"
-#include "Internal/UndefinePlatforms.h"
 #include "Internal/UndefineCoreMacros.h"
 
 #define DETAIL__PREEXTERNALINCLUDE_HAS_BEEN_INCLUDED

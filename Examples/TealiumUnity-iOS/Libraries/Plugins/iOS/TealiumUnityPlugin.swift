@@ -1,12 +1,11 @@
-import TealiumCore
-import TealiumCollect
-import TealiumLifecycle
-import TealiumRemoteCommands
-import TealiumTagManagement
-import TealiumVisitorService
+import TealiumSwift
 
 @objc public protocol TealiumUnityInitializeDelegate {
     func didInitialize(_ success: Bool)
+}
+
+@objc public protocol TealiumUnityTrackDataDeletage {
+    func didReceiveTrackData(data: String?)
 }
 
 @objc public protocol TealiumUnityRemoteCommandDelegate {
@@ -15,6 +14,10 @@ import TealiumVisitorService
 
 @objc public protocol TealiumUnityVisitorServiceDelegate {
     func didReceiveVisitorServiceUpdate(with payload: String?)
+}
+
+@objc public protocol TealiumUnityVisitorIdDelegate {
+    func didReceiveVisitorIdUpdate(with newId: String?)
 }
 
 @objc public protocol TealiumConsentExpiryDelegate {
@@ -30,8 +33,10 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
     private var config: TealiumConfig?
     
     @objc public weak var initializeDelegate: TealiumUnityInitializeDelegate?
+    @objc public weak var trackDataDelegate: TealiumUnityTrackDataDeletage?
     @objc public weak var remoteCommandDelegate: TealiumUnityRemoteCommandDelegate?
     @objc public weak var visitorServiceDelegate: TealiumUnityVisitorServiceDelegate?
+    @objc public weak var visitorIdDelegate: TealiumUnityVisitorIdDelegate?
     @objc public weak var consentExpiryDelegate: TealiumConsentExpiryDelegate? {
         willSet {
             tealium?.consentManager?.onConsentExpiraiton = { [weak self] in
@@ -79,6 +84,9 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
                 return
             }
             self?.initializeDelegate?.didInitialize(true)
+            self?.tealium?.onVisitorId?.subscribe { [weak self] id in
+                self?.visitorIdDelegate?.didReceiveVisitorIdUpdate(with: id)
+            }
         }
     }
 
@@ -125,6 +133,16 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
     }
 
     @objc
+    public func gatherTrackData() {
+        tealium?.gatherTrackData(completion: { [weak self] trackData in
+            guard let trackDataString = trackData.jsonString else {
+                return
+            }
+            self?.trackDataDelegate?.didReceiveTrackData(data: trackDataString)
+        })
+    }
+
+    @objc
     public func addRemoteCommand(_ id: String) {
         let remoteCommand = RemoteCommand(commandId: id, description: nil) { [weak self] response in
             guard let payload = response.payload, 
@@ -164,6 +182,16 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
     @objc
     public func leaveTrace() {
         tealium?.leaveTrace()
+    }
+
+    @objc
+    public func resetVisitorId() {
+        tealium?.resetVisitorId()
+    }
+
+    @objc
+    public func clearStoredVisitorIds() {
+        tealium?.clearStoredVisitorIds()
     }
     
     public func didUpdate(visitorProfile: TealiumVisitorProfile) {

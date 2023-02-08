@@ -16,6 +16,10 @@ import TealiumSwift
     func didReceiveVisitorServiceUpdate(with payload: String?)
 }
 
+@objc public protocol TealiumUnityVisitorIdDelegate {
+    func didReceiveVisitorIdUpdate(with newId: String?)
+}
+
 @objc public protocol TealiumConsentExpiryDelegate {
     func consentDidExpire()
 }
@@ -32,6 +36,7 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
     @objc public weak var trackDataDelegate: TealiumUnityTrackDataDeletage?
     @objc public weak var remoteCommandDelegate: TealiumUnityRemoteCommandDelegate?
     @objc public weak var visitorServiceDelegate: TealiumUnityVisitorServiceDelegate?
+    @objc public weak var visitorIdDelegate: TealiumUnityVisitorIdDelegate?
     @objc public weak var consentExpiryDelegate: TealiumConsentExpiryDelegate? {
         willSet {
             tealium?.consentManager?.onConsentExpiraiton = { [weak self] in
@@ -79,6 +84,9 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
                 return
             }
             self?.initializeDelegate?.didInitialize(true)
+            self?.tealium?.onVisitorId?.subscribe { [weak self] id in
+                self?.visitorIdDelegate?.didReceiveVisitorIdUpdate(with: id)
+            }
         }
     }
 
@@ -174,6 +182,16 @@ public class TealiumUnityPlugin: NSObject, VisitorServiceDelegate {
     @objc
     public func leaveTrace() {
         tealium?.leaveTrace()
+    }
+
+    @objc
+    public func resetVisitorId() {
+        tealium?.resetVisitorId()
+    }
+
+    @objc
+    public func clearStoredVisitorIds() {
+        tealium?.clearStoredVisitorIds()
     }
     
     public func didUpdate(visitorProfile: TealiumVisitorProfile) {

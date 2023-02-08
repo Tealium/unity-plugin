@@ -1,11 +1,11 @@
 <dependencies>
   <packages>
     <package>com.tealium:kotlin-collect-dispatcher:1.1.0</package>
-    <package>com.tealium:kotlin-core:1.4.1</package>
+    <package>com.tealium:kotlin-core:1.5.1</package>
     <package>com.tealium:kotlin-lifecycle:1.1.1</package>
-    <package>com.tealium:kotlin-remotecommand-dispatcher:1.1.1</package>
-    <package>com.tealium:kotlin-tagmanagement-dispatcher:1.1.2</package>
-    <package>com.tealium:kotlin-visitor-service:1.1.0</package>
+    <package>com.tealium:kotlin-remotecommand-dispatcher:1.2.1</package>
+    <package>com.tealium:kotlin-tagmanagement-dispatcher:1.2.0</package>
+    <package>com.tealium:kotlin-visitor-service:1.1.1</package>
     <package>com.tealium:remotecommands:1.0.1</package>
   </packages>
   <files />
@@ -21,7 +21,7 @@
     <setting name="packageDir" value="Assets/Plugins/Android" />
     <setting name="patchAndroidManifest" value="True" />
     <setting name="patchMainTemplateGradle" value="True" />
-    <setting name="projectExportEnabled" value="False" />
+    <setting name="projectExportEnabled" value="True" />
     <setting name="useJetifier" value="True" />
   </settings>
 </dependencies>

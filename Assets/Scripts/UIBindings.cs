@@ -12,6 +12,9 @@ public class UIBindings : MonoBehaviour
 {
     [SerializeField]
     private InputField? traceIdInputField;
+
+    [SerializeField]
+    private InputField? userIdInputField;
     
     [SerializeField]
     private Button? initializeButton;
@@ -21,6 +24,9 @@ public class UIBindings : MonoBehaviour
 
     [SerializeField]
     private Button? joinTraceButton;
+
+    [SerializeField]
+    private Button? setUserIdButton;
 
     [SerializeField]
     private Button? leaveTraceButton;
@@ -59,11 +65,19 @@ public class UIBindings : MonoBehaviour
     private Button? getVisitorIdButton;
 
     [SerializeField]
+    private Button? resetVisitorIdButton;
+
+    [SerializeField]
+    private Button? clearVisitorIdsButton;
+
+
+    [SerializeField]
     private Button? addRemoteCommandButton;
 
     [SerializeField]
     private Button? removeRemoteCommandButton;
     private string traceId = "";
+    private string userId = "";
     private TealiumConfig config = new TealiumConfig("tealiummobile",
                                                      "demo",
                                                      TealiumEnvironment.DEV,
@@ -83,15 +97,17 @@ public class UIBindings : MonoBehaviour
                                                      batchingEnabled: false,
                                                      visitorServiceEnabled: true,
                                                      sessionCountingEnabled: true,
-                                                     customVisitorId: "my_custom_id_123456",
+                                                     visitorIdentityKey: "user_identity",
                                                      useRemoteLibrarySettings: true);
 
     void Start() {
         traceIdInputField?.onEndEdit.AddListener(delegate {SetTraceId(traceIdInputField);});
+        userIdInputField?.onEndEdit.AddListener(delegate {SetUserId(userIdInputField);});
         initializeButton?.onClick.AddListener(Initialize);
         gatherTrackDataButton?.onClick.AddListener(GatherTrackData);
         terminateTealiumButton?.onClick.AddListener(TerminateTealium);
         joinTraceButton?.onClick.AddListener(JoinTrace);
+        setUserIdButton?.onClick.AddListener(SetUserId);
         leaveTraceButton?.onClick.AddListener(LeaveTrace);
         trackEventButton?.onClick.AddListener(TrackEvent);
         trackViewButton?.onClick.AddListener(TrackView);
@@ -103,6 +119,8 @@ public class UIBindings : MonoBehaviour
         setConsentCategoriesButton?.onClick.AddListener(SetConsentCategories);
         getConsentCategoriesButton?.onClick.AddListener(GetConsentCategories);
         getVisitorIdButton?.onClick.AddListener(GetVisitorId);
+        resetVisitorIdButton?.onClick.AddListener(ResetVisitorId);
+        clearVisitorIdsButton?.onClick.AddListener(ClearStoredVisitorIds);
         addRemoteCommandButton?.onClick.AddListener(AddRemoteCommand);
         removeRemoteCommandButton?.onClick.AddListener(RemoveRemoteCommand);
     } 
@@ -114,6 +132,7 @@ public class UIBindings : MonoBehaviour
             TealiumUnityPlugin.AddRemoteCommand("example", payload => PrintPayload("Example Remote Command", payload));
             TealiumUnityPlugin.SetVisitorServiceListener(payload => PrintPayload("Updated Visitor Profile", payload));
             TealiumUnityPlugin.SetConsentExpiryListener(() => TealiumLogger.Log("Consent Expired!!"));
+            TealiumUnityPlugin.SetVisitorIdListener(visitorId => TealiumLogger.Log($"Updated Visitor Id: {visitorId}"));
         } else {
            TealiumLogger.Log(" *** TealiumUnityPlugin Failed to Initialize *** "); 
         }
@@ -121,6 +140,11 @@ public class UIBindings : MonoBehaviour
 
     void GatherTrackData() => TealiumUnityPlugin.GatherTrackData((callback) => PrintPayload("Gather Track Data Response: ", callback));
     void JoinTrace() => TealiumUnityPlugin.JoinTrace(traceId);
+    void SetUserId() {
+        TealiumUnityPlugin.AddToDataLayer(new Dictionary<string, object> {
+            {"user_identity", userId}
+        }, Expiry.Forever);
+    }
     void LeaveTrace() => TealiumUnityPlugin.LeaveTrace(); 
     void TrackEvent() => TealiumUnityPlugin.Track(new TealiumEvent("unity_event", new Dictionary<string, object> {
         {"string_key", "helloworld"},
@@ -172,12 +196,15 @@ public class UIBindings : MonoBehaviour
         categories.ForEach(category => TealiumLogger.Log($"{category.Value} "));
     }
     void GetVisitorId()  => TealiumLogger.Log($"Visitor Id: {TealiumUnityPlugin.GetVisitorId()}");
+    void ResetVisitorId() => TealiumUnityPlugin.ResetVisitorId();
+    void ClearStoredVisitorIds() => TealiumUnityPlugin.ClearStoredVisitorIds();
     void TerminateTealium() => TealiumUnityPlugin.Terminate();
     void AddRemoteCommand() => TealiumUnityPlugin.AddRemoteCommand("hello", (payload) => PrintPayload("Hello Remote Command", payload));
     void RemoveRemoteCommand() => TealiumUnityPlugin.RemoveRemoteCommand("example");
 
     // Helper Methods
     private void SetTraceId(InputField input) => traceId = input.text;
+    private void SetUserId(InputField input) => userId = input.text;
     private List<ConsentCategories> SetRandomConsentCategories() 
     {
         List<ConsentCategories> allCategories = new List<ConsentCategories>(){

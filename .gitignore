@@ -77,3 +77,6 @@ crashlytics-build.properties
 
 # Visual Studio
 .vscode
+
+# iOS
+Examples/TealiumUnity-iOS/Pods

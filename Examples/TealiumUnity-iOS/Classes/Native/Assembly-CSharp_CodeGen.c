@@ -9,547 +9,609 @@
 #include "codegen/il2cpp-codegen-metadata.h"
 
 
-extern const RuntimeMethod* TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E_RuntimeMethod_var;
-extern const RuntimeMethod* TealiumiOS_initializationResponseReceived_mFD32AC02F83B78CABEB108BA6DA3F3CF53EBE482_RuntimeMethod_var;
-extern const RuntimeMethod* TealiumiOS_remoteCommandReceived_m21FFC75B550A9A5301D143DA0DA208042DA9778D_RuntimeMethod_var;
-extern const RuntimeMethod* TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A_RuntimeMethod_var;
+extern const RuntimeMethod* TealiumiOS_consentExpirationReceived_m6BD20EBA076AD8F9F17576B2A4ADC0821095F351_RuntimeMethod_var;
+extern const RuntimeMethod* TealiumiOS_initializationResponseReceived_mCE75DDB10DB04C7CDAD5C79E686AC95444689C45_RuntimeMethod_var;
+extern const RuntimeMethod* TealiumiOS_remoteCommandReceived_m329891AE490BF9E5B99477B569A5AE881D646737_RuntimeMethod_var;
+extern const RuntimeMethod* TealiumiOS_trackDataResponseReceived_m560E76CDB97474A552B4663D703FBF7A4823CB3F_RuntimeMethod_var;
+extern const RuntimeMethod* TealiumiOS_visitorIdUpdateReceived_m5F95C7CF4F502243CB62C15DC4FFA7A5DEF61176_RuntimeMethod_var;
+extern const RuntimeMethod* TealiumiOS_visitorServiceUpdateReceived_mF7CCAAF7184EF435DBAF5FE8BE8AC7576252514C_RuntimeMethod_var;
 
 
 
 // 0x00000001 System.Void Microsoft.CodeAnalysis.EmbeddedAttribute::.ctor()
-extern void EmbeddedAttribute__ctor_m90D0B6DEB625101355554D49B2EE2FB67C875860 (void);
-// 0x00000002 System.Void System.Runtime.CompilerServices.IsReadOnlyAttribute::.ctor()
-extern void IsReadOnlyAttribute__ctor_mF1843241F60B2240CFAE651F1FD8A7AE17E32ECD (void);
-// 0x00000003 System.Void System.Runtime.CompilerServices.NullableAttribute::.ctor(System.Byte)
-extern void NullableAttribute__ctor_m68337A4A4913B9D45F4B7249895084D57F47B445 (void);
-// 0x00000004 System.Void System.Runtime.CompilerServices.NullableAttribute::.ctor(System.Byte[])
-extern void NullableAttribute__ctor_mDD67D1F687CC4C4A36E4E580AAC3AA2EB559CFAC (void);
-// 0x00000005 System.Void System.Runtime.CompilerServices.NullableContextAttribute::.ctor(System.Byte)
-extern void NullableContextAttribute__ctor_mC9D42ADAC30424D8311831B59B21E77EB522453F (void);
-// 0x00000006 System.Void UIBindings::Start()
-extern void UIBindings_Start_m9D954F6B918BE53FD95940BAF5A80A05D8F1D22C (void);
-// 0x00000007 System.Void UIBindings::Initialize()
-extern void UIBindings_Initialize_m8438F9143A6F5E061E03427C7604C8E072EEACF3 (void);
+extern void EmbeddedAttribute__ctor_m68CAD82666F0FF415043D7DC217986AA2D3133D1 (void);
+// 0x00000002 System.Void System.Runtime.CompilerServices.NullableAttribute::.ctor(System.Byte)
+extern void NullableAttribute__ctor_m771BA0E8EFE1DD8AAAE9E2B867CCF4D3AE8834C7 (void);
+// 0x00000003 System.Void System.Runtime.CompilerServices.NullableAttribute::.ctor(System.Byte[])
+extern void NullableAttribute__ctor_mA329224BEC75C65B8E9B5D81D7F5E769E22790E2 (void);
+// 0x00000004 System.Void System.Runtime.CompilerServices.NullableContextAttribute::.ctor(System.Byte)
+extern void NullableContextAttribute__ctor_m3F94BA00FB614574AC19D78E61DC0CA0AE15FCAC (void);
+// 0x00000005 System.Void UIBindings::Start()
+extern void UIBindings_Start_m7FB089F04B037074321560CD7C068DFC183B2885 (void);
+// 0x00000006 System.Void UIBindings::Initialize()
+extern void UIBindings_Initialize_mCF2387374C0695A6A102A794F1E34F7CF6AE3705 (void);
+// 0x00000007 System.Void UIBindings::GatherTrackData()
+extern void UIBindings_GatherTrackData_m668AF1AA89841A33336E8D966FB4F23A362D8673 (void);
 // 0x00000008 System.Void UIBindings::JoinTrace()
-extern void UIBindings_JoinTrace_m744F3A3B1C71827132459954BE54BBC7539A6979 (void);
-// 0x00000009 System.Void UIBindings::LeaveTrace()
-extern void UIBindings_LeaveTrace_m306F0C416513763ED81D9D26384FF1D7AE31CE80 (void);
-// 0x0000000A System.Void UIBindings::TrackEvent()
-extern void UIBindings_TrackEvent_m27BDC3D69766E9D4E046B77C28D91B2F9368BFCE (void);
-// 0x0000000B System.Void UIBindings::TrackView()
-extern void UIBindings_TrackView_m647AB16AE32C88AA72F2EA38485EE86578203CDB (void);
-// 0x0000000C System.Void UIBindings::AddToDataLayer()
-extern void UIBindings_AddToDataLayer_m901CD2D81926E29B4D12C002B0A826105E5595DC (void);
-// 0x0000000D System.Void UIBindings::GetFromDataLayer()
-extern void UIBindings_GetFromDataLayer_mE4B598D52970C44C095B1D22D1B8C421928B5162 (void);
-// 0x0000000E System.Void UIBindings::RemoveFromDataLayer()
-extern void UIBindings_RemoveFromDataLayer_mBE59E7B9E05F13E70D0607B8B4195C395C6346F6 (void);
-// 0x0000000F System.Void UIBindings::SetConsentStatus()
-extern void UIBindings_SetConsentStatus_m47EC4483D9590D4BEB7C93F820D86F41B1EEC2C7 (void);
-// 0x00000010 System.Void UIBindings::GetConsentStatus()
-extern void UIBindings_GetConsentStatus_m21C0142321FFA4641DF9D3C4965EFE538DDCA650 (void);
-// 0x00000011 System.Void UIBindings::SetConsentCategories()
-extern void UIBindings_SetConsentCategories_m1ADEF1F5D2B5451C9CADB9CE404546140B79C89D (void);
-// 0x00000012 System.Void UIBindings::GetConsentCategories()
-extern void UIBindings_GetConsentCategories_mBE3054919A16DA8E25E520C62DDA7E4610644662 (void);
-// 0x00000013 System.Void UIBindings::GetVisitorId()
-extern void UIBindings_GetVisitorId_mB35F1FB2E2423563C5CC6C230CDD2C8636E10DC7 (void);
-// 0x00000014 System.Void UIBindings::TerminateTealium()
-extern void UIBindings_TerminateTealium_m79ACA9FC2E9AFC3D77BD62CB9C3440D8CEA0BBAE (void);
-// 0x00000015 System.Void UIBindings::AddRemoteCommand()
-extern void UIBindings_AddRemoteCommand_mD050A2B54C2CA7974062A992BB50C56AE6E17EFA (void);
-// 0x00000016 System.Void UIBindings::RemoveRemoteCommand()
-extern void UIBindings_RemoveRemoteCommand_m87087A795CA0E488AC93CF3E83399B14BC941961 (void);
-// 0x00000017 System.Void UIBindings::SetTraceId(UnityEngine.UI.InputField)
-extern void UIBindings_SetTraceId_m3CD957AFF0367C9DAC8C13850646EBAD6C546CC3 (void);
-// 0x00000018 System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> UIBindings::SetRandomConsentCategories()
-extern void UIBindings_SetRandomConsentCategories_m0E5F4B8EFF9844BA6E48CCBE48BB2DC3B6B88619 (void);
-// 0x00000019 System.Collections.Generic.List`1<T> UIBindings::GetRandomFromList(System.Collections.Generic.List`1<T>,System.Int32)
-// 0x0000001A System.Void UIBindings::PrintPayload(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void UIBindings_PrintPayload_mF90DFFBD8D8E484E538CC0E3C8673DDF3613A37D (void);
-// 0x0000001B System.Void UIBindings::.ctor()
-extern void UIBindings__ctor_m0F23364E0E547D8579D90992B5E85322E67073FD (void);
-// 0x0000001C System.Void UIBindings::<Start>b__19_0(System.String)
-extern void UIBindings_U3CStartU3Eb__19_0_mBDA31E90CE50C9D6034C8B6732CF12D735A019C7 (void);
-// 0x0000001D System.Void UIBindings/<>c::.cctor()
-extern void U3CU3Ec__cctor_mF074DA0394FF1D6A38D7741A79ABC426AC42A066 (void);
-// 0x0000001E System.Void UIBindings/<>c::.ctor()
-extern void U3CU3Ec__ctor_m71412E00598501A56D91C7EF5E9CF731F20A6C75 (void);
-// 0x0000001F System.Void UIBindings/<>c::<Initialize>b__20_0(System.Boolean)
-extern void U3CU3Ec_U3CInitializeU3Eb__20_0_m77F67E531562167CB666D205F7BAD90B14FD154A (void);
-// 0x00000020 System.Void UIBindings/<>c::<Initialize>b__20_1(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void U3CU3Ec_U3CInitializeU3Eb__20_1_m8B02AECC0A436E6F13437CB18D64CAD13EAF5A61 (void);
-// 0x00000021 System.Void UIBindings/<>c::<Initialize>b__20_2(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void U3CU3Ec_U3CInitializeU3Eb__20_2_m24AA25E5F5279ACE0592B650B4C4AF1EE526DAD4 (void);
-// 0x00000022 System.Void UIBindings/<>c::<Initialize>b__20_3()
-extern void U3CU3Ec_U3CInitializeU3Eb__20_3_m3A6AD4676C834C2F2A9A32F50D495F6005876006 (void);
-// 0x00000023 System.Void UIBindings/<>c::<GetFromDataLayer>b__26_0(System.Object)
-extern void U3CU3Ec_U3CGetFromDataLayerU3Eb__26_0_mE0314B58357BD59F97A923F624E76A207A091162 (void);
-// 0x00000024 System.Void UIBindings/<>c::<GetConsentCategories>b__31_0(TealiumCommon.ConsentCategories)
-extern void U3CU3Ec_U3CGetConsentCategoriesU3Eb__31_0_m2D61AF39E273540056DF8158030FA6051D659612 (void);
-// 0x00000025 System.Void UIBindings/<>c::<AddRemoteCommand>b__34_0(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void U3CU3Ec_U3CAddRemoteCommandU3Eb__34_0_m5D0D1EDA9E03153FC26FD9C850876424C3C9D21C (void);
-// 0x00000026 System.Void TealiumUnity::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
-// 0x00000027 System.Void TealiumUnity::Terminate()
-// 0x00000028 System.Void TealiumUnity::Track(TealiumCommon.TealiumDispatch)
-// 0x00000029 System.Void TealiumUnity::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
-// 0x0000002A System.Object TealiumUnity::GetFromDataLayer(System.String)
-// 0x0000002B System.Void TealiumUnity::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
-// 0x0000002C System.Void TealiumUnity::SetConsentStatus(TealiumCommon.ConsentStatus)
-// 0x0000002D TealiumCommon.ConsentStatus TealiumUnity::GetConsentStatus()
-// 0x0000002E System.Void TealiumUnity::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
-// 0x0000002F System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumUnity::GetConsentCategories()
-// 0x00000030 System.Void TealiumUnity::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-// 0x00000031 System.Void TealiumUnity::RemoveRemoteCommand(System.String)
-// 0x00000032 System.Void TealiumUnity::JoinTrace(System.String)
-// 0x00000033 System.Void TealiumUnity::LeaveTrace()
-// 0x00000034 System.String TealiumUnity::GetVisitorId()
-// 0x00000035 System.Void TealiumUnity::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-// 0x00000036 System.Void TealiumUnity::SetConsentExpiryListener(System.Action)
-// 0x00000037 TealiumUnity TealiumUnityPlugin::get_Tealium()
-extern void TealiumUnityPlugin_get_Tealium_mA72005D735B160353EB60AC4879D0C5E14443D26 (void);
-// 0x00000038 System.Void TealiumUnityPlugin::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
-extern void TealiumUnityPlugin_Initialize_m913F0E98587C5DCE332F304DF31F2DEB355D2E68 (void);
-// 0x00000039 System.Void TealiumUnityPlugin::Terminate()
-extern void TealiumUnityPlugin_Terminate_mF5EBB965654E5BCEF414723666651C8B4CB67BB7 (void);
-// 0x0000003A System.Void TealiumUnityPlugin::Track(TealiumCommon.TealiumDispatch)
-extern void TealiumUnityPlugin_Track_mFB8FD7CDBFAC492172AB9FE8444AE379131DA79B (void);
-// 0x0000003B System.Void TealiumUnityPlugin::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
-extern void TealiumUnityPlugin_AddToDataLayer_mCF204C868D999109267C9029A2AB0E244A661023 (void);
-// 0x0000003C System.Object TealiumUnityPlugin::GetFromDataLayer(System.String)
-extern void TealiumUnityPlugin_GetFromDataLayer_m2CD07EF50616ACE373FF6447D990F77C6706B104 (void);
-// 0x0000003D System.Void TealiumUnityPlugin::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
-extern void TealiumUnityPlugin_RemoveFromDataLayer_m81A902535AF32B1FD400FBB43B515AEE94909157 (void);
-// 0x0000003E System.Void TealiumUnityPlugin::SetConsentStatus(TealiumCommon.ConsentStatus)
-extern void TealiumUnityPlugin_SetConsentStatus_m649EA90ABC1300557C5480E452FD34B5209060B2 (void);
-// 0x0000003F TealiumCommon.ConsentStatus TealiumUnityPlugin::GetConsentStatus()
-extern void TealiumUnityPlugin_GetConsentStatus_m8D3E18B319C199C1502B75678C659530175214FE (void);
-// 0x00000040 System.Void TealiumUnityPlugin::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
-extern void TealiumUnityPlugin_SetConsentCategories_m6A2BA59BFD4167CB7113877763287411BF916517 (void);
-// 0x00000041 System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumUnityPlugin::GetConsentCategories()
-extern void TealiumUnityPlugin_GetConsentCategories_mB5C50638E67E8A4F0AC36516ACE59561A4804699 (void);
-// 0x00000042 System.Void TealiumUnityPlugin::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-extern void TealiumUnityPlugin_AddRemoteCommand_m94867E331AE1E8B5B13E58FC35BE2C07817024A8 (void);
-// 0x00000043 System.Void TealiumUnityPlugin::RemoveRemoteCommand(System.String)
-extern void TealiumUnityPlugin_RemoveRemoteCommand_m871638F3B0AC291CB5DE5457DD81EE5CB80070CC (void);
-// 0x00000044 System.Void TealiumUnityPlugin::JoinTrace(System.String)
-extern void TealiumUnityPlugin_JoinTrace_mA742342384D7AAF7B73798B1E9CD2D8A716178BE (void);
-// 0x00000045 System.Void TealiumUnityPlugin::LeaveTrace()
-extern void TealiumUnityPlugin_LeaveTrace_m0F80ACD50A19F7220530E2E4E68FFB7521968F9F (void);
-// 0x00000046 System.Void TealiumUnityPlugin::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-extern void TealiumUnityPlugin_SetVisitorServiceListener_m52574E4BDFC76826C1054B4062C8A28DED41E077 (void);
-// 0x00000047 System.Void TealiumUnityPlugin::SetConsentExpiryListener(System.Action)
-extern void TealiumUnityPlugin_SetConsentExpiryListener_mC435C2FA1BE292D526396A0C46484A08FEFC4E5B (void);
-// 0x00000048 System.String TealiumUnityPlugin::GetVisitorId()
-extern void TealiumUnityPlugin_GetVisitorId_mC32629F5F5894F2957A052E5514856D8F45424AB (void);
-// 0x00000049 System.Void TealiumUnityPlugin::OnInitialized(System.Boolean)
-extern void TealiumUnityPlugin_OnInitialized_m82F0A2E4D96DE573DDA321B3744ED0FFCAC3B6FE (void);
-// 0x0000004A System.Void TealiumUnityPlugin::OnRemoteCommandCompletion(System.String)
-extern void TealiumUnityPlugin_OnRemoteCommandCompletion_m615FEA22AB87DF7983DE602460C42D813DF61BD1 (void);
-// 0x0000004B System.Void TealiumUnityPlugin::OnVisitorServiceUpdate(System.String)
-extern void TealiumUnityPlugin_OnVisitorServiceUpdate_m3616F974837CCB1FE9CDA3276BFC8D2534A05A2D (void);
-// 0x0000004C System.Void TealiumUnityPlugin::OnConsentExpiration()
-extern void TealiumUnityPlugin_OnConsentExpiration_m173024F00F3ABD6DD3FD0EACA7311B36B41879A9 (void);
-// 0x0000004D System.Collections.Generic.Dictionary`2<System.String,System.Object> TealiumUnityPlugin::ConvertValuesToCollections(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void TealiumUnityPlugin_ConvertValuesToCollections_mAC11F22B332070A759E4AFD9108C6D2DD2E519CF (void);
-// 0x0000004E System.Object TealiumUnityPlugin::ToCollections(System.Object)
-extern void TealiumUnityPlugin_ToCollections_mAC1EF585704EE84BC7A62EDD8D948E51048A9B7B (void);
-// 0x0000004F System.Void TealiumUnityPlugin::.ctor()
-extern void TealiumUnityPlugin__ctor_mF1C9A97DA229A82A4DCD21C58CBB013B31D87640 (void);
-// 0x00000050 System.Void TealiumUnityPlugin::.cctor()
-extern void TealiumUnityPlugin__cctor_mA3311F40C3DAAE825D9DF4E07E3503C358B72DA1 (void);
-// 0x00000051 System.Void TealiumUnityPlugin/<>c::.cctor()
-extern void U3CU3Ec__cctor_mB948784F92FD98A8A5638A37812FCECFD6B8512B (void);
-// 0x00000052 System.Void TealiumUnityPlugin/<>c::.ctor()
-extern void U3CU3Ec__ctor_m3F2768BF4C867E097429E110C2FE63A940E65F41 (void);
-// 0x00000053 System.String TealiumUnityPlugin/<>c::<ToCollections>b__29_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
-extern void U3CU3Ec_U3CToCollectionsU3Eb__29_0_m85615D42E45CA90854D939DB2C9220467D8CCD84 (void);
-// 0x00000054 System.Object TealiumUnityPlugin/<>c::<ToCollections>b__29_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
-extern void U3CU3Ec_U3CToCollectionsU3Eb__29_1_mEFDC642C599CB23C2502261787B2C4FFBEC00E39 (void);
-// 0x00000055 System.Void TealiumAndroid::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
-extern void TealiumAndroid_Initialize_m06A7AA8D6A4AC0C21563C74B4B060141E207E732 (void);
-// 0x00000056 System.Void TealiumAndroid::Terminate()
-extern void TealiumAndroid_Terminate_mE3C7FE601DC2D63F3EA8B7BA85CA7B0469595CE9 (void);
-// 0x00000057 System.Void TealiumAndroid::Track(TealiumCommon.TealiumDispatch)
-extern void TealiumAndroid_Track_m586E4F12C76082D1F479441011B4A33D24D1EA2F (void);
-// 0x00000058 System.Void TealiumAndroid::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
-extern void TealiumAndroid_AddToDataLayer_m1AF60BA94516FF67A286015C5430BDA3FF670812 (void);
-// 0x00000059 System.Object TealiumAndroid::GetFromDataLayer(System.String)
-extern void TealiumAndroid_GetFromDataLayer_m45DA83359980F32DE4F2EC9AD4F206EF03064605 (void);
-// 0x0000005A System.Void TealiumAndroid::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
-extern void TealiumAndroid_RemoveFromDataLayer_mBCEC7749ECECF3BE481F131922CB1CB065FC8A48 (void);
-// 0x0000005B System.Void TealiumAndroid::SetConsentStatus(TealiumCommon.ConsentStatus)
-extern void TealiumAndroid_SetConsentStatus_m416537CA4B3BECA91B3F2F54BE9E71B1CF472FFE (void);
-// 0x0000005C TealiumCommon.ConsentStatus TealiumAndroid::GetConsentStatus()
-extern void TealiumAndroid_GetConsentStatus_mABD4D58D539EEDB3C67E9D7BE3427F965A9928DE (void);
-// 0x0000005D System.Void TealiumAndroid::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
-extern void TealiumAndroid_SetConsentCategories_m16CE26A9E0AC6446A3BB5F3676243A9F83450BF4 (void);
-// 0x0000005E System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumAndroid::GetConsentCategories()
-extern void TealiumAndroid_GetConsentCategories_mA326970C99DC75CC36524CBA552B38801D0CB87B (void);
-// 0x0000005F System.Void TealiumAndroid::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-extern void TealiumAndroid_AddRemoteCommand_mB3391D183792E04604C359EC5941B32B7A483E16 (void);
-// 0x00000060 System.Void TealiumAndroid::RemoveRemoteCommand(System.String)
-extern void TealiumAndroid_RemoveRemoteCommand_mD464B9E2F6276F91945F01500BC3B27D4A5ED21D (void);
-// 0x00000061 System.Void TealiumAndroid::JoinTrace(System.String)
-extern void TealiumAndroid_JoinTrace_m0B3D7E5CEF19E5A12AE552CE8D9A35577FFF0240 (void);
-// 0x00000062 System.Void TealiumAndroid::LeaveTrace()
-extern void TealiumAndroid_LeaveTrace_mC4060B658DBBE705B55D3874378FB6BBCEDE1B61 (void);
-// 0x00000063 System.String TealiumAndroid::GetVisitorId()
-extern void TealiumAndroid_GetVisitorId_m5A3117203135268BE45BA7516A0548FA7FC9A89C (void);
-// 0x00000064 System.Void TealiumAndroid::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-extern void TealiumAndroid_SetVisitorServiceListener_mADE7179BB488DE259266BC35C6CFA34ECB762149 (void);
-// 0x00000065 System.Void TealiumAndroid::SetConsentExpiryListener(System.Action)
-extern void TealiumAndroid_SetConsentExpiryListener_m2F705815A0701BA4DFC9C82C98ED1460D797D0C3 (void);
-// 0x00000066 System.Void TealiumAndroid::HandleInitialized(System.String)
-extern void TealiumAndroid_HandleInitialized_m80C6E28D8A22AC3EC3090842C9DFAE8DEEC87BCD (void);
-// 0x00000067 System.Void TealiumAndroid::HandleRemoteCommandResponse(System.String)
-extern void TealiumAndroid_HandleRemoteCommandResponse_mC796F917AE3917C4FCC2B990F850598C213C9341 (void);
-// 0x00000068 System.Void TealiumAndroid::HandleVisitorProfileUpdate(System.String)
-extern void TealiumAndroid_HandleVisitorProfileUpdate_m893138FB0F59274E9DC1E0B4BC6F190C4EBB2D30 (void);
-// 0x00000069 System.Void TealiumAndroid::HandleConsentUpdate()
-extern void TealiumAndroid_HandleConsentUpdate_mC73F0365DE96515907FD91195502EBFDB534BCE0 (void);
-// 0x0000006A System.Void TealiumAndroid::.ctor()
-extern void TealiumAndroid__ctor_mBE6E43798F0A185C9071D58D94DDC796831F774B (void);
-// 0x0000006B System.Void TealiumAndroid::.cctor()
-extern void TealiumAndroid__cctor_mF4264D6241E1CFDE7CB77F640F0948EFC168A421 (void);
-// 0x0000006C System.Void TealiumAndroid/<>c::.cctor()
-extern void U3CU3Ec__cctor_m75A9155CACC06491D2B5E4D9D1F8D6A74C7F3636 (void);
-// 0x0000006D System.Void TealiumAndroid/<>c::.ctor()
-extern void U3CU3Ec__ctor_m797890F77A5F293A1E906C7546479CC368489277 (void);
-// 0x0000006E TealiumCommon.ConsentCategories TealiumAndroid/<>c::<GetConsentCategories>b__12_0(System.String)
-extern void U3CU3Ec_U3CGetConsentCategoriesU3Eb__12_0_m3FE3C9B1F6FE26F890659A05D3F204FBC8F669CC (void);
-// 0x0000006F System.Void TealiumiOS::Tealium_Initialize(System.String)
-extern void TealiumiOS_Tealium_Initialize_m6086210F37EFD0951883AB06886A8F97B40620ED (void);
-// 0x00000070 System.Void TealiumiOS::Tealium_Track(System.String)
-extern void TealiumiOS_Tealium_Track_m0F2A0216C5A1678C1670397D454477704C6FC794 (void);
-// 0x00000071 System.Void TealiumiOS::Tealium_Terminate()
-extern void TealiumiOS_Tealium_Terminate_mC4E4100F1A2BA2656A0D0AD3064473CB18DDF6F1 (void);
-// 0x00000072 System.Void TealiumiOS::Tealium_AddToDataLayer(System.String,System.String)
-extern void TealiumiOS_Tealium_AddToDataLayer_m94C086E5F04BE9C57AAF955E3F58F79CECCEA58E (void);
-// 0x00000073 System.String TealiumiOS::Tealium_GetFromDataLayer(System.String)
-extern void TealiumiOS_Tealium_GetFromDataLayer_m1D6DF40D0E636D4DC8E4E27F18918D3E4047CAE2 (void);
-// 0x00000074 System.Void TealiumiOS::Tealium_RemoveFromDataLayer(System.String)
-extern void TealiumiOS_Tealium_RemoveFromDataLayer_m01D801D77436A48FE052F9BAC45C3F2D92DDCBDE (void);
-// 0x00000075 System.Void TealiumiOS::Tealium_SetConsentStatus(System.String)
-extern void TealiumiOS_Tealium_SetConsentStatus_mD685B32B49C9706F3550A4B2A43EB6D68D2B1F7E (void);
-// 0x00000076 System.String TealiumiOS::Tealium_GetConsentStatus()
-extern void TealiumiOS_Tealium_GetConsentStatus_mCA2913864185BEE3ECD18548D5DF3A932C9310EC (void);
-// 0x00000077 System.Void TealiumiOS::Tealium_SetConsentCategories(System.String)
-extern void TealiumiOS_Tealium_SetConsentCategories_m98C891EF25ED6DA44D1EC6FA89CB312EF992E2A1 (void);
-// 0x00000078 System.String TealiumiOS::Tealium_GetConsentCategories()
-extern void TealiumiOS_Tealium_GetConsentCategories_m8A7DD850E54E55C107B2A126445C39EA67E09FDF (void);
-// 0x00000079 System.Void TealiumiOS::Tealium_JoinTrace(System.String)
-extern void TealiumiOS_Tealium_JoinTrace_m0C95E0A1BF285F72F3441446382F2B69E0481D2A (void);
-// 0x0000007A System.Void TealiumiOS::Tealium_LeaveTrace()
-extern void TealiumiOS_Tealium_LeaveTrace_m6FA329E9210E2E0867C45336C5F46247ACB5E95E (void);
-// 0x0000007B System.Void TealiumiOS::Tealium_AddRemoteCommand(System.String)
-extern void TealiumiOS_Tealium_AddRemoteCommand_mDB6CE6073A1D34BECDCC30524E7920ADD95A469F (void);
-// 0x0000007C System.Void TealiumiOS::Tealium_RemoveRemoteCommand(System.String)
-extern void TealiumiOS_Tealium_RemoveRemoteCommand_mA946D4D659E18A2C393CEE4EE0A7E2891E56DD3E (void);
-// 0x0000007D System.String TealiumiOS::Tealium_GetVisitorId()
-extern void TealiumiOS_Tealium_GetVisitorId_m1DBCDF67C18D5ECE65737F9192F085E318777579 (void);
-// 0x0000007E System.Void TealiumiOS::Tealium_SetInitializeDelegate(TealiumiOS/InitializeDelegateMessage)
-extern void TealiumiOS_Tealium_SetInitializeDelegate_mB801970B86537D841542DFD2BE6CC728F280FB84 (void);
-// 0x0000007F System.Void TealiumiOS::Tealium_SetRemoteCommandDelegate(TealiumiOS/RemoteCommandDelegateMessage)
-extern void TealiumiOS_Tealium_SetRemoteCommandDelegate_m7C7BC6A6C048C0AC8943582ECE3C44925ED23D91 (void);
-// 0x00000080 System.Void TealiumiOS::Tealium_SetVisitorServiceDelegate(TealiumiOS/VisitorServiceDelegateMessage)
-extern void TealiumiOS_Tealium_SetVisitorServiceDelegate_m57427ECDA3A0AC36EAC52534C0A3AEACC6E669DE (void);
-// 0x00000081 System.Void TealiumiOS::Tealium_SetConsentExpiryDelegate(TealiumiOS/ConsentExpiryDelegateMessage)
-extern void TealiumiOS_Tealium_SetConsentExpiryDelegate_mB605727470979A48ACE05CFF314BF7D87E2A2448 (void);
-// 0x00000082 System.Void TealiumiOS::initializationResponseReceived(System.Boolean)
-extern void TealiumiOS_initializationResponseReceived_mFD32AC02F83B78CABEB108BA6DA3F3CF53EBE482 (void);
-// 0x00000083 System.Void TealiumiOS::remoteCommandReceived(System.String)
-extern void TealiumiOS_remoteCommandReceived_m21FFC75B550A9A5301D143DA0DA208042DA9778D (void);
-// 0x00000084 System.Void TealiumiOS::visitorServiceUpdateReceived(System.String)
-extern void TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A (void);
-// 0x00000085 System.Void TealiumiOS::consentExpirationReceived()
-extern void TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E (void);
-// 0x00000086 System.Void TealiumiOS::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
-extern void TealiumiOS_Initialize_m232846DFCD23518A9B61590FF132F3D32E678B7D (void);
-// 0x00000087 System.Void TealiumiOS::Terminate()
-extern void TealiumiOS_Terminate_m351EBBE38F723B8EE0828ED3A96E654B1C8FFD06 (void);
-// 0x00000088 System.Void TealiumiOS::Track(TealiumCommon.TealiumDispatch)
-extern void TealiumiOS_Track_mADE889D33D334B1A38FB2300383B478390364CBF (void);
-// 0x00000089 System.Void TealiumiOS::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
-extern void TealiumiOS_AddToDataLayer_m758B22DEBC647D0F99377E2B55D0750BB98B7D45 (void);
-// 0x0000008A System.Object TealiumiOS::GetFromDataLayer(System.String)
-extern void TealiumiOS_GetFromDataLayer_m6B769605B312ACCAE3A918FC86D14E7FFCA6C65D (void);
-// 0x0000008B System.Void TealiumiOS::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
-extern void TealiumiOS_RemoveFromDataLayer_m8C1EB72DCB042C4C51138C13D42F9770710B69EF (void);
-// 0x0000008C System.Void TealiumiOS::SetConsentStatus(TealiumCommon.ConsentStatus)
-extern void TealiumiOS_SetConsentStatus_m7D6BDBD7578C2DECBD9DCF1AD494489122F2EF11 (void);
-// 0x0000008D TealiumCommon.ConsentStatus TealiumiOS::GetConsentStatus()
-extern void TealiumiOS_GetConsentStatus_m92FCB53D919685779C483805EBA19DAAD46E91F8 (void);
-// 0x0000008E System.Void TealiumiOS::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
-extern void TealiumiOS_SetConsentCategories_m9AC2EA86007CD07B5317A60B1CA37884AD1F0BD4 (void);
-// 0x0000008F System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumiOS::GetConsentCategories()
-extern void TealiumiOS_GetConsentCategories_mADA9D136B6BB65334B7200EDEF1724DC8DB57E3B (void);
-// 0x00000090 System.Void TealiumiOS::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-extern void TealiumiOS_AddRemoteCommand_m43E04556DF01CE2CF420494816194110D41FC7CD (void);
-// 0x00000091 System.Void TealiumiOS::RemoveRemoteCommand(System.String)
-extern void TealiumiOS_RemoveRemoteCommand_mCC31CF8EA549018CAEA589A3554B40613039AA51 (void);
-// 0x00000092 System.Void TealiumiOS::JoinTrace(System.String)
-extern void TealiumiOS_JoinTrace_mFE415D00C7605244965F1C29CB8B6BDDCDBE1E37 (void);
-// 0x00000093 System.Void TealiumiOS::LeaveTrace()
-extern void TealiumiOS_LeaveTrace_m106302952FC72235E1CFF57AD6B720FC0422164A (void);
-// 0x00000094 System.Void TealiumiOS::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
-extern void TealiumiOS_SetVisitorServiceListener_mE593057CF1AF1D42EFA02F5A4D768995C919BBC0 (void);
-// 0x00000095 System.Void TealiumiOS::SetConsentExpiryListener(System.Action)
-extern void TealiumiOS_SetConsentExpiryListener_m3E813CBD7977626D350BE40CB678DD6B77B04CC7 (void);
-// 0x00000096 System.String TealiumiOS::GetVisitorId()
-extern void TealiumiOS_GetVisitorId_mCDD858BEBA7D1D35D29EB28B96070230A905DAE8 (void);
-// 0x00000097 System.Void TealiumiOS::.ctor()
-extern void TealiumiOS__ctor_m09D87239559A5060FD5EA758A3C68F7E7C6AAE15 (void);
-// 0x00000098 System.Void TealiumiOS/InitializeDelegateMessage::.ctor(System.Object,System.IntPtr)
-extern void InitializeDelegateMessage__ctor_m8EC9122E0BB661FD268F8A13AF2D52E8ACB1DC3D (void);
-// 0x00000099 System.Void TealiumiOS/InitializeDelegateMessage::Invoke(System.Boolean)
-extern void InitializeDelegateMessage_Invoke_m4E2B3326526F9F147BE1C2A7A0F97CB3D1E24F81 (void);
-// 0x0000009A System.IAsyncResult TealiumiOS/InitializeDelegateMessage::BeginInvoke(System.Boolean,System.AsyncCallback,System.Object)
-extern void InitializeDelegateMessage_BeginInvoke_mB7EC0B34FEB759583C3439C0A3CED3FB42DE3173 (void);
-// 0x0000009B System.Void TealiumiOS/InitializeDelegateMessage::EndInvoke(System.IAsyncResult)
-extern void InitializeDelegateMessage_EndInvoke_mE369FE13FA0F9413B6F2EAEAEA0B0B2EDBBB367C (void);
-// 0x0000009C System.Void TealiumiOS/RemoteCommandDelegateMessage::.ctor(System.Object,System.IntPtr)
-extern void RemoteCommandDelegateMessage__ctor_mB216BDD9084AB97D12A9E8E13AE891B3044BECDE (void);
-// 0x0000009D System.Void TealiumiOS/RemoteCommandDelegateMessage::Invoke(System.String)
-extern void RemoteCommandDelegateMessage_Invoke_mC71691E0FBA7273E4E68CD7F6BDFBCC45E07EB85 (void);
-// 0x0000009E System.IAsyncResult TealiumiOS/RemoteCommandDelegateMessage::BeginInvoke(System.String,System.AsyncCallback,System.Object)
-extern void RemoteCommandDelegateMessage_BeginInvoke_m90F921535EAC3936825F67EBE1DCDF5822CACEE4 (void);
-// 0x0000009F System.Void TealiumiOS/RemoteCommandDelegateMessage::EndInvoke(System.IAsyncResult)
-extern void RemoteCommandDelegateMessage_EndInvoke_m93D1D0D6DF0C50893FE6275FB50A6AFA2AA8D647 (void);
-// 0x000000A0 System.Void TealiumiOS/VisitorServiceDelegateMessage::.ctor(System.Object,System.IntPtr)
-extern void VisitorServiceDelegateMessage__ctor_mE8D6105D5AC79C2D07D1307DCA348191B9F27709 (void);
-// 0x000000A1 System.Void TealiumiOS/VisitorServiceDelegateMessage::Invoke(System.String)
-extern void VisitorServiceDelegateMessage_Invoke_m17FF8549470F8A115992C23AC901D3B6D0B3BE51 (void);
-// 0x000000A2 System.IAsyncResult TealiumiOS/VisitorServiceDelegateMessage::BeginInvoke(System.String,System.AsyncCallback,System.Object)
-extern void VisitorServiceDelegateMessage_BeginInvoke_m02DDC2B6E78C646D56FDC896C2038DF4F7D21FA4 (void);
-// 0x000000A3 System.Void TealiumiOS/VisitorServiceDelegateMessage::EndInvoke(System.IAsyncResult)
-extern void VisitorServiceDelegateMessage_EndInvoke_mE72C723E1F65E4FA8ABB2263BFF4EA42847A2573 (void);
-// 0x000000A4 System.Void TealiumiOS/ConsentExpiryDelegateMessage::.ctor(System.Object,System.IntPtr)
-extern void ConsentExpiryDelegateMessage__ctor_mCA8766719329F8E72D113FDB299728BA9A9D6C7E (void);
-// 0x000000A5 System.Void TealiumiOS/ConsentExpiryDelegateMessage::Invoke()
-extern void ConsentExpiryDelegateMessage_Invoke_m31FB8AC73D4DD3A1900AFD06408F52348AE67DAC (void);
-// 0x000000A6 System.IAsyncResult TealiumiOS/ConsentExpiryDelegateMessage::BeginInvoke(System.AsyncCallback,System.Object)
-extern void ConsentExpiryDelegateMessage_BeginInvoke_mE82E15D6B50C720D95B275AD232549CFB8A2FB65 (void);
-// 0x000000A7 System.Void TealiumiOS/ConsentExpiryDelegateMessage::EndInvoke(System.IAsyncResult)
-extern void ConsentExpiryDelegateMessage_EndInvoke_m969FF45AB9EAA369E70167F2E085364CDC8F9E14 (void);
-// 0x000000A8 System.Void TealiumiOS/<>c::.cctor()
-extern void U3CU3Ec__cctor_mEA12D1A326444B1594D31859845A8D4D86B90B7E (void);
-// 0x000000A9 System.Void TealiumiOS/<>c::.ctor()
-extern void U3CU3Ec__ctor_mEB9A7AD400871916B64BFAC69B0157190FA9985F (void);
-// 0x000000AA System.String TealiumiOS/<>c::<SetConsentCategories>b__35_0(TealiumCommon.ConsentCategories)
-extern void U3CU3Ec_U3CSetConsentCategoriesU3Eb__35_0_m243A5475AC4AE336485DCF0F6DDB323860999590 (void);
-// 0x000000AB TealiumCommon.ConsentCategories TealiumiOS/<>c::<GetConsentCategories>b__36_0(System.String)
-extern void U3CU3Ec_U3CGetConsentCategoriesU3Eb__36_0_m04FF432724ACF6B0FCDE911B3414AA8D97AD216A (void);
-// 0x000000AC System.Void TealiumCommon.Collectors::.ctor(System.String)
-extern void Collectors__ctor_m8DBB433DFC8F199C9FE8816467D3AC0F2EF0D7E1 (void);
-// 0x000000AD System.String TealiumCommon.Collectors::get_Value()
-extern void Collectors_get_Value_m7CB4523847C24898D8AC9E95A752C2D8842B7A98 (void);
-// 0x000000AE System.Void TealiumCommon.Collectors::set_Value(System.String)
-extern void Collectors_set_Value_mBAF5D968C86DCE6422E016A9CE2B21065F07CEC8 (void);
-// 0x000000AF TealiumCommon.Collectors TealiumCommon.Collectors::get_AppData()
-extern void Collectors_get_AppData_m56C0A08F30EEF9E94B5DF915ADFDE539EB0A4653 (void);
-// 0x000000B0 TealiumCommon.Collectors TealiumCommon.Collectors::get_Connectivity()
-extern void Collectors_get_Connectivity_m09980B52E66B81C19F9BEBDC41BC9E41BD0E0D2A (void);
-// 0x000000B1 TealiumCommon.Collectors TealiumCommon.Collectors::get_DeviceData()
-extern void Collectors_get_DeviceData_m8CB803E652FB3CA9CD01FB96221C6174A9C7027C (void);
-// 0x000000B2 TealiumCommon.Collectors TealiumCommon.Collectors::get_Lifecycle()
-extern void Collectors_get_Lifecycle_m124496CC136AE20C4E6F32C9C6FE81BDB7F90E55 (void);
-// 0x000000B3 System.Void TealiumCommon.Dispatchers::.ctor(System.String)
-extern void Dispatchers__ctor_m86B83DEFBEECBC3DB4C0DD85FB51A168818BAE8A (void);
-// 0x000000B4 System.String TealiumCommon.Dispatchers::get_Value()
-extern void Dispatchers_get_Value_m9C0BC6232E3855BA51505E134824E0C7A4CF7024 (void);
-// 0x000000B5 System.Void TealiumCommon.Dispatchers::set_Value(System.String)
-extern void Dispatchers_set_Value_m399A47BEB4BE4ACD6BC4EACE7E6C4F218F472B54 (void);
-// 0x000000B6 TealiumCommon.Dispatchers TealiumCommon.Dispatchers::get_TagManagement()
-extern void Dispatchers_get_TagManagement_m5462DD5EEA23CE9E4E562F999B425F9CD3CAC414 (void);
-// 0x000000B7 TealiumCommon.Dispatchers TealiumCommon.Dispatchers::get_Collect()
-extern void Dispatchers_get_Collect_m669B7341EF64EAC1A1A07D2A904BAB3B44ECEE40 (void);
-// 0x000000B8 TealiumCommon.Dispatchers TealiumCommon.Dispatchers::get_RemoteCommands()
-extern void Dispatchers_get_RemoteCommands_m406D223AF76C93AC192C7FF1965CDC2BBC96C799 (void);
-// 0x000000B9 System.Void TealiumCommon.TealiumEnvironment::.ctor(System.String)
-extern void TealiumEnvironment__ctor_m9092842A176D8DBACFD540B9A835D46EDCABEDCC (void);
-// 0x000000BA System.String TealiumCommon.TealiumEnvironment::get_Value()
-extern void TealiumEnvironment_get_Value_m81A23B2C828461341ED1F66B5F47F544DA753F14 (void);
-// 0x000000BB System.Void TealiumCommon.TealiumEnvironment::set_Value(System.String)
-extern void TealiumEnvironment_set_Value_m4422E19AA62EC0D931C10CA1287268EADA8EE10E (void);
-// 0x000000BC TealiumCommon.TealiumEnvironment TealiumCommon.TealiumEnvironment::get_DEV()
-extern void TealiumEnvironment_get_DEV_mAC5432831E1A4370C1C49CEE14A6459BEEB255C7 (void);
-// 0x000000BD TealiumCommon.TealiumEnvironment TealiumCommon.TealiumEnvironment::get_QA()
-extern void TealiumEnvironment_get_QA_m51840CD2A8FECEC4A7F27DC89015CB8BFA613F5A (void);
-// 0x000000BE TealiumCommon.TealiumEnvironment TealiumCommon.TealiumEnvironment::get_PROD()
-extern void TealiumEnvironment_get_PROD_m883A024A8C4A2CAB361BFD6C72BD7BF6AA5575B2 (void);
-// 0x000000BF System.Void TealiumCommon.Expiry::.ctor(System.String)
-extern void Expiry__ctor_m54CFE019A4DA755BE983CCD8EED6990D3F34EF9E (void);
-// 0x000000C0 System.String TealiumCommon.Expiry::get_Value()
-extern void Expiry_get_Value_m6A95A610D4E16816933447F6490ABB5C8C971631 (void);
-// 0x000000C1 System.Void TealiumCommon.Expiry::set_Value(System.String)
-extern void Expiry_set_Value_m929623E377B6B129D31E26D0625BF85F880DFB85 (void);
-// 0x000000C2 TealiumCommon.Expiry TealiumCommon.Expiry::get_Forever()
-extern void Expiry_get_Forever_m4351AEE1513AD854D3902AD4CC9AA9E799901DE1 (void);
-// 0x000000C3 TealiumCommon.Expiry TealiumCommon.Expiry::get_Session()
-extern void Expiry_get_Session_m28BFC06B2F68B71CEEE1E55D2796D781268BC082 (void);
-// 0x000000C4 TealiumCommon.Expiry TealiumCommon.Expiry::get_UntilRestart()
-extern void Expiry_get_UntilRestart_m2D92DDFD6E92F5B84B0E135C1D5C70EC82411C81 (void);
-// 0x000000C5 System.Void TealiumCommon.ConsentPolicy::.ctor(System.String)
-extern void ConsentPolicy__ctor_m883D1772B6DC1B2CC556B0688C1940BD2B055BA9 (void);
-// 0x000000C6 System.String TealiumCommon.ConsentPolicy::get_Value()
-extern void ConsentPolicy_get_Value_m700480FF9763316692F22F0C79809DA6FABA21E4 (void);
-// 0x000000C7 System.Void TealiumCommon.ConsentPolicy::set_Value(System.String)
-extern void ConsentPolicy_set_Value_m41BDE1036488E24B557E26A5E0A3357C8C5122CC (void);
-// 0x000000C8 TealiumCommon.ConsentPolicy TealiumCommon.ConsentPolicy::get_GDPR()
-extern void ConsentPolicy_get_GDPR_m317125775D06AA8D73DCE481F573B6AC6B01BD58 (void);
-// 0x000000C9 TealiumCommon.ConsentPolicy TealiumCommon.ConsentPolicy::get_CCPA()
-extern void ConsentPolicy_get_CCPA_m557BF05FBB917143DCD9FAB6ABB1A6B9CF6FAC8E (void);
-// 0x000000CA System.Void TealiumCommon.ConsentStatus::.ctor(System.String)
-extern void ConsentStatus__ctor_m1842D4BA15B3C05AE0DE9E5F5E5F6FA365BE51E8 (void);
-// 0x000000CB System.String TealiumCommon.ConsentStatus::get_Value()
-extern void ConsentStatus_get_Value_m3D4D2B61997537368BC42C33003E0B2B1C207683 (void);
-// 0x000000CC System.Void TealiumCommon.ConsentStatus::set_Value(System.String)
-extern void ConsentStatus_set_Value_mF4FE346EEB21A01DA59C1C45CB4E99E062A80CDC (void);
-// 0x000000CD TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::get_Consented()
-extern void ConsentStatus_get_Consented_m9F182B2BFCEC85B322FE586C14E862268023924B (void);
-// 0x000000CE TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::get_NotConsented()
-extern void ConsentStatus_get_NotConsented_m5439446A386ED9BC7E4B1EFC501939391C90A6DC (void);
-// 0x000000CF TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::get_Unknown()
-extern void ConsentStatus_get_Unknown_m3903C09D80D387353EBAD77FAB82EDB7AA2E889D (void);
-// 0x000000D0 TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::FromString(System.String)
-extern void ConsentStatus_FromString_m1E77641115BA8DCAD74A87116738A49EC43AA257 (void);
-// 0x000000D1 System.Void TealiumCommon.LogLevel::.ctor(System.String)
-extern void LogLevel__ctor_m21898976F9EF3BE1FFDB9543BE19999FB89DCA5F (void);
-// 0x000000D2 System.String TealiumCommon.LogLevel::get_Value()
-extern void LogLevel_get_Value_mCF3B4A73A735B2CB296365785A5C148F8A5C867A (void);
-// 0x000000D3 System.Void TealiumCommon.LogLevel::set_Value(System.String)
-extern void LogLevel_set_Value_m9D4F6B3EC2D90FFFBC9E375E8A33132AED68AEBF (void);
-// 0x000000D4 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Dev()
-extern void LogLevel_get_Dev_m09265C557CEBB98A324592A0DC4031D9B88E6086 (void);
-// 0x000000D5 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Qa()
-extern void LogLevel_get_Qa_m99D5B4AC0FA1FBF332EE90A7B0E722BF3699FD99 (void);
-// 0x000000D6 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Prod()
-extern void LogLevel_get_Prod_m2953E44D9D100DAF94CC3C2A24B5B01193E16441 (void);
-// 0x000000D7 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Silent()
-extern void LogLevel_get_Silent_m1299B4432100097EABC387425CB2787C695080E5 (void);
-// 0x000000D8 System.Void TealiumCommon.ConsentCategories::.ctor(System.String)
-extern void ConsentCategories__ctor_mE72E045332AE352255B629B960913807473F5F2F (void);
-// 0x000000D9 System.String TealiumCommon.ConsentCategories::get_Value()
-extern void ConsentCategories_get_Value_m6AC4948877BE59ACB65340ED08ED4C1F7F80351B (void);
-// 0x000000DA System.Void TealiumCommon.ConsentCategories::set_Value(System.String)
-extern void ConsentCategories_set_Value_m48C542BBD20842573BCA38C2510E8A941EB17088 (void);
-// 0x000000DB TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Analytics()
-extern void ConsentCategories_get_Analytics_mFB7F944B155E5FD2AC371BA373A67C5D98451099 (void);
-// 0x000000DC TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Affiliates()
-extern void ConsentCategories_get_Affiliates_m51797C8F31AE4279EAC5953A312FCF34097BDF60 (void);
-// 0x000000DD TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_DisplayAds()
-extern void ConsentCategories_get_DisplayAds_mF661FABB32D8621526EB4B5616BD82DD6A6224DC (void);
-// 0x000000DE TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Email()
-extern void ConsentCategories_get_Email_m90664A06DE11C50AF7A1A605D4CAF81F10CAD684 (void);
-// 0x000000DF TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Personalization()
-extern void ConsentCategories_get_Personalization_m641C099080A09652B242A7F93AB954CA1730D3AD (void);
-// 0x000000E0 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Search()
-extern void ConsentCategories_get_Search_m1A5A139A927CB0C28EB88DA9886E2D2C511C33C3 (void);
-// 0x000000E1 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Social()
-extern void ConsentCategories_get_Social_m02DF3DCA364AF20401B05A6D9B98F01AE1A2738D (void);
-// 0x000000E2 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_BigData()
-extern void ConsentCategories_get_BigData_mE6AD596B99DA0238159BCA18549F3EEF49D1D58C (void);
-// 0x000000E3 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Mobile()
-extern void ConsentCategories_get_Mobile_mDAD77858F7BC12C25018BA3CFF9A443F808A18AD (void);
-// 0x000000E4 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Engagement()
-extern void ConsentCategories_get_Engagement_m90A0E3408E18783A443F7A67A7EEC445E8A49819 (void);
-// 0x000000E5 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Monitoring()
-extern void ConsentCategories_get_Monitoring_m49729A17DDACCA0DDFE15064761F08AF5A35E2A7 (void);
-// 0x000000E6 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Crm()
-extern void ConsentCategories_get_Crm_m742A4A10D60CD48C37EFA1458B4008205AA20BB5 (void);
-// 0x000000E7 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Cdp()
-extern void ConsentCategories_get_Cdp_m6485C5EE8D1298EDEB064566F14AB034BDD71441 (void);
-// 0x000000E8 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_CookieMatch()
-extern void ConsentCategories_get_CookieMatch_mA10F6D6101051D6B218DFE6A0EEAA789D68B0DE1 (void);
-// 0x000000E9 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Misc()
-extern void ConsentCategories_get_Misc_m52C17D4409A1F6C575BCD4B5B793A0BC1BB086D0 (void);
-// 0x000000EA TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::FromString(System.String)
-extern void ConsentCategories_FromString_m30E4BE300014257DA586FB1FDE3393940EDA57E5 (void);
-// 0x000000EB System.Void TealiumCommon.TimeUnit::.ctor(System.String)
-extern void TimeUnit__ctor_m01FA07961D35C715E75C3D480EC4D1DA48DFAE0C (void);
-// 0x000000EC System.String TealiumCommon.TimeUnit::get_Value()
-extern void TimeUnit_get_Value_mDD9318B291896F8BFE81DE34D0589734648BBF16 (void);
-// 0x000000ED System.Void TealiumCommon.TimeUnit::set_Value(System.String)
-extern void TimeUnit_set_Value_m6A402797AEE22FAFF282663636940F8FE5265682 (void);
-// 0x000000EE TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Minutes()
-extern void TimeUnit_get_Minutes_mAE175904122EDD9D48D1586ECD46A670932C9EF4 (void);
-// 0x000000EF TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Hours()
-extern void TimeUnit_get_Hours_m011C0A4DCE507156D067618C04BBDE83DB76B107 (void);
-// 0x000000F0 TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Days()
-extern void TimeUnit_get_Days_m98DC3CC69CFA7E70F95611139A73FE918C4AAE79 (void);
-// 0x000000F1 TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Months()
-extern void TimeUnit_get_Months_mFCBE54498CF350B9BB940F077AD3A16BAEFD32D0 (void);
-// 0x000000F2 System.Void TealiumCommon.TealiumConfig::.ctor(System.String,System.String,TealiumCommon.TealiumEnvironment,System.Collections.Generic.List`1<TealiumCommon.Dispatchers>,System.Collections.Generic.List`1<TealiumCommon.Collectors>,System.String,System.String,System.Nullable`1<System.Boolean>,System.String,System.String,System.String,System.String,System.String,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<TealiumCommon.LogLevel>,System.Nullable`1<System.Boolean>,System.Nullable`1<TealiumCommon.ConsentPolicy>,TealiumCommon.ConsentExpiry,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>)
-extern void TealiumConfig__ctor_m7DC0B665A00972A71FCB9ABDD273A4068DC7494E (void);
-// 0x000000F3 System.Void TealiumCommon.TealiumConfig/<>c::.cctor()
-extern void U3CU3Ec__cctor_mFA4784C648F383AE42C423A430EF993E5CBBF938 (void);
-// 0x000000F4 System.Void TealiumCommon.TealiumConfig/<>c::.ctor()
-extern void U3CU3Ec__ctor_m0119CCE9D9644CC5907E3F4A03865A538C5CF088 (void);
-// 0x000000F5 System.String TealiumCommon.TealiumConfig/<>c::<.ctor>b__23_0(TealiumCommon.Dispatchers)
-extern void U3CU3Ec_U3C_ctorU3Eb__23_0_mA8ECD1ED7CF37D021F1C0CFCD712476C18899163 (void);
-// 0x000000F6 System.String TealiumCommon.TealiumConfig/<>c::<.ctor>b__23_1(TealiumCommon.Collectors)
-extern void U3CU3Ec_U3C_ctorU3Eb__23_1_mEF9B9FA48C49BC3E8A527A299A4C8ECADDDF5C16 (void);
-// 0x000000F7 System.Void TealiumCommon.ConsentExpiry::.ctor(System.Int32,TealiumCommon.TimeUnit)
-extern void ConsentExpiry__ctor_m8D1D3E391303F62104EF37445736A34730F3BF64 (void);
-// 0x000000F8 System.Collections.Generic.Dictionary`2<System.String,System.Object> TealiumCommon.ConsentExpiry::ToDictionary()
-extern void ConsentExpiry_ToDictionary_mC66BF120FA7AEAD47E41138A54E3D2D2C1D91EF1 (void);
-// 0x000000F9 System.Void TealiumCommon.TealiumDispatch::.ctor()
-extern void TealiumDispatch__ctor_m1DEEC163E6F6EEA5AE944830C75FDF2CEAFC4E0D (void);
-// 0x000000FA System.Void TealiumCommon.TealiumView::.ctor(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void TealiumView__ctor_m37A3995717F1DA0343C2834782A50B3BAB694CD0 (void);
-// 0x000000FB System.Void TealiumCommon.TealiumEvent::.ctor(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
-extern void TealiumEvent__ctor_m10ADB07BFC85DBA816B2D6CA9742B4B454B98A7B (void);
-// 0x000000FC System.Void TealiumCommon.TealiumLogger::Log(System.String,System.String,System.String,System.Int32)
-extern void TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4 (void);
-static Il2CppMethodPointer s_methodPointers[252] = 
+extern void UIBindings_JoinTrace_m870F80D41E3CF9FF66C9080D1099B36E04F1D1B5 (void);
+// 0x00000009 System.Void UIBindings::SetUserId()
+extern void UIBindings_SetUserId_m682BA046E97701212E33822B6423354717D9EF93 (void);
+// 0x0000000A System.Void UIBindings::LeaveTrace()
+extern void UIBindings_LeaveTrace_mB84D065F5BBD0BB79E20A1AA582BD58DF9A4A110 (void);
+// 0x0000000B System.Void UIBindings::TrackEvent()
+extern void UIBindings_TrackEvent_m887A7AEFB1099139D193108B83C7F2EE50F9A5E8 (void);
+// 0x0000000C System.Void UIBindings::TrackView()
+extern void UIBindings_TrackView_m80BEEC916F219049A2189610E4426E7A9C892343 (void);
+// 0x0000000D System.Void UIBindings::AddToDataLayer()
+extern void UIBindings_AddToDataLayer_m5FEA4CFCA704B85CAA810EB8673BDFA0AA316751 (void);
+// 0x0000000E System.Void UIBindings::GetFromDataLayer()
+extern void UIBindings_GetFromDataLayer_m2F7FB001ACB2BA722A6E623EA5EB3680A3CF392A (void);
+// 0x0000000F System.Void UIBindings::RemoveFromDataLayer()
+extern void UIBindings_RemoveFromDataLayer_mCD99641DF737B9E8CA663CC9C07D6B2434A084F5 (void);
+// 0x00000010 System.Void UIBindings::SetConsentStatus()
+extern void UIBindings_SetConsentStatus_m17C2F34DF7CDD390F1748CE104072E71C84B5B23 (void);
+// 0x00000011 System.Void UIBindings::GetConsentStatus()
+extern void UIBindings_GetConsentStatus_m8D089DE5B447D8328F1205E4448CB26DDA796986 (void);
+// 0x00000012 System.Void UIBindings::SetConsentCategories()
+extern void UIBindings_SetConsentCategories_mCC7155C5E042787A8142B8D70A264CDDDC8F559C (void);
+// 0x00000013 System.Void UIBindings::GetConsentCategories()
+extern void UIBindings_GetConsentCategories_mA972765D4315287DAE81DC1EB72FF3685491A042 (void);
+// 0x00000014 System.Void UIBindings::GetVisitorId()
+extern void UIBindings_GetVisitorId_m3823E56839118B12ECDAD8DD82DC1218E3DB4786 (void);
+// 0x00000015 System.Void UIBindings::ResetVisitorId()
+extern void UIBindings_ResetVisitorId_m647AF445FAE2A44B5318695339CC8C89F7017959 (void);
+// 0x00000016 System.Void UIBindings::ClearStoredVisitorIds()
+extern void UIBindings_ClearStoredVisitorIds_m3DCD3C125E3E60C0BCF14628C04314655E553C6F (void);
+// 0x00000017 System.Void UIBindings::TerminateTealium()
+extern void UIBindings_TerminateTealium_mC12A62159A1CCA962FEB6C8D562793A7A7A77CC0 (void);
+// 0x00000018 System.Void UIBindings::AddRemoteCommand()
+extern void UIBindings_AddRemoteCommand_m231A70478AF51256F61250BDAA9B18104AADE585 (void);
+// 0x00000019 System.Void UIBindings::RemoveRemoteCommand()
+extern void UIBindings_RemoveRemoteCommand_m864799EC8439F6D41BC22D63796E37B1022186B1 (void);
+// 0x0000001A System.Void UIBindings::SetTraceId(UnityEngine.UI.InputField)
+extern void UIBindings_SetTraceId_mFCA7C71AA8198AFA3E0564CB55B50D7DA8896B45 (void);
+// 0x0000001B System.Void UIBindings::SetUserId(UnityEngine.UI.InputField)
+extern void UIBindings_SetUserId_mEC7E49DBD4AED4A9078BDFB9D47F25CE81605E38 (void);
+// 0x0000001C System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> UIBindings::SetRandomConsentCategories()
+extern void UIBindings_SetRandomConsentCategories_m645F123BF9ADEBF7B36A59A5292237C57790B92F (void);
+// 0x0000001D System.Collections.Generic.List`1<T> UIBindings::GetRandomFromList(System.Collections.Generic.List`1<T>,System.Int32)
+// 0x0000001E System.Void UIBindings::PrintPayload(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void UIBindings_PrintPayload_m4E4FBD3AE67E2EAAAE84DC2D2DC01459D6F24ACA (void);
+// 0x0000001F System.Void UIBindings::.ctor()
+extern void UIBindings__ctor_m3330F63050A933FA0FC2B101625F87A53AA607AA (void);
+// 0x00000020 System.Void UIBindings::<Start>b__25_0(System.String)
+extern void UIBindings_U3CStartU3Eb__25_0_m59A8B4FCF7BBAC576710A35A80D1EDE113348CD6 (void);
+// 0x00000021 System.Void UIBindings::<Start>b__25_1(System.String)
+extern void UIBindings_U3CStartU3Eb__25_1_m1C9E1B130CDB5E1501AC7D7FD90774DFC41350AF (void);
+// 0x00000022 System.Void UIBindings/<>c::.cctor()
+extern void U3CU3Ec__cctor_m329E2417F6168750F4880FBD878A83EDFCBC0AF5 (void);
+// 0x00000023 System.Void UIBindings/<>c::.ctor()
+extern void U3CU3Ec__ctor_m7974777A8F8C0358664FBB3E86D29E5748D44CAD (void);
+// 0x00000024 System.Void UIBindings/<>c::<Initialize>b__26_0(System.Boolean)
+extern void U3CU3Ec_U3CInitializeU3Eb__26_0_m87DE1B1E82F1DBC4FC5D225F7B7ADFE8A0003D7E (void);
+// 0x00000025 System.Void UIBindings/<>c::<Initialize>b__26_1(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void U3CU3Ec_U3CInitializeU3Eb__26_1_mECD12E125D37D4591994B221B66CD50B591EEF37 (void);
+// 0x00000026 System.Void UIBindings/<>c::<Initialize>b__26_2(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void U3CU3Ec_U3CInitializeU3Eb__26_2_mF748A0CC7A1D96F3098438FAF9B482DF81089B94 (void);
+// 0x00000027 System.Void UIBindings/<>c::<Initialize>b__26_3()
+extern void U3CU3Ec_U3CInitializeU3Eb__26_3_m6C738FC6E7392A55DFC44E5D681B090091386534 (void);
+// 0x00000028 System.Void UIBindings/<>c::<Initialize>b__26_4(System.String)
+extern void U3CU3Ec_U3CInitializeU3Eb__26_4_mFB5FD9F30FB377CE1DD1F12F169D75CF518934A3 (void);
+// 0x00000029 System.Void UIBindings/<>c::<GatherTrackData>b__27_0(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void U3CU3Ec_U3CGatherTrackDataU3Eb__27_0_m4293026AA45AA4FC5F2937B45191970D137BA2C4 (void);
+// 0x0000002A System.Void UIBindings/<>c::<GetFromDataLayer>b__34_0(System.Object)
+extern void U3CU3Ec_U3CGetFromDataLayerU3Eb__34_0_mC4988EC73331B0BEEACA94D442F7B26930DB090D (void);
+// 0x0000002B System.Void UIBindings/<>c::<GetConsentCategories>b__39_0(TealiumCommon.ConsentCategories)
+extern void U3CU3Ec_U3CGetConsentCategoriesU3Eb__39_0_mC1ECEDD9698FD53600D3228BDDEABFAC8967D180 (void);
+// 0x0000002C System.Void UIBindings/<>c::<AddRemoteCommand>b__44_0(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void U3CU3Ec_U3CAddRemoteCommandU3Eb__44_0_m830D23A0111A2FA9C6AE959AEC6CE7F69941E62B (void);
+// 0x0000002D System.Void TealiumUnity::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
+// 0x0000002E System.Void TealiumUnity::GatherTrackData(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+// 0x0000002F System.Void TealiumUnity::Terminate()
+// 0x00000030 System.Void TealiumUnity::Track(TealiumCommon.TealiumDispatch)
+// 0x00000031 System.Void TealiumUnity::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
+// 0x00000032 System.Object TealiumUnity::GetFromDataLayer(System.String)
+// 0x00000033 System.Void TealiumUnity::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
+// 0x00000034 System.Void TealiumUnity::SetConsentStatus(TealiumCommon.ConsentStatus)
+// 0x00000035 TealiumCommon.ConsentStatus TealiumUnity::GetConsentStatus()
+// 0x00000036 System.Void TealiumUnity::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
+// 0x00000037 System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumUnity::GetConsentCategories()
+// 0x00000038 System.Void TealiumUnity::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+// 0x00000039 System.Void TealiumUnity::RemoveRemoteCommand(System.String)
+// 0x0000003A System.Void TealiumUnity::JoinTrace(System.String)
+// 0x0000003B System.Void TealiumUnity::LeaveTrace()
+// 0x0000003C System.String TealiumUnity::GetVisitorId()
+// 0x0000003D System.Void TealiumUnity::ResetVisitorId()
+// 0x0000003E System.Void TealiumUnity::ClearStoredVisitorIds()
+// 0x0000003F System.Void TealiumUnity::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+// 0x00000040 System.Void TealiumUnity::SetVisitorIdListener(System.Action`1<System.String>)
+// 0x00000041 System.Void TealiumUnity::SetConsentExpiryListener(System.Action)
+// 0x00000042 TealiumUnity TealiumUnityPlugin::get_Tealium()
+extern void TealiumUnityPlugin_get_Tealium_m41D46497AA1FE25342AFFC24AA097B0F3093C975 (void);
+// 0x00000043 System.Void TealiumUnityPlugin::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
+extern void TealiumUnityPlugin_Initialize_m49FC9A9808B2E6E182C66874812BFDDA104E10E8 (void);
+// 0x00000044 System.Void TealiumUnityPlugin::GatherTrackData(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumUnityPlugin_GatherTrackData_m954DF61C0DC4F7DD897BDF7613C67D241DF7C5DB (void);
+// 0x00000045 System.Void TealiumUnityPlugin::Terminate()
+extern void TealiumUnityPlugin_Terminate_m0A3863FECCD06B13494805FC96DDDE3D6FAB34B7 (void);
+// 0x00000046 System.Void TealiumUnityPlugin::Track(TealiumCommon.TealiumDispatch)
+extern void TealiumUnityPlugin_Track_m919E9140D60E124001C1A580874A19B149A2D28E (void);
+// 0x00000047 System.Void TealiumUnityPlugin::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
+extern void TealiumUnityPlugin_AddToDataLayer_mA6F02FB3EFF47F65F87CB40BE53894E934E3A8C6 (void);
+// 0x00000048 System.Object TealiumUnityPlugin::GetFromDataLayer(System.String)
+extern void TealiumUnityPlugin_GetFromDataLayer_mFCF894F6A355FF2B13480FE703514EF43F9929D4 (void);
+// 0x00000049 System.Void TealiumUnityPlugin::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
+extern void TealiumUnityPlugin_RemoveFromDataLayer_m0BE1B6CFF4B70BC749EE148618337CD0EEE50B7A (void);
+// 0x0000004A System.Void TealiumUnityPlugin::SetConsentStatus(TealiumCommon.ConsentStatus)
+extern void TealiumUnityPlugin_SetConsentStatus_mF086AFADE14D009EFA71BE0B81AFD6AD53F850AF (void);
+// 0x0000004B TealiumCommon.ConsentStatus TealiumUnityPlugin::GetConsentStatus()
+extern void TealiumUnityPlugin_GetConsentStatus_m4CCCC5EFEDD9DBEAA27E5056695407C89189C167 (void);
+// 0x0000004C System.Void TealiumUnityPlugin::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
+extern void TealiumUnityPlugin_SetConsentCategories_m472980355B2D7E62BA24E231896C3933BFBDD5C2 (void);
+// 0x0000004D System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumUnityPlugin::GetConsentCategories()
+extern void TealiumUnityPlugin_GetConsentCategories_m789F9A52A53C20DF4A88F2DBC524506444A860EE (void);
+// 0x0000004E System.Void TealiumUnityPlugin::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumUnityPlugin_AddRemoteCommand_m456E6BE64315E28895478DA79BC8FC58554E3C20 (void);
+// 0x0000004F System.Void TealiumUnityPlugin::RemoveRemoteCommand(System.String)
+extern void TealiumUnityPlugin_RemoveRemoteCommand_mC9EF56E70CFF3AEB660D98BE7938122FBBCB59AE (void);
+// 0x00000050 System.Void TealiumUnityPlugin::JoinTrace(System.String)
+extern void TealiumUnityPlugin_JoinTrace_mC6F2229C52EF5C1E539FF4DC887B3D607FA64002 (void);
+// 0x00000051 System.Void TealiumUnityPlugin::LeaveTrace()
+extern void TealiumUnityPlugin_LeaveTrace_mE97A6D02E208014595278A834C2C4AEAED14A295 (void);
+// 0x00000052 System.Void TealiumUnityPlugin::ResetVisitorId()
+extern void TealiumUnityPlugin_ResetVisitorId_m277EEAA569A79065AB9E10090EBE4BDBADB0E319 (void);
+// 0x00000053 System.Void TealiumUnityPlugin::ClearStoredVisitorIds()
+extern void TealiumUnityPlugin_ClearStoredVisitorIds_m5B68A6B2F8AB5B12D5E39E4987C7B89374FB591E (void);
+// 0x00000054 System.Void TealiumUnityPlugin::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumUnityPlugin_SetVisitorServiceListener_m80E54F260DEA3250721DBBBF8FBB69B5A9343E68 (void);
+// 0x00000055 System.Void TealiumUnityPlugin::SetVisitorIdListener(System.Action`1<System.String>)
+extern void TealiumUnityPlugin_SetVisitorIdListener_mA232EBF8511A7AEF3688D0DE381CD86F9DDE5F5D (void);
+// 0x00000056 System.Void TealiumUnityPlugin::SetConsentExpiryListener(System.Action)
+extern void TealiumUnityPlugin_SetConsentExpiryListener_m0F576829D95789D9D5FC405D58180BA996958547 (void);
+// 0x00000057 System.String TealiumUnityPlugin::GetVisitorId()
+extern void TealiumUnityPlugin_GetVisitorId_m319CC9DD00AEF7C7ABB476627C0B4864CA1F55F1 (void);
+// 0x00000058 System.Void TealiumUnityPlugin::OnInitialized(System.Boolean)
+extern void TealiumUnityPlugin_OnInitialized_mE72F033E1403D024D70A3AEF37C138EB0674FEE8 (void);
+// 0x00000059 System.Void TealiumUnityPlugin::OnTrackDataCompletion(System.String)
+extern void TealiumUnityPlugin_OnTrackDataCompletion_m3EAF8C8C0E3F27392682D83C8116BB62B4D7A489 (void);
+// 0x0000005A System.Void TealiumUnityPlugin::OnRemoteCommandCompletion(System.String)
+extern void TealiumUnityPlugin_OnRemoteCommandCompletion_m856DE4571F801B738DE1FEAB17E07E335A84D11D (void);
+// 0x0000005B System.Void TealiumUnityPlugin::OnVisitorServiceUpdate(System.String)
+extern void TealiumUnityPlugin_OnVisitorServiceUpdate_m6D8D74A4692AAA41B2BE7621995C0DD5252E6E6A (void);
+// 0x0000005C System.Void TealiumUnityPlugin::OnVisitorIdUpdate(System.String)
+extern void TealiumUnityPlugin_OnVisitorIdUpdate_mD1B534C0FB0508EAC86EAAFF7011566372BEDF16 (void);
+// 0x0000005D System.Void TealiumUnityPlugin::OnConsentExpiration()
+extern void TealiumUnityPlugin_OnConsentExpiration_mA2B29815EFF88B8C52F9DFA7CB8B64A1A992AC02 (void);
+// 0x0000005E System.Void TealiumUnityPlugin::.ctor()
+extern void TealiumUnityPlugin__ctor_m49061CC842C2159749B2CE035C63C79D345E2DBB (void);
+// 0x0000005F System.Void TealiumUnityPlugin::.cctor()
+extern void TealiumUnityPlugin__cctor_m0AEFE137AD5DF02894BF90A9F58E48EF5D7DA83C (void);
+// 0x00000060 System.Void TealiumAndroid::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
+extern void TealiumAndroid_Initialize_m1828E626E424780FFC3DA81D0628C7CE3D6A6B11 (void);
+// 0x00000061 System.Void TealiumAndroid::Terminate()
+extern void TealiumAndroid_Terminate_m6E6015E5E48F7F3D628743EB3BB5B2C3D82357A4 (void);
+// 0x00000062 System.Void TealiumAndroid::GatherTrackData(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumAndroid_GatherTrackData_mE65B450E7F8AE37BB63D2A2F8623D44AD0717266 (void);
+// 0x00000063 System.Void TealiumAndroid::Track(TealiumCommon.TealiumDispatch)
+extern void TealiumAndroid_Track_mA6E83FE052C7931D6E94123552FB3DA94D61F757 (void);
+// 0x00000064 System.Void TealiumAndroid::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
+extern void TealiumAndroid_AddToDataLayer_mDA4B15C6D6FDE9A97037A3F0D7C682FDCCCCFD6D (void);
+// 0x00000065 System.Object TealiumAndroid::GetFromDataLayer(System.String)
+extern void TealiumAndroid_GetFromDataLayer_m262B00F915D821CB8C36B5EF79C5D30F29110639 (void);
+// 0x00000066 System.Void TealiumAndroid::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
+extern void TealiumAndroid_RemoveFromDataLayer_m1FDEBEF1880305BC2E86E59EAE3B39023A291237 (void);
+// 0x00000067 System.Void TealiumAndroid::SetConsentStatus(TealiumCommon.ConsentStatus)
+extern void TealiumAndroid_SetConsentStatus_m2FB577FC0B2D6A9D07256727F7C164DFCE717120 (void);
+// 0x00000068 TealiumCommon.ConsentStatus TealiumAndroid::GetConsentStatus()
+extern void TealiumAndroid_GetConsentStatus_m24373730E3023411ECB988C54C2A89699C713597 (void);
+// 0x00000069 System.Void TealiumAndroid::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
+extern void TealiumAndroid_SetConsentCategories_m7F2CBE1DD28D2A7C6B9D40F085EDE32924BB1D7A (void);
+// 0x0000006A System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumAndroid::GetConsentCategories()
+extern void TealiumAndroid_GetConsentCategories_mD7CE9D804F68EF72B1C65D82D922395B4F6118AC (void);
+// 0x0000006B System.Void TealiumAndroid::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumAndroid_AddRemoteCommand_m5BA048E00109D2DBDC7F8C4C8DC690211AFB4F11 (void);
+// 0x0000006C System.Void TealiumAndroid::RemoveRemoteCommand(System.String)
+extern void TealiumAndroid_RemoveRemoteCommand_mA102E475630F6E58001225BFF6570313519C2E68 (void);
+// 0x0000006D System.Void TealiumAndroid::JoinTrace(System.String)
+extern void TealiumAndroid_JoinTrace_mE05513E76EBFA9AEC91224EA34C28449A888AC7A (void);
+// 0x0000006E System.Void TealiumAndroid::LeaveTrace()
+extern void TealiumAndroid_LeaveTrace_m892EAB08CF792F2C39523FBBE471971A6F6D0F50 (void);
+// 0x0000006F System.String TealiumAndroid::GetVisitorId()
+extern void TealiumAndroid_GetVisitorId_mD7F7E5C11FA697033DB9D945CF867C0990E17FA4 (void);
+// 0x00000070 System.Void TealiumAndroid::ResetVisitorId()
+extern void TealiumAndroid_ResetVisitorId_m5FEC08A603062A6F470BB750E31567ECCB45815E (void);
+// 0x00000071 System.Void TealiumAndroid::ClearStoredVisitorIds()
+extern void TealiumAndroid_ClearStoredVisitorIds_m69E2164B72081900A3F9926124D18C814D92B079 (void);
+// 0x00000072 System.Void TealiumAndroid::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumAndroid_SetVisitorServiceListener_m05460292DD7BBC5935D8A4E0E1301BD812190348 (void);
+// 0x00000073 System.Void TealiumAndroid::SetVisitorIdListener(System.Action`1<System.String>)
+extern void TealiumAndroid_SetVisitorIdListener_m8538E7264E0FCA4E9F4AAB4E97B5E46EEE27C1E6 (void);
+// 0x00000074 System.Void TealiumAndroid::SetConsentExpiryListener(System.Action)
+extern void TealiumAndroid_SetConsentExpiryListener_m361A39446A4BD98D8FE7EB84B29BC15B6F0879EA (void);
+// 0x00000075 System.Void TealiumAndroid::HandleInitialized(System.String)
+extern void TealiumAndroid_HandleInitialized_mDE0D36057D3358E20A84970D518DC5AB952D27C3 (void);
+// 0x00000076 System.Void TealiumAndroid::HandleRemoteCommandResponse(System.String)
+extern void TealiumAndroid_HandleRemoteCommandResponse_m4B76B2E06F847D59CF47F3E8E1A794B9CF4D3110 (void);
+// 0x00000077 System.Void TealiumAndroid::HandleVisitorProfileUpdate(System.String)
+extern void TealiumAndroid_HandleVisitorProfileUpdate_m5894AC20E9CFAA6FC257BE43AC7A861376D03C53 (void);
+// 0x00000078 System.Void TealiumAndroid::HandleVisitorIdUpdate(System.String)
+extern void TealiumAndroid_HandleVisitorIdUpdate_m28B7830DE5D6470D2703B8A36AC85A65FD5C6A27 (void);
+// 0x00000079 System.Void TealiumAndroid::HandleConsentUpdate()
+extern void TealiumAndroid_HandleConsentUpdate_mD4394DCEF3DA68BAFC9187DC8EFE9900F6D51465 (void);
+// 0x0000007A System.Void TealiumAndroid::.ctor()
+extern void TealiumAndroid__ctor_m288AF3B011F719309F1E79C6F74A71F6705B4DF1 (void);
+// 0x0000007B System.Void TealiumAndroid::.cctor()
+extern void TealiumAndroid__cctor_m4F9D9834C4A078B931E8CDD9204F06ADC9A7E62C (void);
+// 0x0000007C System.Void TealiumAndroid/<>c::.cctor()
+extern void U3CU3Ec__cctor_mB50EBAA8FB6B4D37BDD383B619A29731F32C9FFB (void);
+// 0x0000007D System.Void TealiumAndroid/<>c::.ctor()
+extern void U3CU3Ec__ctor_mB38E6A167B30DB74185A5682849BD4D2E7DB5010 (void);
+// 0x0000007E TealiumCommon.ConsentCategories TealiumAndroid/<>c::<GetConsentCategories>b__13_0(System.String)
+extern void U3CU3Ec_U3CGetConsentCategoriesU3Eb__13_0_mBB45CC61C3BEF44B96AD87D9AB64C17353450EE8 (void);
+// 0x0000007F System.Collections.Generic.Dictionary`2<System.String,System.Object> TealiumHelpers::ConvertValuesToCollections(System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void TealiumHelpers_ConvertValuesToCollections_mB7257650666D2F6BEDAB2E9B828F8E2F3D3B6E2B (void);
+// 0x00000080 System.Object TealiumHelpers::ToCollections(System.Object)
+extern void TealiumHelpers_ToCollections_m4AF35491F82921852716D469AA56F8EE7CE170CD (void);
+// 0x00000081 System.Void TealiumHelpers::.ctor()
+extern void TealiumHelpers__ctor_m50750B2515CC0F8BA453B838DFB1EAE3118FC16D (void);
+// 0x00000082 System.Void TealiumHelpers/<>c::.cctor()
+extern void U3CU3Ec__cctor_m56503C327E1217E914C0BF912A07F19D54C9E9F9 (void);
+// 0x00000083 System.Void TealiumHelpers/<>c::.ctor()
+extern void U3CU3Ec__ctor_m0746FEB2A7CF90575D1385CA6877841F26758BF8 (void);
+// 0x00000084 System.String TealiumHelpers/<>c::<ToCollections>b__1_0(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+extern void U3CU3Ec_U3CToCollectionsU3Eb__1_0_m6E68A0445A52E43AF175A8CB3B06FEED84E54D9D (void);
+// 0x00000085 System.Object TealiumHelpers/<>c::<ToCollections>b__1_1(System.Collections.Generic.KeyValuePair`2<System.String,System.Object>)
+extern void U3CU3Ec_U3CToCollectionsU3Eb__1_1_mC001C768BA3C1D752AE305AB4CE2A47BC2426AEF (void);
+// 0x00000086 System.Void TealiumiOS::Tealium_Initialize(System.String)
+extern void TealiumiOS_Tealium_Initialize_m6D78B13861BEE5808D110D68B550B589E5FB920E (void);
+// 0x00000087 System.Void TealiumiOS::Tealium_GatherTrackData()
+extern void TealiumiOS_Tealium_GatherTrackData_m01B216ABF9558A35EBD535496748350D4D79C23E (void);
+// 0x00000088 System.Void TealiumiOS::Tealium_Track(System.String)
+extern void TealiumiOS_Tealium_Track_m11E26B126340D7D9CB6773036379F61FA19DFE12 (void);
+// 0x00000089 System.Void TealiumiOS::Tealium_Terminate()
+extern void TealiumiOS_Tealium_Terminate_mE832FDE56B336FCFEE57DEABA541F55BB769CE96 (void);
+// 0x0000008A System.Void TealiumiOS::Tealium_AddToDataLayer(System.String,System.String)
+extern void TealiumiOS_Tealium_AddToDataLayer_mB025E55B2AE01CCDA1C15B72BB7B1966593AAEDE (void);
+// 0x0000008B System.String TealiumiOS::Tealium_GetFromDataLayer(System.String)
+extern void TealiumiOS_Tealium_GetFromDataLayer_m2484B30DE85147CE9BBFB99824DE93788F4FA017 (void);
+// 0x0000008C System.Void TealiumiOS::Tealium_RemoveFromDataLayer(System.String)
+extern void TealiumiOS_Tealium_RemoveFromDataLayer_m20617DB6569E93E4D8DA38E4CC646F28878872E6 (void);
+// 0x0000008D System.Void TealiumiOS::Tealium_SetConsentStatus(System.String)
+extern void TealiumiOS_Tealium_SetConsentStatus_mACED6DD8BE4336920C3E420382E386C2F6B774DC (void);
+// 0x0000008E System.String TealiumiOS::Tealium_GetConsentStatus()
+extern void TealiumiOS_Tealium_GetConsentStatus_m168F0CD8B7D0677E51388AD9D11FBBA17C93A306 (void);
+// 0x0000008F System.Void TealiumiOS::Tealium_SetConsentCategories(System.String)
+extern void TealiumiOS_Tealium_SetConsentCategories_m831C23309031557176184140F7064A01B164FDE8 (void);
+// 0x00000090 System.String TealiumiOS::Tealium_GetConsentCategories()
+extern void TealiumiOS_Tealium_GetConsentCategories_m49FD58EB0FB14EB06FBF10D451AC3DC62E6C2461 (void);
+// 0x00000091 System.Void TealiumiOS::Tealium_JoinTrace(System.String)
+extern void TealiumiOS_Tealium_JoinTrace_m2AECF0F1E56A2DD431566775E66ED3057A187EE2 (void);
+// 0x00000092 System.Void TealiumiOS::Tealium_LeaveTrace()
+extern void TealiumiOS_Tealium_LeaveTrace_m564310E815DE43C6BB73BFF02DC36E734F509034 (void);
+// 0x00000093 System.Void TealiumiOS::Tealium_AddRemoteCommand(System.String)
+extern void TealiumiOS_Tealium_AddRemoteCommand_m1D64693B70D88B962D17EE0A26ACCD190BB381F2 (void);
+// 0x00000094 System.Void TealiumiOS::Tealium_RemoveRemoteCommand(System.String)
+extern void TealiumiOS_Tealium_RemoveRemoteCommand_m402F861C02D6CF13F4D100B88ECD99A1A873B0DC (void);
+// 0x00000095 System.String TealiumiOS::Tealium_GetVisitorId()
+extern void TealiumiOS_Tealium_GetVisitorId_m144D92893184B66BBBFC40E697D9E87AD5D1B1EE (void);
+// 0x00000096 System.Void TealiumiOS::Tealium_ResetVisitorId()
+extern void TealiumiOS_Tealium_ResetVisitorId_m0A5AFFED5D5A38A46C26C3F9021010E8908C1A30 (void);
+// 0x00000097 System.Void TealiumiOS::Tealium_ClearStoredVisitorIds()
+extern void TealiumiOS_Tealium_ClearStoredVisitorIds_m6B96CC26E6EE0BB3E0BCC583C98C371CAC5D8AFD (void);
+// 0x00000098 System.Void TealiumiOS::Tealium_SetInitializeDelegate(TealiumiOS/InitializeDelegateMessage)
+extern void TealiumiOS_Tealium_SetInitializeDelegate_mF721BBECBD2DEC8A69FAEF22A56FF009CFCA7551 (void);
+// 0x00000099 System.Void TealiumiOS::Tealium_SetTrackDataDelegate(TealiumiOS/GatherTrackDataDelegateMessage)
+extern void TealiumiOS_Tealium_SetTrackDataDelegate_mCD34C90BC8E605B2AF89B0FAB1A46A6BED5E45EC (void);
+// 0x0000009A System.Void TealiumiOS::Tealium_SetRemoteCommandDelegate(TealiumiOS/RemoteCommandDelegateMessage)
+extern void TealiumiOS_Tealium_SetRemoteCommandDelegate_mE14F585CB49F84C8745BE1583350648F5BF051CC (void);
+// 0x0000009B System.Void TealiumiOS::Tealium_SetVisitorServiceDelegate(TealiumiOS/VisitorServiceDelegateMessage)
+extern void TealiumiOS_Tealium_SetVisitorServiceDelegate_m3E964BBD848EC7B72FF1C67D12C126B17C142E93 (void);
+// 0x0000009C System.Void TealiumiOS::Tealium_SetVisitorIdDelegate(TealiumiOS/VisitorIdDelegateMessage)
+extern void TealiumiOS_Tealium_SetVisitorIdDelegate_mB9730BE8ECF95AAD115C5C254468B94C51D5FC66 (void);
+// 0x0000009D System.Void TealiumiOS::Tealium_SetConsentExpiryDelegate(TealiumiOS/ConsentExpiryDelegateMessage)
+extern void TealiumiOS_Tealium_SetConsentExpiryDelegate_mD76441C9FBD15CE88916240FBD8561D2B8A52398 (void);
+// 0x0000009E System.Void TealiumiOS::initializationResponseReceived(System.Boolean)
+extern void TealiumiOS_initializationResponseReceived_mCE75DDB10DB04C7CDAD5C79E686AC95444689C45 (void);
+// 0x0000009F System.Void TealiumiOS::trackDataResponseReceived(System.String)
+extern void TealiumiOS_trackDataResponseReceived_m560E76CDB97474A552B4663D703FBF7A4823CB3F (void);
+// 0x000000A0 System.Void TealiumiOS::remoteCommandReceived(System.String)
+extern void TealiumiOS_remoteCommandReceived_m329891AE490BF9E5B99477B569A5AE881D646737 (void);
+// 0x000000A1 System.Void TealiumiOS::visitorServiceUpdateReceived(System.String)
+extern void TealiumiOS_visitorServiceUpdateReceived_mF7CCAAF7184EF435DBAF5FE8BE8AC7576252514C (void);
+// 0x000000A2 System.Void TealiumiOS::visitorIdUpdateReceived(System.String)
+extern void TealiumiOS_visitorIdUpdateReceived_m5F95C7CF4F502243CB62C15DC4FFA7A5DEF61176 (void);
+// 0x000000A3 System.Void TealiumiOS::consentExpirationReceived()
+extern void TealiumiOS_consentExpirationReceived_m6BD20EBA076AD8F9F17576B2A4ADC0821095F351 (void);
+// 0x000000A4 System.Void TealiumiOS::Initialize(TealiumCommon.TealiumConfig,System.Action`1<System.Boolean>)
+extern void TealiumiOS_Initialize_m35E07FF65685A5A8EFA487DDE2107683C501BEAB (void);
+// 0x000000A5 System.Void TealiumiOS::GatherTrackData(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumiOS_GatherTrackData_m6AA155E750D3BE9E340997209DC362925AA7F1B6 (void);
+// 0x000000A6 System.Void TealiumiOS::Terminate()
+extern void TealiumiOS_Terminate_mFBD71ED3433D3BD0291E23F2F3588D125D99D8E9 (void);
+// 0x000000A7 System.Void TealiumiOS::Track(TealiumCommon.TealiumDispatch)
+extern void TealiumiOS_Track_mC09B2B27F2072F59D1DFB2C00DB3BDC976236F23 (void);
+// 0x000000A8 System.Void TealiumiOS::AddToDataLayer(System.Collections.Generic.Dictionary`2<System.String,System.Object>,TealiumCommon.Expiry)
+extern void TealiumiOS_AddToDataLayer_m2EAAD1E3FBCFA0805A4F14C031DB9F2583F5B2C0 (void);
+// 0x000000A9 System.Object TealiumiOS::GetFromDataLayer(System.String)
+extern void TealiumiOS_GetFromDataLayer_m5E78AD27E9F3ACC1454A36604195B75AC299AF49 (void);
+// 0x000000AA System.Void TealiumiOS::RemoveFromDataLayer(System.Collections.Generic.List`1<System.String>)
+extern void TealiumiOS_RemoveFromDataLayer_m4B22C6033E3128FE32D03D4D1DFF25AD472E8D45 (void);
+// 0x000000AB System.Void TealiumiOS::SetConsentStatus(TealiumCommon.ConsentStatus)
+extern void TealiumiOS_SetConsentStatus_m931EE7D4DB87B0923DF4B30F47A28FC08D132E43 (void);
+// 0x000000AC TealiumCommon.ConsentStatus TealiumiOS::GetConsentStatus()
+extern void TealiumiOS_GetConsentStatus_m785A858267643AE054ADC4D5340CDAD51C631844 (void);
+// 0x000000AD System.Void TealiumiOS::SetConsentCategories(System.Collections.Generic.List`1<TealiumCommon.ConsentCategories>)
+extern void TealiumiOS_SetConsentCategories_mB59DD9C390A2D6B8DE078E241571F8DD6497E8F3 (void);
+// 0x000000AE System.Collections.Generic.List`1<TealiumCommon.ConsentCategories> TealiumiOS::GetConsentCategories()
+extern void TealiumiOS_GetConsentCategories_m6372B7701DB04D6770CB8C7ECAC6AE41E103EC65 (void);
+// 0x000000AF System.Void TealiumiOS::AddRemoteCommand(System.String,System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumiOS_AddRemoteCommand_m3F73A2EA4662D9B68983F86E7CE4544E79710940 (void);
+// 0x000000B0 System.Void TealiumiOS::RemoveRemoteCommand(System.String)
+extern void TealiumiOS_RemoveRemoteCommand_m62B161B0AFB21B82DD11226D795E1B9E8E1BF6E5 (void);
+// 0x000000B1 System.Void TealiumiOS::JoinTrace(System.String)
+extern void TealiumiOS_JoinTrace_mB52483A13F10A1462E45E7C0FD97A0116651AA88 (void);
+// 0x000000B2 System.Void TealiumiOS::LeaveTrace()
+extern void TealiumiOS_LeaveTrace_mD0C6BF63E3AEDE6DCEE14C5C3F4F1E28A757C84C (void);
+// 0x000000B3 System.Void TealiumiOS::SetVisitorServiceListener(System.Action`1<System.Collections.Generic.Dictionary`2<System.String,System.Object>>)
+extern void TealiumiOS_SetVisitorServiceListener_m9F8407CDE2868A7E136B7ED88CDB3CD8F72CCF09 (void);
+// 0x000000B4 System.Void TealiumiOS::SetVisitorIdListener(System.Action`1<System.String>)
+extern void TealiumiOS_SetVisitorIdListener_m3A31845AA13C689B15A5DF0C3FA3DCA3EA26B3D1 (void);
+// 0x000000B5 System.Void TealiumiOS::SetConsentExpiryListener(System.Action)
+extern void TealiumiOS_SetConsentExpiryListener_m79F36E72DC3BF60965BDEAB7044231F31A8E711D (void);
+// 0x000000B6 System.String TealiumiOS::GetVisitorId()
+extern void TealiumiOS_GetVisitorId_mD4FD83DA792191A8573F3FB7ED09F1CBBBC2E818 (void);
+// 0x000000B7 System.Void TealiumiOS::ResetVisitorId()
+extern void TealiumiOS_ResetVisitorId_m424A9634B97ACDBA9AE9641DA50948BC7E08E8B2 (void);
+// 0x000000B8 System.Void TealiumiOS::ClearStoredVisitorIds()
+extern void TealiumiOS_ClearStoredVisitorIds_m57A6D1A3C0A61A0242AEF10F019A73F93CBA1B63 (void);
+// 0x000000B9 System.Void TealiumiOS::.ctor()
+extern void TealiumiOS__ctor_mC006D8000F41ACEE84B653997CE8FD1285A41910 (void);
+// 0x000000BA System.Void TealiumiOS/InitializeDelegateMessage::.ctor(System.Object,System.IntPtr)
+extern void InitializeDelegateMessage__ctor_m5193EF114A6EC0775EB25209E86DB351E468ACDE (void);
+// 0x000000BB System.Void TealiumiOS/InitializeDelegateMessage::Invoke(System.Boolean)
+extern void InitializeDelegateMessage_Invoke_mF9ED60B40B57137D798A609F78CC2972CE0B82F7 (void);
+// 0x000000BC System.IAsyncResult TealiumiOS/InitializeDelegateMessage::BeginInvoke(System.Boolean,System.AsyncCallback,System.Object)
+extern void InitializeDelegateMessage_BeginInvoke_m4973EA42DD2361179954C12082E7BE35559F3990 (void);
+// 0x000000BD System.Void TealiumiOS/InitializeDelegateMessage::EndInvoke(System.IAsyncResult)
+extern void InitializeDelegateMessage_EndInvoke_m5653C88A603E6CF33DDA82D27CEE9BB6E3384037 (void);
+// 0x000000BE System.Void TealiumiOS/GatherTrackDataDelegateMessage::.ctor(System.Object,System.IntPtr)
+extern void GatherTrackDataDelegateMessage__ctor_mD103B8C05626377B3E931C21E58819C3C1EEF63D (void);
+// 0x000000BF System.Void TealiumiOS/GatherTrackDataDelegateMessage::Invoke(System.String)
+extern void GatherTrackDataDelegateMessage_Invoke_m51B0CC593B2C5424031F59130C29423314B69093 (void);
+// 0x000000C0 System.IAsyncResult TealiumiOS/GatherTrackDataDelegateMessage::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void GatherTrackDataDelegateMessage_BeginInvoke_m18FE6990250290256C29104356AB761745DCC830 (void);
+// 0x000000C1 System.Void TealiumiOS/GatherTrackDataDelegateMessage::EndInvoke(System.IAsyncResult)
+extern void GatherTrackDataDelegateMessage_EndInvoke_m0B1545E37F772871D14EB4F27DBB5DE6AE03B6B6 (void);
+// 0x000000C2 System.Void TealiumiOS/RemoteCommandDelegateMessage::.ctor(System.Object,System.IntPtr)
+extern void RemoteCommandDelegateMessage__ctor_m690F781D07DAE8CCD06C049C2DB780FB4C135C05 (void);
+// 0x000000C3 System.Void TealiumiOS/RemoteCommandDelegateMessage::Invoke(System.String)
+extern void RemoteCommandDelegateMessage_Invoke_mB0DE38077C76C48052256CFC3BC18348F96BC8D6 (void);
+// 0x000000C4 System.IAsyncResult TealiumiOS/RemoteCommandDelegateMessage::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void RemoteCommandDelegateMessage_BeginInvoke_m6E11E16D78EDCB33937452854AF0A9949D10E772 (void);
+// 0x000000C5 System.Void TealiumiOS/RemoteCommandDelegateMessage::EndInvoke(System.IAsyncResult)
+extern void RemoteCommandDelegateMessage_EndInvoke_m018AE329B8A4F41B08627D472DEB3B92A3E4E798 (void);
+// 0x000000C6 System.Void TealiumiOS/VisitorServiceDelegateMessage::.ctor(System.Object,System.IntPtr)
+extern void VisitorServiceDelegateMessage__ctor_m11F6DB372B8AFBDB5A3F7F6D94B40EA18A934BB0 (void);
+// 0x000000C7 System.Void TealiumiOS/VisitorServiceDelegateMessage::Invoke(System.String)
+extern void VisitorServiceDelegateMessage_Invoke_mA0BE726CFF122334A4F2B5F4D5194F3F946A7D73 (void);
+// 0x000000C8 System.IAsyncResult TealiumiOS/VisitorServiceDelegateMessage::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void VisitorServiceDelegateMessage_BeginInvoke_m10840D4F86588A229DABB87B0295B25133CD779C (void);
+// 0x000000C9 System.Void TealiumiOS/VisitorServiceDelegateMessage::EndInvoke(System.IAsyncResult)
+extern void VisitorServiceDelegateMessage_EndInvoke_m3185BE95335AD977FDDDC86F791377DD5C989F53 (void);
+// 0x000000CA System.Void TealiumiOS/VisitorIdDelegateMessage::.ctor(System.Object,System.IntPtr)
+extern void VisitorIdDelegateMessage__ctor_m6FFDA8234390CD8336338CBB89AFCA098CCF0242 (void);
+// 0x000000CB System.Void TealiumiOS/VisitorIdDelegateMessage::Invoke(System.String)
+extern void VisitorIdDelegateMessage_Invoke_m28A79395060EA04A7108E4AB2F231468F41902DE (void);
+// 0x000000CC System.IAsyncResult TealiumiOS/VisitorIdDelegateMessage::BeginInvoke(System.String,System.AsyncCallback,System.Object)
+extern void VisitorIdDelegateMessage_BeginInvoke_m42AC4994A491FDF0C3A97182952199D42B335CE7 (void);
+// 0x000000CD System.Void TealiumiOS/VisitorIdDelegateMessage::EndInvoke(System.IAsyncResult)
+extern void VisitorIdDelegateMessage_EndInvoke_m84E9A41842FE5972E6391A407FA27E33C644C82D (void);
+// 0x000000CE System.Void TealiumiOS/ConsentExpiryDelegateMessage::.ctor(System.Object,System.IntPtr)
+extern void ConsentExpiryDelegateMessage__ctor_m7DF92C1E7D9C4EADBB616ED3A73E7F1E54FCE31D (void);
+// 0x000000CF System.Void TealiumiOS/ConsentExpiryDelegateMessage::Invoke()
+extern void ConsentExpiryDelegateMessage_Invoke_m378EABB8D1F38E87099EEFABCB7C3B65ED9B5E57 (void);
+// 0x000000D0 System.IAsyncResult TealiumiOS/ConsentExpiryDelegateMessage::BeginInvoke(System.AsyncCallback,System.Object)
+extern void ConsentExpiryDelegateMessage_BeginInvoke_m048CFCCFF5EEE609DF7C37DCD1CBBC85E4550254 (void);
+// 0x000000D1 System.Void TealiumiOS/ConsentExpiryDelegateMessage::EndInvoke(System.IAsyncResult)
+extern void ConsentExpiryDelegateMessage_EndInvoke_mF7223221222C46394532B62A4BB2E252AFB3BEF3 (void);
+// 0x000000D2 System.Void TealiumiOS/<>c::.cctor()
+extern void U3CU3Ec__cctor_mF06F39108624357800B12F8CA19F2506D4A62F39 (void);
+// 0x000000D3 System.Void TealiumiOS/<>c::.ctor()
+extern void U3CU3Ec__ctor_mCDAC4DF3F94667DFFC4FF3419B8EE33824370676 (void);
+// 0x000000D4 System.String TealiumiOS/<>c::<SetConsentCategories>b__45_0(TealiumCommon.ConsentCategories)
+extern void U3CU3Ec_U3CSetConsentCategoriesU3Eb__45_0_m4A080CF0BD2466B4BADD90019AC7D920045FDCC6 (void);
+// 0x000000D5 TealiumCommon.ConsentCategories TealiumiOS/<>c::<GetConsentCategories>b__46_0(System.String)
+extern void U3CU3Ec_U3CGetConsentCategoriesU3Eb__46_0_m8FAF2C0A602D98BACB9D4843922065654AD83663 (void);
+// 0x000000D6 System.Void TealiumCommon.Collectors::.ctor(System.String)
+extern void Collectors__ctor_m22A5162195E73249532143A5E818EF095C734390 (void);
+// 0x000000D7 System.String TealiumCommon.Collectors::get_Value()
+extern void Collectors_get_Value_m7EF29A25B40E5407A78983F99764E17B59797B31 (void);
+// 0x000000D8 TealiumCommon.Collectors TealiumCommon.Collectors::get_AppData()
+extern void Collectors_get_AppData_m26EE636746A30E978145CC9324022044DC905801 (void);
+// 0x000000D9 TealiumCommon.Collectors TealiumCommon.Collectors::get_Connectivity()
+extern void Collectors_get_Connectivity_m984412DD173B3C7BB0F7C9EDFD74472532214ABF (void);
+// 0x000000DA TealiumCommon.Collectors TealiumCommon.Collectors::get_DeviceData()
+extern void Collectors_get_DeviceData_m0BED8184A8CBE7D4BA62D6E2EAA42CACCDF802E0 (void);
+// 0x000000DB TealiumCommon.Collectors TealiumCommon.Collectors::get_Lifecycle()
+extern void Collectors_get_Lifecycle_m0D29A90A8C9F1B9A861517A600C3ECB1D26BE623 (void);
+// 0x000000DC System.Void TealiumCommon.Dispatchers::.ctor(System.String)
+extern void Dispatchers__ctor_mE47EA330081AB8F5CB35121072C60E5B92F52CF3 (void);
+// 0x000000DD System.String TealiumCommon.Dispatchers::get_Value()
+extern void Dispatchers_get_Value_m96FCCE34072659185FBD13A9519521C44C0A43F4 (void);
+// 0x000000DE TealiumCommon.Dispatchers TealiumCommon.Dispatchers::get_TagManagement()
+extern void Dispatchers_get_TagManagement_mF964086A3430D2820F6527C74A33C699880D6D9E (void);
+// 0x000000DF TealiumCommon.Dispatchers TealiumCommon.Dispatchers::get_Collect()
+extern void Dispatchers_get_Collect_m7FC4FF6005F3CF7044E5DA4248BAA05E11C077DA (void);
+// 0x000000E0 TealiumCommon.Dispatchers TealiumCommon.Dispatchers::get_RemoteCommands()
+extern void Dispatchers_get_RemoteCommands_m79D50980C62B35C2DF2D4C991E1ED44C98045952 (void);
+// 0x000000E1 System.Void TealiumCommon.TealiumEnvironment::.ctor(System.String)
+extern void TealiumEnvironment__ctor_m682BD689369C468F4F88B0133B36C48213DB89C4 (void);
+// 0x000000E2 System.String TealiumCommon.TealiumEnvironment::get_Value()
+extern void TealiumEnvironment_get_Value_mC7C745C0C23BBA867FA6107B2207D687D003E817 (void);
+// 0x000000E3 TealiumCommon.TealiumEnvironment TealiumCommon.TealiumEnvironment::get_DEV()
+extern void TealiumEnvironment_get_DEV_m750F4205DEA1FB0997D2679DC922E23FCFA88F1D (void);
+// 0x000000E4 TealiumCommon.TealiumEnvironment TealiumCommon.TealiumEnvironment::get_QA()
+extern void TealiumEnvironment_get_QA_mB2F75C76643CB2D492D594ED6F338E49F4C06134 (void);
+// 0x000000E5 TealiumCommon.TealiumEnvironment TealiumCommon.TealiumEnvironment::get_PROD()
+extern void TealiumEnvironment_get_PROD_mFED44A4A64CB0A1C8A9DB2263D749F4586CF3BF8 (void);
+// 0x000000E6 System.Void TealiumCommon.Expiry::.ctor(System.String)
+extern void Expiry__ctor_mE513C4D03326B522B5035F60CE499FC45FF3C36E (void);
+// 0x000000E7 System.String TealiumCommon.Expiry::get_Value()
+extern void Expiry_get_Value_m56499EE94F25D8F2FBB5115F297A9C1E86B3FF9F (void);
+// 0x000000E8 TealiumCommon.Expiry TealiumCommon.Expiry::get_Forever()
+extern void Expiry_get_Forever_m51111E2BC326615AA5C50AB53AAD52841CFB3965 (void);
+// 0x000000E9 TealiumCommon.Expiry TealiumCommon.Expiry::get_Session()
+extern void Expiry_get_Session_m5115FCDCE41DD5840531956E6D5BE2DAE6E2655C (void);
+// 0x000000EA TealiumCommon.Expiry TealiumCommon.Expiry::get_UntilRestart()
+extern void Expiry_get_UntilRestart_mF789F7DDA7E0AA83C4E1751E0735D70045D96380 (void);
+// 0x000000EB System.Void TealiumCommon.ConsentPolicy::.ctor(System.String)
+extern void ConsentPolicy__ctor_mBFA656D0300BF0A550237B6AD50C97E4EB7F4EDF (void);
+// 0x000000EC System.String TealiumCommon.ConsentPolicy::get_Value()
+extern void ConsentPolicy_get_Value_mE9BE72AF33A492C0DCE9D901954328AB329DBB80 (void);
+// 0x000000ED TealiumCommon.ConsentPolicy TealiumCommon.ConsentPolicy::get_GDPR()
+extern void ConsentPolicy_get_GDPR_mCAA4862EB2E55CE12916B60EBF0CD8DA4F8EFD15 (void);
+// 0x000000EE TealiumCommon.ConsentPolicy TealiumCommon.ConsentPolicy::get_CCPA()
+extern void ConsentPolicy_get_CCPA_mAD26271EFD773CC347E932B6503DA0DBF4006719 (void);
+// 0x000000EF System.Void TealiumCommon.ConsentStatus::.ctor(System.String)
+extern void ConsentStatus__ctor_m4DEB38B73AFC57F3DC8AF314CD76670B47BE3D0D (void);
+// 0x000000F0 System.String TealiumCommon.ConsentStatus::get_Value()
+extern void ConsentStatus_get_Value_m2ADCDD2A5B6C65269758BC1FF5689F78B6646444 (void);
+// 0x000000F1 TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::get_Consented()
+extern void ConsentStatus_get_Consented_mED13AF4E0E077E7FE26F2302A46484B6353435B7 (void);
+// 0x000000F2 TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::get_NotConsented()
+extern void ConsentStatus_get_NotConsented_mC6E9AD785DD1D555C2E06536BA0ED9C82886A07C (void);
+// 0x000000F3 TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::get_Unknown()
+extern void ConsentStatus_get_Unknown_mD535782567A2544056580CFDE174F1EA5286E808 (void);
+// 0x000000F4 TealiumCommon.ConsentStatus TealiumCommon.ConsentStatus::FromString(System.String)
+extern void ConsentStatus_FromString_m4F01F1A9403B980A933807C3B1895410F0AE79B7 (void);
+// 0x000000F5 System.Void TealiumCommon.LogLevel::.ctor(System.String)
+extern void LogLevel__ctor_mCD6C0933ABBDB87CB41FF4CE2F5858F032E27D67 (void);
+// 0x000000F6 System.String TealiumCommon.LogLevel::get_Value()
+extern void LogLevel_get_Value_m7190CB1FF14479332F21B2B5A9F3787D4BF7E805 (void);
+// 0x000000F7 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Dev()
+extern void LogLevel_get_Dev_m69BD4DA6D02766F0B1B2D7F3A906562543981677 (void);
+// 0x000000F8 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Qa()
+extern void LogLevel_get_Qa_m99EB1BE6AE4260F27745C5B7D467DD7897838A88 (void);
+// 0x000000F9 TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Prod()
+extern void LogLevel_get_Prod_m11EFCB5AF0FB55553C46966DE8EB14B062DAEE16 (void);
+// 0x000000FA TealiumCommon.LogLevel TealiumCommon.LogLevel::get_Silent()
+extern void LogLevel_get_Silent_m385FB6A7ED5DA9A13DDC19D942E21D73C3895E95 (void);
+// 0x000000FB System.Void TealiumCommon.ConsentCategories::.ctor(System.String)
+extern void ConsentCategories__ctor_m3627B27340085C053CDB134AEBBE32F05161FD0E (void);
+// 0x000000FC System.String TealiumCommon.ConsentCategories::get_Value()
+extern void ConsentCategories_get_Value_m4AF5AE221DCC4030E2750AD709B245AAFD94E0DD (void);
+// 0x000000FD TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Analytics()
+extern void ConsentCategories_get_Analytics_mDF43FBF9C42E37437EF2ACB5275CA2280C2727B2 (void);
+// 0x000000FE TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Affiliates()
+extern void ConsentCategories_get_Affiliates_mAFA01EBFE19FCCB678981D33573AFED3C8F9F315 (void);
+// 0x000000FF TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_DisplayAds()
+extern void ConsentCategories_get_DisplayAds_m1DA237BDEEF1BF8E1527786983C01F5A0E29AA95 (void);
+// 0x00000100 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Email()
+extern void ConsentCategories_get_Email_m74301EAA84BCF89E782EC24C5E0D88DA247023A6 (void);
+// 0x00000101 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Personalization()
+extern void ConsentCategories_get_Personalization_mC7446AC6DB2C471027265652A47DB9BF4256F291 (void);
+// 0x00000102 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Search()
+extern void ConsentCategories_get_Search_m4C6209308E7092010700693FB300921B63B6A9A5 (void);
+// 0x00000103 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Social()
+extern void ConsentCategories_get_Social_m974F066476D190A5878AE90542A9B5246D95A6C3 (void);
+// 0x00000104 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_BigData()
+extern void ConsentCategories_get_BigData_mBA0029A5B2CA045A60226D03E7563DCB63456EA6 (void);
+// 0x00000105 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Mobile()
+extern void ConsentCategories_get_Mobile_mEA1C02426F4CC27FE9A1BC524B7CFD855033F8F4 (void);
+// 0x00000106 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Engagement()
+extern void ConsentCategories_get_Engagement_m20113E7CDB4E46F86A34C6D93A65FC7EBA410BDE (void);
+// 0x00000107 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Monitoring()
+extern void ConsentCategories_get_Monitoring_mE27E48A40086FBF8CAC65CD2EF7C7D6757C5A2F2 (void);
+// 0x00000108 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Crm()
+extern void ConsentCategories_get_Crm_mC1DDE13ABD1EEC1871B1E3069878E2C60F9A738C (void);
+// 0x00000109 TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Cdp()
+extern void ConsentCategories_get_Cdp_mD06321195D3E451C3B98ECDCDBCE84362091DA11 (void);
+// 0x0000010A TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_CookieMatch()
+extern void ConsentCategories_get_CookieMatch_m04B893CB6C098AEA6451FDA043306412BF45232E (void);
+// 0x0000010B TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::get_Misc()
+extern void ConsentCategories_get_Misc_m7C498601E9EAF189CB942879DFF7EB0E89203DA1 (void);
+// 0x0000010C TealiumCommon.ConsentCategories TealiumCommon.ConsentCategories::FromString(System.String)
+extern void ConsentCategories_FromString_m4DD3591C1D3729EB34990744EC81B96518EFDD50 (void);
+// 0x0000010D System.Void TealiumCommon.TimeUnit::.ctor(System.String)
+extern void TimeUnit__ctor_m7F4BC1F78DD4C218D4C77532F1110D4CEACA43C0 (void);
+// 0x0000010E System.String TealiumCommon.TimeUnit::get_Value()
+extern void TimeUnit_get_Value_m14DF4CB5057D2D7B35C46843D17981AD9B6D9B6B (void);
+// 0x0000010F TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Minutes()
+extern void TimeUnit_get_Minutes_mF7956FBFF1EF814BA17FC94851C9A496BEE1656A (void);
+// 0x00000110 TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Hours()
+extern void TimeUnit_get_Hours_m03DADDCDECFFCE3698670DC9131D2452B5B9869C (void);
+// 0x00000111 TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Days()
+extern void TimeUnit_get_Days_mBAC09826AA811CB46497709647413ACF56DCDD01 (void);
+// 0x00000112 TealiumCommon.TimeUnit TealiumCommon.TimeUnit::get_Months()
+extern void TimeUnit_get_Months_mB0A21DD0CFF02E727085905AA36F966B92182A58 (void);
+// 0x00000113 System.Void TealiumCommon.TealiumConfig::.ctor(System.String,System.String,TealiumCommon.TealiumEnvironment,System.Collections.Generic.List`1<TealiumCommon.Dispatchers>,System.Collections.Generic.List`1<TealiumCommon.Collectors>,System.String,System.String,System.Nullable`1<System.Boolean>,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<TealiumCommon.LogLevel>,System.Nullable`1<System.Boolean>,System.Nullable`1<TealiumCommon.ConsentPolicy>,TealiumCommon.ConsentExpiry,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.Nullable`1<System.Boolean>,System.String)
+extern void TealiumConfig__ctor_m0A96C3450D489B776AE73CF81A344A852D04192C (void);
+// 0x00000114 System.Void TealiumCommon.TealiumConfig/<>c::.cctor()
+extern void U3CU3Ec__cctor_m8BA299158BD586DCCB609FFC94A5FB1060E306D1 (void);
+// 0x00000115 System.Void TealiumCommon.TealiumConfig/<>c::.ctor()
+extern void U3CU3Ec__ctor_m6FFC1E515C71FF5A17D5E2467AD41D098781296B (void);
+// 0x00000116 System.String TealiumCommon.TealiumConfig/<>c::<.ctor>b__26_0(TealiumCommon.Dispatchers)
+extern void U3CU3Ec_U3C_ctorU3Eb__26_0_m85E990ADAC29EE84B910E54ED08386155C598B1D (void);
+// 0x00000117 System.String TealiumCommon.TealiumConfig/<>c::<.ctor>b__26_1(TealiumCommon.Collectors)
+extern void U3CU3Ec_U3C_ctorU3Eb__26_1_m3DCE7E90535CF1C89BDDD1ECB14C5CE52E24F75F (void);
+// 0x00000118 System.Void TealiumCommon.ConsentExpiry::.ctor(System.Int32,TealiumCommon.TimeUnit)
+extern void ConsentExpiry__ctor_mD332664C3AC08BCA9CA55303364081B65443C962 (void);
+// 0x00000119 System.Collections.Generic.Dictionary`2<System.String,System.Object> TealiumCommon.ConsentExpiry::ToDictionary()
+extern void ConsentExpiry_ToDictionary_m8DA828C893D8CE75F47E87BD3D15584512E5A570 (void);
+// 0x0000011A System.Void TealiumCommon.TealiumDispatch::.ctor(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void TealiumDispatch__ctor_m7E4216F5DCDB1D5BE531B44AFA86DF62E5C4D4E1 (void);
+// 0x0000011B System.Void TealiumCommon.TealiumView::.ctor(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void TealiumView__ctor_m8FB5B35B067228F18E34F035C1AB3016AABF4189 (void);
+// 0x0000011C System.Void TealiumCommon.TealiumEvent::.ctor(System.String,System.Collections.Generic.Dictionary`2<System.String,System.Object>)
+extern void TealiumEvent__ctor_m72902EEE58AFC9E9585BF338B52E9ECFA3340895 (void);
+// 0x0000011D System.Void TealiumCommon.TealiumLogger::Log(System.String,System.String,System.String,System.Int32)
+extern void TealiumLogger_Log_m0E48059ABCCD96E535135D35C37224610C8EE848 (void);
+static Il2CppMethodPointer s_methodPointers[285] = 
 {
-	EmbeddedAttribute__ctor_m90D0B6DEB625101355554D49B2EE2FB67C875860,
-	IsReadOnlyAttribute__ctor_mF1843241F60B2240CFAE651F1FD8A7AE17E32ECD,
-	NullableAttribute__ctor_m68337A4A4913B9D45F4B7249895084D57F47B445,
-	NullableAttribute__ctor_mDD67D1F687CC4C4A36E4E580AAC3AA2EB559CFAC,
-	NullableContextAttribute__ctor_mC9D42ADAC30424D8311831B59B21E77EB522453F,
-	UIBindings_Start_m9D954F6B918BE53FD95940BAF5A80A05D8F1D22C,
-	UIBindings_Initialize_m8438F9143A6F5E061E03427C7604C8E072EEACF3,
-	UIBindings_JoinTrace_m744F3A3B1C71827132459954BE54BBC7539A6979,
-	UIBindings_LeaveTrace_m306F0C416513763ED81D9D26384FF1D7AE31CE80,
-	UIBindings_TrackEvent_m27BDC3D69766E9D4E046B77C28D91B2F9368BFCE,
-	UIBindings_TrackView_m647AB16AE32C88AA72F2EA38485EE86578203CDB,
-	UIBindings_AddToDataLayer_m901CD2D81926E29B4D12C002B0A826105E5595DC,
-	UIBindings_GetFromDataLayer_mE4B598D52970C44C095B1D22D1B8C421928B5162,
-	UIBindings_RemoveFromDataLayer_mBE59E7B9E05F13E70D0607B8B4195C395C6346F6,
-	UIBindings_SetConsentStatus_m47EC4483D9590D4BEB7C93F820D86F41B1EEC2C7,
-	UIBindings_GetConsentStatus_m21C0142321FFA4641DF9D3C4965EFE538DDCA650,
-	UIBindings_SetConsentCategories_m1ADEF1F5D2B5451C9CADB9CE404546140B79C89D,
-	UIBindings_GetConsentCategories_mBE3054919A16DA8E25E520C62DDA7E4610644662,
-	UIBindings_GetVisitorId_mB35F1FB2E2423563C5CC6C230CDD2C8636E10DC7,
-	UIBindings_TerminateTealium_m79ACA9FC2E9AFC3D77BD62CB9C3440D8CEA0BBAE,
-	UIBindings_AddRemoteCommand_mD050A2B54C2CA7974062A992BB50C56AE6E17EFA,
-	UIBindings_RemoveRemoteCommand_m87087A795CA0E488AC93CF3E83399B14BC941961,
-	UIBindings_SetTraceId_m3CD957AFF0367C9DAC8C13850646EBAD6C546CC3,
-	UIBindings_SetRandomConsentCategories_m0E5F4B8EFF9844BA6E48CCBE48BB2DC3B6B88619,
+	EmbeddedAttribute__ctor_m68CAD82666F0FF415043D7DC217986AA2D3133D1,
+	NullableAttribute__ctor_m771BA0E8EFE1DD8AAAE9E2B867CCF4D3AE8834C7,
+	NullableAttribute__ctor_mA329224BEC75C65B8E9B5D81D7F5E769E22790E2,
+	NullableContextAttribute__ctor_m3F94BA00FB614574AC19D78E61DC0CA0AE15FCAC,
+	UIBindings_Start_m7FB089F04B037074321560CD7C068DFC183B2885,
+	UIBindings_Initialize_mCF2387374C0695A6A102A794F1E34F7CF6AE3705,
+	UIBindings_GatherTrackData_m668AF1AA89841A33336E8D966FB4F23A362D8673,
+	UIBindings_JoinTrace_m870F80D41E3CF9FF66C9080D1099B36E04F1D1B5,
+	UIBindings_SetUserId_m682BA046E97701212E33822B6423354717D9EF93,
+	UIBindings_LeaveTrace_mB84D065F5BBD0BB79E20A1AA582BD58DF9A4A110,
+	UIBindings_TrackEvent_m887A7AEFB1099139D193108B83C7F2EE50F9A5E8,
+	UIBindings_TrackView_m80BEEC916F219049A2189610E4426E7A9C892343,
+	UIBindings_AddToDataLayer_m5FEA4CFCA704B85CAA810EB8673BDFA0AA316751,
+	UIBindings_GetFromDataLayer_m2F7FB001ACB2BA722A6E623EA5EB3680A3CF392A,
+	UIBindings_RemoveFromDataLayer_mCD99641DF737B9E8CA663CC9C07D6B2434A084F5,
+	UIBindings_SetConsentStatus_m17C2F34DF7CDD390F1748CE104072E71C84B5B23,
+	UIBindings_GetConsentStatus_m8D089DE5B447D8328F1205E4448CB26DDA796986,
+	UIBindings_SetConsentCategories_mCC7155C5E042787A8142B8D70A264CDDDC8F559C,
+	UIBindings_GetConsentCategories_mA972765D4315287DAE81DC1EB72FF3685491A042,
+	UIBindings_GetVisitorId_m3823E56839118B12ECDAD8DD82DC1218E3DB4786,
+	UIBindings_ResetVisitorId_m647AF445FAE2A44B5318695339CC8C89F7017959,
+	UIBindings_ClearStoredVisitorIds_m3DCD3C125E3E60C0BCF14628C04314655E553C6F,
+	UIBindings_TerminateTealium_mC12A62159A1CCA962FEB6C8D562793A7A7A77CC0,
+	UIBindings_AddRemoteCommand_m231A70478AF51256F61250BDAA9B18104AADE585,
+	UIBindings_RemoveRemoteCommand_m864799EC8439F6D41BC22D63796E37B1022186B1,
+	UIBindings_SetTraceId_mFCA7C71AA8198AFA3E0564CB55B50D7DA8896B45,
+	UIBindings_SetUserId_mEC7E49DBD4AED4A9078BDFB9D47F25CE81605E38,
+	UIBindings_SetRandomConsentCategories_m645F123BF9ADEBF7B36A59A5292237C57790B92F,
 	NULL,
-	UIBindings_PrintPayload_mF90DFFBD8D8E484E538CC0E3C8673DDF3613A37D,
-	UIBindings__ctor_m0F23364E0E547D8579D90992B5E85322E67073FD,
-	UIBindings_U3CStartU3Eb__19_0_mBDA31E90CE50C9D6034C8B6732CF12D735A019C7,
-	U3CU3Ec__cctor_mF074DA0394FF1D6A38D7741A79ABC426AC42A066,
-	U3CU3Ec__ctor_m71412E00598501A56D91C7EF5E9CF731F20A6C75,
-	U3CU3Ec_U3CInitializeU3Eb__20_0_m77F67E531562167CB666D205F7BAD90B14FD154A,
-	U3CU3Ec_U3CInitializeU3Eb__20_1_m8B02AECC0A436E6F13437CB18D64CAD13EAF5A61,
-	U3CU3Ec_U3CInitializeU3Eb__20_2_m24AA25E5F5279ACE0592B650B4C4AF1EE526DAD4,
-	U3CU3Ec_U3CInitializeU3Eb__20_3_m3A6AD4676C834C2F2A9A32F50D495F6005876006,
-	U3CU3Ec_U3CGetFromDataLayerU3Eb__26_0_mE0314B58357BD59F97A923F624E76A207A091162,
-	U3CU3Ec_U3CGetConsentCategoriesU3Eb__31_0_m2D61AF39E273540056DF8158030FA6051D659612,
-	U3CU3Ec_U3CAddRemoteCommandU3Eb__34_0_m5D0D1EDA9E03153FC26FD9C850876424C3C9D21C,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
-	NULL,
+	UIBindings_PrintPayload_m4E4FBD3AE67E2EAAAE84DC2D2DC01459D6F24ACA,
+	UIBindings__ctor_m3330F63050A933FA0FC2B101625F87A53AA607AA,
+	UIBindings_U3CStartU3Eb__25_0_m59A8B4FCF7BBAC576710A35A80D1EDE113348CD6,
+	UIBindings_U3CStartU3Eb__25_1_m1C9E1B130CDB5E1501AC7D7FD90774DFC41350AF,
+	U3CU3Ec__cctor_m329E2417F6168750F4880FBD878A83EDFCBC0AF5,
+	U3CU3Ec__ctor_m7974777A8F8C0358664FBB3E86D29E5748D44CAD,
+	U3CU3Ec_U3CInitializeU3Eb__26_0_m87DE1B1E82F1DBC4FC5D225F7B7ADFE8A0003D7E,
+	U3CU3Ec_U3CInitializeU3Eb__26_1_mECD12E125D37D4591994B221B66CD50B591EEF37,
+	U3CU3Ec_U3CInitializeU3Eb__26_2_mF748A0CC7A1D96F3098438FAF9B482DF81089B94,
+	U3CU3Ec_U3CInitializeU3Eb__26_3_m6C738FC6E7392A55DFC44E5D681B090091386534,
+	U3CU3Ec_U3CInitializeU3Eb__26_4_mFB5FD9F30FB377CE1DD1F12F169D75CF518934A3,
+	U3CU3Ec_U3CGatherTrackDataU3Eb__27_0_m4293026AA45AA4FC5F2937B45191970D137BA2C4,
+	U3CU3Ec_U3CGetFromDataLayerU3Eb__34_0_mC4988EC73331B0BEEACA94D442F7B26930DB090D,
+	U3CU3Ec_U3CGetConsentCategoriesU3Eb__39_0_mC1ECEDD9698FD53600D3228BDDEABFAC8967D180,
+	U3CU3Ec_U3CAddRemoteCommandU3Eb__44_0_m830D23A0111A2FA9C6AE959AEC6CE7F69941E62B,
 	NULL,
 	NULL,
 	NULL,
@@ -558,554 +620,609 @@ static Il2CppMethodPointer s_methodPointers[252] =
 	NULL,
 	NULL,
 	NULL,
-	TealiumUnityPlugin_get_Tealium_mA72005D735B160353EB60AC4879D0C5E14443D26,
-	TealiumUnityPlugin_Initialize_m913F0E98587C5DCE332F304DF31F2DEB355D2E68,
-	TealiumUnityPlugin_Terminate_mF5EBB965654E5BCEF414723666651C8B4CB67BB7,
-	TealiumUnityPlugin_Track_mFB8FD7CDBFAC492172AB9FE8444AE379131DA79B,
-	TealiumUnityPlugin_AddToDataLayer_mCF204C868D999109267C9029A2AB0E244A661023,
-	TealiumUnityPlugin_GetFromDataLayer_m2CD07EF50616ACE373FF6447D990F77C6706B104,
-	TealiumUnityPlugin_RemoveFromDataLayer_m81A902535AF32B1FD400FBB43B515AEE94909157,
-	TealiumUnityPlugin_SetConsentStatus_m649EA90ABC1300557C5480E452FD34B5209060B2,
-	TealiumUnityPlugin_GetConsentStatus_m8D3E18B319C199C1502B75678C659530175214FE,
-	TealiumUnityPlugin_SetConsentCategories_m6A2BA59BFD4167CB7113877763287411BF916517,
-	TealiumUnityPlugin_GetConsentCategories_mB5C50638E67E8A4F0AC36516ACE59561A4804699,
-	TealiumUnityPlugin_AddRemoteCommand_m94867E331AE1E8B5B13E58FC35BE2C07817024A8,
-	TealiumUnityPlugin_RemoveRemoteCommand_m871638F3B0AC291CB5DE5457DD81EE5CB80070CC,
-	TealiumUnityPlugin_JoinTrace_mA742342384D7AAF7B73798B1E9CD2D8A716178BE,
-	TealiumUnityPlugin_LeaveTrace_m0F80ACD50A19F7220530E2E4E68FFB7521968F9F,
-	TealiumUnityPlugin_SetVisitorServiceListener_m52574E4BDFC76826C1054B4062C8A28DED41E077,
-	TealiumUnityPlugin_SetConsentExpiryListener_mC435C2FA1BE292D526396A0C46484A08FEFC4E5B,
-	TealiumUnityPlugin_GetVisitorId_mC32629F5F5894F2957A052E5514856D8F45424AB,
-	TealiumUnityPlugin_OnInitialized_m82F0A2E4D96DE573DDA321B3744ED0FFCAC3B6FE,
-	TealiumUnityPlugin_OnRemoteCommandCompletion_m615FEA22AB87DF7983DE602460C42D813DF61BD1,
-	TealiumUnityPlugin_OnVisitorServiceUpdate_m3616F974837CCB1FE9CDA3276BFC8D2534A05A2D,
-	TealiumUnityPlugin_OnConsentExpiration_m173024F00F3ABD6DD3FD0EACA7311B36B41879A9,
-	TealiumUnityPlugin_ConvertValuesToCollections_mAC11F22B332070A759E4AFD9108C6D2DD2E519CF,
-	TealiumUnityPlugin_ToCollections_mAC1EF585704EE84BC7A62EDD8D948E51048A9B7B,
-	TealiumUnityPlugin__ctor_mF1C9A97DA229A82A4DCD21C58CBB013B31D87640,
-	TealiumUnityPlugin__cctor_mA3311F40C3DAAE825D9DF4E07E3503C358B72DA1,
-	U3CU3Ec__cctor_mB948784F92FD98A8A5638A37812FCECFD6B8512B,
-	U3CU3Ec__ctor_m3F2768BF4C867E097429E110C2FE63A940E65F41,
-	U3CU3Ec_U3CToCollectionsU3Eb__29_0_m85615D42E45CA90854D939DB2C9220467D8CCD84,
-	U3CU3Ec_U3CToCollectionsU3Eb__29_1_mEFDC642C599CB23C2502261787B2C4FFBEC00E39,
-	TealiumAndroid_Initialize_m06A7AA8D6A4AC0C21563C74B4B060141E207E732,
-	TealiumAndroid_Terminate_mE3C7FE601DC2D63F3EA8B7BA85CA7B0469595CE9,
-	TealiumAndroid_Track_m586E4F12C76082D1F479441011B4A33D24D1EA2F,
-	TealiumAndroid_AddToDataLayer_m1AF60BA94516FF67A286015C5430BDA3FF670812,
-	TealiumAndroid_GetFromDataLayer_m45DA83359980F32DE4F2EC9AD4F206EF03064605,
-	TealiumAndroid_RemoveFromDataLayer_mBCEC7749ECECF3BE481F131922CB1CB065FC8A48,
-	TealiumAndroid_SetConsentStatus_m416537CA4B3BECA91B3F2F54BE9E71B1CF472FFE,
-	TealiumAndroid_GetConsentStatus_mABD4D58D539EEDB3C67E9D7BE3427F965A9928DE,
-	TealiumAndroid_SetConsentCategories_m16CE26A9E0AC6446A3BB5F3676243A9F83450BF4,
-	TealiumAndroid_GetConsentCategories_mA326970C99DC75CC36524CBA552B38801D0CB87B,
-	TealiumAndroid_AddRemoteCommand_mB3391D183792E04604C359EC5941B32B7A483E16,
-	TealiumAndroid_RemoveRemoteCommand_mD464B9E2F6276F91945F01500BC3B27D4A5ED21D,
-	TealiumAndroid_JoinTrace_m0B3D7E5CEF19E5A12AE552CE8D9A35577FFF0240,
-	TealiumAndroid_LeaveTrace_mC4060B658DBBE705B55D3874378FB6BBCEDE1B61,
-	TealiumAndroid_GetVisitorId_m5A3117203135268BE45BA7516A0548FA7FC9A89C,
-	TealiumAndroid_SetVisitorServiceListener_mADE7179BB488DE259266BC35C6CFA34ECB762149,
-	TealiumAndroid_SetConsentExpiryListener_m2F705815A0701BA4DFC9C82C98ED1460D797D0C3,
-	TealiumAndroid_HandleInitialized_m80C6E28D8A22AC3EC3090842C9DFAE8DEEC87BCD,
-	TealiumAndroid_HandleRemoteCommandResponse_mC796F917AE3917C4FCC2B990F850598C213C9341,
-	TealiumAndroid_HandleVisitorProfileUpdate_m893138FB0F59274E9DC1E0B4BC6F190C4EBB2D30,
-	TealiumAndroid_HandleConsentUpdate_mC73F0365DE96515907FD91195502EBFDB534BCE0,
-	TealiumAndroid__ctor_mBE6E43798F0A185C9071D58D94DDC796831F774B,
-	TealiumAndroid__cctor_mF4264D6241E1CFDE7CB77F640F0948EFC168A421,
-	U3CU3Ec__cctor_m75A9155CACC06491D2B5E4D9D1F8D6A74C7F3636,
-	U3CU3Ec__ctor_m797890F77A5F293A1E906C7546479CC368489277,
-	U3CU3Ec_U3CGetConsentCategoriesU3Eb__12_0_m3FE3C9B1F6FE26F890659A05D3F204FBC8F669CC,
-	TealiumiOS_Tealium_Initialize_m6086210F37EFD0951883AB06886A8F97B40620ED,
-	TealiumiOS_Tealium_Track_m0F2A0216C5A1678C1670397D454477704C6FC794,
-	TealiumiOS_Tealium_Terminate_mC4E4100F1A2BA2656A0D0AD3064473CB18DDF6F1,
-	TealiumiOS_Tealium_AddToDataLayer_m94C086E5F04BE9C57AAF955E3F58F79CECCEA58E,
-	TealiumiOS_Tealium_GetFromDataLayer_m1D6DF40D0E636D4DC8E4E27F18918D3E4047CAE2,
-	TealiumiOS_Tealium_RemoveFromDataLayer_m01D801D77436A48FE052F9BAC45C3F2D92DDCBDE,
-	TealiumiOS_Tealium_SetConsentStatus_mD685B32B49C9706F3550A4B2A43EB6D68D2B1F7E,
-	TealiumiOS_Tealium_GetConsentStatus_mCA2913864185BEE3ECD18548D5DF3A932C9310EC,
-	TealiumiOS_Tealium_SetConsentCategories_m98C891EF25ED6DA44D1EC6FA89CB312EF992E2A1,
-	TealiumiOS_Tealium_GetConsentCategories_m8A7DD850E54E55C107B2A126445C39EA67E09FDF,
-	TealiumiOS_Tealium_JoinTrace_m0C95E0A1BF285F72F3441446382F2B69E0481D2A,
-	TealiumiOS_Tealium_LeaveTrace_m6FA329E9210E2E0867C45336C5F46247ACB5E95E,
-	TealiumiOS_Tealium_AddRemoteCommand_mDB6CE6073A1D34BECDCC30524E7920ADD95A469F,
-	TealiumiOS_Tealium_RemoveRemoteCommand_mA946D4D659E18A2C393CEE4EE0A7E2891E56DD3E,
-	TealiumiOS_Tealium_GetVisitorId_m1DBCDF67C18D5ECE65737F9192F085E318777579,
-	TealiumiOS_Tealium_SetInitializeDelegate_mB801970B86537D841542DFD2BE6CC728F280FB84,
-	TealiumiOS_Tealium_SetRemoteCommandDelegate_m7C7BC6A6C048C0AC8943582ECE3C44925ED23D91,
-	TealiumiOS_Tealium_SetVisitorServiceDelegate_m57427ECDA3A0AC36EAC52534C0A3AEACC6E669DE,
-	TealiumiOS_Tealium_SetConsentExpiryDelegate_mB605727470979A48ACE05CFF314BF7D87E2A2448,
-	TealiumiOS_initializationResponseReceived_mFD32AC02F83B78CABEB108BA6DA3F3CF53EBE482,
-	TealiumiOS_remoteCommandReceived_m21FFC75B550A9A5301D143DA0DA208042DA9778D,
-	TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A,
-	TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E,
-	TealiumiOS_Initialize_m232846DFCD23518A9B61590FF132F3D32E678B7D,
-	TealiumiOS_Terminate_m351EBBE38F723B8EE0828ED3A96E654B1C8FFD06,
-	TealiumiOS_Track_mADE889D33D334B1A38FB2300383B478390364CBF,
-	TealiumiOS_AddToDataLayer_m758B22DEBC647D0F99377E2B55D0750BB98B7D45,
-	TealiumiOS_GetFromDataLayer_m6B769605B312ACCAE3A918FC86D14E7FFCA6C65D,
-	TealiumiOS_RemoveFromDataLayer_m8C1EB72DCB042C4C51138C13D42F9770710B69EF,
-	TealiumiOS_SetConsentStatus_m7D6BDBD7578C2DECBD9DCF1AD494489122F2EF11,
-	TealiumiOS_GetConsentStatus_m92FCB53D919685779C483805EBA19DAAD46E91F8,
-	TealiumiOS_SetConsentCategories_m9AC2EA86007CD07B5317A60B1CA37884AD1F0BD4,
-	TealiumiOS_GetConsentCategories_mADA9D136B6BB65334B7200EDEF1724DC8DB57E3B,
-	TealiumiOS_AddRemoteCommand_m43E04556DF01CE2CF420494816194110D41FC7CD,
-	TealiumiOS_RemoveRemoteCommand_mCC31CF8EA549018CAEA589A3554B40613039AA51,
-	TealiumiOS_JoinTrace_mFE415D00C7605244965F1C29CB8B6BDDCDBE1E37,
-	TealiumiOS_LeaveTrace_m106302952FC72235E1CFF57AD6B720FC0422164A,
-	TealiumiOS_SetVisitorServiceListener_mE593057CF1AF1D42EFA02F5A4D768995C919BBC0,
-	TealiumiOS_SetConsentExpiryListener_m3E813CBD7977626D350BE40CB678DD6B77B04CC7,
-	TealiumiOS_GetVisitorId_mCDD858BEBA7D1D35D29EB28B96070230A905DAE8,
-	TealiumiOS__ctor_m09D87239559A5060FD5EA758A3C68F7E7C6AAE15,
-	InitializeDelegateMessage__ctor_m8EC9122E0BB661FD268F8A13AF2D52E8ACB1DC3D,
-	InitializeDelegateMessage_Invoke_m4E2B3326526F9F147BE1C2A7A0F97CB3D1E24F81,
-	InitializeDelegateMessage_BeginInvoke_mB7EC0B34FEB759583C3439C0A3CED3FB42DE3173,
-	InitializeDelegateMessage_EndInvoke_mE369FE13FA0F9413B6F2EAEAEA0B0B2EDBBB367C,
-	RemoteCommandDelegateMessage__ctor_mB216BDD9084AB97D12A9E8E13AE891B3044BECDE,
-	RemoteCommandDelegateMessage_Invoke_mC71691E0FBA7273E4E68CD7F6BDFBCC45E07EB85,
-	RemoteCommandDelegateMessage_BeginInvoke_m90F921535EAC3936825F67EBE1DCDF5822CACEE4,
-	RemoteCommandDelegateMessage_EndInvoke_m93D1D0D6DF0C50893FE6275FB50A6AFA2AA8D647,
-	VisitorServiceDelegateMessage__ctor_mE8D6105D5AC79C2D07D1307DCA348191B9F27709,
-	VisitorServiceDelegateMessage_Invoke_m17FF8549470F8A115992C23AC901D3B6D0B3BE51,
-	VisitorServiceDelegateMessage_BeginInvoke_m02DDC2B6E78C646D56FDC896C2038DF4F7D21FA4,
-	VisitorServiceDelegateMessage_EndInvoke_mE72C723E1F65E4FA8ABB2263BFF4EA42847A2573,
-	ConsentExpiryDelegateMessage__ctor_mCA8766719329F8E72D113FDB299728BA9A9D6C7E,
-	ConsentExpiryDelegateMessage_Invoke_m31FB8AC73D4DD3A1900AFD06408F52348AE67DAC,
-	ConsentExpiryDelegateMessage_BeginInvoke_mE82E15D6B50C720D95B275AD232549CFB8A2FB65,
-	ConsentExpiryDelegateMessage_EndInvoke_m969FF45AB9EAA369E70167F2E085364CDC8F9E14,
-	U3CU3Ec__cctor_mEA12D1A326444B1594D31859845A8D4D86B90B7E,
-	U3CU3Ec__ctor_mEB9A7AD400871916B64BFAC69B0157190FA9985F,
-	U3CU3Ec_U3CSetConsentCategoriesU3Eb__35_0_m243A5475AC4AE336485DCF0F6DDB323860999590,
-	U3CU3Ec_U3CGetConsentCategoriesU3Eb__36_0_m04FF432724ACF6B0FCDE911B3414AA8D97AD216A,
-	Collectors__ctor_m8DBB433DFC8F199C9FE8816467D3AC0F2EF0D7E1,
-	Collectors_get_Value_m7CB4523847C24898D8AC9E95A752C2D8842B7A98,
-	Collectors_set_Value_mBAF5D968C86DCE6422E016A9CE2B21065F07CEC8,
-	Collectors_get_AppData_m56C0A08F30EEF9E94B5DF915ADFDE539EB0A4653,
-	Collectors_get_Connectivity_m09980B52E66B81C19F9BEBDC41BC9E41BD0E0D2A,
-	Collectors_get_DeviceData_m8CB803E652FB3CA9CD01FB96221C6174A9C7027C,
-	Collectors_get_Lifecycle_m124496CC136AE20C4E6F32C9C6FE81BDB7F90E55,
-	Dispatchers__ctor_m86B83DEFBEECBC3DB4C0DD85FB51A168818BAE8A,
-	Dispatchers_get_Value_m9C0BC6232E3855BA51505E134824E0C7A4CF7024,
-	Dispatchers_set_Value_m399A47BEB4BE4ACD6BC4EACE7E6C4F218F472B54,
-	Dispatchers_get_TagManagement_m5462DD5EEA23CE9E4E562F999B425F9CD3CAC414,
-	Dispatchers_get_Collect_m669B7341EF64EAC1A1A07D2A904BAB3B44ECEE40,
-	Dispatchers_get_RemoteCommands_m406D223AF76C93AC192C7FF1965CDC2BBC96C799,
-	TealiumEnvironment__ctor_m9092842A176D8DBACFD540B9A835D46EDCABEDCC,
-	TealiumEnvironment_get_Value_m81A23B2C828461341ED1F66B5F47F544DA753F14,
-	TealiumEnvironment_set_Value_m4422E19AA62EC0D931C10CA1287268EADA8EE10E,
-	TealiumEnvironment_get_DEV_mAC5432831E1A4370C1C49CEE14A6459BEEB255C7,
-	TealiumEnvironment_get_QA_m51840CD2A8FECEC4A7F27DC89015CB8BFA613F5A,
-	TealiumEnvironment_get_PROD_m883A024A8C4A2CAB361BFD6C72BD7BF6AA5575B2,
-	Expiry__ctor_m54CFE019A4DA755BE983CCD8EED6990D3F34EF9E,
-	Expiry_get_Value_m6A95A610D4E16816933447F6490ABB5C8C971631,
-	Expiry_set_Value_m929623E377B6B129D31E26D0625BF85F880DFB85,
-	Expiry_get_Forever_m4351AEE1513AD854D3902AD4CC9AA9E799901DE1,
-	Expiry_get_Session_m28BFC06B2F68B71CEEE1E55D2796D781268BC082,
-	Expiry_get_UntilRestart_m2D92DDFD6E92F5B84B0E135C1D5C70EC82411C81,
-	ConsentPolicy__ctor_m883D1772B6DC1B2CC556B0688C1940BD2B055BA9,
-	ConsentPolicy_get_Value_m700480FF9763316692F22F0C79809DA6FABA21E4,
-	ConsentPolicy_set_Value_m41BDE1036488E24B557E26A5E0A3357C8C5122CC,
-	ConsentPolicy_get_GDPR_m317125775D06AA8D73DCE481F573B6AC6B01BD58,
-	ConsentPolicy_get_CCPA_m557BF05FBB917143DCD9FAB6ABB1A6B9CF6FAC8E,
-	ConsentStatus__ctor_m1842D4BA15B3C05AE0DE9E5F5E5F6FA365BE51E8,
-	ConsentStatus_get_Value_m3D4D2B61997537368BC42C33003E0B2B1C207683,
-	ConsentStatus_set_Value_mF4FE346EEB21A01DA59C1C45CB4E99E062A80CDC,
-	ConsentStatus_get_Consented_m9F182B2BFCEC85B322FE586C14E862268023924B,
-	ConsentStatus_get_NotConsented_m5439446A386ED9BC7E4B1EFC501939391C90A6DC,
-	ConsentStatus_get_Unknown_m3903C09D80D387353EBAD77FAB82EDB7AA2E889D,
-	ConsentStatus_FromString_m1E77641115BA8DCAD74A87116738A49EC43AA257,
-	LogLevel__ctor_m21898976F9EF3BE1FFDB9543BE19999FB89DCA5F,
-	LogLevel_get_Value_mCF3B4A73A735B2CB296365785A5C148F8A5C867A,
-	LogLevel_set_Value_m9D4F6B3EC2D90FFFBC9E375E8A33132AED68AEBF,
-	LogLevel_get_Dev_m09265C557CEBB98A324592A0DC4031D9B88E6086,
-	LogLevel_get_Qa_m99D5B4AC0FA1FBF332EE90A7B0E722BF3699FD99,
-	LogLevel_get_Prod_m2953E44D9D100DAF94CC3C2A24B5B01193E16441,
-	LogLevel_get_Silent_m1299B4432100097EABC387425CB2787C695080E5,
-	ConsentCategories__ctor_mE72E045332AE352255B629B960913807473F5F2F,
-	ConsentCategories_get_Value_m6AC4948877BE59ACB65340ED08ED4C1F7F80351B,
-	ConsentCategories_set_Value_m48C542BBD20842573BCA38C2510E8A941EB17088,
-	ConsentCategories_get_Analytics_mFB7F944B155E5FD2AC371BA373A67C5D98451099,
-	ConsentCategories_get_Affiliates_m51797C8F31AE4279EAC5953A312FCF34097BDF60,
-	ConsentCategories_get_DisplayAds_mF661FABB32D8621526EB4B5616BD82DD6A6224DC,
-	ConsentCategories_get_Email_m90664A06DE11C50AF7A1A605D4CAF81F10CAD684,
-	ConsentCategories_get_Personalization_m641C099080A09652B242A7F93AB954CA1730D3AD,
-	ConsentCategories_get_Search_m1A5A139A927CB0C28EB88DA9886E2D2C511C33C3,
-	ConsentCategories_get_Social_m02DF3DCA364AF20401B05A6D9B98F01AE1A2738D,
-	ConsentCategories_get_BigData_mE6AD596B99DA0238159BCA18549F3EEF49D1D58C,
-	ConsentCategories_get_Mobile_mDAD77858F7BC12C25018BA3CFF9A443F808A18AD,
-	ConsentCategories_get_Engagement_m90A0E3408E18783A443F7A67A7EEC445E8A49819,
-	ConsentCategories_get_Monitoring_m49729A17DDACCA0DDFE15064761F08AF5A35E2A7,
-	ConsentCategories_get_Crm_m742A4A10D60CD48C37EFA1458B4008205AA20BB5,
-	ConsentCategories_get_Cdp_m6485C5EE8D1298EDEB064566F14AB034BDD71441,
-	ConsentCategories_get_CookieMatch_mA10F6D6101051D6B218DFE6A0EEAA789D68B0DE1,
-	ConsentCategories_get_Misc_m52C17D4409A1F6C575BCD4B5B793A0BC1BB086D0,
-	ConsentCategories_FromString_m30E4BE300014257DA586FB1FDE3393940EDA57E5,
-	TimeUnit__ctor_m01FA07961D35C715E75C3D480EC4D1DA48DFAE0C,
-	TimeUnit_get_Value_mDD9318B291896F8BFE81DE34D0589734648BBF16,
-	TimeUnit_set_Value_m6A402797AEE22FAFF282663636940F8FE5265682,
-	TimeUnit_get_Minutes_mAE175904122EDD9D48D1586ECD46A670932C9EF4,
-	TimeUnit_get_Hours_m011C0A4DCE507156D067618C04BBDE83DB76B107,
-	TimeUnit_get_Days_m98DC3CC69CFA7E70F95611139A73FE918C4AAE79,
-	TimeUnit_get_Months_mFCBE54498CF350B9BB940F077AD3A16BAEFD32D0,
-	TealiumConfig__ctor_m7DC0B665A00972A71FCB9ABDD273A4068DC7494E,
-	U3CU3Ec__cctor_mFA4784C648F383AE42C423A430EF993E5CBBF938,
-	U3CU3Ec__ctor_m0119CCE9D9644CC5907E3F4A03865A538C5CF088,
-	U3CU3Ec_U3C_ctorU3Eb__23_0_mA8ECD1ED7CF37D021F1C0CFCD712476C18899163,
-	U3CU3Ec_U3C_ctorU3Eb__23_1_mEF9B9FA48C49BC3E8A527A299A4C8ECADDDF5C16,
-	ConsentExpiry__ctor_m8D1D3E391303F62104EF37445736A34730F3BF64,
-	ConsentExpiry_ToDictionary_mC66BF120FA7AEAD47E41138A54E3D2D2C1D91EF1,
-	TealiumDispatch__ctor_m1DEEC163E6F6EEA5AE944830C75FDF2CEAFC4E0D,
-	TealiumView__ctor_m37A3995717F1DA0343C2834782A50B3BAB694CD0,
-	TealiumEvent__ctor_m10ADB07BFC85DBA816B2D6CA9742B4B454B98A7B,
-	TealiumLogger_Log_m6E92D221280CEE0829C99535D817613A6BEDD8E4,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	TealiumUnityPlugin_get_Tealium_m41D46497AA1FE25342AFFC24AA097B0F3093C975,
+	TealiumUnityPlugin_Initialize_m49FC9A9808B2E6E182C66874812BFDDA104E10E8,
+	TealiumUnityPlugin_GatherTrackData_m954DF61C0DC4F7DD897BDF7613C67D241DF7C5DB,
+	TealiumUnityPlugin_Terminate_m0A3863FECCD06B13494805FC96DDDE3D6FAB34B7,
+	TealiumUnityPlugin_Track_m919E9140D60E124001C1A580874A19B149A2D28E,
+	TealiumUnityPlugin_AddToDataLayer_mA6F02FB3EFF47F65F87CB40BE53894E934E3A8C6,
+	TealiumUnityPlugin_GetFromDataLayer_mFCF894F6A355FF2B13480FE703514EF43F9929D4,
+	TealiumUnityPlugin_RemoveFromDataLayer_m0BE1B6CFF4B70BC749EE148618337CD0EEE50B7A,
+	TealiumUnityPlugin_SetConsentStatus_mF086AFADE14D009EFA71BE0B81AFD6AD53F850AF,
+	TealiumUnityPlugin_GetConsentStatus_m4CCCC5EFEDD9DBEAA27E5056695407C89189C167,
+	TealiumUnityPlugin_SetConsentCategories_m472980355B2D7E62BA24E231896C3933BFBDD5C2,
+	TealiumUnityPlugin_GetConsentCategories_m789F9A52A53C20DF4A88F2DBC524506444A860EE,
+	TealiumUnityPlugin_AddRemoteCommand_m456E6BE64315E28895478DA79BC8FC58554E3C20,
+	TealiumUnityPlugin_RemoveRemoteCommand_mC9EF56E70CFF3AEB660D98BE7938122FBBCB59AE,
+	TealiumUnityPlugin_JoinTrace_mC6F2229C52EF5C1E539FF4DC887B3D607FA64002,
+	TealiumUnityPlugin_LeaveTrace_mE97A6D02E208014595278A834C2C4AEAED14A295,
+	TealiumUnityPlugin_ResetVisitorId_m277EEAA569A79065AB9E10090EBE4BDBADB0E319,
+	TealiumUnityPlugin_ClearStoredVisitorIds_m5B68A6B2F8AB5B12D5E39E4987C7B89374FB591E,
+	TealiumUnityPlugin_SetVisitorServiceListener_m80E54F260DEA3250721DBBBF8FBB69B5A9343E68,
+	TealiumUnityPlugin_SetVisitorIdListener_mA232EBF8511A7AEF3688D0DE381CD86F9DDE5F5D,
+	TealiumUnityPlugin_SetConsentExpiryListener_m0F576829D95789D9D5FC405D58180BA996958547,
+	TealiumUnityPlugin_GetVisitorId_m319CC9DD00AEF7C7ABB476627C0B4864CA1F55F1,
+	TealiumUnityPlugin_OnInitialized_mE72F033E1403D024D70A3AEF37C138EB0674FEE8,
+	TealiumUnityPlugin_OnTrackDataCompletion_m3EAF8C8C0E3F27392682D83C8116BB62B4D7A489,
+	TealiumUnityPlugin_OnRemoteCommandCompletion_m856DE4571F801B738DE1FEAB17E07E335A84D11D,
+	TealiumUnityPlugin_OnVisitorServiceUpdate_m6D8D74A4692AAA41B2BE7621995C0DD5252E6E6A,
+	TealiumUnityPlugin_OnVisitorIdUpdate_mD1B534C0FB0508EAC86EAAFF7011566372BEDF16,
+	TealiumUnityPlugin_OnConsentExpiration_mA2B29815EFF88B8C52F9DFA7CB8B64A1A992AC02,
+	TealiumUnityPlugin__ctor_m49061CC842C2159749B2CE035C63C79D345E2DBB,
+	TealiumUnityPlugin__cctor_m0AEFE137AD5DF02894BF90A9F58E48EF5D7DA83C,
+	TealiumAndroid_Initialize_m1828E626E424780FFC3DA81D0628C7CE3D6A6B11,
+	TealiumAndroid_Terminate_m6E6015E5E48F7F3D628743EB3BB5B2C3D82357A4,
+	TealiumAndroid_GatherTrackData_mE65B450E7F8AE37BB63D2A2F8623D44AD0717266,
+	TealiumAndroid_Track_mA6E83FE052C7931D6E94123552FB3DA94D61F757,
+	TealiumAndroid_AddToDataLayer_mDA4B15C6D6FDE9A97037A3F0D7C682FDCCCCFD6D,
+	TealiumAndroid_GetFromDataLayer_m262B00F915D821CB8C36B5EF79C5D30F29110639,
+	TealiumAndroid_RemoveFromDataLayer_m1FDEBEF1880305BC2E86E59EAE3B39023A291237,
+	TealiumAndroid_SetConsentStatus_m2FB577FC0B2D6A9D07256727F7C164DFCE717120,
+	TealiumAndroid_GetConsentStatus_m24373730E3023411ECB988C54C2A89699C713597,
+	TealiumAndroid_SetConsentCategories_m7F2CBE1DD28D2A7C6B9D40F085EDE32924BB1D7A,
+	TealiumAndroid_GetConsentCategories_mD7CE9D804F68EF72B1C65D82D922395B4F6118AC,
+	TealiumAndroid_AddRemoteCommand_m5BA048E00109D2DBDC7F8C4C8DC690211AFB4F11,
+	TealiumAndroid_RemoveRemoteCommand_mA102E475630F6E58001225BFF6570313519C2E68,
+	TealiumAndroid_JoinTrace_mE05513E76EBFA9AEC91224EA34C28449A888AC7A,
+	TealiumAndroid_LeaveTrace_m892EAB08CF792F2C39523FBBE471971A6F6D0F50,
+	TealiumAndroid_GetVisitorId_mD7F7E5C11FA697033DB9D945CF867C0990E17FA4,
+	TealiumAndroid_ResetVisitorId_m5FEC08A603062A6F470BB750E31567ECCB45815E,
+	TealiumAndroid_ClearStoredVisitorIds_m69E2164B72081900A3F9926124D18C814D92B079,
+	TealiumAndroid_SetVisitorServiceListener_m05460292DD7BBC5935D8A4E0E1301BD812190348,
+	TealiumAndroid_SetVisitorIdListener_m8538E7264E0FCA4E9F4AAB4E97B5E46EEE27C1E6,
+	TealiumAndroid_SetConsentExpiryListener_m361A39446A4BD98D8FE7EB84B29BC15B6F0879EA,
+	TealiumAndroid_HandleInitialized_mDE0D36057D3358E20A84970D518DC5AB952D27C3,
+	TealiumAndroid_HandleRemoteCommandResponse_m4B76B2E06F847D59CF47F3E8E1A794B9CF4D3110,
+	TealiumAndroid_HandleVisitorProfileUpdate_m5894AC20E9CFAA6FC257BE43AC7A861376D03C53,
+	TealiumAndroid_HandleVisitorIdUpdate_m28B7830DE5D6470D2703B8A36AC85A65FD5C6A27,
+	TealiumAndroid_HandleConsentUpdate_mD4394DCEF3DA68BAFC9187DC8EFE9900F6D51465,
+	TealiumAndroid__ctor_m288AF3B011F719309F1E79C6F74A71F6705B4DF1,
+	TealiumAndroid__cctor_m4F9D9834C4A078B931E8CDD9204F06ADC9A7E62C,
+	U3CU3Ec__cctor_mB50EBAA8FB6B4D37BDD383B619A29731F32C9FFB,
+	U3CU3Ec__ctor_mB38E6A167B30DB74185A5682849BD4D2E7DB5010,
+	U3CU3Ec_U3CGetConsentCategoriesU3Eb__13_0_mBB45CC61C3BEF44B96AD87D9AB64C17353450EE8,
+	TealiumHelpers_ConvertValuesToCollections_mB7257650666D2F6BEDAB2E9B828F8E2F3D3B6E2B,
+	TealiumHelpers_ToCollections_m4AF35491F82921852716D469AA56F8EE7CE170CD,
+	TealiumHelpers__ctor_m50750B2515CC0F8BA453B838DFB1EAE3118FC16D,
+	U3CU3Ec__cctor_m56503C327E1217E914C0BF912A07F19D54C9E9F9,
+	U3CU3Ec__ctor_m0746FEB2A7CF90575D1385CA6877841F26758BF8,
+	U3CU3Ec_U3CToCollectionsU3Eb__1_0_m6E68A0445A52E43AF175A8CB3B06FEED84E54D9D,
+	U3CU3Ec_U3CToCollectionsU3Eb__1_1_mC001C768BA3C1D752AE305AB4CE2A47BC2426AEF,
+	TealiumiOS_Tealium_Initialize_m6D78B13861BEE5808D110D68B550B589E5FB920E,
+	TealiumiOS_Tealium_GatherTrackData_m01B216ABF9558A35EBD535496748350D4D79C23E,
+	TealiumiOS_Tealium_Track_m11E26B126340D7D9CB6773036379F61FA19DFE12,
+	TealiumiOS_Tealium_Terminate_mE832FDE56B336FCFEE57DEABA541F55BB769CE96,
+	TealiumiOS_Tealium_AddToDataLayer_mB025E55B2AE01CCDA1C15B72BB7B1966593AAEDE,
+	TealiumiOS_Tealium_GetFromDataLayer_m2484B30DE85147CE9BBFB99824DE93788F4FA017,
+	TealiumiOS_Tealium_RemoveFromDataLayer_m20617DB6569E93E4D8DA38E4CC646F28878872E6,
+	TealiumiOS_Tealium_SetConsentStatus_mACED6DD8BE4336920C3E420382E386C2F6B774DC,
+	TealiumiOS_Tealium_GetConsentStatus_m168F0CD8B7D0677E51388AD9D11FBBA17C93A306,
+	TealiumiOS_Tealium_SetConsentCategories_m831C23309031557176184140F7064A01B164FDE8,
+	TealiumiOS_Tealium_GetConsentCategories_m49FD58EB0FB14EB06FBF10D451AC3DC62E6C2461,
+	TealiumiOS_Tealium_JoinTrace_m2AECF0F1E56A2DD431566775E66ED3057A187EE2,
+	TealiumiOS_Tealium_LeaveTrace_m564310E815DE43C6BB73BFF02DC36E734F509034,
+	TealiumiOS_Tealium_AddRemoteCommand_m1D64693B70D88B962D17EE0A26ACCD190BB381F2,
+	TealiumiOS_Tealium_RemoveRemoteCommand_m402F861C02D6CF13F4D100B88ECD99A1A873B0DC,
+	TealiumiOS_Tealium_GetVisitorId_m144D92893184B66BBBFC40E697D9E87AD5D1B1EE,
+	TealiumiOS_Tealium_ResetVisitorId_m0A5AFFED5D5A38A46C26C3F9021010E8908C1A30,
+	TealiumiOS_Tealium_ClearStoredVisitorIds_m6B96CC26E6EE0BB3E0BCC583C98C371CAC5D8AFD,
+	TealiumiOS_Tealium_SetInitializeDelegate_mF721BBECBD2DEC8A69FAEF22A56FF009CFCA7551,
+	TealiumiOS_Tealium_SetTrackDataDelegate_mCD34C90BC8E605B2AF89B0FAB1A46A6BED5E45EC,
+	TealiumiOS_Tealium_SetRemoteCommandDelegate_mE14F585CB49F84C8745BE1583350648F5BF051CC,
+	TealiumiOS_Tealium_SetVisitorServiceDelegate_m3E964BBD848EC7B72FF1C67D12C126B17C142E93,
+	TealiumiOS_Tealium_SetVisitorIdDelegate_mB9730BE8ECF95AAD115C5C254468B94C51D5FC66,
+	TealiumiOS_Tealium_SetConsentExpiryDelegate_mD76441C9FBD15CE88916240FBD8561D2B8A52398,
+	TealiumiOS_initializationResponseReceived_mCE75DDB10DB04C7CDAD5C79E686AC95444689C45,
+	TealiumiOS_trackDataResponseReceived_m560E76CDB97474A552B4663D703FBF7A4823CB3F,
+	TealiumiOS_remoteCommandReceived_m329891AE490BF9E5B99477B569A5AE881D646737,
+	TealiumiOS_visitorServiceUpdateReceived_mF7CCAAF7184EF435DBAF5FE8BE8AC7576252514C,
+	TealiumiOS_visitorIdUpdateReceived_m5F95C7CF4F502243CB62C15DC4FFA7A5DEF61176,
+	TealiumiOS_consentExpirationReceived_m6BD20EBA076AD8F9F17576B2A4ADC0821095F351,
+	TealiumiOS_Initialize_m35E07FF65685A5A8EFA487DDE2107683C501BEAB,
+	TealiumiOS_GatherTrackData_m6AA155E750D3BE9E340997209DC362925AA7F1B6,
+	TealiumiOS_Terminate_mFBD71ED3433D3BD0291E23F2F3588D125D99D8E9,
+	TealiumiOS_Track_mC09B2B27F2072F59D1DFB2C00DB3BDC976236F23,
+	TealiumiOS_AddToDataLayer_m2EAAD1E3FBCFA0805A4F14C031DB9F2583F5B2C0,
+	TealiumiOS_GetFromDataLayer_m5E78AD27E9F3ACC1454A36604195B75AC299AF49,
+	TealiumiOS_RemoveFromDataLayer_m4B22C6033E3128FE32D03D4D1DFF25AD472E8D45,
+	TealiumiOS_SetConsentStatus_m931EE7D4DB87B0923DF4B30F47A28FC08D132E43,
+	TealiumiOS_GetConsentStatus_m785A858267643AE054ADC4D5340CDAD51C631844,
+	TealiumiOS_SetConsentCategories_mB59DD9C390A2D6B8DE078E241571F8DD6497E8F3,
+	TealiumiOS_GetConsentCategories_m6372B7701DB04D6770CB8C7ECAC6AE41E103EC65,
+	TealiumiOS_AddRemoteCommand_m3F73A2EA4662D9B68983F86E7CE4544E79710940,
+	TealiumiOS_RemoveRemoteCommand_m62B161B0AFB21B82DD11226D795E1B9E8E1BF6E5,
+	TealiumiOS_JoinTrace_mB52483A13F10A1462E45E7C0FD97A0116651AA88,
+	TealiumiOS_LeaveTrace_mD0C6BF63E3AEDE6DCEE14C5C3F4F1E28A757C84C,
+	TealiumiOS_SetVisitorServiceListener_m9F8407CDE2868A7E136B7ED88CDB3CD8F72CCF09,
+	TealiumiOS_SetVisitorIdListener_m3A31845AA13C689B15A5DF0C3FA3DCA3EA26B3D1,
+	TealiumiOS_SetConsentExpiryListener_m79F36E72DC3BF60965BDEAB7044231F31A8E711D,
+	TealiumiOS_GetVisitorId_mD4FD83DA792191A8573F3FB7ED09F1CBBBC2E818,
+	TealiumiOS_ResetVisitorId_m424A9634B97ACDBA9AE9641DA50948BC7E08E8B2,
+	TealiumiOS_ClearStoredVisitorIds_m57A6D1A3C0A61A0242AEF10F019A73F93CBA1B63,
+	TealiumiOS__ctor_mC006D8000F41ACEE84B653997CE8FD1285A41910,
+	InitializeDelegateMessage__ctor_m5193EF114A6EC0775EB25209E86DB351E468ACDE,
+	InitializeDelegateMessage_Invoke_mF9ED60B40B57137D798A609F78CC2972CE0B82F7,
+	InitializeDelegateMessage_BeginInvoke_m4973EA42DD2361179954C12082E7BE35559F3990,
+	InitializeDelegateMessage_EndInvoke_m5653C88A603E6CF33DDA82D27CEE9BB6E3384037,
+	GatherTrackDataDelegateMessage__ctor_mD103B8C05626377B3E931C21E58819C3C1EEF63D,
+	GatherTrackDataDelegateMessage_Invoke_m51B0CC593B2C5424031F59130C29423314B69093,
+	GatherTrackDataDelegateMessage_BeginInvoke_m18FE6990250290256C29104356AB761745DCC830,
+	GatherTrackDataDelegateMessage_EndInvoke_m0B1545E37F772871D14EB4F27DBB5DE6AE03B6B6,
+	RemoteCommandDelegateMessage__ctor_m690F781D07DAE8CCD06C049C2DB780FB4C135C05,
+	RemoteCommandDelegateMessage_Invoke_mB0DE38077C76C48052256CFC3BC18348F96BC8D6,
+	RemoteCommandDelegateMessage_BeginInvoke_m6E11E16D78EDCB33937452854AF0A9949D10E772,
+	RemoteCommandDelegateMessage_EndInvoke_m018AE329B8A4F41B08627D472DEB3B92A3E4E798,
+	VisitorServiceDelegateMessage__ctor_m11F6DB372B8AFBDB5A3F7F6D94B40EA18A934BB0,
+	VisitorServiceDelegateMessage_Invoke_mA0BE726CFF122334A4F2B5F4D5194F3F946A7D73,
+	VisitorServiceDelegateMessage_BeginInvoke_m10840D4F86588A229DABB87B0295B25133CD779C,
+	VisitorServiceDelegateMessage_EndInvoke_m3185BE95335AD977FDDDC86F791377DD5C989F53,
+	VisitorIdDelegateMessage__ctor_m6FFDA8234390CD8336338CBB89AFCA098CCF0242,
+	VisitorIdDelegateMessage_Invoke_m28A79395060EA04A7108E4AB2F231468F41902DE,
+	VisitorIdDelegateMessage_BeginInvoke_m42AC4994A491FDF0C3A97182952199D42B335CE7,
+	VisitorIdDelegateMessage_EndInvoke_m84E9A41842FE5972E6391A407FA27E33C644C82D,
+	ConsentExpiryDelegateMessage__ctor_m7DF92C1E7D9C4EADBB616ED3A73E7F1E54FCE31D,
+	ConsentExpiryDelegateMessage_Invoke_m378EABB8D1F38E87099EEFABCB7C3B65ED9B5E57,
+	ConsentExpiryDelegateMessage_BeginInvoke_m048CFCCFF5EEE609DF7C37DCD1CBBC85E4550254,
+	ConsentExpiryDelegateMessage_EndInvoke_mF7223221222C46394532B62A4BB2E252AFB3BEF3,
+	U3CU3Ec__cctor_mF06F39108624357800B12F8CA19F2506D4A62F39,
+	U3CU3Ec__ctor_mCDAC4DF3F94667DFFC4FF3419B8EE33824370676,
+	U3CU3Ec_U3CSetConsentCategoriesU3Eb__45_0_m4A080CF0BD2466B4BADD90019AC7D920045FDCC6,
+	U3CU3Ec_U3CGetConsentCategoriesU3Eb__46_0_m8FAF2C0A602D98BACB9D4843922065654AD83663,
+	Collectors__ctor_m22A5162195E73249532143A5E818EF095C734390,
+	Collectors_get_Value_m7EF29A25B40E5407A78983F99764E17B59797B31,
+	Collectors_get_AppData_m26EE636746A30E978145CC9324022044DC905801,
+	Collectors_get_Connectivity_m984412DD173B3C7BB0F7C9EDFD74472532214ABF,
+	Collectors_get_DeviceData_m0BED8184A8CBE7D4BA62D6E2EAA42CACCDF802E0,
+	Collectors_get_Lifecycle_m0D29A90A8C9F1B9A861517A600C3ECB1D26BE623,
+	Dispatchers__ctor_mE47EA330081AB8F5CB35121072C60E5B92F52CF3,
+	Dispatchers_get_Value_m96FCCE34072659185FBD13A9519521C44C0A43F4,
+	Dispatchers_get_TagManagement_mF964086A3430D2820F6527C74A33C699880D6D9E,
+	Dispatchers_get_Collect_m7FC4FF6005F3CF7044E5DA4248BAA05E11C077DA,
+	Dispatchers_get_RemoteCommands_m79D50980C62B35C2DF2D4C991E1ED44C98045952,
+	TealiumEnvironment__ctor_m682BD689369C468F4F88B0133B36C48213DB89C4,
+	TealiumEnvironment_get_Value_mC7C745C0C23BBA867FA6107B2207D687D003E817,
+	TealiumEnvironment_get_DEV_m750F4205DEA1FB0997D2679DC922E23FCFA88F1D,
+	TealiumEnvironment_get_QA_mB2F75C76643CB2D492D594ED6F338E49F4C06134,
+	TealiumEnvironment_get_PROD_mFED44A4A64CB0A1C8A9DB2263D749F4586CF3BF8,
+	Expiry__ctor_mE513C4D03326B522B5035F60CE499FC45FF3C36E,
+	Expiry_get_Value_m56499EE94F25D8F2FBB5115F297A9C1E86B3FF9F,
+	Expiry_get_Forever_m51111E2BC326615AA5C50AB53AAD52841CFB3965,
+	Expiry_get_Session_m5115FCDCE41DD5840531956E6D5BE2DAE6E2655C,
+	Expiry_get_UntilRestart_mF789F7DDA7E0AA83C4E1751E0735D70045D96380,
+	ConsentPolicy__ctor_mBFA656D0300BF0A550237B6AD50C97E4EB7F4EDF,
+	ConsentPolicy_get_Value_mE9BE72AF33A492C0DCE9D901954328AB329DBB80,
+	ConsentPolicy_get_GDPR_mCAA4862EB2E55CE12916B60EBF0CD8DA4F8EFD15,
+	ConsentPolicy_get_CCPA_mAD26271EFD773CC347E932B6503DA0DBF4006719,
+	ConsentStatus__ctor_m4DEB38B73AFC57F3DC8AF314CD76670B47BE3D0D,
+	ConsentStatus_get_Value_m2ADCDD2A5B6C65269758BC1FF5689F78B6646444,
+	ConsentStatus_get_Consented_mED13AF4E0E077E7FE26F2302A46484B6353435B7,
+	ConsentStatus_get_NotConsented_mC6E9AD785DD1D555C2E06536BA0ED9C82886A07C,
+	ConsentStatus_get_Unknown_mD535782567A2544056580CFDE174F1EA5286E808,
+	ConsentStatus_FromString_m4F01F1A9403B980A933807C3B1895410F0AE79B7,
+	LogLevel__ctor_mCD6C0933ABBDB87CB41FF4CE2F5858F032E27D67,
+	LogLevel_get_Value_m7190CB1FF14479332F21B2B5A9F3787D4BF7E805,
+	LogLevel_get_Dev_m69BD4DA6D02766F0B1B2D7F3A906562543981677,
+	LogLevel_get_Qa_m99EB1BE6AE4260F27745C5B7D467DD7897838A88,
+	LogLevel_get_Prod_m11EFCB5AF0FB55553C46966DE8EB14B062DAEE16,
+	LogLevel_get_Silent_m385FB6A7ED5DA9A13DDC19D942E21D73C3895E95,
+	ConsentCategories__ctor_m3627B27340085C053CDB134AEBBE32F05161FD0E,
+	ConsentCategories_get_Value_m4AF5AE221DCC4030E2750AD709B245AAFD94E0DD,
+	ConsentCategories_get_Analytics_mDF43FBF9C42E37437EF2ACB5275CA2280C2727B2,
+	ConsentCategories_get_Affiliates_mAFA01EBFE19FCCB678981D33573AFED3C8F9F315,
+	ConsentCategories_get_DisplayAds_m1DA237BDEEF1BF8E1527786983C01F5A0E29AA95,
+	ConsentCategories_get_Email_m74301EAA84BCF89E782EC24C5E0D88DA247023A6,
+	ConsentCategories_get_Personalization_mC7446AC6DB2C471027265652A47DB9BF4256F291,
+	ConsentCategories_get_Search_m4C6209308E7092010700693FB300921B63B6A9A5,
+	ConsentCategories_get_Social_m974F066476D190A5878AE90542A9B5246D95A6C3,
+	ConsentCategories_get_BigData_mBA0029A5B2CA045A60226D03E7563DCB63456EA6,
+	ConsentCategories_get_Mobile_mEA1C02426F4CC27FE9A1BC524B7CFD855033F8F4,
+	ConsentCategories_get_Engagement_m20113E7CDB4E46F86A34C6D93A65FC7EBA410BDE,
+	ConsentCategories_get_Monitoring_mE27E48A40086FBF8CAC65CD2EF7C7D6757C5A2F2,
+	ConsentCategories_get_Crm_mC1DDE13ABD1EEC1871B1E3069878E2C60F9A738C,
+	ConsentCategories_get_Cdp_mD06321195D3E451C3B98ECDCDBCE84362091DA11,
+	ConsentCategories_get_CookieMatch_m04B893CB6C098AEA6451FDA043306412BF45232E,
+	ConsentCategories_get_Misc_m7C498601E9EAF189CB942879DFF7EB0E89203DA1,
+	ConsentCategories_FromString_m4DD3591C1D3729EB34990744EC81B96518EFDD50,
+	TimeUnit__ctor_m7F4BC1F78DD4C218D4C77532F1110D4CEACA43C0,
+	TimeUnit_get_Value_m14DF4CB5057D2D7B35C46843D17981AD9B6D9B6B,
+	TimeUnit_get_Minutes_mF7956FBFF1EF814BA17FC94851C9A496BEE1656A,
+	TimeUnit_get_Hours_m03DADDCDECFFCE3698670DC9131D2452B5B9869C,
+	TimeUnit_get_Days_mBAC09826AA811CB46497709647413ACF56DCDD01,
+	TimeUnit_get_Months_mB0A21DD0CFF02E727085905AA36F966B92182A58,
+	TealiumConfig__ctor_m0A96C3450D489B776AE73CF81A344A852D04192C,
+	U3CU3Ec__cctor_m8BA299158BD586DCCB609FFC94A5FB1060E306D1,
+	U3CU3Ec__ctor_m6FFC1E515C71FF5A17D5E2467AD41D098781296B,
+	U3CU3Ec_U3C_ctorU3Eb__26_0_m85E990ADAC29EE84B910E54ED08386155C598B1D,
+	U3CU3Ec_U3C_ctorU3Eb__26_1_m3DCE7E90535CF1C89BDDD1ECB14C5CE52E24F75F,
+	ConsentExpiry__ctor_mD332664C3AC08BCA9CA55303364081B65443C962,
+	ConsentExpiry_ToDictionary_m8DA828C893D8CE75F47E87BD3D15584512E5A570,
+	TealiumDispatch__ctor_m7E4216F5DCDB1D5BE531B44AFA86DF62E5C4D4E1,
+	TealiumView__ctor_m8FB5B35B067228F18E34F035C1AB3016AABF4189,
+	TealiumEvent__ctor_m72902EEE58AFC9E9585BF338B52E9ECFA3340895,
+	TealiumLogger_Log_m0E48059ABCCD96E535135D35C37224610C8EE848,
 };
-extern void Collectors__ctor_m8DBB433DFC8F199C9FE8816467D3AC0F2EF0D7E1_AdjustorThunk (void);
-extern void Collectors_get_Value_m7CB4523847C24898D8AC9E95A752C2D8842B7A98_AdjustorThunk (void);
-extern void Collectors_set_Value_mBAF5D968C86DCE6422E016A9CE2B21065F07CEC8_AdjustorThunk (void);
-extern void Dispatchers__ctor_m86B83DEFBEECBC3DB4C0DD85FB51A168818BAE8A_AdjustorThunk (void);
-extern void Dispatchers_get_Value_m9C0BC6232E3855BA51505E134824E0C7A4CF7024_AdjustorThunk (void);
-extern void Dispatchers_set_Value_m399A47BEB4BE4ACD6BC4EACE7E6C4F218F472B54_AdjustorThunk (void);
-extern void TealiumEnvironment__ctor_m9092842A176D8DBACFD540B9A835D46EDCABEDCC_AdjustorThunk (void);
-extern void TealiumEnvironment_get_Value_m81A23B2C828461341ED1F66B5F47F544DA753F14_AdjustorThunk (void);
-extern void TealiumEnvironment_set_Value_m4422E19AA62EC0D931C10CA1287268EADA8EE10E_AdjustorThunk (void);
-extern void Expiry__ctor_m54CFE019A4DA755BE983CCD8EED6990D3F34EF9E_AdjustorThunk (void);
-extern void Expiry_get_Value_m6A95A610D4E16816933447F6490ABB5C8C971631_AdjustorThunk (void);
-extern void Expiry_set_Value_m929623E377B6B129D31E26D0625BF85F880DFB85_AdjustorThunk (void);
-extern void ConsentPolicy__ctor_m883D1772B6DC1B2CC556B0688C1940BD2B055BA9_AdjustorThunk (void);
-extern void ConsentPolicy_get_Value_m700480FF9763316692F22F0C79809DA6FABA21E4_AdjustorThunk (void);
-extern void ConsentPolicy_set_Value_m41BDE1036488E24B557E26A5E0A3357C8C5122CC_AdjustorThunk (void);
-extern void ConsentStatus__ctor_m1842D4BA15B3C05AE0DE9E5F5E5F6FA365BE51E8_AdjustorThunk (void);
-extern void ConsentStatus_get_Value_m3D4D2B61997537368BC42C33003E0B2B1C207683_AdjustorThunk (void);
-extern void ConsentStatus_set_Value_mF4FE346EEB21A01DA59C1C45CB4E99E062A80CDC_AdjustorThunk (void);
-extern void LogLevel__ctor_m21898976F9EF3BE1FFDB9543BE19999FB89DCA5F_AdjustorThunk (void);
-extern void LogLevel_get_Value_mCF3B4A73A735B2CB296365785A5C148F8A5C867A_AdjustorThunk (void);
-extern void LogLevel_set_Value_m9D4F6B3EC2D90FFFBC9E375E8A33132AED68AEBF_AdjustorThunk (void);
-extern void ConsentCategories__ctor_mE72E045332AE352255B629B960913807473F5F2F_AdjustorThunk (void);
-extern void ConsentCategories_get_Value_m6AC4948877BE59ACB65340ED08ED4C1F7F80351B_AdjustorThunk (void);
-extern void ConsentCategories_set_Value_m48C542BBD20842573BCA38C2510E8A941EB17088_AdjustorThunk (void);
-extern void TimeUnit__ctor_m01FA07961D35C715E75C3D480EC4D1DA48DFAE0C_AdjustorThunk (void);
-extern void TimeUnit_get_Value_mDD9318B291896F8BFE81DE34D0589734648BBF16_AdjustorThunk (void);
-extern void TimeUnit_set_Value_m6A402797AEE22FAFF282663636940F8FE5265682_AdjustorThunk (void);
-static Il2CppTokenAdjustorThunkPair s_adjustorThunks[27] = 
+extern void Collectors__ctor_m22A5162195E73249532143A5E818EF095C734390_AdjustorThunk (void);
+extern void Collectors_get_Value_m7EF29A25B40E5407A78983F99764E17B59797B31_AdjustorThunk (void);
+extern void Dispatchers__ctor_mE47EA330081AB8F5CB35121072C60E5B92F52CF3_AdjustorThunk (void);
+extern void Dispatchers_get_Value_m96FCCE34072659185FBD13A9519521C44C0A43F4_AdjustorThunk (void);
+extern void TealiumEnvironment__ctor_m682BD689369C468F4F88B0133B36C48213DB89C4_AdjustorThunk (void);
+extern void TealiumEnvironment_get_Value_mC7C745C0C23BBA867FA6107B2207D687D003E817_AdjustorThunk (void);
+extern void Expiry__ctor_mE513C4D03326B522B5035F60CE499FC45FF3C36E_AdjustorThunk (void);
+extern void Expiry_get_Value_m56499EE94F25D8F2FBB5115F297A9C1E86B3FF9F_AdjustorThunk (void);
+extern void ConsentPolicy__ctor_mBFA656D0300BF0A550237B6AD50C97E4EB7F4EDF_AdjustorThunk (void);
+extern void ConsentPolicy_get_Value_mE9BE72AF33A492C0DCE9D901954328AB329DBB80_AdjustorThunk (void);
+extern void ConsentStatus__ctor_m4DEB38B73AFC57F3DC8AF314CD76670B47BE3D0D_AdjustorThunk (void);
+extern void ConsentStatus_get_Value_m2ADCDD2A5B6C65269758BC1FF5689F78B6646444_AdjustorThunk (void);
+extern void LogLevel__ctor_mCD6C0933ABBDB87CB41FF4CE2F5858F032E27D67_AdjustorThunk (void);
+extern void LogLevel_get_Value_m7190CB1FF14479332F21B2B5A9F3787D4BF7E805_AdjustorThunk (void);
+extern void ConsentCategories__ctor_m3627B27340085C053CDB134AEBBE32F05161FD0E_AdjustorThunk (void);
+extern void ConsentCategories_get_Value_m4AF5AE221DCC4030E2750AD709B245AAFD94E0DD_AdjustorThunk (void);
+extern void TimeUnit__ctor_m7F4BC1F78DD4C218D4C77532F1110D4CEACA43C0_AdjustorThunk (void);
+extern void TimeUnit_get_Value_m14DF4CB5057D2D7B35C46843D17981AD9B6D9B6B_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[18] = 
 {
-	{ 0x060000AC, Collectors__ctor_m8DBB433DFC8F199C9FE8816467D3AC0F2EF0D7E1_AdjustorThunk },
-	{ 0x060000AD, Collectors_get_Value_m7CB4523847C24898D8AC9E95A752C2D8842B7A98_AdjustorThunk },
-	{ 0x060000AE, Collectors_set_Value_mBAF5D968C86DCE6422E016A9CE2B21065F07CEC8_AdjustorThunk },
-	{ 0x060000B3, Dispatchers__ctor_m86B83DEFBEECBC3DB4C0DD85FB51A168818BAE8A_AdjustorThunk },
-	{ 0x060000B4, Dispatchers_get_Value_m9C0BC6232E3855BA51505E134824E0C7A4CF7024_AdjustorThunk },
-	{ 0x060000B5, Dispatchers_set_Value_m399A47BEB4BE4ACD6BC4EACE7E6C4F218F472B54_AdjustorThunk },
-	{ 0x060000B9, TealiumEnvironment__ctor_m9092842A176D8DBACFD540B9A835D46EDCABEDCC_AdjustorThunk },
-	{ 0x060000BA, TealiumEnvironment_get_Value_m81A23B2C828461341ED1F66B5F47F544DA753F14_AdjustorThunk },
-	{ 0x060000BB, TealiumEnvironment_set_Value_m4422E19AA62EC0D931C10CA1287268EADA8EE10E_AdjustorThunk },
-	{ 0x060000BF, Expiry__ctor_m54CFE019A4DA755BE983CCD8EED6990D3F34EF9E_AdjustorThunk },
-	{ 0x060000C0, Expiry_get_Value_m6A95A610D4E16816933447F6490ABB5C8C971631_AdjustorThunk },
-	{ 0x060000C1, Expiry_set_Value_m929623E377B6B129D31E26D0625BF85F880DFB85_AdjustorThunk },
-	{ 0x060000C5, ConsentPolicy__ctor_m883D1772B6DC1B2CC556B0688C1940BD2B055BA9_AdjustorThunk },
-	{ 0x060000C6, ConsentPolicy_get_Value_m700480FF9763316692F22F0C79809DA6FABA21E4_AdjustorThunk },
-	{ 0x060000C7, ConsentPolicy_set_Value_m41BDE1036488E24B557E26A5E0A3357C8C5122CC_AdjustorThunk },
-	{ 0x060000CA, ConsentStatus__ctor_m1842D4BA15B3C05AE0DE9E5F5E5F6FA365BE51E8_AdjustorThunk },
-	{ 0x060000CB, ConsentStatus_get_Value_m3D4D2B61997537368BC42C33003E0B2B1C207683_AdjustorThunk },
-	{ 0x060000CC, ConsentStatus_set_Value_mF4FE346EEB21A01DA59C1C45CB4E99E062A80CDC_AdjustorThunk },
-	{ 0x060000D1, LogLevel__ctor_m21898976F9EF3BE1FFDB9543BE19999FB89DCA5F_AdjustorThunk },
-	{ 0x060000D2, LogLevel_get_Value_mCF3B4A73A735B2CB296365785A5C148F8A5C867A_AdjustorThunk },
-	{ 0x060000D3, LogLevel_set_Value_m9D4F6B3EC2D90FFFBC9E375E8A33132AED68AEBF_AdjustorThunk },
-	{ 0x060000D8, ConsentCategories__ctor_mE72E045332AE352255B629B960913807473F5F2F_AdjustorThunk },
-	{ 0x060000D9, ConsentCategories_get_Value_m6AC4948877BE59ACB65340ED08ED4C1F7F80351B_AdjustorThunk },
-	{ 0x060000DA, ConsentCategories_set_Value_m48C542BBD20842573BCA38C2510E8A941EB17088_AdjustorThunk },
-	{ 0x060000EB, TimeUnit__ctor_m01FA07961D35C715E75C3D480EC4D1DA48DFAE0C_AdjustorThunk },
-	{ 0x060000EC, TimeUnit_get_Value_mDD9318B291896F8BFE81DE34D0589734648BBF16_AdjustorThunk },
-	{ 0x060000ED, TimeUnit_set_Value_m6A402797AEE22FAFF282663636940F8FE5265682_AdjustorThunk },
+	{ 0x060000D6, Collectors__ctor_m22A5162195E73249532143A5E818EF095C734390_AdjustorThunk },
+	{ 0x060000D7, Collectors_get_Value_m7EF29A25B40E5407A78983F99764E17B59797B31_AdjustorThunk },
+	{ 0x060000DC, Dispatchers__ctor_mE47EA330081AB8F5CB35121072C60E5B92F52CF3_AdjustorThunk },
+	{ 0x060000DD, Dispatchers_get_Value_m96FCCE34072659185FBD13A9519521C44C0A43F4_AdjustorThunk },
+	{ 0x060000E1, TealiumEnvironment__ctor_m682BD689369C468F4F88B0133B36C48213DB89C4_AdjustorThunk },
+	{ 0x060000E2, TealiumEnvironment_get_Value_mC7C745C0C23BBA867FA6107B2207D687D003E817_AdjustorThunk },
+	{ 0x060000E6, Expiry__ctor_mE513C4D03326B522B5035F60CE499FC45FF3C36E_AdjustorThunk },
+	{ 0x060000E7, Expiry_get_Value_m56499EE94F25D8F2FBB5115F297A9C1E86B3FF9F_AdjustorThunk },
+	{ 0x060000EB, ConsentPolicy__ctor_mBFA656D0300BF0A550237B6AD50C97E4EB7F4EDF_AdjustorThunk },
+	{ 0x060000EC, ConsentPolicy_get_Value_mE9BE72AF33A492C0DCE9D901954328AB329DBB80_AdjustorThunk },
+	{ 0x060000EF, ConsentStatus__ctor_m4DEB38B73AFC57F3DC8AF314CD76670B47BE3D0D_AdjustorThunk },
+	{ 0x060000F0, ConsentStatus_get_Value_m2ADCDD2A5B6C65269758BC1FF5689F78B6646444_AdjustorThunk },
+	{ 0x060000F5, LogLevel__ctor_mCD6C0933ABBDB87CB41FF4CE2F5858F032E27D67_AdjustorThunk },
+	{ 0x060000F6, LogLevel_get_Value_m7190CB1FF14479332F21B2B5A9F3787D4BF7E805_AdjustorThunk },
+	{ 0x060000FB, ConsentCategories__ctor_m3627B27340085C053CDB134AEBBE32F05161FD0E_AdjustorThunk },
+	{ 0x060000FC, ConsentCategories_get_Value_m4AF5AE221DCC4030E2750AD709B245AAFD94E0DD_AdjustorThunk },
+	{ 0x0600010D, TimeUnit__ctor_m7F4BC1F78DD4C218D4C77532F1110D4CEACA43C0_AdjustorThunk },
+	{ 0x0600010E, TimeUnit_get_Value_m14DF4CB5057D2D7B35C46843D17981AD9B6D9B6B_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[252] = 
+static const int32_t s_InvokerIndices[285] = 
 {
-	2333,
-	2333,
-	1979,
-	1959,
-	1979,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	2333,
-	1959,
-	2284,
-	-1,
-	3279,
-	2333,
-	1959,
-	3655,
-	2333,
-	1979,
-	1959,
-	1959,
-	2333,
-	1959,
-	1921,
-	1959,
-	1199,
-	2333,
-	1959,
-	1194,
-	1559,
-	1959,
-	1923,
-	2249,
-	1959,
-	2284,
-	1199,
-	1959,
-	1959,
-	2333,
-	2284,
-	1959,
-	1959,
-	3641,
-	3279,
-	3655,
-	3600,
-	3275,
-	3469,
-	3600,
-	3596,
-	3627,
-	3600,
-	3641,
-	3279,
-	3600,
-	3600,
-	3655,
-	3600,
-	3600,
-	3641,
-	3602,
-	3600,
-	3600,
-	3655,
-	3469,
-	3469,
-	2333,
-	3655,
-	3655,
-	2333,
-	1534,
-	1534,
-	1199,
-	2333,
-	1959,
-	1194,
-	1559,
-	1959,
-	1923,
-	2249,
-	1959,
-	2284,
-	1199,
-	1959,
-	1959,
-	2333,
-	2284,
-	1959,
-	1959,
-	1959,
-	1959,
-	1959,
-	2333,
-	2333,
-	3655,
-	3655,
-	2333,
-	1316,
-	3600,
-	3600,
-	3655,
-	3279,
-	3469,
-	3600,
-	3600,
-	3641,
-	3600,
-	3641,
-	3600,
-	3655,
-	3600,
-	3600,
-	3641,
-	3600,
-	3600,
-	3600,
-	3600,
-	3602,
-	3600,
-	3600,
-	3655,
-	1199,
-	2333,
-	1959,
-	1194,
-	1559,
-	1959,
-	1923,
-	2249,
-	1959,
-	2284,
-	1199,
-	1959,
-	1959,
-	2333,
-	1959,
-	1959,
-	2284,
-	2333,
-	1198,
-	1979,
-	676,
-	1959,
-	1198,
-	1959,
-	663,
-	1959,
-	1198,
-	1959,
-	663,
-	1959,
-	1198,
-	2333,
-	919,
-	1959,
-	3655,
-	2333,
-	1547,
-	1316,
-	1959,
-	2284,
-	1959,
-	3623,
-	3623,
-	3623,
-	3623,
-	1959,
-	2284,
-	1959,
-	3631,
-	3631,
-	3631,
-	1959,
-	2284,
-	1959,
-	3649,
-	3649,
-	3649,
-	1959,
-	2284,
-	1959,
-	3632,
-	3632,
-	3632,
-	1959,
-	2284,
-	1959,
-	3626,
-	3626,
-	1959,
-	2284,
-	1959,
-	3627,
-	3627,
-	3627,
-	3340,
-	1959,
-	2284,
-	1959,
-	3639,
-	3639,
-	3639,
-	3639,
-	1959,
-	2284,
-	1959,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3625,
-	3339,
-	1959,
-	2284,
-	1959,
-	3651,
-	3651,
-	3651,
-	3651,
+	4648,
+	3711,
+	3783,
+	3711,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	4648,
+	3783,
+	3783,
+	4548,
 	0,
-	3655,
-	2333,
-	1552,
-	1546,
-	1136,
-	2284,
-	2333,
-	1199,
-	1199,
-	2806,
+	6370,
+	4648,
+	3783,
+	3783,
+	7095,
+	4648,
+	3711,
+	3783,
+	3783,
+	4648,
+	3783,
+	3783,
+	3783,
+	3721,
+	3783,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	7070,
+	6370,
+	6945,
+	7095,
+	6945,
+	6366,
+	6725,
+	6945,
+	6939,
+	7049,
+	6945,
+	7070,
+	6370,
+	6945,
+	6945,
+	7095,
+	7095,
+	7095,
+	6945,
+	6945,
+	6945,
+	7070,
+	6937,
+	6945,
+	6945,
+	6945,
+	6945,
+	7095,
+	4648,
+	7095,
+	2179,
+	4648,
+	3783,
+	3783,
+	2173,
+	3367,
+	3783,
+	3723,
+	4485,
+	3783,
+	4548,
+	2179,
+	3783,
+	3783,
+	4648,
+	4548,
+	4648,
+	4648,
+	3783,
+	3783,
+	3783,
+	3783,
+	3783,
+	3783,
+	3783,
+	4648,
+	4648,
+	7095,
+	7095,
+	4648,
+	2921,
+	6725,
+	6725,
+	4648,
+	7095,
+	4648,
+	3342,
+	3342,
+	6945,
+	7095,
+	6945,
+	7095,
+	6370,
+	6725,
+	6945,
+	6945,
+	7070,
+	6945,
+	7070,
+	6945,
+	7095,
+	6945,
+	6945,
+	7070,
+	7095,
+	7095,
+	6945,
+	6945,
+	6945,
+	6945,
+	6945,
+	6945,
+	6937,
+	6945,
+	6945,
+	6945,
+	6945,
+	7095,
+	2179,
+	3783,
+	4648,
+	3783,
+	2173,
+	3367,
+	3783,
+	3723,
+	4485,
+	3783,
+	4548,
+	2179,
+	3783,
+	3783,
+	4648,
+	3783,
+	3783,
+	3783,
+	4548,
+	4648,
+	4648,
+	4648,
+	2177,
+	3711,
+	1048,
+	3783,
+	2177,
+	3783,
+	1079,
+	3783,
+	2177,
+	3783,
+	1079,
+	3783,
+	2177,
+	3783,
+	1079,
+	3783,
+	2177,
+	3783,
+	1079,
+	3783,
+	2177,
+	4648,
+	1746,
+	3783,
+	7095,
+	4648,
+	3354,
+	2921,
+	3783,
+	4548,
+	7044,
+	7044,
+	7044,
+	7044,
+	3783,
+	4548,
+	7054,
+	7054,
+	7054,
+	3783,
+	4548,
+	7083,
+	7083,
+	7083,
+	3783,
+	4548,
+	7056,
+	7056,
+	7056,
+	3783,
+	4548,
+	7048,
+	7048,
+	3783,
+	4548,
+	7049,
+	7049,
+	7049,
+	6554,
+	3783,
+	4548,
+	7067,
+	7067,
+	7067,
+	7067,
+	3783,
+	4548,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	7047,
+	6553,
+	3783,
+	4548,
+	7086,
+	7086,
+	7086,
+	7086,
+	0,
+	7095,
+	4648,
+	3360,
+	3353,
+	2062,
+	4548,
+	2179,
+	2179,
+	2179,
+	5481,
 };
-static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[4] = 
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[6] = 
 {
-	{ 0x06000082, 4,  (void**)&TealiumiOS_initializationResponseReceived_mFD32AC02F83B78CABEB108BA6DA3F3CF53EBE482_RuntimeMethod_var, 0 },
-	{ 0x06000083, 5,  (void**)&TealiumiOS_remoteCommandReceived_m21FFC75B550A9A5301D143DA0DA208042DA9778D_RuntimeMethod_var, 0 },
-	{ 0x06000084, 6,  (void**)&TealiumiOS_visitorServiceUpdateReceived_mDFCEFB9BEE708383385E3FB07A4E3FB9EF2EC27A_RuntimeMethod_var, 0 },
-	{ 0x06000085, 3,  (void**)&TealiumiOS_consentExpirationReceived_mB882EBF0FA33E3AC0F3E6D03BFA68B4721E7D89E_RuntimeMethod_var, 0 },
+	{ 0x0600009E, 13,  (void**)&TealiumiOS_initializationResponseReceived_mCE75DDB10DB04C7CDAD5C79E686AC95444689C45_RuntimeMethod_var, 0 },
+	{ 0x0600009F, 15,  (void**)&TealiumiOS_trackDataResponseReceived_m560E76CDB97474A552B4663D703FBF7A4823CB3F_RuntimeMethod_var, 0 },
+	{ 0x060000A0, 14,  (void**)&TealiumiOS_remoteCommandReceived_m329891AE490BF9E5B99477B569A5AE881D646737_RuntimeMethod_var, 0 },
+	{ 0x060000A1, 17,  (void**)&TealiumiOS_visitorServiceUpdateReceived_mF7CCAAF7184EF435DBAF5FE8BE8AC7576252514C_RuntimeMethod_var, 0 },
+	{ 0x060000A2, 16,  (void**)&TealiumiOS_visitorIdUpdateReceived_m5F95C7CF4F502243CB62C15DC4FFA7A5DEF61176_RuntimeMethod_var, 0 },
+	{ 0x060000A3, 12,  (void**)&TealiumiOS_consentExpirationReceived_m6BD20EBA076AD8F9F17576B2A4ADC0821095F351_RuntimeMethod_var, 0 },
 };
 static const Il2CppTokenRangePair s_rgctxIndices[1] = 
 {
-	{ 0x06000019, { 0, 5 } },
+	{ 0x0600001D, { 0, 5 } },
 };
+extern const uint32_t g_rgctx_List_1_tF1C50C86D73A3FA607519C5B84011587F0DB2495;
+extern const uint32_t g_rgctx_List_1__ctor_mC74590B3AFFE44A5FFD670B2DC183029D62C9939;
+extern const uint32_t g_rgctx_List_1_get_Count_mB52C4F8440320281417F2B53008AFEDB299F646A;
+extern const uint32_t g_rgctx_List_1_get_Item_mCDB5A7C90684401162F9BD4505BF3D6B3C5DB23C;
+extern const uint32_t g_rgctx_List_1_Add_mBBA8291B1C708B32C942F42E995CC9E976B6C4A0;
 static const Il2CppRGCTXDefinition s_rgctxValues[5] = 
 {
-	{ (Il2CppRGCTXDataType)2, 2724 },
-	{ (Il2CppRGCTXDataType)3, 7890 },
-	{ (Il2CppRGCTXDataType)3, 7892 },
-	{ (Il2CppRGCTXDataType)3, 7893 },
-	{ (Il2CppRGCTXDataType)3, 7891 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_tF1C50C86D73A3FA607519C5B84011587F0DB2495 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1__ctor_mC74590B3AFFE44A5FFD670B2DC183029D62C9939 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_get_Count_mB52C4F8440320281417F2B53008AFEDB299F646A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_get_Item_mCDB5A7C90684401162F9BD4505BF3D6B3C5DB23C },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Add_mBBA8291B1C708B32C942F42E995CC9E976B6C4A0 },
 };
-extern const CustomAttributesCacheGenerator g_AssemblyU2DCSharp_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	252,
+	285,
 	s_methodPointers,
-	27,
+	18,
 	s_adjustorThunks,
 	s_InvokerIndices,
-	4,
+	6,
 	s_reversePInvokeIndices,
 	1,
 	s_rgctxIndices,
 	5,
 	s_rgctxValues,
 	NULL,
-	g_AssemblyU2DCSharp_AttributeGenerators,
 	NULL, // module initializer,
 	NULL,
 	NULL,

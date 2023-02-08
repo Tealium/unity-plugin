@@ -13,45 +13,40 @@
 
 
 // 0x00000001 System.Boolean System.Runtime.Serialization.DataContractAttribute::get_IsReference()
-extern void DataContractAttribute_get_IsReference_mD233910F6BE95DC8F61D97C2B5BEB0BE0B817518 (void);
+extern void DataContractAttribute_get_IsReference_mEC2FFE0351B0DD896E7805670D6A614B1AE4C101 (void);
 // 0x00000002 System.String System.Runtime.Serialization.DataMemberAttribute::get_Name()
-extern void DataMemberAttribute_get_Name_mB7896BB8772FA242DB9ECA0CF9C68130C40079DD (void);
+extern void DataMemberAttribute_get_Name_m8C4BF39A517D901076BAFF6FF89DD53C5F4B2B3E (void);
 // 0x00000003 System.Int32 System.Runtime.Serialization.DataMemberAttribute::get_Order()
-extern void DataMemberAttribute_get_Order_m6276D5139B7020DB7C0D545DC24E6BE287FFF382 (void);
+extern void DataMemberAttribute_get_Order_m34D8C756AE07BD345011D887546DF54D71898956 (void);
 // 0x00000004 System.Boolean System.Runtime.Serialization.DataMemberAttribute::get_IsRequired()
-extern void DataMemberAttribute_get_IsRequired_mF7CC60E82900625E383EBAACDCB45E6C649E2DB7 (void);
+extern void DataMemberAttribute_get_IsRequired_m318C586E28E349EA87096FE6FE473B4C4FD58C73 (void);
 // 0x00000005 System.Boolean System.Runtime.Serialization.DataMemberAttribute::get_EmitDefaultValue()
-extern void DataMemberAttribute_get_EmitDefaultValue_mFAF0D3A1269ACCAD4A3EF9EA47A2FF6BF1E3AA3B (void);
+extern void DataMemberAttribute_get_EmitDefaultValue_m430708B4CFB34DD522B6D01A66CE8FDEDCC088E8 (void);
 // 0x00000006 System.String System.Runtime.Serialization.EnumMemberAttribute::get_Value()
-extern void EnumMemberAttribute_get_Value_mC26949F87E6A636CF952151DC4F77110050627A3 (void);
-// 0x00000007 System.Void System.Runtime.Serialization.KnownTypeAttribute::.ctor(System.Type)
-extern void KnownTypeAttribute__ctor_m4E4832EA5ACAD7B15D9F02CABB221E6F8713482A (void);
-static Il2CppMethodPointer s_methodPointers[7] = 
+extern void EnumMemberAttribute_get_Value_mB41126B613B9FD1CD8A05D08FCEC4B6663864BE9 (void);
+static Il2CppMethodPointer s_methodPointers[6] = 
 {
-	DataContractAttribute_get_IsReference_mD233910F6BE95DC8F61D97C2B5BEB0BE0B817518,
-	DataMemberAttribute_get_Name_mB7896BB8772FA242DB9ECA0CF9C68130C40079DD,
-	DataMemberAttribute_get_Order_m6276D5139B7020DB7C0D545DC24E6BE287FFF382,
-	DataMemberAttribute_get_IsRequired_mF7CC60E82900625E383EBAACDCB45E6C649E2DB7,
-	DataMemberAttribute_get_EmitDefaultValue_mFAF0D3A1269ACCAD4A3EF9EA47A2FF6BF1E3AA3B,
-	EnumMemberAttribute_get_Value_mC26949F87E6A636CF952151DC4F77110050627A3,
-	KnownTypeAttribute__ctor_m4E4832EA5ACAD7B15D9F02CABB221E6F8713482A,
+	DataContractAttribute_get_IsReference_mEC2FFE0351B0DD896E7805670D6A614B1AE4C101,
+	DataMemberAttribute_get_Name_m8C4BF39A517D901076BAFF6FF89DD53C5F4B2B3E,
+	DataMemberAttribute_get_Order_m34D8C756AE07BD345011D887546DF54D71898956,
+	DataMemberAttribute_get_IsRequired_m318C586E28E349EA87096FE6FE473B4C4FD58C73,
+	DataMemberAttribute_get_EmitDefaultValue_m430708B4CFB34DD522B6D01A66CE8FDEDCC088E8,
+	EnumMemberAttribute_get_Value_mB41126B613B9FD1CD8A05D08FCEC4B6663864BE9,
 };
-static const int32_t s_InvokerIndices[7] = 
+static const int32_t s_InvokerIndices[6] = 
 {
-	2306,
-	2284,
-	2269,
-	2306,
-	2306,
-	2284,
-	1959,
+	4475,
+	4548,
+	4525,
+	4475,
+	4475,
+	4548,
 };
-extern const CustomAttributesCacheGenerator g_System_Runtime_Serialization_AttributeGenerators[];
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_System_Runtime_Serialization_CodeGenModule;
 const Il2CppCodeGenModule g_System_Runtime_Serialization_CodeGenModule = 
 {
 	"System.Runtime.Serialization.dll",
-	7,
+	6,
 	s_methodPointers,
 	0,
 	NULL,
@@ -63,7 +58,6 @@ const Il2CppCodeGenModule g_System_Runtime_Serialization_CodeGenModule =
 	0,
 	NULL,
 	NULL,
-	g_System_Runtime_Serialization_AttributeGenerators,
 	NULL, // module initializer,
 	NULL,
 	NULL,

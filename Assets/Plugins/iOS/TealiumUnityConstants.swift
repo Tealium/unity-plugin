@@ -52,6 +52,7 @@ public enum TealiumUnityConstants {
         case visitorServiceEnabled
         case memoryReportingEnabled
         case sessionCountingEnabled
+        case visitorIdentityKey
     }
     
     enum Dispatch: String {
