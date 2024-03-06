@@ -92,8 +92,8 @@
      -->
      <!-- <iosPod name="tealium-swift" version="~> 2.6.5" bitcodeEnabled="true"
             minTargetSdk="9.0" addToAllTargets="true" /> -->
-    <iosPod name="tealium-swift" version="~> 2.8" bitcodeEnabled="true"
-            minTargetSdk="9.0" addToAllTargets="true" 
+    <iosPod name="tealium-swift" version="~> 2.12"
+            minTargetSdk="12.0" addToAllTargets="true" 
             modular_headers="true"
             subspecs="['Core','TagManagement','Collect','Lifecycle','RemoteCommands','VisitorService']" />
         <!-- <iosPod name="tealium-swift/Core" version="~> 2.9" bitcodeEnabled="true"

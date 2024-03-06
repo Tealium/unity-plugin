@@ -15,7 +15,6 @@
 		0562445898CE5EB049FCEFFA /* UnityEngine.UI1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDF14950983378CCC15356B8 /* UnityEngine.UI1.cpp */; };
 		07284E68B3913DCFC1CEA852 /* libil2cpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8E4E16AC13891AEE869E5E /* libil2cpp.a */; };
 		08F545D2AE5031C7B614FFC6 /* GenericMethods7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF054FC3BDF844992D925DB8 /* GenericMethods7.cpp */; };
-		093342B4A2752A034996B486 /* Generics41.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 713044148AB313A185D876F4 /* Generics41.cpp */; };
 		0A3B4EC592B9F9A0DF8E3FED /* Newtonsoft.Json.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 313F4AD7AB34B0D70DAB5C00 /* Newtonsoft.Json.cpp */; };
 		0AB14D3F9F080F82D60AECD0 /* Generics14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 345A48E8B53C730FA00BC9DD /* Generics14.cpp */; };
 		0B36453EB5AB78A1D6887692 /* System_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = 5F5E40A08EF0162FCECA30AE /* System_CodeGen.c */; };
@@ -72,7 +71,6 @@
 		39DB438388FAA53AD3754A78 /* System.Core_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = B52C4D608DD6F684C4D57E0B /* System.Core_CodeGen.c */; };
 		3AEB4262B65D8D3B4A52348A /* UnityEngine.GameCenterModule_CodeGen.c in Sources */ = {isa = PBXBuildFile; fileRef = C46344BF870A49FE5594B64C /* UnityEngine.GameCenterModule_CodeGen.c */; };
 		3BDE4B5FBE2FBC193BF35B13 /* GenericMethods9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C0C54462927691FC589C38D4 /* GenericMethods9.cpp */; };
-		3BFC42E1A9F7208F603A51D9 /* UnityEngine.UI4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78B54DF59CC1CABFA8D56AA5 /* UnityEngine.UI4.cpp */; };
 		3E003EA4271C3FA9B1C80781 /* Pods_Unity_iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D43BA7B477079A3AD5C4450 /* Pods_Unity_iPhone.framework */; };
 		40A8496398A9027675ED1EEA /* Generics37.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123248B1850DDC166F998F6D /* Generics37.cpp */; };
 		41864F0F819103CF4B6138AF /* IUnityGraphicsMetal.h in Headers */ = {isa = PBXBuildFile; fileRef = 030F4AD1A05485FA33E80D65 /* IUnityGraphicsMetal.h */; };
@@ -109,7 +107,7 @@
 		53FF4C649EC3F4FEAE32E9C8 /* NSUserDefaults.mm in Sources */ = {isa = PBXBuildFile; fileRef = D50749F3B7A2E66039FBC90B /* NSUserDefaults.mm */; };
 		5623C57617FDCB0800090B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		5623C57717FDCB0800090B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 830B5C100E5ED4C100C7819F /* UIKit.framework */; };
-		5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
+		5623C57D17FDCB0900090B9E = {isa = PBXBuildFile; fileRef = 5623C57B17FDCB0900090B9E /* InfoPlist.strings */; };
 		5623C57F17FDCB0900090B9E /* Unity_iPhone_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5623C57E17FDCB0900090B9E /* Unity_iPhone_Tests.m */; };
 		56C56C9817D6015200616839 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C56C9717D6015100616839 /* Images.xcassets */; };
 		57914030B9EF511E5B092287 /* Generics10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77014EB6B2661E1DF1E6C695 /* Generics10.cpp */; };
@@ -433,7 +431,7 @@
 		1B8E497DB5CB844360E593AD /* Il2CppMetadataUsage.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppMetadataUsage.c; path = Classes/Native/Il2CppMetadataUsage.c; sourceTree = SOURCE_ROOT; };
 		1C324605A6D8A230A29E4655 /* UnityEngine.GridModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.GridModule.cpp; path = Classes/Native/UnityEngine.GridModule.cpp; sourceTree = SOURCE_ROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unity-Target-New.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* TealiumUnity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TealiumUnity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		202A42B592A02EED8FAEA9C7 /* UnityEngine.UIElementsModule9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule9.cpp; path = Classes/Native/UnityEngine.UIElementsModule9.cpp; sourceTree = SOURCE_ROOT; };
 		20AF4511B8A1AA8DF6B63559 /* Generics27.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics27.cpp; path = Classes/Native/Generics27.cpp; sourceTree = SOURCE_ROOT; };
 		21554EAF98FEFF8FC6EB7AD6 /* Assembly-CSharp_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "Assembly-CSharp_CodeGen.c"; path = "Classes/Native/Assembly-CSharp_CodeGen.c"; sourceTree = SOURCE_ROOT; };
@@ -520,7 +518,6 @@
 		6FBC4EB0AFA8D4EB67D3E995 /* System4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System4.cpp; path = Classes/Native/System4.cpp; sourceTree = SOURCE_ROOT; };
 		700B4013B1B24E7A703B1D3C /* GenericMethods5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GenericMethods5.cpp; path = Classes/Native/GenericMethods5.cpp; sourceTree = SOURCE_ROOT; };
 		70BB419DAC8F2280C7324DD5 /* mscorlib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib.cpp; path = Classes/Native/mscorlib.cpp; sourceTree = SOURCE_ROOT; };
-		713044148AB313A185D876F4 /* Generics41.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics41.cpp; path = Classes/Native/Generics41.cpp; sourceTree = SOURCE_ROOT; };
 		7190404B9F8169C43B80AE44 /* UnityEngine.CoreModule1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.CoreModule1.cpp; path = Classes/Native/UnityEngine.CoreModule1.cpp; sourceTree = SOURCE_ROOT; };
 		7194471CA53318422CDE5B9D /* System.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System.cpp; path = Classes/Native/System.cpp; sourceTree = SOURCE_ROOT; };
 		71AF44239429F7AD7441A570 /* UnityEngine.AnimationModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.AnimationModule_CodeGen.c; path = Classes/Native/UnityEngine.AnimationModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
@@ -529,7 +526,6 @@
 		729D416085E9FD3C2DAF25D1 /* UnityEngine.TextCoreTextEngineModule1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.TextCoreTextEngineModule1.cpp; path = Classes/Native/UnityEngine.TextCoreTextEngineModule1.cpp; sourceTree = SOURCE_ROOT; };
 		76054156B0AFC6B37E438159 /* Newtonsoft.Json8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Newtonsoft.Json8.cpp; path = Classes/Native/Newtonsoft.Json8.cpp; sourceTree = SOURCE_ROOT; };
 		77014EB6B2661E1DF1E6C695 /* Generics10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics10.cpp; path = Classes/Native/Generics10.cpp; sourceTree = SOURCE_ROOT; };
-		78B54DF59CC1CABFA8D56AA5 /* UnityEngine.UI4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UI4.cpp; path = Classes/Native/UnityEngine.UI4.cpp; sourceTree = SOURCE_ROOT; };
 		793149679DAB741B5D3E829E /* UnityEngine.AudioModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.AudioModule_CodeGen.c; path = Classes/Native/UnityEngine.AudioModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		7A8E43DC83505BA3B20DD467 /* baselib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = baselib.a; path = Libraries/baselib.a; sourceTree = SOURCE_ROOT; };
 		7AF6424895F831ABCB4484BA /* TealiumUnityPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TealiumUnityPlugin.swift; path = Libraries/Plugins/iOS/TealiumUnityPlugin.swift; sourceTree = SOURCE_ROOT; };
@@ -839,14 +835,14 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */,
+				1D6058910D05DD3D006BFB54 /* TealiumUnity.app */,
 				5623C57317FDCB0800090B9E /* Unity-iPhone Tests.xctest */,
 				9D25AB9D213FB47800354C27 /* UnityFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29B97314FDCFA39411CA2CEA = {
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
 				AA31BF961B55660D0013FB1B /* Data */,
@@ -977,7 +973,6 @@
 				276542B99FE53B93973368B8 /* Generics39.cpp */,
 				6DF441418095A36EDFA863E6 /* Generics4.cpp */,
 				BD354CBB81A02ECD5D5E829C /* Generics40.cpp */,
-				713044148AB313A185D876F4 /* Generics41.cpp */,
 				A1784B1CA0C20AA2AA563448 /* Generics5.cpp */,
 				00384D2084C935FA8D370588 /* Generics6.cpp */,
 				3700426EA688AEFF85BDDCB3 /* Generics7.cpp */,
@@ -1115,7 +1110,6 @@
 				FDF14950983378CCC15356B8 /* UnityEngine.UI1.cpp */,
 				8AF049FC956896261FC146B5 /* UnityEngine.UI2.cpp */,
 				50D04B84ACC3F06F10B9DEBD /* UnityEngine.UI3.cpp */,
-				78B54DF59CC1CABFA8D56AA5 /* UnityEngine.UI4.cpp */,
 				080E42209EFE0A53888F26D0 /* UnityEngine.UIElementsModule.cpp */,
 				0E8B48D08EBA6FCC38AC47DD /* UnityEngine.UIElementsModule1.cpp */,
 				7CAE45C181614F3C8BF0B9A0 /* UnityEngine.UIElementsModule10.cpp */,
@@ -1365,7 +1359,6 @@
 				58002D7287FADB6C6722DDAF /* Pods-UnityFramework.releaseforrunning.xcconfig */,
 				17D80B962E2CF033929FADCD /* Pods-UnityFramework.debug.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -1397,13 +1390,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Unity-iPhone" */;
 			buildPhases = (
-				7CA67CB1F5D015DBEB6E00E4 /* [CP] Check Pods Manifest.lock */,
+				7CA67CB1F5D015DBEB6E00E4 /* ShellScript */,
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				83D0C1FD0E6C8D7700EBCE5D /* CopyFiles */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
 				9D25ABAB213FB47800354C27 /* Embed Frameworks */,
-				20D48F44C2237A5E8FDA614D /* [CP] Embed Pods Frameworks */,
+				20D48F44C2237A5E8FDA614D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1412,7 +1405,7 @@
 			);
 			name = "Unity-iPhone";
 			productName = "iPhone-target";
-			productReference = 1D6058910D05DD3D006BFB54 /* Unity-Target-New.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* TealiumUnity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5623C57217FDCB0800090B9E /* Unity-iPhone Tests */ = {
@@ -1437,7 +1430,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D25ABA6213FB47800354C27 /* Build configuration list for PBXNativeTarget "UnityFramework" */;
 			buildPhases = (
-				A53E2232F0FE8380197CD153 /* [CP] Check Pods Manifest.lock */,
+				A53E2232F0FE8380197CD153 /* ShellScript */,
 				9D25AB9A213FB47800354C27 /* Headers */,
 				9D25AB98213FB47800354C27 /* Sources */,
 				9D25AB99213FB47800354C27 /* Frameworks */,
@@ -1474,7 +1467,7 @@
 					};
 					9D25AB9C213FB47800354C27 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -1489,8 +1482,8 @@
 				German,
 				en,
 			);
-			mainGroup = 29B97314FDCFA39411CA2CEA;
-			productRefGroup = 19C28FACFE9D520D11CA2CBB /* Products */;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			productRefGroup = 19C28FACFE9D520D11CA2CBB;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1520,7 +1513,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5623C57D17FDCB0900090B9E /* InfoPlist.strings in Resources */,
+				5623C57D17FDCB0900090B9E,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1534,7 +1527,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		20D48F44C2237A5E8FDA614D /* [CP] Embed Pods Frameworks */ = {
+		20D48F44C2237A5E8FDA614D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1552,7 +1545,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Unity-iPhone/Pods-Unity-iPhone-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CA67CB1F5D015DBEB6E00E4 /* [CP] Check Pods Manifest.lock */ = {
+		7CA67CB1F5D015DBEB6E00E4 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1574,7 +1567,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A53E2232F0FE8380197CD153 /* [CP] Check Pods Manifest.lock */ = {
+		A53E2232F0FE8380197CD153 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1710,7 +1703,6 @@
 				971E4371BB58F2685CCB595F /* Generics39.cpp in Sources */,
 				929E4843B72268C9E1B83646 /* Generics4.cpp in Sources */,
 				2756439D89925BF187EC2F37 /* Generics40.cpp in Sources */,
-				093342B4A2752A034996B486 /* Generics41.cpp in Sources */,
 				7D454F739FA1D27A4EBCF567 /* Generics5.cpp in Sources */,
 				942644BDB48F03E39C1F6016 /* Generics6.cpp in Sources */,
 				1DFF4929AEC814FA87E93F46 /* Generics7.cpp in Sources */,
@@ -1848,7 +1840,6 @@
 				0562445898CE5EB049FCEFFA /* UnityEngine.UI1.cpp in Sources */,
 				D9B341C9B327ED05764791B9 /* UnityEngine.UI2.cpp in Sources */,
 				D57444A58D51FF18C02573E6 /* UnityEngine.UI3.cpp in Sources */,
-				3BFC42E1A9F7208F603A51D9 /* UnityEngine.UI4.cpp in Sources */,
 				CD244DDEA5B1C50FDE1E90FD /* UnityEngine.UIElementsModule.cpp in Sources */,
 				B6E14C32AA3572514A4AEF8B /* UnityEngine.UIElementsModule1.cpp in Sources */,
 				F6C747BABABCC89BA0869D73 /* UnityEngine.UIElementsModule10.cpp in Sources */,
@@ -1935,7 +1926,7 @@
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 563D322CA68BE84D846CBB0F /* Pods-Unity-iPhone.debug.xcconfig */;
+			baseConfigurationReference = 563D322CA68BE84D846CBB0F;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
@@ -1954,7 +1945,7 @@
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -1963,7 +1954,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.TealiumUnity;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.Tealium-Unity";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -1978,7 +1969,7 @@
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA04EAB84F7799146BBBFC4 /* Pods-Unity-iPhone.release.xcconfig */;
+			baseConfigurationReference = 8DA04EAB84F7799146BBBFC4;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
@@ -1995,7 +1986,7 @@
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = NO;
@@ -2004,7 +1995,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.TealiumUnity;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.Tealium-Unity";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2048,7 +2039,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "Unity-iPhone Tests/Unity-iPhone Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unity3d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2101,7 +2092,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "Unity-iPhone Tests/Unity-iPhone Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unity3d.${PRODUCT_NAME:rfc1034identifier}";
@@ -2158,7 +2149,7 @@
 		};
 		56E860811D6757FF00A1AB2B /* ReleaseForRunning */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E29EA067D2CE06A8BFEF939 /* Pods-Unity-iPhone.releaseforrunning.xcconfig */;
+			baseConfigurationReference = 4E29EA067D2CE06A8BFEF939;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
@@ -2176,7 +2167,7 @@
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -2185,7 +2176,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.TealiumUnity;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.Tealium-Unity";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2229,7 +2220,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "Unity-iPhone Tests/Unity-iPhone Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unity3d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2286,7 +2277,7 @@
 		};
 		56E860841D67581C00A1AB2B /* ReleaseForProfiling */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2DFF633E9972CE44247D5DC /* Pods-Unity-iPhone.releaseforprofiling.xcconfig */;
+			baseConfigurationReference = D2DFF633E9972CE44247D5DC;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = x86_64;
@@ -2303,7 +2294,7 @@
 				ENABLE_ON_DEMAND_RESOURCES = NO;
 				GCC_ENABLE_CPP_EXCEPTIONS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
@@ -2312,7 +2303,7 @@
 					"$(inherited)",
 					"$(OTHER_CFLAGS)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.DefaultCompany.TealiumUnity;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DefaultCompany.Tealium-Unity";
 				PRODUCT_NAME = "$(PRODUCT_NAME_APP)";
 				PROVISIONING_PROFILE = "$(PROVISIONING_PROFILE_APP)";
 				PROVISIONING_PROFILE_APP = "";
@@ -2356,7 +2347,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				INFOPLIST_FILE = "Unity-iPhone Tests/Unity-iPhone Tests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.unity3d.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2374,7 +2365,7 @@
 		};
 		9D25ABA7213FB47800354C27 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DCF466CE8C2127F91986A79 /* Pods-UnityFramework.release.xcconfig */;
+			baseConfigurationReference = 0DCF466CE8C2127F91986A79;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2410,7 +2401,7 @@
 				);
 				INFOPLIST_FILE = UnityFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2455,7 +2446,7 @@
 		};
 		9D25ABA8213FB47800354C27 /* ReleaseForProfiling */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8D4F4DB7E5821741353520D /* Pods-UnityFramework.releaseforprofiling.xcconfig */;
+			baseConfigurationReference = F8D4F4DB7E5821741353520D;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2491,7 +2482,7 @@
 				);
 				INFOPLIST_FILE = UnityFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2537,7 +2528,7 @@
 		};
 		9D25ABA9213FB47800354C27 /* ReleaseForRunning */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58002D7287FADB6C6722DDAF /* Pods-UnityFramework.releaseforrunning.xcconfig */;
+			baseConfigurationReference = 58002D7287FADB6C6722DDAF;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2574,7 +2565,7 @@
 				);
 				INFOPLIST_FILE = UnityFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -2620,7 +2611,7 @@
 		};
 		9D25ABAA213FB47800354C27 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17D80B962E2CF033929FADCD /* Pods-UnityFramework.debug.xcconfig */;
+			baseConfigurationReference = 17D80B962E2CF033929FADCD;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -2658,7 +2649,7 @@
 				);
 				INFOPLIST_FILE = UnityFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_GENERATE_MAP_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (

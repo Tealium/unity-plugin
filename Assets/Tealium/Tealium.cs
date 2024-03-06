@@ -233,7 +233,7 @@ public class TealiumUnityPlugin : MonoBehaviour
             if (success) {
                 Dictionary<string, object> pluginData = new Dictionary<string, object> {
                     {"plugin_name", "Tealium-Unity"},
-                    {"plugin_version", "2.0.1"}
+                    {"plugin_version", "2.1.0"}
                 };
                 Tealium.AddToDataLayer(pluginData, Expiry.Forever);
             }
